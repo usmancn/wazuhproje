@@ -1,0 +1,77 @@
+{
+    "timestamp": "2026-05-17T16:21:54.640+0000",
+    "rule": {
+        "level": 3,
+        "description": "Successful sudo to ROOT executed.",
+        "id": "5402",
+        "mitre": {
+            "id": [
+                "T1548.003"
+            ],
+            "tactic": [
+                "Privilege Escalation",
+                "Defense Evasion"
+            ],
+            "technique": [
+                "Sudo and Sudo Caching"
+            ]
+        },
+        "firedtimes": 10,
+        "mail": false,
+        "groups": [
+            "syslog",
+            "sudo"
+        ],
+        "pci_dss": [
+            "10.2.5",
+            "10.2.2"
+        ],
+        "gpg13": [
+            "7.6",
+            "7.8",
+            "7.13"
+        ],
+        "gdpr": [
+            "IV_32.2"
+        ],
+        "hipaa": [
+            "164.312.b"
+        ],
+        "nist_800_53": [
+            "AU.14",
+            "AC.7",
+            "AC.6"
+        ],
+        "tsc": [
+            "CC6.8",
+            "CC7.2",
+            "CC7.3"
+        ]
+    },
+    "agent": {
+        "id": "000",
+        "name": "osmanubuntu"
+    },
+    "manager": {
+        "name": "osmanubuntu"
+    },
+    "id": "1779034914.859200",
+    "full_log": "May 17 16:21:53 osmanubuntu sudo[3825]:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/tail -1 /var/ossec/logs/alerts/alerts.json",
+    "predecoder": {
+        "program_name": "sudo",
+        "timestamp": "May 17 16:21:53",
+        "hostname": "osmanubuntu"
+    },
+    "decoder": {
+        "parent": "sudo",
+        "name": "sudo",
+        "ftscomment": "First time user executed the sudo command"
+    },
+    "data": {
+        "srcuser": "osman",
+        "dstuser": "root",
+        "pwd": "/home/osman",
+        "command": "/usr/bin/tail -1 /var/ossec/logs/alerts/alerts.json"
+    },
+    "location": "journald"
+}
