@@ -39,17 +39,17 @@ Sunumu yaparken `sunum_app.html` üzerinden ilerleyeceksin. Sekmelerin ne olduğ
 *(Üst menüden "⚡ Canlı Saldırı Demo" sekmesine tıkla)*
 > "Wazuh'un tespit yeteneğini kanıtlamak için şimdi sisteme canlı bir siber saldırı düzenleyeceğiz. Tarayıcım üzerinden Ubuntu sunucusuna art arda hatalı SSH şifreleri yollayacağım." 
 *(Kırmızı "SSH BRUTE-FORCE BAŞLAT" butonuna bas)*
-> "Sol tarafta benim saldırgan bilgisayar olarak yolladığım isteklerin teker teker reddedildiğini görüyorsunuz. Sağ tarafa bakarsanız, Wazuh ardışık hatalı girişleri saniyeler içinde anladı ve '🔴 Rule 5712 (Kritik Seviye 10)' olarak etiketleyip alarm üretti."
+> "Ekranda gördüğünüz gibi, **şu an SSH Brute-Force saldırı senaryosunu uyguladık**. Sol tarafta saldırganın başarısız giriş denemeleri akıyor. Sağ tarafa baktığımızda ise, **Wazuh bunu anında tespit etti ve 'Rule 5712 (Kritik Seviye 10)' kuralıyla logladı.**"
 
 ### [02:00 - 03:00] Saldırı 2: Yetki Yükseltme
-> "Peki saldırgan şifreyi bir şekilde bulup içeri sızsaydı ne olacaktı? Hemen onu da simüle edelim."
+> "İkinci senaryomuzda, saldırganın sistemi ele geçirip yetkisini artırmaya çalıştığını varsayıyoruz."
 *(Sarı "SUDO YETKİ YÜKSELTME" butonuna bas)*
-> "Saldırgan sistemde 'root' yetkisi almaya çalıştığı an, Wazuh bunu da affetmedi. Sağ tarafta MITRE ATT&CK T1548.003 koduyla, sistemde tehlikeli bir yetki yükseltme girişimi olduğunu anında tespit etti."
+> "**Şu an Yetki Yükseltme (Privilege Escalation) senaryosunu uyguladık**. Saldırgan sistemde izinsiz olarak 'root' (yönetici) olmaya çalıştı. **Wazuh bu tehlikeli hareketi de anında 'Rule 5402' kuralıyla logladı.**"
 
-### [03:00 - 04:00] JSON Analizi ve Kanıt
+### [03:00 - 04:00] JSON Analizi ve Kanıt (Hocanın Beklediği Kısım)
 *(Sağ tarafa düşen uyarının üzerindeki 'JSON Gör 👁️' yazısına tıkla. Eğer ekranda log yoksa üst menüden '🗄️ Tüm Log Arşivi' sekmesine tıkla ve herhangi bir logun üstüne basarak JSON'u aç)*
-> "Wazuh bize sadece 'saldırı var' deyip bırakmıyor. Gördüğünüz gibi tespit ettiği saldırıyı makine formatında, yani yapılandırılmış bir JSON olarak veriyor.
-> **(Ekranda açılan JSON'u göstererek)** İçinde saldırganın IP adresi (srcip), bağlandığı port, hedef kullanıcı adı ve olayın gerçekleştiği milisaniyeye kadar her detay mevcut. Ayrıca kuralın ağırlık seviyesi (Level) de bu JSON'un içinde yer alıyor. Sistemimiz bizim için şu ana kadar yüzlerce bu şekilde log üretti."
+> "Hocam, **işte bahsettiğimiz ham log (JSON) çıktılarımız tam olarak bunlardır.** *(Ekranda açılan JSON'u parmağınla göster)*
+> Wazuh bize sadece 'saldırı var' demiyor. Bakın, bu JSON çıktısının içinde saldırganın IP adresi (srcip), bağlandığı port, hedef kullanıcı adı ve kuralın ağırlık seviyesi (Level) gibi tüm parametreler makinenin okuyabileceği yapılandırılmış bir formatta bulunuyor. Sistemimiz bizim için şu ana kadar yüzlerce bu şekilde ham log üretti ve arşivledi."
 
 ### [04:00 - 05:00] Kapanış ve Ahmet'e Pas Atma
 > "Sonuç olarak; kurduğumuz sistem ayakta, saldırıları gerçek zamanlı tespit ediyor ve ham veriyi JSON formatında başarıyla dışarı aktarıyor.

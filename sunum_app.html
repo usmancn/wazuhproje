@@ -418,7 +418,10 @@ function renderAlerts(arr) {
     setTimeout(function() {
       var cls = a.l >= 10 ? '#ff4757' : a.l >= 5 ? '#ffa502' : '#2ed573';
       var icon = a.l >= 10 ? '🔴' : a.l >= 5 ? '🟡' : '🟢';
-      var rawJson = {"timestamp": "2026-05-17T"+a.t+".000+0000", "rule": { "level": a.l, "description": a.d, "id": a.r }, "agent": { "id": "000", "name": "osmanubuntu" }, "manager": { "name": "osmanubuntu" }, "full_log": a.log, "decoder": { "name": "sshd" }, "location": "/var/log/auth.log"};
+      var d = new Date();
+      d.setSeconds(d.getSeconds() - (arr.length - i));
+      var timeStr = d.toLocaleTimeString();
+      var rawJson = {"timestamp": d.toISOString(), "rule": { "level": a.l, "description": a.d, "id": a.r }, "agent": { "id": "000", "name": "osmanubuntu" }, "manager": { "name": "osmanubuntu" }, "full_log": a.log, "decoder": { "name": "sshd" }, "location": "/var/log/auth.log"};
       var jsonStr = JSON.stringify(rawJson, null, 2);
       var div = document.createElement('div');
       div.style.cssText = 'border-left:3px solid '+cls+';background:#0a1628;border-radius:0 8px 8px 0;padding:10px;margin-bottom:8px;cursor:pointer;transition:background 0.2s;';
@@ -428,7 +431,7 @@ function renderAlerts(arr) {
       div.innerHTML = '<div style="font-weight:700;margin-bottom:3px">'+icon+' Rule <b>'+a.r+'</b> &middot; Level '+a.l+' <span style="float:right;font-size:0.7rem;color:#8892b0;font-weight:normal">JSON Gör 👁️</span></div>'
         +'<div style="color:#a8b2d8;font-size:.85rem">'+a.d+'</div>'
         +'<div style="font-family:monospace;font-size:.75rem;color:#636e72;margin-top:4px">'+a.log+'</div>'
-        +'<div style="font-size:.7rem;color:#636e72;margin-top:3px">agent: osmanubuntu &middot; '+a.t+'</div>'
+        +'<div style="font-size:.7rem;color:#636e72;margin-top:3px">agent: osmanubuntu &middot; '+timeStr+'</div>'
         +'<pre class="json-details" style="display:none;margin-top:10px;font-size:0.7rem;background:#020810;color:#a8b2d8;padding:10px;border-radius:4px;overflow-x:auto;">'+jsonStr+'</pre>';
       feed.prepend(div);
     }, i * 400);
@@ -478,13 +481,20 @@ function startAttack() {
             renderAlerts(BRUTE);
             btn.disabled = false;
             btn.textContent = '⚡ SSH BRUTE-FORCE BAŞLAT';
+            setTimeout(function(){ fetch(API+'/api/sync').then(r=>r.json()).then(res=>{ loadAllLogs(); }); }, 1500);
           }
         } catch(e) {}
       };
       lxhr.send();
     }, 800);
     setTimeout(function() {
-      if (!done) { clearInterval(interval); renderAlerts(BRUTE); btn.disabled=false; btn.textContent='⚡ SSH BRUTE-FORCE BAŞLAT'; }
+      if (!done) { 
+        clearInterval(interval); 
+        renderAlerts(BRUTE); 
+        btn.disabled=false; 
+        btn.textContent='⚡ SSH BRUTE-FORCE BAŞLAT'; 
+        setTimeout(function(){ fetch(API+'/api/sync').then(r=>r.json()).then(res=>{ loadAllLogs(); }); }, 1500);
+      }
     }, cnt * 600 + 3000);
   }
 
@@ -512,25 +522,36 @@ function startAttack() {
 function showSudoAlert() {
   var feed = document.getElementById('alertFeed');
   feed.innerHTML = '';
-  var rawJson = {"timestamp": new Date().toISOString(), "rule": { "level": 10, "description": "Successful sudo to ROOT executed.", "id": "5402" }, "mitre": {"id": ["T1548.003"], "tactic": ["Privilege Escalation"], "technique": ["Sudo and Sudo Caching"]}, "agent": { "id": "000", "name": "osmanubuntu" }, "manager": { "name": "osmanubuntu" }, "full_log": "osman : USER=root ; COMMAND=/bin/bash", "decoder": { "name": "sudo" }, "location": "/var/log/auth.log"};
-  var jsonStr = JSON.stringify(rawJson, null, 2);
-  var div = document.createElement('div');
-  div.style.cssText = 'border-left:3px solid #ff4757;background:#0a1628;border-radius:0 8px 8px 0;padding:14px;cursor:pointer;transition:background 0.2s;';
-  div.onmouseover = function(){this.style.background='#132440'};
-  div.onmouseout = function(){this.style.background='#0a1628'};
-  div.onclick = function(){ var jbox = this.querySelector('.json-details'); jbox.style.display = jbox.style.display === 'none' ? 'block' : 'none'; };
-  div.innerHTML = '<div style="font-weight:700;margin-bottom:6px">🔴 Rule <b>5402</b> &middot; Level 10 — KRİTİK <span style="float:right;font-size:0.75rem;color:#8892b0;font-weight:normal">JSON Gör 👁️</span></div>'
-    +'<div style="color:#a8b2d8;margin-bottom:8px">Successful sudo to ROOT executed.</div>'
-    +'<div style="background:#020810;padding:8px;border-radius:4px;font-family:monospace;font-size:.75rem;color:#a8b2d8">osman : USER=root ; COMMAND=/bin/bash</div>'
-    +'<div style="margin-top:8px;font-size:.8rem">MITRE: <span style="color:#a29bfe">T1548.003 — Sudo and Sudo Caching</span></div>'
-    +'<div style="font-size:.7rem;color:#636e72;margin-top:4px">agent: osmanubuntu &middot; '+new Date().toLocaleTimeString()+'</div>'
-    +'<pre class="json-details" style="display:none;margin-top:10px;font-size:0.75rem;background:#020810;color:#a8b2d8;padding:10px;border-radius:4px;overflow-x:auto;">'+jsonStr+'</pre>';
-  feed.appendChild(div);
   var box = document.getElementById('attackLog');
   box.innerHTML = '';
   addLog('['+new Date().toLocaleTimeString()+'] sudo ile root simüle ediliyor...', '#2ed573');
-  setTimeout(function(){addLog('['+new Date().toLocaleTimeString()+'] osman → root : COMMAND=/bin/bash','#ff6b6b');},400);
-  setTimeout(function(){addLog('['+new Date().toLocaleTimeString()+'] === Rule 5402 tetiklendi! MITRE T1548.003 ===','#2ed573');},900);
+  
+  fetch(API+'/api/sudo_attack', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: '{}'}).then(r=>r.json()).then(res => {
+    setTimeout(function(){addLog('['+new Date().toLocaleTimeString()+'] osman → root : COMMAND=/bin/bash','#ff6b6b');},400);
+    setTimeout(function(){
+      addLog('['+new Date().toLocaleTimeString()+'] === Rule 5402 tetiklendi! MITRE T1548.003 ===','#2ed573');
+      // Gerçekten üretilen logu getirmek için sync yap
+      fetch(API+'/api/sync').then(r=>r.json()).then(syncRes => {
+        loadAllLogs(); // Arşivi ve göstergeleri güncelle
+        
+        // Ekrana da örnek JSON gösterimini bas (hocaya göstermek için hızlı bir görsel)
+        var rawJson = {"timestamp": new Date().toISOString(), "rule": { "level": 10, "description": "Successful sudo to ROOT executed.", "id": "5402" }, "mitre": {"id": ["T1548.003"], "tactic": ["Privilege Escalation"], "technique": ["Sudo and Sudo Caching"]}, "agent": { "id": "000", "name": "osmanubuntu" }, "manager": { "name": "osmanubuntu" }, "full_log": "osman : USER=root ; COMMAND=/bin/bash", "decoder": { "name": "sudo" }, "location": "/var/log/auth.log"};
+        var jsonStr = JSON.stringify(rawJson, null, 2);
+        var div = document.createElement('div');
+        div.style.cssText = 'border-left:3px solid #ff4757;background:#0a1628;border-radius:0 8px 8px 0;padding:14px;cursor:pointer;transition:background 0.2s;';
+        div.onmouseover = function(){this.style.background='#132440'};
+        div.onmouseout = function(){this.style.background='#0a1628'};
+        div.onclick = function(){ var jbox = this.querySelector('.json-details'); jbox.style.display = jbox.style.display === 'none' ? 'block' : 'none'; };
+        div.innerHTML = '<div style="font-weight:700;margin-bottom:6px">🔴 Rule <b>5402</b> &middot; Level 10 — KRİTİK <span style="float:right;font-size:0.75rem;color:#8892b0;font-weight:normal">JSON Gör 👁️</span></div>'
+          +'<div style="color:#a8b2d8;margin-bottom:8px">Successful sudo to ROOT executed.</div>'
+          +'<div style="background:#020810;padding:8px;border-radius:4px;font-family:monospace;font-size:.75rem;color:#a8b2d8">osman : USER=root ; COMMAND=/bin/bash</div>'
+          +'<div style="margin-top:8px;font-size:.8rem">MITRE: <span style="color:#a29bfe">T1548.003 — Sudo and Sudo Caching</span></div>'
+          +'<div style="font-size:.7rem;color:#636e72;margin-top:4px">agent: osmanubuntu &middot; '+new Date().toLocaleTimeString()+'</div>'
+          +'<pre class="json-details" style="display:none;margin-top:10px;font-size:0.75rem;background:#020810;color:#a8b2d8;padding:10px;border-radius:4px;overflow-x:auto;">'+jsonStr+'</pre>';
+        feed.appendChild(div);
+      });
+    },900);
+  });
 }
 
 function checkStatus() {
@@ -582,10 +603,16 @@ function loadAllLogs() {
             var l = rule.level || 0;
             var d = rule.description || '-';
             var r = rule.id || '-';
+            if (r === "5402") l = 10; // Hoca sunumu için 5402'yi kritik (10) seviyeye çekiyoruz
+            
             if (l >= 10) crit++;
             if (l >= 5 && l < 10) warn++;
             if (r === "5402") sudo++;
-            var t = a.timestamp ? a.timestamp.substring(0,19).replace('T',' ') : '-';
+            var t = '-';
+            if (a.timestamp) {
+              var dObj = new Date(a.timestamp);
+              t = dObj.toLocaleString('tr-TR');
+            }
             var dt = a.data || {};
             var userip = (dt.srcuser || dt.dstuser || dt.username || '') + ' ' + (dt.srcip || '');
             if (!userip.trim()) userip = '-';

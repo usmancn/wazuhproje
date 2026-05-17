@@ -48,7 +48,7 @@ def run_ssh_attack(username, attempts=8):
             port = 55000 + i
             log_msg = f"Invalid user {username} from 192.168.64.1 port {port}"
             subprocess.run(
-                ["ssh", "-o", "StrictHostKeyChecking=no",
+                ["ssh", "-i", SSH_KEY, "-o", "StrictHostKeyChecking=no",
                  "-o", "ConnectTimeout=3", "-o", "BatchMode=yes",
                  f"osman@{UBUNTU_IP}",
                  f"sudo logger -t sshd '{log_msg}'"],
