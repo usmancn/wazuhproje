@@ -3,10 +3,10 @@
     {
       "type": "SSH_BRUTE_FORCE",
       "severity": "CRITICAL",
-      "description": "192.168.64.1 adresinden 531 başarısız SSH giriş denemesi. Bu IP sisteme kaba kuvvet saldırısı yapıyor.",
+      "description": "192.168.64.1 adresinden 547 başarısız SSH giriş denemesi. Bu IP sisteme kaba kuvvet saldırısı yapıyor.",
       "mitre": "T1110.001 — Brute Force: Password Guessing",
       "source": "auth.log",
-      "event_count": 531
+      "event_count": 547
     },
     {
       "type": "PRIVILEGE_ESCALATION_SUCCESS",
@@ -49,7 +49,7 @@
       "description": "AppArmor güvenlik duvarı 'sys_nice' programının çalışmasını engelledi.",
       "mitre": "T1068 — Exploitation for Privilege Escalation",
       "source": "kern.log",
-      "event_count": 7
+      "event_count": 9
     },
     {
       "type": "APPARMOR_BLOCK",
@@ -65,7 +65,7 @@
       "description": "AppArmor güvenlik duvarı 'net_admin' programının çalışmasını engelledi.",
       "mitre": "T1068 — Exploitation for Privilege Escalation",
       "source": "kern.log",
-      "event_count": 6
+      "event_count": 8
     }
   ]
 }
