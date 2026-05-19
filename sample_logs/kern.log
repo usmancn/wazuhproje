@@ -4859,3 +4859,6 @@ May 19 23:13:31 osmanubuntu kernel: [    5.847214] audit: type=1400 audit(177923
 May 19 23:13:42 osmanubuntu kernel: [   16.318327] virtio_gpu virtio1: [drm] drm_plane_enable_fb_damage_clips() not called
 May 19 23:13:43 osmanubuntu kernel: [   17.553612] rfkill: input handler disabled
 May 19 23:13:44 osmanubuntu kernel: [   18.173174] input: spice vdagent tablet as /devices/virtual/input/input4
+May 19 23:37:26 osmanubuntu kernel: [ 1439.724822] rfkill: input handler enabled
+May 19 23:37:28 osmanubuntu kernel: [ 1441.280412] rfkill: input handler disabled
+May 19 23:37:30 osmanubuntu kernel: [ 1443.707744] input: spice vdagent tablet as /devices/virtual/input/input5

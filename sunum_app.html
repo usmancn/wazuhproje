@@ -1368,11 +1368,18 @@ function toggleJsonPanel(btn) {
   btn.style.borderColor = 'var(--blue)';
 }
 
+var isSingleAnalysisRunning = false;
 function analyzeSingleAlert(btn, encodedJson) {
+  if (isSingleAnalysisRunning) {
+    alert("Şu anda devam eden bir yapay zeka analizi var. Lütfen tamamlanmasını bekleyin.");
+    return;
+  }
+  
   var resDiv = btn.parentElement.nextElementSibling;
   if (resDiv && resDiv.classList.contains('json-raw-panel')) resDiv = resDiv.nextElementSibling;
   btn.textContent = 'Bekleyin...';
   btn.disabled = true;
+  isSingleAnalysisRunning = true;
   if (resDiv) { resDiv.style.display = 'block'; resDiv.innerHTML = '<span style="color:var(--blue);font-size:0.72rem;font-family:var(--font-mono);">LLM analiz ediyor...</span>'; }
   
   var jsonStr = decodeURIComponent(encodedJson);
@@ -1390,6 +1397,7 @@ function analyzeSingleAlert(btn, encodedJson) {
   }).then(r=>r.json()).then(res=>{
     btn.textContent = 'Tekrar Yorumla';
     btn.disabled = false;
+    isSingleAnalysisRunning = false;
     if(res.ok && res.explanation) {
       var txt = res.explanation.trim()
                  .replace(/\*\*(.*?)\*\*/g, '<strong style="color:#fff">$1</strong>')
@@ -1402,6 +1410,7 @@ function analyzeSingleAlert(btn, encodedJson) {
   }).catch(()=>{
     btn.textContent = 'Tekrar Yorumla';
     btn.disabled = false;
+    isSingleAnalysisRunning = false;
     resDiv.innerHTML = '<span style="color:var(--crit)"> Sunucuya ulaşılamadı.</span>';
   });
 }
@@ -1413,7 +1422,7 @@ function checkStatus() {
   txt.textContent = 'Sorgulanıyor...';
   var xhr = new XMLHttpRequest();
   xhr.open('GET', API+'/api/status', true);
-  xhr.timeout = 6000;
+  xhr.timeout = 15000;
   xhr.onload = function() {
     try {
       var d = JSON.parse(xhr.responseText);

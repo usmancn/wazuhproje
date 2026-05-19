@@ -39023,3 +39023,633 @@ May 19 23:35:16 osmanubuntu systemd[1]: session-483.scope: Deactivated successfu
 May 19 23:35:16 osmanubuntu systemd[1]: Started Session 484 of User osman.
 May 19 23:35:16 osmanubuntu systemd[1]: session-484.scope: Deactivated successfully.
 May 19 23:35:16 osmanubuntu systemd[1]: Started Session 485 of User osman.
+May 19 23:35:16 osmanubuntu systemd[1]: session-485.scope: Deactivated successfully.
+May 19 23:35:16 osmanubuntu systemd[1]: Started Session 486 of User osman.
+May 19 23:35:16 osmanubuntu systemd[1]: session-486.scope: Deactivated successfully.
+May 19 23:35:21 osmanubuntu systemd[1]: Started Session 487 of User osman.
+May 19 23:35:21 osmanubuntu systemd[1]: session-487.scope: Deactivated successfully.
+May 19 23:35:21 osmanubuntu systemd[1]: Started Session 488 of User osman.
+May 19 23:35:21 osmanubuntu systemd[1]: session-488.scope: Deactivated successfully.
+May 19 23:35:26 osmanubuntu systemd[1]: Started Session 489 of User osman.
+May 19 23:35:26 osmanubuntu systemd[1]: session-489.scope: Deactivated successfully.
+May 19 23:35:26 osmanubuntu systemd[1]: Started Session 490 of User osman.
+May 19 23:35:26 osmanubuntu systemd[1]: session-490.scope: Deactivated successfully.
+May 19 23:35:31 osmanubuntu systemd[1]: Started Session 491 of User osman.
+May 19 23:35:31 osmanubuntu systemd[1]: session-491.scope: Deactivated successfully.
+May 19 23:35:31 osmanubuntu systemd[1]: Started Session 492 of User osman.
+May 19 23:35:31 osmanubuntu systemd[1]: session-492.scope: Deactivated successfully.
+May 19 23:35:36 osmanubuntu systemd[1]: Started Session 493 of User osman.
+May 19 23:35:36 osmanubuntu systemd[1]: session-493.scope: Deactivated successfully.
+May 19 23:35:36 osmanubuntu systemd[1]: Started Session 494 of User osman.
+May 19 23:35:36 osmanubuntu systemd[1]: session-494.scope: Deactivated successfully.
+May 19 23:35:41 osmanubuntu systemd[1]: Started Session 495 of User osman.
+May 19 23:35:41 osmanubuntu systemd[1]: session-495.scope: Deactivated successfully.
+May 19 23:35:41 osmanubuntu systemd[1]: Started Session 496 of User osman.
+May 19 23:35:41 osmanubuntu systemd[1]: session-496.scope: Deactivated successfully.
+May 19 23:35:51 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 23:35:51 osmanubuntu systemd[4779]: Stopped target Main User Target.
+May 19 23:35:51 osmanubuntu systemd[4779]: Stopping D-Bus User Message Bus...
+May 19 23:35:51 osmanubuntu systemd[4779]: Stopping PipeWire Media Session Manager...
+May 19 23:35:51 osmanubuntu systemd[4779]: Stopped D-Bus User Message Bus.
+May 19 23:35:51 osmanubuntu systemd[4779]: Stopped PipeWire Media Session Manager.
+May 19 23:35:51 osmanubuntu systemd[4779]: Stopping PipeWire Multimedia Service...
+May 19 23:35:51 osmanubuntu systemd[4779]: Stopped PipeWire Multimedia Service.
+May 19 23:35:51 osmanubuntu systemd[4779]: Removed slice User Core Session Slice.
+May 19 23:35:51 osmanubuntu systemd[4779]: Stopped target Basic System.
+May 19 23:35:51 osmanubuntu systemd[4779]: Stopped target Paths.
+May 19 23:35:51 osmanubuntu systemd[4779]: Stopped Pending report trigger for Ubuntu Report.
+May 19 23:35:51 osmanubuntu systemd[4779]: Stopped target Sockets.
+May 19 23:35:51 osmanubuntu systemd[4779]: Stopped target Timers.
+May 19 23:35:51 osmanubuntu systemd[4779]: Closed D-Bus User Message Bus Socket.
+May 19 23:35:51 osmanubuntu systemd[4779]: Closed GnuPG network certificate management daemon.
+May 19 23:35:51 osmanubuntu systemd[4779]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 23:35:51 osmanubuntu systemd[4779]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 23:35:51 osmanubuntu systemd[4779]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 23:35:51 osmanubuntu systemd[4779]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 23:35:51 osmanubuntu systemd[4779]: Closed PipeWire Multimedia System Socket.
+May 19 23:35:51 osmanubuntu systemd[4779]: Closed debconf communication socket.
+May 19 23:35:51 osmanubuntu systemd[4779]: Closed Sound System.
+May 19 23:35:51 osmanubuntu systemd[4779]: Closed REST API socket for snapd user session agent.
+May 19 23:35:51 osmanubuntu systemd[4779]: Closed Speech Dispatcher Socket.
+May 19 23:35:51 osmanubuntu systemd[4779]: Removed slice User Application Slice.
+May 19 23:35:51 osmanubuntu systemd[4779]: Reached target Shutdown.
+May 19 23:35:51 osmanubuntu systemd[4779]: Finished Exit the Session.
+May 19 23:35:51 osmanubuntu systemd[4779]: Reached target Exit the Session.
+May 19 23:35:51 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 23:35:51 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 23:35:51 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 23:35:51 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 23:35:51 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 23:35:51 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 23:35:51 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 23:35:51 osmanubuntu systemd[1]: user-1000.slice: Consumed 16.036s CPU time.
+May 19 23:36:34 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service' requested by ':1.83' (uid=131 pid=3027 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:36:34 osmanubuntu systemd[1]: Starting Fingerprint Authentication Daemon...
+May 19 23:36:34 osmanubuntu dbus-daemon[702]: [system] Successfully activated service 'net.reactivated.Fprint'
+May 19 23:36:34 osmanubuntu systemd[1]: Started Fingerprint Authentication Daemon.
+May 19 23:37:04 osmanubuntu systemd[1]: fprintd.service: Deactivated successfully.
+May 19 23:37:26 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 23:37:26 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 23:37:26 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 23:37:26 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 23:37:26 osmanubuntu systemd[29404]: Queued start job for default target Main User Target.
+May 19 23:37:26 osmanubuntu systemd[29404]: Created slice User Application Slice.
+May 19 23:37:26 osmanubuntu systemd[29404]: Created slice User Core Session Slice.
+May 19 23:37:26 osmanubuntu systemd[29404]: Started Pending report trigger for Ubuntu Report.
+May 19 23:37:26 osmanubuntu systemd[29404]: Reached target Paths.
+May 19 23:37:26 osmanubuntu systemd[29404]: Reached target Timers.
+May 19 23:37:26 osmanubuntu systemd[29404]: Starting D-Bus User Message Bus Socket...
+May 19 23:37:26 osmanubuntu systemd[29404]: Listening on GnuPG network certificate management daemon.
+May 19 23:37:26 osmanubuntu systemd[29404]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 23:37:26 osmanubuntu systemd[29404]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 23:37:26 osmanubuntu systemd[29404]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 23:37:26 osmanubuntu systemd[29404]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 23:37:26 osmanubuntu systemd[29404]: Listening on PipeWire Multimedia System Socket.
+May 19 23:37:26 osmanubuntu systemd[29404]: Listening on debconf communication socket.
+May 19 23:37:26 osmanubuntu systemd[29404]: Listening on Sound System.
+May 19 23:37:26 osmanubuntu systemd[29404]: Listening on REST API socket for snapd user session agent.
+May 19 23:37:26 osmanubuntu systemd[29404]: Listening on Speech Dispatcher Socket.
+May 19 23:37:26 osmanubuntu systemd[29404]: Listening on D-Bus User Message Bus Socket.
+May 19 23:37:26 osmanubuntu systemd[29404]: Reached target Sockets.
+May 19 23:37:26 osmanubuntu systemd[29404]: Reached target Basic System.
+May 19 23:37:26 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 23:37:26 osmanubuntu systemd[1]: Started Session 497 of User osman.
+May 19 23:37:26 osmanubuntu systemd[29404]: Started PipeWire Multimedia Service.
+May 19 23:37:26 osmanubuntu systemd[29404]: Started PipeWire Media Session Manager.
+May 19 23:37:26 osmanubuntu systemd[29404]: Starting Sound Service...
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 1 users.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 1 users.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Successfully made thread 29415 of process 29412 owned by '1000' RT at priority 20.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Supervising 7 threads of 4 processes of 2 users.
+May 19 23:37:26 osmanubuntu systemd[29404]: Started D-Bus User Message Bus.
+May 19 23:37:26 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] AppArmor D-Bus mediation is enabled
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Successfully made thread 29411 of process 29411 owned by '1000' high priority at nice level -11.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Supervising 8 threads of 5 processes of 2 users.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Successfully made thread 29414 of process 29414 owned by '1000' high priority at nice level -11.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Supervising 9 threads of 6 processes of 2 users.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: message repeated 2 times: [ Supervising 9 threads of 6 processes of 2 users.]
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Successfully made thread 29421 of process 29411 owned by '1000' RT at priority 20.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Supervising 10 threads of 6 processes of 2 users.
+May 19 23:37:26 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.1160' (uid=1000 pid=29414 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 23:37:26 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Supervising 10 threads of 6 processes of 2 users.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Successfully made thread 29422 of process 29414 owned by '1000' RT at priority 5.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Supervising 11 threads of 6 processes of 2 users.
+May 19 23:37:26 osmanubuntu systemd[29404]: Started Sound Service.
+May 19 23:37:26 osmanubuntu systemd[29404]: Reached target Main User Target.
+May 19 23:37:26 osmanubuntu systemd[29404]: Startup finished in 111ms.
+May 19 23:37:26 osmanubuntu kernel: [ 1439.724822] rfkill: input handler enabled
+May 19 23:37:26 osmanubuntu spice-vdagentd: closed vdagent virtio channel
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Supervising 11 threads of 6 processes of 2 users.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Successfully made thread 29455 of process 29414 owned by '1000' RT at priority 5.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Supervising 12 threads of 6 processes of 2 users.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Supervising 12 threads of 6 processes of 2 users.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Successfully made thread 29465 of process 29414 owned by '1000' RT at priority 5.
+May 19 23:37:26 osmanubuntu rtkit-daemon[2411]: Supervising 13 threads of 6 processes of 2 users.
+May 19 23:37:26 osmanubuntu gnome-shell[3027]: Could not release device '/dev/input/event4' (13,68): GDBus.Error:org.freedesktop.login1.DeviceNotTaken: Device not taken
+May 19 23:37:26 osmanubuntu systemd[29404]: Created slice Slice /app/gnome-session-manager.
+May 19 23:37:26 osmanubuntu systemd[29404]: Created slice User Background Tasks Slice.
+May 19 23:37:26 osmanubuntu systemd[29404]: Started Path trigger for Apport crash notifications.
+May 19 23:37:26 osmanubuntu systemd[29404]: Started Path trigger for new release of Ubuntu notifications.
+May 19 23:37:26 osmanubuntu systemd[29404]: Reached target GNOME Wayland Session.
+May 19 23:37:26 osmanubuntu systemd[29404]: Reached target GNOME Shell.
+May 19 23:37:26 osmanubuntu systemd[29404]: Condition check resulted in GNOME Initial Setup Copy Worker being skipped.
+May 19 23:37:26 osmanubuntu systemd[29404]: Starting Start gnome-keyring as SSH agent...
+May 19 23:37:26 osmanubuntu systemd[29404]: Starting Start gnome-keyring for the Secrets Service, and PKCS #11...
+May 19 23:37:26 osmanubuntu systemd[29404]: Starting Monitor Session leader for GNOME Session...
+May 19 23:37:26 osmanubuntu systemd[29404]: Starting Session Migration...
+May 19 23:37:26 osmanubuntu systemd[29404]: Starting Rewrite dynamic launcher portal entries...
+May 19 23:37:26 osmanubuntu systemd[29404]: Started Monitor Session leader for GNOME Session.
+May 19 23:37:26 osmanubuntu systemd[29404]: Finished Session Migration.
+May 19 23:37:26 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.9' (uid=1000 pid=29477 comm="/usr/libexec/xdg-desktop-portal-rewrite-launchers " label="unconfined")
+May 19 23:37:26 osmanubuntu systemd[29404]: Starting Virtual filesystem service...
+May 19 23:37:26 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gtk.vfs.Daemon'
+May 19 23:37:26 osmanubuntu systemd[29404]: Started Virtual filesystem service.
+May 19 23:37:26 osmanubuntu gnome-keyring-daemon[29474]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+May 19 23:37:26 osmanubuntu systemd[29404]: Finished Rewrite dynamic launcher portal entries.
+May 19 23:37:26 osmanubuntu sh[29487]: dbus-update-activation-environment: setting SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+May 19 23:37:26 osmanubuntu sh[29487]: dbus-update-activation-environment: setting SSH_AGENT_LAUNCHER=gnome-keyring
+May 19 23:37:26 osmanubuntu systemd[29404]: Finished Start gnome-keyring for the Secrets Service, and PKCS #11.
+May 19 23:37:26 osmanubuntu sh[29468]: /bin/sh: 1: initctl: not found
+May 19 23:37:26 osmanubuntu systemd[29404]: Finished Start gnome-keyring as SSH agent.
+May 19 23:37:26 osmanubuntu systemd[29404]: Started OpenSSH Agent.
+May 19 23:37:26 osmanubuntu systemd[29404]: Reached target Session services which should run early before the graphical session is brought up.
+May 19 23:37:26 osmanubuntu systemd[29404]: Reached target Tasks to be run before GNOME Session starts.
+May 19 23:37:26 osmanubuntu systemd[29404]: Starting GNOME Session Manager (session: ubuntu)...
+May 19 23:37:26 osmanubuntu gnome-keyring-pkcs11.desktop[29506]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+May 19 23:37:26 osmanubuntu gnome-keyring-secrets.desktop[29507]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+May 19 23:37:26 osmanubuntu gnome-keyring-ssh.desktop[29508]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+May 19 23:37:26 osmanubuntu systemd[29404]: app-gnome-gnome\x2dkeyring\x2dpkcs11-29502.scope: Couldn't move process 29502 to requested cgroup '/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome-gnome\x2dkeyring\x2dpkcs11-29502.scope': No such process
+May 19 23:37:26 osmanubuntu systemd[29404]: app-gnome-gnome\x2dkeyring\x2dpkcs11-29502.scope: Failed to add PIDs to scope's control group: No such process
+May 19 23:37:26 osmanubuntu systemd[29404]: app-gnome-gnome\x2dkeyring\x2dpkcs11-29502.scope: Failed with result 'resources'.
+May 19 23:37:26 osmanubuntu systemd[29404]: Failed to start Application launched by gnome-session-binary.
+May 19 23:37:26 osmanubuntu systemd[29404]: app-gnome-gnome\x2dkeyring\x2dsecrets-29504.scope: Couldn't move process 29504 to requested cgroup '/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome-gnome\x2dkeyring\x2dsecrets-29504.scope': No such process
+May 19 23:37:26 osmanubuntu systemd[29404]: app-gnome-gnome\x2dkeyring\x2dsecrets-29504.scope: Failed to add PIDs to scope's control group: No such process
+May 19 23:37:26 osmanubuntu systemd[29404]: app-gnome-gnome\x2dkeyring\x2dsecrets-29504.scope: Failed with result 'resources'.
+May 19 23:37:26 osmanubuntu systemd[29404]: Failed to start Application launched by gnome-session-binary.
+May 19 23:37:26 osmanubuntu systemd[29404]: app-gnome-gnome\x2dkeyring\x2dssh-29505.scope: Couldn't move process 29505 to requested cgroup '/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome-gnome\x2dkeyring\x2dssh-29505.scope': No such process
+May 19 23:37:26 osmanubuntu systemd[29404]: app-gnome-gnome\x2dkeyring\x2dssh-29505.scope: Failed to add PIDs to scope's control group: No such process
+May 19 23:37:26 osmanubuntu systemd[29404]: app-gnome-gnome\x2dkeyring\x2dssh-29505.scope: Failed with result 'resources'.
+May 19 23:37:26 osmanubuntu systemd[29404]: Failed to start Application launched by gnome-session-binary.
+May 19 23:37:26 osmanubuntu systemd[29404]: Started GNOME Session Manager (session: ubuntu).
+May 19 23:37:26 osmanubuntu gnome-session[29490]: gnome-session-binary[29490]: GnomeDesktop-WARNING: Could not create transient scope for PID 29509: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Process with ID 29509 does not exist.
+May 19 23:37:26 osmanubuntu gnome-session-binary[29490]: GnomeDesktop-WARNING: Could not create transient scope for PID 29509: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Process with ID 29509 does not exist.
+May 19 23:37:26 osmanubuntu systemd[29404]: Started Application launched by gnome-session-binary.
+May 19 23:37:26 osmanubuntu systemd[29404]: Reached target GNOME Session Manager is ready.
+May 19 23:37:26 osmanubuntu systemd[29404]: Starting GNOME Shell on Wayland...
+May 19 23:37:26 osmanubuntu systemd[29404]: Starting GNOME Shell on X11...
+May 19 23:37:26 osmanubuntu systemd[29404]: org.gnome.Shell@x11.service: Skipped due to 'exec-condition'.
+May 19 23:37:26 osmanubuntu systemd[29404]: Condition check resulted in GNOME Shell on X11 being skipped.
+May 19 23:37:26 osmanubuntu systemd[29404]: org.gnome.Shell@x11.service: Scheduled restart job, restart counter is at 1.
+May 19 23:37:26 osmanubuntu systemd[29404]: Stopped GNOME Shell on X11.
+May 19 23:37:26 osmanubuntu systemd[29404]: Starting GNOME Shell on X11...
+May 19 23:37:26 osmanubuntu systemd[29404]: org.gnome.Shell@x11.service: Skipped due to 'exec-condition'.
+May 19 23:37:26 osmanubuntu systemd[29404]: Condition check resulted in GNOME Shell on X11 being skipped.
+May 19 23:37:26 osmanubuntu systemd[29404]: org.gnome.Shell@x11.service: Scheduled restart job, restart counter is at 2.
+May 19 23:37:26 osmanubuntu systemd[29404]: Stopped GNOME Shell on X11.
+May 19 23:37:26 osmanubuntu systemd[29404]: Starting GNOME Shell on X11...
+May 19 23:37:26 osmanubuntu systemd[29404]: org.gnome.Shell@x11.service: Skipped due to 'exec-condition'.
+May 19 23:37:26 osmanubuntu systemd[29404]: Condition check resulted in GNOME Shell on X11 being skipped.
+May 19 23:37:26 osmanubuntu systemd[29404]: org.gnome.Shell@x11.service: Scheduled restart job, restart counter is at 3.
+May 19 23:37:26 osmanubuntu systemd[29404]: Stopped GNOME Shell on X11.
+May 19 23:37:26 osmanubuntu systemd[29404]: org.gnome.Shell@x11.service: Start request repeated too quickly.
+May 19 23:37:26 osmanubuntu systemd[29404]: org.gnome.Shell@x11.service: Skipped due to 'exec-condition'.
+May 19 23:37:26 osmanubuntu systemd[29404]: Started GNOME Shell on X11.
+May 19 23:37:26 osmanubuntu gnome-shell[29519]: Running GNOME Shell (using mutter 42.9) as a Wayland display server
+May 19 23:37:26 osmanubuntu gnome-shell[29519]: Added device '/dev/dri/card0' (virtio_gpu) using non-atomic mode setting.
+May 19 23:37:26 osmanubuntu gnome-shell[29519]: Created gbm renderer for '/dev/dri/card0'
+May 19 23:37:26 osmanubuntu gnome-shell[29519]: GPU /dev/dri/card0 selected as primary
+May 19 23:37:27 osmanubuntu gnome-shell[29519]: Using public X11 display :0, (using :1 for managed services)
+May 19 23:37:27 osmanubuntu gnome-shell[29519]: Using Wayland display name 'wayland-0'
+May 19 23:37:27 osmanubuntu gnome-shell[29519]: Unset XDG_SESSION_ID, getCurrentSessionProxy() called outside a user session. Asking logind directly.
+May 19 23:37:27 osmanubuntu gnome-shell[29519]: Will monitor session 497
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.26' (uid=1000 pid=29519 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting sandboxed app permission store...
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating service name='org.gnome.Shell.CalendarServer' requested by ':1.26' (uid=1000 pid=29519 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+May 19 23:37:27 osmanubuntu systemd[29404]: Started sandboxed app permission store.
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.gnome.evolution.dataserver.Sources5' unit='evolution-source-registry.service' requested by ':1.29' (uid=1000 pid=29537 comm="/usr/libexec/gnome-shell-calendar-server " label="unconfined")
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting Evolution source registry...
+May 19 23:37:27 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.freedesktop.GeoClue2' unit='geoclue.service' requested by ':1.1166' (uid=1000 pid=29519 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:37:27 osmanubuntu systemd[1]: Starting Location Lookup Service...
+May 19 23:37:27 osmanubuntu gnome-shell[29519]: Telepathy is not available, chat integration will be disabled.
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.gtk.vfs.UDisks2VolumeMonitor' unit='gvfs-udisks2-volume-monitor.service' requested by ':1.26' (uid=1000 pid=29519 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting Virtual filesystem service - disk device monitor...
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating service name='org.gnome.OnlineAccounts' requested by ':1.30' (uid=1000 pid=29546 comm="/usr/libexec/evolution-source-registry " label="unconfined")
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gtk.vfs.UDisks2VolumeMonitor'
+May 19 23:37:27 osmanubuntu systemd[29404]: Started Virtual filesystem service - disk device monitor.
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.gtk.vfs.GoaVolumeMonitor' unit='gvfs-goa-volume-monitor.service' requested by ':1.26' (uid=1000 pid=29519 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:37:27 osmanubuntu dbus-daemon[702]: [system] Successfully activated service 'org.freedesktop.GeoClue2'
+May 19 23:37:27 osmanubuntu systemd[1]: Started Location Lookup Service.
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting Virtual filesystem service - GNOME Online Accounts monitor...
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gnome.evolution.dataserver.Sources5'
+May 19 23:37:27 osmanubuntu systemd[29404]: Started Evolution source registry.
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.gnome.evolution.dataserver.Calendar8' unit='evolution-calendar-factory.service' requested by ':1.29' (uid=1000 pid=29537 comm="/usr/libexec/gnome-shell-calendar-server " label="unconfined")
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting Evolution calendar service...
+May 19 23:37:27 osmanubuntu goa-daemon[29555]: goa-daemon version 3.44.0 starting
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating service name='org.gnome.Identity' requested by ':1.34' (uid=1000 pid=29555 comm="/usr/libexec/goa-daemon " label="unconfined")
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gnome.OnlineAccounts'
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gtk.vfs.GoaVolumeMonitor'
+May 19 23:37:27 osmanubuntu systemd[29404]: Started Virtual filesystem service - GNOME Online Accounts monitor.
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.gtk.vfs.GPhoto2VolumeMonitor' unit='gvfs-gphoto2-volume-monitor.service' requested by ':1.26' (uid=1000 pid=29519 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gnome.evolution.dataserver.Calendar8'
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gnome.Identity'
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting Virtual filesystem service - digital camera monitor...
+May 19 23:37:27 osmanubuntu systemd[29404]: Started Evolution calendar service.
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='ca.desrt.dconf' unit='dconf.service' requested by ':1.33' (uid=1000 pid=29568 comm="/usr/libexec/evolution-calendar-factory " label="unconfined")
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting User preferences database...
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'ca.desrt.dconf'
+May 19 23:37:27 osmanubuntu systemd[29404]: Started User preferences database.
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.gnome.evolution.dataserver.AddressBook10' unit='evolution-addressbook-factory.service' requested by ':1.33' (uid=1000 pid=29568 comm="/usr/libexec/evolution-calendar-factory " label="unconfined")
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gtk.vfs.GPhoto2VolumeMonitor'
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting Evolution address book service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Started Virtual filesystem service - digital camera monitor.
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.gtk.vfs.AfcVolumeMonitor' unit='gvfs-afc-volume-monitor.service' requested by ':1.26' (uid=1000 pid=29519 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting Virtual filesystem service - Apple File Conduit monitor...
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gtk.vfs.AfcVolumeMonitor'
+May 19 23:37:27 osmanubuntu systemd[29404]: Started Virtual filesystem service - Apple File Conduit monitor.
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.gtk.vfs.MTPVolumeMonitor' unit='gvfs-mtp-volume-monitor.service' requested by ':1.26' (uid=1000 pid=29519 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting Virtual filesystem service - Media Transfer Protocol monitor...
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gnome.Shell.CalendarServer'
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gtk.vfs.MTPVolumeMonitor'
+May 19 23:37:27 osmanubuntu systemd[29404]: Started Virtual filesystem service - Media Transfer Protocol monitor.
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gnome.evolution.dataserver.AddressBook10'
+May 19 23:37:27 osmanubuntu systemd[29404]: Started Evolution address book service.
+May 19 23:37:27 osmanubuntu gnome-shell[29519]: Failed to import DBusMenu, quicklists are not avaialble: Error: Requiring Dbusmenu, version none: Typelib file for namespace 'Dbusmenu' (any version) not found
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating service name='org.freedesktop.FileManager1' requested by ':1.26' (uid=1000 pid=29519 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating service name='org.gnome.Shell.Notifications' requested by ':1.26' (uid=1000 pid=29519 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:37:27 osmanubuntu at-spi-dbus-bus.desktop[29516]: dbus-daemon[29516]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=1000 pid=29519 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:37:27 osmanubuntu at-spi-dbus-bus.desktop[29516]: dbus-daemon[29516]: Successfully activated service 'org.a11y.atspi.Registry'
+May 19 23:37:27 osmanubuntu at-spi-dbus-bus.desktop[29629]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+May 19 23:37:27 osmanubuntu systemd[29404]: Started GNOME Shell on Wayland.
+May 19 23:37:27 osmanubuntu systemd[29404]: Reached target GNOME Session is initialized.
+May 19 23:37:27 osmanubuntu systemd[29404]: GNOME session X11 services is inactive.
+May 19 23:37:27 osmanubuntu systemd[29404]: Dependency failed for GNOME XSettings service.
+May 19 23:37:27 osmanubuntu systemd[29404]: org.gnome.SettingsDaemon.XSettings.service: Job org.gnome.SettingsDaemon.XSettings.service/start failed with result 'dependency'.
+May 19 23:37:27 osmanubuntu systemd[29404]: gnome-session-x11-services-ready.target: Job gnome-session-x11-services-ready.target/verify-active failed with result 'dependency'.
+May 19 23:37:27 osmanubuntu systemd[29404]: Reached target GNOME Session (session: ubuntu).
+May 19 23:37:27 osmanubuntu systemd[29404]: Reached target GNOME XSettings target.
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting Signal initialization done to GNOME Session Manager...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting IBus Daemon for GNOME...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME accessibility service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME color management service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME date & time service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME maintenance of expirable data service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME keyboard configuration service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME keyboard shortcuts service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME power management service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME printer notifications service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME RFKill support service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME FreeDesktop screensaver service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME file sharing service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME smartcard service...
+May 19 23:37:27 osmanubuntu spice-vdagent[29690]: vdagent started
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME sound sample caching service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Starting GNOME Wacom tablet support service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Finished Signal initialization done to GNOME Session Manager.
+May 19 23:37:27 osmanubuntu NetworkManager[703]: <info>  [1779233847.8948] agent-manager: agent[27f27bceaf1fe958,:1.1166/org.gnome.Shell.NetworkAgent/1000]: agent registered
+May 19 23:37:27 osmanubuntu systemd[29404]: Started GNOME accessibility service.
+May 19 23:37:27 osmanubuntu systemd[29404]: Started Application launched by gnome-session-binary.
+May 19 23:37:27 osmanubuntu systemd[29404]: Reached target GNOME accessibility target.
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gnome.Shell.Notifications'
+May 19 23:37:27 osmanubuntu systemd[29404]: Started GNOME maintenance of expirable data service.
+May 19 23:37:27 osmanubuntu systemd[29404]: Reached target GNOME maintenance of expirable data target.
+May 19 23:37:27 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.1174' (uid=1000 pid=29665 comm="/usr/libexec/gsd-rfkill " label="unconfined")
+May 19 23:37:27 osmanubuntu systemd[29404]: Started GNOME FreeDesktop screensaver service.
+May 19 23:37:27 osmanubuntu systemd[29404]: Reached target GNOME FreeDesktop screensaver target.
+May 19 23:37:27 osmanubuntu systemd[1]: Starting Hostname Service...
+May 19 23:37:27 osmanubuntu systemd[29404]: Started GNOME printer notifications service.
+May 19 23:37:27 osmanubuntu systemd[29404]: Reached target GNOME printer notifications target.
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating service name='org.freedesktop.portal.IBus' requested by ':1.60' (uid=1000 pid=29646 comm="/usr/bin/ibus-daemon --panel disable " label="unconfined")
+May 19 23:37:27 osmanubuntu systemd[29404]: Started IBus Daemon for GNOME.
+May 19 23:37:27 osmanubuntu systemd[29404]: Started GNOME smartcard service.
+May 19 23:37:27 osmanubuntu systemd[29404]: Reached target GNOME smartcard target.
+May 19 23:37:27 osmanubuntu systemd[29404]: Started GNOME sound sample caching service.
+May 19 23:37:27 osmanubuntu systemd[29404]: Reached target GNOME sound sample caching target.
+May 19 23:37:27 osmanubuntu systemd[29404]: Started GNOME file sharing service.
+May 19 23:37:27 osmanubuntu systemd[29404]: Reached target GNOME file sharing target.
+May 19 23:37:27 osmanubuntu systemd[29404]: Started GNOME date & time service.
+May 19 23:37:27 osmanubuntu systemd[29404]: Reached target GNOME date & time target.
+May 19 23:37:27 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.freedesktop.portal.IBus'
+May 19 23:37:27 osmanubuntu gnome-shell[29519]: Error looking up permission: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for geolocation
+May 19 23:37:27 osmanubuntu gnome-shell[29751]: (WW) Option "-listen" for file descriptors is deprecated
+May 19 23:37:27 osmanubuntu gnome-shell[29751]: Please use "-listenfd" instead.
+May 19 23:37:27 osmanubuntu gnome-shell[29751]: (WW) Option "-listen" for file descriptors is deprecated
+May 19 23:37:27 osmanubuntu gnome-shell[29751]: Please use "-listenfd" instead.
+May 19 23:37:28 osmanubuntu dbus-daemon[702]: [system] Successfully activated service 'org.freedesktop.hostname1'
+May 19 23:37:28 osmanubuntu systemd[1]: Started Hostname Service.
+May 19 23:37:28 osmanubuntu kernel: [ 1441.280412] rfkill: input handler disabled
+May 19 23:37:28 osmanubuntu systemd[29404]: Started GNOME RFKill support service.
+May 19 23:37:28 osmanubuntu systemd[29404]: Reached target GNOME RFKill support target.
+May 19 23:37:28 osmanubuntu gnome-shell[29519]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+May 19 23:37:28 osmanubuntu gnome-shell[29519]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+May 19 23:37:28 osmanubuntu gnome-shell[29519]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+May 19 23:37:28 osmanubuntu gnome-shell[29519]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+May 19 23:37:28 osmanubuntu gnome-shell[29519]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+May 19 23:37:28 osmanubuntu gnome-shell[29519]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+May 19 23:37:28 osmanubuntu gnome-shell[29519]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+May 19 23:37:28 osmanubuntu gnome-shell[29519]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+May 19 23:37:28 osmanubuntu gnome-shell[29519]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+May 19 23:37:28 osmanubuntu systemd[29404]: Started GNOME keyboard configuration service.
+May 19 23:37:28 osmanubuntu systemd[29404]: Reached target GNOME keyboard configuration target.
+May 19 23:37:28 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service' requested by ':1.1180' (uid=1000 pid=29652 comm="/usr/libexec/gsd-keyboard " label="unconfined")
+May 19 23:37:28 osmanubuntu systemd[1]: Starting Locale Service...
+May 19 23:37:28 osmanubuntu systemd[29404]: Started GNOME Wacom tablet support service.
+May 19 23:37:28 osmanubuntu systemd[29404]: Reached target GNOME Wacom tablet support target.
+May 19 23:37:28 osmanubuntu systemd[29404]: Started GNOME color management service.
+May 19 23:37:28 osmanubuntu systemd[29404]: Reached target GNOME color management target.
+May 19 23:37:28 osmanubuntu systemd[29404]: Started GNOME keyboard shortcuts service.
+May 19 23:37:28 osmanubuntu systemd[29404]: Reached target GNOME keyboard shortcuts target.
+May 19 23:37:28 osmanubuntu systemd[29404]: Started GNOME power management service.
+May 19 23:37:28 osmanubuntu systemd[29404]: Reached target GNOME power management target.
+May 19 23:37:28 osmanubuntu systemd[29404]: Reached target GNOME Session.
+May 19 23:37:28 osmanubuntu systemd[29404]: Reached target GNOME Wayland Session (session: ubuntu).
+May 19 23:37:28 osmanubuntu systemd[29404]: Reached target Current graphical user session.
+May 19 23:37:28 osmanubuntu systemd[29404]: Condition check resulted in GNOME Initial Setup being skipped.
+May 19 23:37:28 osmanubuntu systemd[29404]: Starting Tracker file system data miner...
+May 19 23:37:28 osmanubuntu dbus-daemon[702]: [system] Successfully activated service 'org.freedesktop.locale1'
+May 19 23:37:28 osmanubuntu systemd[1]: Started Locale Service.
+May 19 23:37:28 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating service name='org.gnome.ScreenSaver' requested by ':1.53' (uid=1000 pid=29659 comm="/usr/libexec/gsd-power " label="unconfined")
+May 19 23:37:28 osmanubuntu gsd-media-keys[29657]: Failed to grab accelerator for keybinding settings:hibernate
+May 19 23:37:28 osmanubuntu gsd-media-keys[29657]: Failed to grab accelerator for keybinding settings:playback-repeat
+May 19 23:37:28 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gnome.ScreenSaver'
+May 19 23:37:28 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.freedesktop.portal.Desktop' unit='xdg-desktop-portal.service' requested by ':1.43' (uid=1000 pid=29620 comm="/usr/bin/nautilus --gapplication-service " label="unconfined")
+May 19 23:37:28 osmanubuntu systemd[29404]: Starting Portal service...
+May 19 23:37:28 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.freedesktop.portal.Documents' unit='xdg-document-portal.service' requested by ':1.77' (uid=1000 pid=29808 comm="/usr/libexec/xdg-desktop-portal " label="unconfined")
+May 19 23:37:28 osmanubuntu systemd[29404]: Starting flatpak document portal service...
+May 19 23:37:28 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.freedesktop.portal.Documents'
+May 19 23:37:28 osmanubuntu systemd[29404]: Started flatpak document portal service.
+May 19 23:37:28 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.gnome' unit='xdg-desktop-portal-gnome.service' requested by ':1.77' (uid=1000 pid=29808 comm="/usr/libexec/xdg-desktop-portal " label="unconfined")
+May 19 23:37:28 osmanubuntu systemd[29404]: Starting Portal service (GNOME implementation)...
+May 19 23:37:28 osmanubuntu systemd[29404]: Started Tracker file system data miner.
+May 19 23:37:29 osmanubuntu systemd[29404]: Reached target GNOME session X11 services.
+May 19 23:37:29 osmanubuntu systemd[29404]: Starting GNOME XSettings service...
+May 19 23:37:29 osmanubuntu gnome-shell[29829]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+May 19 23:37:29 osmanubuntu gnome-shell[29829]: > Warning:          Unsupported maximum keycode 708, clipping.
+May 19 23:37:29 osmanubuntu gnome-shell[29829]: >                   X11 cannot support keycodes above 255.
+May 19 23:37:29 osmanubuntu gnome-shell[29829]: Errors from xkbcomp are not fatal to the X server
+May 19 23:37:29 osmanubuntu gnome-shell[29519]: GNOME Shell started at Tue May 19 2026 23:37:27 GMT+0000 (UTC)
+May 19 23:37:29 osmanubuntu gnome-shell[29519]: Registering session with GDM
+May 19 23:37:29 osmanubuntu gsd-rfkill[3293]: Error releasing name org.gnome.SettingsDaemon.Rfkill: The connection is closed
+May 19 23:37:29 osmanubuntu gsd-a11y-settin[3322]: Error releasing name org.gnome.SettingsDaemon.A11ySettings: The connection is closed
+May 19 23:37:29 osmanubuntu gsd-smartcard[3296]: Error releasing name org.gnome.SettingsDaemon.Smartcard: The connection is closed
+May 19 23:37:29 osmanubuntu gsd-datetime[3305]: Error releasing name org.gnome.SettingsDaemon.Datetime: The connection is closed
+May 19 23:37:29 osmanubuntu gdm-launch-environment]: GLib-GObject: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+May 19 23:37:29 osmanubuntu gsd-color[29648]: failed to connect to device: Failed to connect to missing device /org/freedesktop/ColorManager/devices/xrandr_Red_Hat__Inc__QEMU_Monitor_gdm_131
+May 19 23:37:29 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.freedesktop.impl.portal.desktop.gnome'
+May 19 23:37:29 osmanubuntu systemd[29404]: Started Portal service (GNOME implementation).
+May 19 23:37:29 osmanubuntu systemd[1]: session-c1.scope: Deactivated successfully.
+May 19 23:37:29 osmanubuntu systemd[1]: session-c1.scope: Consumed 12.588s CPU time.
+May 19 23:37:29 osmanubuntu rtkit-daemon[2411]: Supervising 9 threads of 5 processes of 2 users.
+May 19 23:37:29 osmanubuntu rtkit-daemon[2411]: message repeated 2 times: [ Supervising 9 threads of 5 processes of 2 users.]
+May 19 23:37:29 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.gtk' unit='xdg-desktop-portal-gtk.service' requested by ':1.77' (uid=1000 pid=29808 comm="/usr/libexec/xdg-desktop-portal " label="unconfined")
+May 19 23:37:29 osmanubuntu systemd[29404]: Starting Portal service (GTK/GNOME implementation)...
+May 19 23:37:29 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.freedesktop.impl.portal.desktop.gtk'
+May 19 23:37:29 osmanubuntu systemd[29404]: Started Portal service (GTK/GNOME implementation).
+May 19 23:37:29 osmanubuntu systemd[29404]: Started GNOME XSettings service.
+May 19 23:37:29 osmanubuntu systemd[29404]: Reached target GNOME session X11 services.
+May 19 23:37:29 osmanubuntu gnome-shell[29519]: ATK Bridge is disabled but a11y has already been enabled.
+May 19 23:37:30 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.freedesktop.portal.Desktop'
+May 19 23:37:30 osmanubuntu systemd[29404]: Started Portal service.
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: No SPICE display found for connector Virtual-1
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: vdagent_mutter_get_resolutions: No Spice display ID matching - assuming display ID == Monitor index
+May 19 23:37:30 osmanubuntu kernel: [ 1443.707744] input: spice vdagent tablet as /devices/virtual/input/input5
+May 19 23:37:30 osmanubuntu spice-vdagentd: opening vdagent virtio channel
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: No SPICE display found for connector Virtual-1
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: vdagent_mutter_get_resolutions: No Spice display ID matching - assuming display ID == Monitor index
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Received Graphics Device Info:
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Device /dev/dri/card0 is at /sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Found card '/sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0' with Vendor ID 0x10, Device ID 0x1af4
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Mapping connector Virtual-1 to display #0
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Device /dev/dri/card0 is at /sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Found card '/sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0' with Vendor ID 0x10, Device ID 0x1af4
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Couldn't find an XRandr output for the specified device
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: channel_id: 0 monitor_id: 0 device_address: pci/0000/02.0, device_display_id: 0 xrandr output ID NOT FOUND
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Found monitor Virtual-1 with geometry 1280x800+0-0 - associating it to SPICE display #0
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Received Graphics Device Info:
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Device /dev/dri/card0 is at /sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Found card '/sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0' with Vendor ID 0x10, Device ID 0x1af4
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Mapping connector Virtual-1 to display #0
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Device /dev/dri/card0 is at /sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Found card '/sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0' with Vendor ID 0x10, Device ID 0x1af4
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Couldn't find an XRandr output for the specified device
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: channel_id: 0 monitor_id: 0 device_address: pci/0000/02.0, device_display_id: 0 xrandr output ID NOT FOUND
+May 19 23:37:30 osmanubuntu spice-vdagentd: Set max clipboard: 104857600
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Found monitor Virtual-1 with geometry 1280x800+0-0 - associating it to SPICE display #0
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Received Graphics Device Info:
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Device /dev/dri/card0 is at /sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Found card '/sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0' with Vendor ID 0x10, Device ID 0x1af4
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Mapping connector Virtual-1 to display #0
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Device /dev/dri/card0 is at /sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Found card '/sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0' with Vendor ID 0x10, Device ID 0x1af4
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Couldn't find an XRandr output for the specified device
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: channel_id: 0 monitor_id: 0 device_address: pci/0000/02.0, device_display_id: 0 xrandr output ID NOT FOUND
+May 19 23:37:30 osmanubuntu spice-vdagentd: No QXL devices found, not generating xorg.conf
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Found monitor Virtual-1 with geometry 1280x800+0-0 - associating it to SPICE display #0
+May 19 23:37:30 osmanubuntu spice-vdagentd: Set max clipboard: 104857600
+May 19 23:37:30 osmanubuntu spice-vdagentd: No QXL devices found, not generating xorg.conf
+May 19 23:37:30 osmanubuntu spice-vdagentd: No QXL devices found, not generating xorg.conf
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Found monitor Virtual-1 with geometry 1280x800+0-0 - associating it to SPICE display #0
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: vdagent_audio_playback_sync mute=yes nchannels=2
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: vdagent-audio: (playback-left) 0 (0.00%)
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: vdagent-audio: (playback-right) 0 (0.00%)
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: vdagent_audio_record_sync mute=yes nchannels=2
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: vdagent-audio: (capture-left) 0 (0.00%)
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: vdagent-audio: (capture-right) 0 (0.00%)
+May 19 23:37:30 osmanubuntu gnome-session-binary[29490]: Entering running state
+May 19 23:37:30 osmanubuntu gnome-session[29490]: gnome-session-binary[29490]: GnomeDesktop-WARNING: Could not create transient scope for PID 29889: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Process with ID 29889 does not exist.
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Found monitor Virtual-1 with geometry 1280x800+0-0 - associating it to SPICE display #0
+May 19 23:37:30 osmanubuntu at-spi2-registr[29629]: Failed to register client: GDBus.Error:org.gnome.SessionManager.AlreadyRegistered: Unable to register client
+May 19 23:37:30 osmanubuntu at-spi2-registr[29629]: Unable to register client with session manager
+May 19 23:37:30 osmanubuntu gnome-session-binary[29490]: GnomeDesktop-WARNING: Could not create transient scope for PID 29889: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Process with ID 29889 does not exist.
+May 19 23:37:30 osmanubuntu spice-vdagent[29690]: Found monitor Virtual-1 with geometry 1280x800+0-0 - associating it to SPICE display #0
+May 19 23:37:30 osmanubuntu systemd[29404]: Started Application launched by gnome-session-binary.
+May 19 23:37:30 osmanubuntu systemd[29404]: message repeated 4 times: [ Started Application launched by gnome-session-binary.]
+May 19 23:37:30 osmanubuntu systemd[29404]: app-gnome-user\x2ddirs\x2dupdate\x2dgtk-29896.scope: Couldn't move process 29896 to requested cgroup '/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome-user\x2ddirs\x2dupdate\x2dgtk-29896.scope': No such process
+May 19 23:37:30 osmanubuntu systemd[29404]: app-gnome-user\x2ddirs\x2dupdate\x2dgtk-29896.scope: Failed to add PIDs to scope's control group: No such process
+May 19 23:37:30 osmanubuntu systemd[29404]: app-gnome-user\x2ddirs\x2dupdate\x2dgtk-29896.scope: Failed with result 'resources'.
+May 19 23:37:30 osmanubuntu systemd[29404]: Failed to start Application launched by gnome-session-binary.
+May 19 23:37:30 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.freedesktop.FileManager1'
+May 19 23:37:30 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating service name='org.gnome.ArchiveManager1' requested by ':1.83' (uid=1000 pid=29834 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 19 23:37:31 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gnome.ArchiveManager1'
+May 19 23:37:31 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Activating via systemd: service name='org.gtk.vfs.Metadata' unit='gvfs-metadata.service' requested by ':1.83' (uid=1000 pid=29834 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 19 23:37:31 osmanubuntu systemd[29404]: Starting Virtual filesystem metadata service...
+May 19 23:37:31 osmanubuntu dbus-daemon[29420]: [session uid=1000 pid=29420] Successfully activated service 'org.gtk.vfs.Metadata'
+May 19 23:37:31 osmanubuntu systemd[29404]: Started Virtual filesystem metadata service.
+May 19 23:37:31 osmanubuntu gnome-shell[29519]: DING: Detected async api for thumbnails
+May 19 23:37:31 osmanubuntu gnome-shell[29519]: DING: GNOME nautilus 42.6
+May 19 23:37:39 osmanubuntu systemd[1]: Stopping User Manager for UID 131...
+May 19 23:37:39 osmanubuntu systemd[2997]: Stopped target Main User Target.
+May 19 23:37:39 osmanubuntu systemd[2997]: Stopping D-Bus User Message Bus...
+May 19 23:37:39 osmanubuntu systemd[2997]: Stopping PipeWire Media Session Manager...
+May 19 23:37:39 osmanubuntu systemd[2997]: Stopped D-Bus User Message Bus.
+May 19 23:37:39 osmanubuntu systemd[2997]: Stopped PipeWire Media Session Manager.
+May 19 23:37:39 osmanubuntu systemd[2997]: Stopping PipeWire Multimedia Service...
+May 19 23:37:39 osmanubuntu systemd[2997]: Stopped PipeWire Multimedia Service.
+May 19 23:37:39 osmanubuntu systemd[2997]: Removed slice User Core Session Slice.
+May 19 23:37:39 osmanubuntu systemd[2997]: Stopped target Basic System.
+May 19 23:37:39 osmanubuntu systemd[2997]: Stopped target Paths.
+May 19 23:37:39 osmanubuntu systemd[2997]: Stopped Pending report trigger for Ubuntu Report.
+May 19 23:37:39 osmanubuntu systemd[2997]: Stopped target Sockets.
+May 19 23:37:39 osmanubuntu systemd[2997]: Stopped target Timers.
+May 19 23:37:39 osmanubuntu systemd[2997]: Closed D-Bus User Message Bus Socket.
+May 19 23:37:39 osmanubuntu systemd[2997]: Closed GnuPG network certificate management daemon.
+May 19 23:37:39 osmanubuntu systemd[2997]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 23:37:39 osmanubuntu systemd[2997]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 23:37:39 osmanubuntu systemd[2997]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 23:37:39 osmanubuntu systemd[2997]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 23:37:39 osmanubuntu systemd[2997]: Closed PipeWire Multimedia System Socket.
+May 19 23:37:39 osmanubuntu systemd[2997]: Closed debconf communication socket.
+May 19 23:37:39 osmanubuntu systemd[2997]: Closed Sound System.
+May 19 23:37:39 osmanubuntu systemd[2997]: Closed REST API socket for snapd user session agent.
+May 19 23:37:39 osmanubuntu systemd[2997]: Closed Speech Dispatcher Socket.
+May 19 23:37:39 osmanubuntu systemd[2997]: Removed slice User Application Slice.
+May 19 23:37:39 osmanubuntu systemd[2997]: Reached target Shutdown.
+May 19 23:37:39 osmanubuntu systemd[2997]: Finished Exit the Session.
+May 19 23:37:39 osmanubuntu systemd[2997]: Reached target Exit the Session.
+May 19 23:37:39 osmanubuntu systemd[1]: user@131.service: Deactivated successfully.
+May 19 23:37:39 osmanubuntu systemd[1]: Stopped User Manager for UID 131.
+May 19 23:37:39 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/131...
+May 19 23:37:39 osmanubuntu systemd[1]: run-user-131.mount: Deactivated successfully.
+May 19 23:37:39 osmanubuntu systemd[1]: user-runtime-dir@131.service: Deactivated successfully.
+May 19 23:37:39 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/131.
+May 19 23:37:39 osmanubuntu systemd[1]: Removed slice User Slice of UID 131.
+May 19 23:37:39 osmanubuntu systemd[1]: user-131.slice: Consumed 13.067s CPU time.
+May 19 23:37:40 osmanubuntu nautilus[29620]: Could not delete '.meta.isrunning': No such file or directory
+May 19 23:37:51 osmanubuntu pulseaudio[29414]: GetManagedObjects() failed: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+May 19 23:37:58 osmanubuntu systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+May 19 23:37:58 osmanubuntu systemd[1]: systemd-localed.service: Deactivated successfully.
+May 19 23:38:27 osmanubuntu geoclue[29550]: Service not used for 60 seconds. Shutting down..
+May 19 23:38:27 osmanubuntu systemd[1]: geoclue.service: Deactivated successfully.
+May 19 23:38:30 osmanubuntu systemd[29404]: Started Application launched by gnome-session-binary.
+May 19 23:38:30 osmanubuntu systemd[29404]: Started Application launched by gnome-session-binary.
+May 19 23:38:34 osmanubuntu ubuntu-appindicators@ubuntu.com[29519]: unable to update icon for software-update-available
+May 19 23:38:34 osmanubuntu ubuntu-appindicators@ubuntu.com[29519]: unable to update icon for livepatch
+May 19 23:39:30 osmanubuntu systemd[29404]: Started Application launched by gnome-session-binary.
+May 19 23:39:36 osmanubuntu systemd[1]: Started Session 499 of User osman.
+May 19 23:39:36 osmanubuntu systemd[1]: Started Session 500 of User osman.
+May 19 23:39:36 osmanubuntu systemd[1]: Started Session 503 of User osman.
+May 19 23:39:36 osmanubuntu systemd[1]: Started Session 504 of User osman.
+May 19 23:39:36 osmanubuntu systemd[1]: Started Session 502 of User osman.
+May 19 23:39:36 osmanubuntu systemd[1]: Started Session 501 of User osman.
+May 19 23:39:37 osmanubuntu systemd[1]: session-504.scope: Deactivated successfully.
+May 19 23:39:37 osmanubuntu systemd[1]: session-499.scope: Deactivated successfully.
+May 19 23:39:37 osmanubuntu systemd[1]: session-500.scope: Deactivated successfully.
+May 19 23:39:38 osmanubuntu systemd[1]: Started Session 505 of User osman.
+May 19 23:39:38 osmanubuntu systemd[1]: session-505.scope: Deactivated successfully.
+May 19 23:39:38 osmanubuntu systemd[1]: session-503.scope: Deactivated successfully.
+May 19 23:39:38 osmanubuntu systemd[1]: session-501.scope: Deactivated successfully.
+May 19 23:39:38 osmanubuntu systemd[1]: Started Session 506 of User osman.
+May 19 23:39:38 osmanubuntu systemd[1]: session-506.scope: Deactivated successfully.
+May 19 23:39:38 osmanubuntu systemd[1]: Started Session 507 of User osman.
+May 19 23:39:38 osmanubuntu systemd[1]: session-502.scope: Deactivated successfully.
+May 19 23:39:39 osmanubuntu systemd[1]: session-507.scope: Deactivated successfully.
+May 19 23:39:42 osmanubuntu systemd[1]: Started Session 508 of User osman.
+May 19 23:39:42 osmanubuntu systemd[1]: Started Session 509 of User osman.
+May 19 23:39:42 osmanubuntu systemd[1]: session-508.scope: Deactivated successfully.
+May 19 23:39:42 osmanubuntu systemd[1]: session-509.scope: Deactivated successfully.
+May 19 23:39:42 osmanubuntu systemd[1]: Started Session 510 of User osman.
+May 19 23:39:42 osmanubuntu systemd[1]: session-510.scope: Deactivated successfully.
+May 19 23:39:47 osmanubuntu systemd[1]: Started Session 511 of User osman.
+May 19 23:39:47 osmanubuntu systemd[1]: session-511.scope: Deactivated successfully.
+May 19 23:39:47 osmanubuntu systemd[1]: Started Session 512 of User osman.
+May 19 23:39:47 osmanubuntu systemd[1]: session-512.scope: Deactivated successfully.
+May 19 23:39:47 osmanubuntu systemd[1]: Started Session 513 of User osman.
+May 19 23:39:47 osmanubuntu systemd[1]: session-513.scope: Deactivated successfully.
+May 19 23:39:52 osmanubuntu systemd[1]: Started Session 515 of User osman.
+May 19 23:39:52 osmanubuntu systemd[1]: Started Session 514 of User osman.
+May 19 23:39:52 osmanubuntu systemd[1]: session-514.scope: Deactivated successfully.
+May 19 23:39:52 osmanubuntu systemd[1]: session-515.scope: Deactivated successfully.
+May 19 23:39:52 osmanubuntu systemd[1]: Started Session 516 of User osman.
+May 19 23:39:52 osmanubuntu systemd[1]: session-516.scope: Deactivated successfully.
+May 19 23:39:57 osmanubuntu systemd[1]: Started Session 518 of User osman.
+May 19 23:39:57 osmanubuntu systemd[1]: Started Session 517 of User osman.
+May 19 23:39:57 osmanubuntu systemd[1]: session-518.scope: Deactivated successfully.
+May 19 23:39:57 osmanubuntu systemd[1]: session-517.scope: Deactivated successfully.
+May 19 23:39:57 osmanubuntu systemd[1]: Started Session 519 of User osman.
+May 19 23:39:57 osmanubuntu systemd[1]: session-519.scope: Deactivated successfully.
+May 19 23:40:02 osmanubuntu systemd[1]: Started Session 520 of User osman.
+May 19 23:40:02 osmanubuntu systemd[1]: Started Session 521 of User osman.
+May 19 23:40:02 osmanubuntu systemd[1]: session-520.scope: Deactivated successfully.
+May 19 23:40:02 osmanubuntu systemd[1]: session-521.scope: Deactivated successfully.
+May 19 23:40:02 osmanubuntu systemd[1]: Started Session 522 of User osman.
+May 19 23:40:02 osmanubuntu systemd[1]: session-522.scope: Deactivated successfully.
+May 19 23:40:07 osmanubuntu systemd[1]: Started Session 523 of User osman.
+May 19 23:40:07 osmanubuntu systemd[1]: Started Session 524 of User osman.
+May 19 23:40:07 osmanubuntu systemd[1]: session-523.scope: Deactivated successfully.
+May 19 23:40:07 osmanubuntu systemd[1]: session-524.scope: Deactivated successfully.
+May 19 23:40:07 osmanubuntu systemd[1]: Started Session 525 of User osman.
+May 19 23:40:07 osmanubuntu systemd[1]: session-525.scope: Deactivated successfully.
+May 19 23:40:12 osmanubuntu systemd[1]: Started Session 526 of User osman.
+May 19 23:40:12 osmanubuntu systemd[1]: Started Session 527 of User osman.
+May 19 23:40:12 osmanubuntu systemd[1]: session-526.scope: Deactivated successfully.
+May 19 23:40:12 osmanubuntu systemd[1]: session-527.scope: Deactivated successfully.
+May 19 23:40:12 osmanubuntu systemd[1]: Started Session 528 of User osman.
+May 19 23:40:12 osmanubuntu systemd[1]: session-528.scope: Deactivated successfully.
+May 19 23:40:17 osmanubuntu systemd[1]: Started Session 530 of User osman.
+May 19 23:40:17 osmanubuntu systemd[1]: Started Session 529 of User osman.
+May 19 23:40:17 osmanubuntu systemd[1]: session-529.scope: Deactivated successfully.
+May 19 23:40:17 osmanubuntu systemd[1]: session-530.scope: Deactivated successfully.
+May 19 23:40:17 osmanubuntu systemd[1]: Started Session 531 of User osman.
+May 19 23:40:17 osmanubuntu systemd[1]: session-531.scope: Deactivated successfully.
+May 19 23:40:22 osmanubuntu systemd[1]: Started Session 533 of User osman.
+May 19 23:40:22 osmanubuntu systemd[1]: Started Session 532 of User osman.
+May 19 23:40:22 osmanubuntu systemd[1]: session-533.scope: Deactivated successfully.
+May 19 23:40:22 osmanubuntu systemd[1]: session-532.scope: Deactivated successfully.
+May 19 23:40:22 osmanubuntu systemd[1]: Started Session 534 of User osman.
+May 19 23:40:22 osmanubuntu systemd[1]: session-534.scope: Deactivated successfully.
+May 19 23:40:27 osmanubuntu systemd[1]: Started Session 535 of User osman.
+May 19 23:40:27 osmanubuntu systemd[1]: Started Session 536 of User osman.
+May 19 23:40:27 osmanubuntu systemd[1]: session-535.scope: Deactivated successfully.
+May 19 23:40:27 osmanubuntu systemd[1]: session-536.scope: Deactivated successfully.
+May 19 23:40:27 osmanubuntu systemd[1]: Started Session 537 of User osman.
+May 19 23:40:27 osmanubuntu systemd[1]: session-537.scope: Deactivated successfully.
+May 19 23:40:32 osmanubuntu systemd[1]: Started Session 539 of User osman.
+May 19 23:40:32 osmanubuntu systemd[1]: Started Session 538 of User osman.
+May 19 23:40:32 osmanubuntu systemd[1]: session-538.scope: Deactivated successfully.
+May 19 23:40:32 osmanubuntu systemd[1]: session-539.scope: Deactivated successfully.
+May 19 23:40:32 osmanubuntu systemd[1]: Started Session 540 of User osman.
+May 19 23:40:32 osmanubuntu systemd[1]: session-540.scope: Deactivated successfully.
+May 19 23:40:37 osmanubuntu systemd[1]: Started Session 541 of User osman.
+May 19 23:40:37 osmanubuntu systemd[1]: Started Session 542 of User osman.
+May 19 23:40:37 osmanubuntu systemd[1]: session-542.scope: Deactivated successfully.
+May 19 23:40:37 osmanubuntu systemd[1]: session-541.scope: Deactivated successfully.
+May 19 23:40:37 osmanubuntu systemd[1]: Started Session 543 of User osman.
+May 19 23:40:37 osmanubuntu systemd[1]: session-543.scope: Deactivated successfully.
+May 19 23:40:42 osmanubuntu systemd[1]: Started Session 544 of User osman.
+May 19 23:40:42 osmanubuntu systemd[1]: Started Session 545 of User osman.
+May 19 23:40:42 osmanubuntu systemd[1]: session-544.scope: Deactivated successfully.
+May 19 23:40:42 osmanubuntu systemd[1]: session-545.scope: Deactivated successfully.
+May 19 23:40:42 osmanubuntu systemd[1]: Started Session 546 of User osman.
+May 19 23:40:42 osmanubuntu systemd[1]: session-546.scope: Deactivated successfully.
+May 19 23:40:47 osmanubuntu systemd[1]: Started Session 547 of User osman.
+May 19 23:40:47 osmanubuntu systemd[1]: Started Session 548 of User osman.
+May 19 23:40:47 osmanubuntu systemd[1]: session-547.scope: Deactivated successfully.
+May 19 23:40:47 osmanubuntu systemd[1]: session-548.scope: Deactivated successfully.
+May 19 23:40:47 osmanubuntu systemd[1]: Started Session 549 of User osman.
+May 19 23:40:47 osmanubuntu systemd[1]: session-549.scope: Deactivated successfully.
+May 19 23:40:52 osmanubuntu systemd[1]: Started Session 550 of User osman.
+May 19 23:40:52 osmanubuntu systemd[1]: Started Session 551 of User osman.
+May 19 23:40:52 osmanubuntu systemd[1]: session-551.scope: Deactivated successfully.
+May 19 23:40:52 osmanubuntu systemd[1]: session-550.scope: Deactivated successfully.
+May 19 23:40:52 osmanubuntu systemd[1]: Started Session 552 of User osman.
+May 19 23:40:52 osmanubuntu systemd[1]: session-552.scope: Deactivated successfully.
+May 19 23:40:57 osmanubuntu systemd[1]: Started Session 554 of User osman.
+May 19 23:40:57 osmanubuntu systemd[1]: Started Session 553 of User osman.
+May 19 23:40:57 osmanubuntu systemd[1]: session-554.scope: Deactivated successfully.
+May 19 23:40:57 osmanubuntu systemd[1]: session-553.scope: Deactivated successfully.
+May 19 23:40:57 osmanubuntu systemd[1]: Started Session 555 of User osman.
+May 19 23:40:57 osmanubuntu systemd[1]: session-555.scope: Deactivated successfully.
+May 19 23:41:02 osmanubuntu systemd[1]: Started Session 557 of User osman.
+May 19 23:41:02 osmanubuntu systemd[1]: Started Session 556 of User osman.
+May 19 23:41:02 osmanubuntu systemd[1]: session-556.scope: Deactivated successfully.
+May 19 23:41:02 osmanubuntu systemd[1]: session-557.scope: Deactivated successfully.
+May 19 23:41:02 osmanubuntu systemd[1]: Started Session 558 of User osman.
+May 19 23:41:02 osmanubuntu systemd[1]: session-558.scope: Deactivated successfully.
+May 19 23:41:07 osmanubuntu systemd[1]: Started Session 559 of User osman.
+May 19 23:41:07 osmanubuntu systemd[1]: session-559.scope: Deactivated successfully.
+May 19 23:41:07 osmanubuntu systemd[1]: Started Session 560 of User osman.
+May 19 23:41:07 osmanubuntu systemd[1]: session-560.scope: Deactivated successfully.
+May 19 23:41:10 osmanubuntu systemd[1]: Started Session 561 of User osman.
+May 19 23:41:10 osmanubuntu systemd[1]: session-561.scope: Deactivated successfully.
+May 19 23:41:10 osmanubuntu systemd[1]: Started Session 562 of User osman.
