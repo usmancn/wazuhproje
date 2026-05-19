@@ -394,29 +394,35 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
 <div class="sidebar">
   <div class="sidebar-header">
     <div class="logo-title">
-      <span class="logo-icon">🛡️</span> Wazuh AI SIEM
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent);flex-shrink:0"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Wazuh AI SIEM
     </div>
-    <div class="sidebar-meta">
-      osmanubuntu &middot; Wazuh 4.8.0<br>
-      Ubuntu 22.04 ARM64
+  <div class="sidebar-meta">
+      Wazuh Manager | osmanubuntu<br>
+      Ubuntu 22.04 LTS ARM64
     </div>
   </div>
   
   <div class="nav-menu">
     <button class="nav-btn active" onclick="show('overview', this)">
-      <span class="nav-icon">📊</span> Genel Bakış & Mimari
+      <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      Genel Bakış & Mimari
     </button>
     <button class="nav-btn" onclick="show('live', this)">
-      <span class="nav-icon">⚡</span> Canlı Saldırı Simülasyonu
+      <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+      Canlı Saldırı Simülasyonu
     </button>
     <button class="nav-btn" onclick="show('ai', this)">
-      <span class="nav-icon">🤖</span> Yapay Zeka (AI) Analizi
+      <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Yapay Zeka Analizi
     </button>
     <button class="nav-btn" onclick="show('all-logs', this); loadAllLogs()">
-      <span class="nav-icon">🗄️</span> Tüm Log Arşivi
+      <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      Tüm Log Arşivi
     </button>
     <button class="nav-btn" onclick="show('evidence', this)">
-      <span class="nav-icon">📚</span> Teknik Kanıtlar
+      <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      Teknik Kanıtlar
     </button>
   </div>
 
@@ -439,7 +445,6 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
   <div id="overview" class="page active">
     <div style="margin-bottom: 24px; padding: 0 10px;">
       <h2 style="font-size: 1.5rem; margin-bottom: 8px; border:none; padding:0; display:flex; align-items:center; gap:10px;">
-        <span style="font-size: 1.8rem;">📈</span> 
         Tarihsel Güvenlik İstatistikleri (Wazuh SIEM)
       </h2>
       <p style="color: var(--text-muted); font-size: 0.95rem;">Wazuh Manager'ın kurulumundan itibaren analiz ettiği ve arşivlediği tüm güvenlik olaylarının kümülatif (toplam) dökümü.</p>
@@ -469,22 +474,22 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
     </div>
 
     <div class="glass-panel">
-      <h2>🏗️ Sistem Mimarisi ve Altyapı</h2>
+      <h2>Sistem Mimarisi ve Altyapı</h2>
       <div class="arch-diagram">
         <div class="arch-node">
-          <div class="arch-icon-big">💻</div>
+          <div class="arch-icon-big"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
           <div class="arch-title">MacBook Air</div>
           <div class="arch-desc">Apple Silicon M4<br>Host Makine (UTM)</div>
         </div>
-        <div class="arch-path">─SSH─→</div>
+        <div class="arch-path">─ SSH ─→</div>
         <div class="arch-node highlight">
-          <div class="arch-icon-big">🐧</div>
+          <div class="arch-icon-big"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--ok)" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg></div>
           <div class="arch-title">osmanubuntu</div>
           <div class="arch-desc">Ubuntu 22.04 LTS ARM64<br>IP: 192.168.64.4</div>
         </div>
         <div class="arch-path">→</div>
         <div class="arch-node">
-          <div class="arch-icon-big">🛡️</div>
+          <div class="arch-icon-big"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
           <div class="arch-title">Wazuh Manager</div>
           <div class="arch-desc">v4.8.0 Kaynaktan Derleme<br>JSON Alert Çıktısı</div>
         </div>
@@ -505,7 +510,7 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
         <!-- SOL: KONTROL PANELİ -->
         <div>
           <div class="glass-panel" style="padding: 24px;">
-            <h2 style="font-size: 1.2rem; color: var(--danger);"><span style="font-size: 1.5rem">🎯</span> Saldırı Simülasyon Paneli</h2>
+            <h2 style="font-size: 1.2rem; color: var(--danger);">Saldırı Simülasyon Paneli</h2>
             
             <div class="control-group">
               <div class="control-label"><span class="step-badge">1</span> Saldırı Parametrelerini Seçin</div>
@@ -522,10 +527,10 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
             <div class="control-group">
               <div class="control-label"><span class="step-badge">2</span> Atak Vektörünü Başlatın</div>
               <button class="btn-primary" id="btnBrute" onclick="startAttack()">
-                <span>⚡</span> SSH BRUTE-FORCE BAŞLAT
+                SSH Brute-Force Başlat
               </button>
               <button class="btn-secondary" onclick="showSudoAlert()">
-                <span>🔓</span> SUDO YETKİ YÜKSELTME (Demo)
+                Sudo Yetki Yükseltme (Demo)
               </button>
               <div style="text-align: center; margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">
                 Hedef: <strong style="color: var(--accent);">192.168.64.4</strong>
@@ -543,7 +548,7 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
         <div>
           <div class="glass-panel" style="padding: 24px; height: 100%; display: flex; flex-direction: column;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border-light);">
-              <h2 style="margin: 0; border: none; padding: 0; font-size: 1.2rem;"><span style="font-size: 1.5rem; margin-right: 8px;">🛡️</span> Wazuh Anlık Tespit Feed'i</h2>
+              <h2 style="margin: 0; border: none; padding: 0; font-size: 1.2rem;">Wazuh Anlık Tespit Feed'i</h2>
               <div style="display: flex; align-items: center; gap: 10px;">
                 <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600; letter-spacing: 0.5px;">OTONOM AI MODELİ:</span>
                 <select id="liveLLMSelector" class="modern-select" style="padding: 6px 12px; font-size: 0.8rem; background: rgba(0,0,0,0.4); color: var(--accent); border-color: rgba(14, 165, 233, 0.3);">
@@ -555,8 +560,8 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
             
             <div class="alert-feed-container" id="alertFeed">
               <div style="height: 100%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.9rem; flex-direction: column; gap: 12px;">
-                <span style="font-size: 2rem; opacity: 0.5;">📡</span>
-                Saldırı başlatıldığında gerçek zamanlı Wazuh alarmları ve Otonom AI analizleri burada belirecektir.
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="opacity:0.4"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+                Simülasyon başlatıldığında Wazuh alarmları burada görünecektir.
               </div>
             </div>
           </div>
@@ -570,7 +575,7 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
   <div id="ai" class="page">
     <div class="glass-panel" style="margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 30px; padding: 24px 30px;">
       <div style="flex: 1; min-width: 300px;">
-        <h2 style="border: none; padding: 0; margin-bottom: 8px;"><span style="font-size: 1.5rem; margin-right: 8px;">🤖</span> Yapay Zeka Destekli Otonom Analiz</h2>
+        <h2 style="border: none; padding: 0; margin-bottom: 8px;">Yapay Zeka Destekli Otonom Analiz</h2>
         <p style="color: var(--text-muted); font-size: 0.9rem;">Ubuntu log dosyalarını (auth.log, syslog, kern.log) tarar ve seçili LLM ile analiz raporu oluşturur.</p>
       </div>
       <div style="display: flex; align-items: center; gap: 15px;">
@@ -580,7 +585,7 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
           <option value="ollama">Ollama (Yerel)</option>
         </select>
         <button id="btn-live-analyze" onclick="runLiveAnalysis()" class="btn-primary" style="width: auto; padding: 10px 24px; border-radius: 30px; box-shadow: 0 0 20px rgba(14, 165, 233, 0.4); background: linear-gradient(135deg, var(--accent), #0284c7);">
-          🤖 Otonom Analizi Başlat
+          Analizi Başlat
         </button>
       </div>
     </div>
@@ -603,17 +608,17 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
     </div>
 
     <div class="ai-tabs-nav">
-      <button class="ai-tab-btn active" onclick="switchAITab('ai-tab-ana', this)">🧠 Kapsamlı Özet Raporu</button>
-      <button class="ai-tab-btn" onclick="switchAITab('ai-tab-auth', this)">📤 auth.log</button>
-      <button class="ai-tab-btn" onclick="switchAITab('ai-tab-syslog', this)">📜 syslog</button>
-      <button class="ai-tab-btn" onclick="switchAITab('ai-tab-kern', this)">🖥️ kern.log</button>
+      <button class="ai-tab-btn active" onclick="switchAITab('ai-tab-ana', this)">Kapsamlı Özet Raporu</button>
+      <button class="ai-tab-btn" onclick="switchAITab('ai-tab-auth', this)">auth.log</button>
+      <button class="ai-tab-btn" onclick="switchAITab('ai-tab-syslog', this)">syslog</button>
+      <button class="ai-tab-btn" onclick="switchAITab('ai-tab-kern', this)">kern.log</button>
     </div>
 
     <div id="ai-tab-ana" class="ai-tab-content active">
       <div class="glass-panel" style="padding: 0; overflow: hidden;">
         <div style="background: rgba(16, 185, 129, 0.1); padding: 20px 24px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); display: flex; justify-content: space-between; align-items: center;">
           <div id="ai-report-title" style="color: var(--ok); font-weight: 600; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
-            <span style="font-size: 1.3rem;">🧠</span> Kapsamlı LLM Raporu
+            Kapsamlı LLM Raporu
           </div>
           <div id="ai-report-file" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); background: rgba(0,0,0,0.3); padding: 4px 10px; border-radius: 4px;"></div>
         </div>
@@ -627,7 +632,7 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
       <div class="ai-summary-grid">
         <div class="ai-log-box">
           <div class="ai-log-header">
-            <span style="color: var(--accent)">📤 auth.log (Güvenlik & Giriş Logları)</span>
+            <span style="color: var(--accent)">auth.log — Kimlik Doğrulama & Giriş Logları</span>
             <span id="auth-badge" style="font-size: 0.75rem; color: var(--text-muted); font-weight: 400;">—</span>
           </div>
           <div class="ai-log-body" id="auth-findings"><div style="text-align:center; padding-top:40px; opacity:0.5;">Analiz bekleniyor...</div></div>
@@ -639,7 +644,7 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
       <div class="ai-summary-grid">
         <div class="ai-log-box">
           <div class="ai-log-header">
-            <span style="color: var(--purple)">📜 syslog (Genel Sistem Logları)</span>
+            <span style="color: var(--purple)">syslog — Genel Sistem Logları</span>
             <span id="syslog-badge" style="font-size: 0.75rem; color: var(--text-muted); font-weight: 400;">—</span>
           </div>
           <div class="ai-log-body" id="syslog-findings"><div style="text-align:center; padding-top:40px; opacity:0.5;">Analiz bekleniyor...</div></div>
@@ -651,7 +656,7 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
       <div class="ai-summary-grid">
         <div class="ai-log-box">
           <div class="ai-log-header">
-            <span style="color: #f472b6">🖥️ kern.log (Çekirdek Logları)</span>
+            <span style="color: #f472b6">kern.log — Çekirdek (Kernel) Logları</span>
             <span id="kern-badge" style="font-size: 0.75rem; color: var(--text-muted); font-weight: 400;">—</span>
           </div>
           <div class="ai-log-body" id="kern-findings"><div style="text-align:center; padding-top:40px; opacity:0.5;">Analiz bekleniyor...</div></div>
@@ -664,7 +669,7 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
   <div id="all-logs" class="page">
     <div class="glass-panel">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-        <h2 style="margin: 0; border: none; padding: 0;">🗄️ Tüm Wazuh Log Arşivi</h2>
+        <h2 style="margin: 0; border: none; padding: 0;">Tüm Wazuh Log Arşivi</h2>
         <div style="background: rgba(14, 165, 233, 0.1); color: var(--accent); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(14, 165, 233, 0.2);">
           <span id="totalLogsCount">0</span> Kayıt
         </div>
@@ -695,12 +700,12 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
   <!-- 5. TEKNİK KANITLAR -->
   <div id="evidence" class="page">
     <div class="glass-panel">
-      <h2 style="color: var(--purple)"><span style="font-size: 1.5rem; margin-right: 8px;">📚</span> Teorik Senaryolar & Kurulum Kanıtları</h2>
+      <h2 style="color: var(--purple)">Saldırı Senaryoları & Kurulum Kanıtları</h2>
       <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 30px; line-height: 1.6;">Bu bölüm, projenin arkasındaki saldırı mantığını (MITRE ATT&CK), ham JSON verilerini ve sistem bileşenlerinin çalıştığına dair CLI çıktılarını barındırır.</p>
 
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px;">
         <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-light); border-radius: 12px; padding: 24px;">
-          <h3 style="font-size: 1.1rem; color: var(--danger); margin-bottom: 12px;">🔴 Senaryo 1: SSH Brute-Force</h3>
+          <h3 style="font-size: 1.1rem; color: var(--danger); margin-bottom: 12px; display:flex; align-items:center; gap:8px;"><span style="width:10px;height:10px;border-radius:50%;background:var(--danger);display:inline-block;flex-shrink:0"></span> Senaryo 1: SSH Brute-Force</h3>
           <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 16px;">Bir IP adresinden peş peşe yapılan başarısız SSH giriş denemeleri Wazuh tarafından "Rule 5712" (Level 10) olarak anında tespit edilir.</p>
           <div class="mitre">
             <div class="mitre-tag" style="background:rgba(255,255,255,0.05); padding:6px 10px; border-radius:6px; display:inline-block; font-size:0.8rem; margin-right:8px; margin-bottom:8px;"><div class="id" style="color:var(--accent);font-weight:600;">T1110</div><div class="name">Brute Force</div></div>
@@ -708,7 +713,7 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
           </div>
         </div>
         <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-light); border-radius: 12px; padding: 24px;">
-          <h3 style="font-size: 1.1rem; color: var(--warn); margin-bottom: 12px;">🟠 Senaryo 2: Privilege Escalation</h3>
+          <h3 style="font-size: 1.1rem; color: var(--warn); margin-bottom: 12px; display:flex; align-items:center; gap:8px;"><span style="width:10px;height:10px;border-radius:50%;background:var(--warn);display:inline-block;flex-shrink:0"></span> Senaryo 2: Privilege Escalation</h3>
           <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 16px;">Sisteme giriş yapan bir kullanıcının "sudo" komutuyla ROOT yetkisine yükselmesi "Rule 5402" ile izlenir ve alarm üretilir.</p>
           <div class="mitre">
             <div class="mitre-tag" style="background:rgba(255,255,255,0.05); padding:6px 10px; border-radius:6px; display:inline-block; font-size:0.8rem; margin-right:8px; margin-bottom:8px;"><div class="id" style="color:var(--accent);font-weight:600;">T1548.003</div><div class="name">Sudo and Sudo Caching</div></div>
@@ -717,7 +722,7 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
         </div>
       </div>
 
-      <h3 style="font-size: 1.1rem; margin-bottom: 16px; color: var(--text-main);">📋 Örnek Ham JSON (Wazuh Çıktısı)</h3>
+      <h3 style="font-size: 1.1rem; margin-bottom: 16px; color: var(--text-main);">Örnek Ham JSON (Wazuh Çıktısı)</h3>
       <div class="tab-group">
         <button class="tab-btn active" onclick="showTab('t1',this)">Brute-Force (Rule 5712)</button>
         <button class="tab-btn" onclick="showTab('t2',this)">Yetki Yükseltme (Rule 5402)</button>
@@ -745,7 +750,7 @@ pre.code-block { background: #020617; padding: 20px; border-radius: 8px; border:
 }</pre>
       </div>
 
-      <h3 style="font-size: 1.1rem; margin-top: 40px; margin-bottom: 16px; color: var(--text-main);">✅ Sistem & Kurulum Kanıtları</h3>
+      <h3 style="font-size: 1.1rem; margin-top: 40px; margin-bottom: 16px; color: var(--text-main);">Sistem & Kurulum Kanıtları</h3>
       <div style="background: rgba(0,0,0,0.3); border-radius: 12px; padding: 20px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); line-height: 1.8; border: 1px solid var(--border-light);">
         <strong style="color: var(--ok)">$ dpkg -l | grep wazuh-manager</strong><br>
         ii  wazuh-manager   4.8.0-1   arm64   Wazuh manager — package for managing agents<br><br>
