@@ -96,7 +96,7 @@ def run_live_analysis(api_key="", llm_provider="gemini"):
             "--syslog", logs["syslog"],
             "--kern",   logs["kern"],
             "--llm",    llm_provider,
-            "--model",  "gemini-2.5-flash" if llm_provider == "gemini" else ("gpt-4o-mini" if llm_provider == "openai" else "llama3.2"),
+            "--model",  "gemini-2.5-flash" if llm_provider == "gemini" else ("gpt-4o-mini" if llm_provider == "openai" else "mistral"),
             "--output", os.path.join(base, "reports"),
         ]
         if api_key:
