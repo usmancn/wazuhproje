@@ -37625,3 +37625,1129 @@ May 19 23:13:42 osmanubuntu org.gnome.Shell.desktop[3130]: Please use "-listenfd
 May 19 23:13:42 osmanubuntu org.gnome.Shell.desktop[3130]: (WW) Option "-listen" for file descriptors is deprecated
 May 19 23:13:42 osmanubuntu org.gnome.Shell.desktop[3130]: Please use "-listenfd" instead.
 May 19 23:13:42 osmanubuntu systemd[1]: Started Session 12 of User osman.
+May 19 23:13:42 osmanubuntu systemd[1]: session-12.scope: Deactivated successfully.
+May 19 23:13:43 osmanubuntu systemd[1]: Started Session 13 of User osman.
+May 19 23:13:43 osmanubuntu gnome-shell[3027]: Unset XDG_SESSION_ID, getCurrentSessionProxy() called outside a user session. Asking logind directly.
+May 19 23:13:43 osmanubuntu gnome-shell[3027]: Will monitor session c1
+May 19 23:13:43 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service' requested by ':1.83' (uid=131 pid=3027 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:13:43 osmanubuntu systemd[1]: session-13.scope: Deactivated successfully.
+May 19 23:13:43 osmanubuntu systemd[1]: Starting Locale Service...
+May 19 23:13:43 osmanubuntu dbus-daemon[702]: [system] Successfully activated service 'org.freedesktop.locale1'
+May 19 23:13:43 osmanubuntu systemd[1]: Started Locale Service.
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Activating service name='org.freedesktop.impl.portal.PermissionStore' requested by ':1.3' (uid=131 pid=3027 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+May 19 23:13:43 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service' requested by ':1.83' (uid=131 pid=3027 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:13:43 osmanubuntu systemd[1]: Starting Daemon for power management...
+May 19 23:13:43 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.freedesktop.GeoClue2' unit='geoclue.service' requested by ':1.83' (uid=131 pid=3027 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:13:43 osmanubuntu systemd[1]: Starting Location Lookup Service...
+May 19 23:13:43 osmanubuntu dbus-daemon[702]: [system] Successfully activated service 'org.freedesktop.UPower'
+May 19 23:13:43 osmanubuntu systemd[1]: Started Daemon for power management.
+May 19 23:13:43 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.83' (uid=131 pid=3027 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:13:43 osmanubuntu systemd[1]: Starting PackageKit Daemon...
+May 19 23:13:43 osmanubuntu gnome-shell[3027]: Extension ubuntu-appindicators@ubuntu.com already installed in /usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com. /usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com will not be loaded
+May 19 23:13:43 osmanubuntu gnome-shell[3027]: Extension ding@rastersoft.com already installed in /usr/share/gnome-shell/extensions/ding@rastersoft.com. /usr/share/gnome-shell/extensions/ding@rastersoft.com will not be loaded
+May 19 23:13:43 osmanubuntu gnome-shell[3027]: Extension ubuntu-dock@ubuntu.com already installed in /usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com. /usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com will not be loaded
+May 19 23:13:43 osmanubuntu PackageKit: daemon start
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Activating service name='org.gnome.Shell.Notifications' requested by ':1.3' (uid=131 pid=3027 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3119]: dbus-daemon[3119]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=131 pid=3027 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3119]: dbus-daemon[3119]: Successfully activated service 'org.a11y.atspi.Registry'
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3266]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+May 19 23:13:43 osmanubuntu dbus-daemon[702]: [system] Successfully activated service 'org.freedesktop.GeoClue2'
+May 19 23:13:43 osmanubuntu systemd[1]: Started Location Lookup Service.
+May 19 23:13:43 osmanubuntu org.gnome.Shell.desktop[3027]: Window manager warning: Failed to parse saved session file: Failed to open file “/var/lib/gdm3/.config/mutter/sessions/10ec7ce1e6d66a807017792324227183400000030170000.ms”: No such file or directory
+May 19 23:13:43 osmanubuntu dbus-daemon[702]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+May 19 23:13:43 osmanubuntu systemd[1]: Started PackageKit Daemon.
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Successfully activated service 'org.gnome.Shell.Notifications'
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Activating service name='org.gtk.vfs.Daemon' requested by ':1.17' (uid=131 pid=3284 comm="ibus-daemon --panel disable " label="unconfined")
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Successfully activated service 'org.gtk.vfs.Daemon'
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Activating service name='org.freedesktop.systemd1' requested by ':1.9' (uid=131 pid=3276 comm="/usr/libexec/gsd-sharing " label="unconfined")
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+May 19 23:13:43 osmanubuntu gsd-sharing[3276]: Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Activating service name='org.freedesktop.portal.IBus' requested by ':1.17' (uid=131 pid=3284 comm="ibus-daemon --panel disable " label="unconfined")
+May 19 23:13:43 osmanubuntu gsd-sharing[3276]: Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+May 19 23:13:43 osmanubuntu kernel: [   17.553612] rfkill: input handler disabled
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Successfully activated service 'org.freedesktop.portal.IBus'
+May 19 23:13:43 osmanubuntu NetworkManager[703]: <info>  [1779232423.4311] agent-manager: agent[78e92161b6dc4542,:1.83/org.gnome.Shell.NetworkAgent/131]: agent registered
+May 19 23:13:43 osmanubuntu gnome-shell[3027]: Error looking up permission: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for geolocation
+May 19 23:13:43 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service' requested by ':1.83' (uid=131 pid=3027 comm="/usr/bin/gnome-shell " label="unconfined")
+May 19 23:13:43 osmanubuntu systemd[1]: Starting Fingerprint Authentication Daemon...
+May 19 23:13:43 osmanubuntu gnome-shell[3027]: ATK Bridge is disabled but a11y has already been enabled.
+May 19 23:13:43 osmanubuntu dbus-daemon[702]: [system] Successfully activated service 'net.reactivated.Fprint'
+May 19 23:13:43 osmanubuntu systemd[1]: Started Fingerprint Authentication Daemon.
+May 19 23:13:43 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.freedesktop.ColorManager' unit='colord.service' requested by ':1.105' (uid=131 pid=3282 comm="/usr/libexec/gsd-color " label="unconfined")
+May 19 23:13:43 osmanubuntu systemd[1]: Starting Manage, Install and Generate Color Profiles...
+May 19 23:13:43 osmanubuntu spice-vdagent[3431]: vdagent started
+May 19 23:13:43 osmanubuntu dbus-daemon[702]: [system] Successfully activated service 'org.freedesktop.ColorManager'
+May 19 23:13:43 osmanubuntu systemd[1]: Started Manage, Install and Generate Color Profiles.
+May 19 23:13:43 osmanubuntu gnome-shell[3027]: JS ERROR: Failed to initialize fprintd service: Gio.IOErrorEnum: GDBus.Error:net.reactivated.Fprint.Error.NoSuchDevice: No devices available#012asyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:114:23
+May 19 23:13:43 osmanubuntu ibus-daemon[3284]: GChildWatchSource: Exit status of a child process was requested but ECHILD was received by waitpid(). See the documentation of g_child_watch_source_new() for possible causes.
+May 19 23:13:43 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Activating service name='org.gnome.ScreenSaver' requested by ':1.27' (uid=131 pid=3333 comm="/usr/libexec/gsd-power " label="unconfined")
+May 19 23:13:43 osmanubuntu gsd-media-keys[3312]: Failed to grab accelerator for keybinding settings:hibernate
+May 19 23:13:43 osmanubuntu gsd-media-keys[3312]: Failed to grab accelerator for keybinding settings:playback-repeat
+May 19 23:13:43 osmanubuntu org.gnome.Shell.desktop[3442]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+May 19 23:13:43 osmanubuntu org.gnome.Shell.desktop[3442]: > Warning:          Unsupported maximum keycode 708, clipping.
+May 19 23:13:43 osmanubuntu org.gnome.Shell.desktop[3442]: >                   X11 cannot support keycodes above 255.
+May 19 23:13:43 osmanubuntu org.gnome.Shell.desktop[3442]: Errors from xkbcomp are not fatal to the X server
+May 19 23:13:43 osmanubuntu systemd[1]: Starting Agent daemon for Spice guests...
+May 19 23:13:43 osmanubuntu systemd[1]: Started Agent daemon for Spice guests.
+May 19 23:13:44 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Activating service name='org.freedesktop.portal.IBus' requested by ':1.35' (uid=131 pid=3434 comm="ibus-daemon --panel disable -r --xim " label="unconfined")
+May 19 23:13:44 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Successfully activated service 'org.freedesktop.portal.IBus'
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: No SPICE display found for connector Virtual-1
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: vdagent_mutter_get_resolutions: No Spice display ID matching - assuming display ID == Monitor index
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: warning could not get file xfer save dir, file transfers will be disabled
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: File transfer is disabled
+May 19 23:13:44 osmanubuntu kernel: [   18.173174] input: spice vdagent tablet as /devices/virtual/input/input4
+May 19 23:13:44 osmanubuntu spice-vdagentd: opening vdagent virtio channel
+May 19 23:13:44 osmanubuntu gnome-session-binary[3017]: Entering running state
+May 19 23:13:44 osmanubuntu xbrlapi.desktop[3473]: openConnection: connect: No such file or directory
+May 19 23:13:44 osmanubuntu xbrlapi.desktop[3473]: cannot connect to braille devices daemon brltty at :0
+May 19 23:13:44 osmanubuntu spice-vdagentd: Set max clipboard: 104857600
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Received Graphics Device Info:
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Device /dev/dri/card0 is at /sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Found card '/sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0' with Vendor ID 0x10, Device ID 0x1af4
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Mapping connector Virtual-1 to display #0
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Device /dev/dri/card0 is at /sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Found card '/sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0' with Vendor ID 0x10, Device ID 0x1af4
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Couldn't find an XRandr output for the specified device
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: channel_id: 0 monitor_id: 0 device_address: pci/0000/02.0, device_display_id: 0 xrandr output ID NOT FOUND
+May 19 23:13:44 osmanubuntu spice-vdagentd: Set max clipboard: 104857600
+May 19 23:13:44 osmanubuntu spice-vdagentd: No QXL devices found, not generating xorg.conf
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Found monitor Virtual-1 with geometry 1280x800+0-0 - associating it to SPICE display #0
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Received Graphics Device Info:
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Device /dev/dri/card0 is at /sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Found card '/sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0' with Vendor ID 0x10, Device ID 0x1af4
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Mapping connector Virtual-1 to display #0
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Device /dev/dri/card0 is at /sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Found card '/sys/devices/pci0000:00/0000:00:02.0/virtio1/drm/card0' with Vendor ID 0x10, Device ID 0x1af4
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Couldn't find an XRandr output for the specified device
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: channel_id: 0 monitor_id: 0 device_address: pci/0000/02.0, device_display_id: 0 xrandr output ID NOT FOUND
+May 19 23:13:44 osmanubuntu /usr/libexec/gdm-wayland-session[3016]: dbus-daemon[3016]: [session uid=131 pid=3016] Successfully activated service 'org.gnome.ScreenSaver'
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Found monitor Virtual-1 with geometry 1280x800+0-0 - associating it to SPICE display #0
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: vdagent_audio_playback_sync mute=yes nchannels=2
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: vdagent-audio: (playback-left) 0 (0.00%)
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: vdagent-audio: (playback-right) 0 (0.00%)
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: vdagent_audio_record_sync mute=yes nchannels=2
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: vdagent-audio: (capture-left) 0 (0.00%)
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: vdagent-audio: (capture-right) 0 (0.00%)
+May 19 23:13:44 osmanubuntu spice-vdagent[3431]: Found monitor Virtual-1 with geometry 1280x800+0-0 - associating it to SPICE display #0
+May 19 23:13:44 osmanubuntu gnome-shell[3027]: Registering session with GDM
+May 19 23:13:53 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 23:13:53 osmanubuntu systemd[2358]: Stopped target Main User Target.
+May 19 23:13:53 osmanubuntu systemd[2358]: Stopping D-Bus User Message Bus...
+May 19 23:13:53 osmanubuntu systemd[2358]: Stopping PipeWire Media Session Manager...
+May 19 23:13:53 osmanubuntu systemd[2358]: Stopped D-Bus User Message Bus.
+May 19 23:13:53 osmanubuntu systemd[2358]: Stopped PipeWire Media Session Manager.
+May 19 23:13:53 osmanubuntu systemd[2358]: Stopping PipeWire Multimedia Service...
+May 19 23:13:53 osmanubuntu systemd[2358]: Stopped PipeWire Multimedia Service.
+May 19 23:13:53 osmanubuntu systemd[2358]: Removed slice User Core Session Slice.
+May 19 23:13:53 osmanubuntu systemd[2358]: Stopped target Basic System.
+May 19 23:13:53 osmanubuntu systemd[2358]: Stopped target Paths.
+May 19 23:13:53 osmanubuntu systemd[2358]: Stopped Pending report trigger for Ubuntu Report.
+May 19 23:13:53 osmanubuntu systemd[2358]: Stopped target Sockets.
+May 19 23:13:53 osmanubuntu systemd[2358]: Stopped target Timers.
+May 19 23:13:53 osmanubuntu systemd[2358]: Closed D-Bus User Message Bus Socket.
+May 19 23:13:53 osmanubuntu systemd[2358]: Closed GnuPG network certificate management daemon.
+May 19 23:13:53 osmanubuntu systemd[2358]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 23:13:53 osmanubuntu systemd[2358]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 23:13:53 osmanubuntu systemd[2358]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 23:13:53 osmanubuntu systemd[2358]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 23:13:53 osmanubuntu systemd[2358]: Closed PipeWire Multimedia System Socket.
+May 19 23:13:53 osmanubuntu systemd[2358]: Closed debconf communication socket.
+May 19 23:13:53 osmanubuntu systemd[2358]: Closed Sound System.
+May 19 23:13:53 osmanubuntu systemd[2358]: Closed REST API socket for snapd user session agent.
+May 19 23:13:53 osmanubuntu systemd[2358]: Closed Speech Dispatcher Socket.
+May 19 23:13:53 osmanubuntu systemd[2358]: Removed slice User Application Slice.
+May 19 23:13:53 osmanubuntu systemd[2358]: Reached target Shutdown.
+May 19 23:13:53 osmanubuntu systemd[2358]: Finished Exit the Session.
+May 19 23:13:53 osmanubuntu systemd[2358]: Reached target Exit the Session.
+May 19 23:13:53 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 23:13:53 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 23:13:53 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 23:13:53 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 23:13:53 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 23:13:53 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 23:13:53 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 23:13:53 osmanubuntu systemd[1]: user-1000.slice: Consumed 1.045s CPU time.
+May 19 23:13:59 osmanubuntu systemd[1]: systemd-fsckd.service: Deactivated successfully.
+May 19 23:14:04 osmanubuntu systemd[1]: systemd-timedated.service: Deactivated successfully.
+May 19 23:14:05 osmanubuntu systemd-resolved[680]: Clock change detected. Flushing caches.
+May 19 23:14:05 osmanubuntu systemd-timesyncd[643]: Initial synchronization to time server 91.189.91.157:123 (ntp.ubuntu.com).
+May 19 23:14:14 osmanubuntu systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+May 19 23:14:14 osmanubuntu systemd[1]: systemd-localed.service: Deactivated successfully.
+May 19 23:14:14 osmanubuntu systemd[1]: fprintd.service: Deactivated successfully.
+May 19 23:14:23 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 23:14:23 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 23:14:23 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 23:14:23 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 23:14:23 osmanubuntu systemd[4512]: Queued start job for default target Main User Target.
+May 19 23:14:23 osmanubuntu systemd[4512]: Created slice User Application Slice.
+May 19 23:14:23 osmanubuntu systemd[4512]: Created slice User Core Session Slice.
+May 19 23:14:23 osmanubuntu systemd[4512]: Started Pending report trigger for Ubuntu Report.
+May 19 23:14:23 osmanubuntu systemd[4512]: Reached target Paths.
+May 19 23:14:23 osmanubuntu systemd[4512]: Reached target Timers.
+May 19 23:14:23 osmanubuntu systemd[4512]: Starting D-Bus User Message Bus Socket...
+May 19 23:14:23 osmanubuntu systemd[4512]: Listening on GnuPG network certificate management daemon.
+May 19 23:14:23 osmanubuntu systemd[4512]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 23:14:23 osmanubuntu systemd[4512]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 23:14:23 osmanubuntu systemd[4512]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 23:14:23 osmanubuntu systemd[4512]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 23:14:23 osmanubuntu systemd[4512]: Listening on PipeWire Multimedia System Socket.
+May 19 23:14:23 osmanubuntu systemd[4512]: Listening on debconf communication socket.
+May 19 23:14:23 osmanubuntu systemd[4512]: Listening on Sound System.
+May 19 23:14:23 osmanubuntu systemd[4512]: Listening on REST API socket for snapd user session agent.
+May 19 23:14:23 osmanubuntu systemd[4512]: Listening on Speech Dispatcher Socket.
+May 19 23:14:23 osmanubuntu systemd[4512]: Listening on D-Bus User Message Bus Socket.
+May 19 23:14:23 osmanubuntu systemd[4512]: Reached target Sockets.
+May 19 23:14:23 osmanubuntu systemd[4512]: Reached target Basic System.
+May 19 23:14:23 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 23:14:23 osmanubuntu systemd[1]: Started Session 14 of User osman.
+May 19 23:14:23 osmanubuntu systemd[4512]: Started PipeWire Multimedia Service.
+May 19 23:14:23 osmanubuntu systemd[4512]: Started PipeWire Media Session Manager.
+May 19 23:14:23 osmanubuntu systemd[4512]: Starting Sound Service...
+May 19 23:14:23 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 1 users.
+May 19 23:14:23 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 1 users.
+May 19 23:14:23 osmanubuntu pipewire[4519]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 23:14:23 osmanubuntu pipewire[4519]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 23:14:24 osmanubuntu pipewire-media-session[4520]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 23:14:24 osmanubuntu pipewire-media-session[4520]: mod.rt: could not make thread 4522 realtime using RTKit: Permission denied
+May 19 23:14:24 osmanubuntu systemd[4512]: Started D-Bus User Message Bus.
+May 19 23:14:24 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:14:24 osmanubuntu dbus-daemon[4572]: [session uid=1000 pid=4572] AppArmor D-Bus mediation is enabled
+May 19 23:14:24 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:14:24 osmanubuntu pipewire[4519]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 23:14:24 osmanubuntu pipewire[4519]: mod.rt: could not make thread 4573 realtime using RTKit: Permission denied
+May 19 23:14:24 osmanubuntu systemd[1]: session-14.scope: Deactivated successfully.
+May 19 23:14:24 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.129' (uid=1000 pid=4521 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 23:14:24 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 23:14:24 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:14:24 osmanubuntu rtkit-daemon[2411]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 23:14:24 osmanubuntu systemd[4512]: Started Sound Service.
+May 19 23:14:24 osmanubuntu systemd[4512]: Reached target Main User Target.
+May 19 23:14:24 osmanubuntu systemd[4512]: Startup finished in 1.124s.
+May 19 23:14:34 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopped target Main User Target.
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopping D-Bus User Message Bus...
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopping PipeWire Media Session Manager...
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopping Sound Service...
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopped D-Bus User Message Bus.
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopped PipeWire Media Session Manager.
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopping PipeWire Multimedia Service...
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopped PipeWire Multimedia Service.
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopped Sound Service.
+May 19 23:14:34 osmanubuntu systemd[4512]: Removed slice User Core Session Slice.
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopped target Basic System.
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopped target Paths.
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopped Pending report trigger for Ubuntu Report.
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopped target Sockets.
+May 19 23:14:34 osmanubuntu systemd[4512]: Stopped target Timers.
+May 19 23:14:34 osmanubuntu systemd[4512]: Closed D-Bus User Message Bus Socket.
+May 19 23:14:34 osmanubuntu systemd[4512]: Closed GnuPG network certificate management daemon.
+May 19 23:14:34 osmanubuntu systemd[4512]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 23:14:34 osmanubuntu systemd[4512]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 23:14:34 osmanubuntu systemd[4512]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 23:14:34 osmanubuntu systemd[4512]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 23:14:34 osmanubuntu systemd[4512]: Closed PipeWire Multimedia System Socket.
+May 19 23:14:34 osmanubuntu systemd[4512]: Closed debconf communication socket.
+May 19 23:14:34 osmanubuntu systemd[4512]: Closed Sound System.
+May 19 23:14:34 osmanubuntu systemd[4512]: Closed REST API socket for snapd user session agent.
+May 19 23:14:34 osmanubuntu systemd[4512]: Closed Speech Dispatcher Socket.
+May 19 23:14:34 osmanubuntu systemd[4512]: Removed slice User Application Slice.
+May 19 23:14:34 osmanubuntu systemd[4512]: Reached target Shutdown.
+May 19 23:14:34 osmanubuntu systemd[4512]: Finished Exit the Session.
+May 19 23:14:34 osmanubuntu systemd[4512]: Reached target Exit the Session.
+May 19 23:14:34 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 23:14:34 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 23:14:34 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 23:14:34 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 23:14:34 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 23:14:34 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 23:14:34 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 23:14:44 osmanubuntu geoclue[3256]: Service not used for 60 seconds. Shutting down..
+May 19 23:14:44 osmanubuntu systemd[1]: geoclue.service: Deactivated successfully.
+May 19 23:15:00 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 23:15:00 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 23:15:00 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 23:15:00 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 23:15:00 osmanubuntu systemd[4610]: Queued start job for default target Main User Target.
+May 19 23:15:00 osmanubuntu systemd[4610]: Created slice User Application Slice.
+May 19 23:15:00 osmanubuntu systemd[4610]: Created slice User Core Session Slice.
+May 19 23:15:00 osmanubuntu systemd[4610]: Started Pending report trigger for Ubuntu Report.
+May 19 23:15:00 osmanubuntu systemd[4610]: Reached target Paths.
+May 19 23:15:00 osmanubuntu systemd[4610]: Reached target Timers.
+May 19 23:15:00 osmanubuntu systemd[4610]: Starting D-Bus User Message Bus Socket...
+May 19 23:15:00 osmanubuntu systemd[4610]: Listening on GnuPG network certificate management daemon.
+May 19 23:15:00 osmanubuntu systemd[4610]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 23:15:00 osmanubuntu systemd[4610]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 23:15:00 osmanubuntu systemd[4610]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 23:15:00 osmanubuntu systemd[4610]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 23:15:00 osmanubuntu systemd[4610]: Listening on PipeWire Multimedia System Socket.
+May 19 23:15:00 osmanubuntu systemd[4610]: Listening on debconf communication socket.
+May 19 23:15:00 osmanubuntu systemd[4610]: Listening on Sound System.
+May 19 23:15:00 osmanubuntu systemd[4610]: Listening on REST API socket for snapd user session agent.
+May 19 23:15:00 osmanubuntu systemd[4610]: Listening on Speech Dispatcher Socket.
+May 19 23:15:00 osmanubuntu systemd[4610]: Listening on D-Bus User Message Bus Socket.
+May 19 23:15:00 osmanubuntu systemd[4610]: Reached target Sockets.
+May 19 23:15:00 osmanubuntu systemd[4610]: Reached target Basic System.
+May 19 23:15:00 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 23:15:00 osmanubuntu systemd[4610]: Started PipeWire Multimedia Service.
+May 19 23:15:00 osmanubuntu systemd[1]: Started Session 16 of User osman.
+May 19 23:15:00 osmanubuntu systemd[4610]: Started PipeWire Media Session Manager.
+May 19 23:15:00 osmanubuntu systemd[4610]: Starting Sound Service...
+May 19 23:15:00 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:15:00 osmanubuntu pipewire[4617]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 23:15:00 osmanubuntu pipewire[4617]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 23:15:00 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:15:00 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:15:00 osmanubuntu systemd[4610]: Started D-Bus User Message Bus.
+May 19 23:15:00 osmanubuntu dbus-daemon[4638]: [session uid=1000 pid=4638] AppArmor D-Bus mediation is enabled
+May 19 23:15:00 osmanubuntu pipewire-media-session[4618]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 23:15:00 osmanubuntu pipewire-media-session[4618]: mod.rt: could not make thread 4637 realtime using RTKit: Permission denied
+May 19 23:15:00 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:15:00 osmanubuntu pipewire[4617]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 23:15:00 osmanubuntu pipewire[4617]: mod.rt: could not make thread 4639 realtime using RTKit: Permission denied
+May 19 23:15:00 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.151' (uid=1000 pid=4619 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 23:15:00 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 23:15:00 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:15:00 osmanubuntu rtkit-daemon[2411]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 23:15:00 osmanubuntu systemd[4610]: Started Sound Service.
+May 19 23:15:00 osmanubuntu systemd[4610]: Reached target Main User Target.
+May 19 23:15:00 osmanubuntu systemd[4610]: Startup finished in 155ms.
+May 19 23:15:00 osmanubuntu systemd[1]: session-16.scope: Deactivated successfully.
+May 19 23:15:10 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 23:15:10 osmanubuntu systemd[4610]: Stopped target Main User Target.
+May 19 23:15:10 osmanubuntu systemd[4610]: Stopping D-Bus User Message Bus...
+May 19 23:15:10 osmanubuntu systemd[4610]: Stopping PipeWire Media Session Manager...
+May 19 23:15:10 osmanubuntu systemd[4610]: Stopped D-Bus User Message Bus.
+May 19 23:15:10 osmanubuntu systemd[4610]: Stopped PipeWire Media Session Manager.
+May 19 23:15:10 osmanubuntu systemd[4610]: Stopping PipeWire Multimedia Service...
+May 19 23:15:10 osmanubuntu systemd[4610]: Stopped PipeWire Multimedia Service.
+May 19 23:15:10 osmanubuntu systemd[4610]: Removed slice User Core Session Slice.
+May 19 23:15:10 osmanubuntu systemd[4610]: Stopped target Basic System.
+May 19 23:15:10 osmanubuntu systemd[4610]: Stopped target Paths.
+May 19 23:15:10 osmanubuntu systemd[4610]: Stopped Pending report trigger for Ubuntu Report.
+May 19 23:15:10 osmanubuntu systemd[4610]: Stopped target Sockets.
+May 19 23:15:10 osmanubuntu systemd[4610]: Stopped target Timers.
+May 19 23:15:10 osmanubuntu systemd[4610]: Closed D-Bus User Message Bus Socket.
+May 19 23:15:10 osmanubuntu systemd[4610]: Closed GnuPG network certificate management daemon.
+May 19 23:15:10 osmanubuntu systemd[4610]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 23:15:10 osmanubuntu systemd[4610]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 23:15:10 osmanubuntu systemd[4610]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 23:15:10 osmanubuntu systemd[4610]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 23:15:10 osmanubuntu systemd[4610]: Closed PipeWire Multimedia System Socket.
+May 19 23:15:10 osmanubuntu systemd[4610]: Closed debconf communication socket.
+May 19 23:15:10 osmanubuntu systemd[4610]: Closed Sound System.
+May 19 23:15:10 osmanubuntu systemd[4610]: Closed REST API socket for snapd user session agent.
+May 19 23:15:10 osmanubuntu systemd[4610]: Closed Speech Dispatcher Socket.
+May 19 23:15:10 osmanubuntu systemd[4610]: Removed slice User Application Slice.
+May 19 23:15:10 osmanubuntu systemd[4610]: Reached target Shutdown.
+May 19 23:15:10 osmanubuntu systemd[4610]: Finished Exit the Session.
+May 19 23:15:10 osmanubuntu systemd[4610]: Reached target Exit the Session.
+May 19 23:15:10 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 23:15:10 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 23:15:10 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 23:15:10 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 23:15:10 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 23:15:10 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 23:15:10 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 23:17:01 osmanubuntu CRON[4686]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+May 19 23:18:32 osmanubuntu systemd[1]: Starting Download data for packages that failed at package install time...
+May 19 23:18:32 osmanubuntu systemd[1]: update-notifier-download.service: Deactivated successfully.
+May 19 23:18:32 osmanubuntu systemd[1]: Finished Download data for packages that failed at package install time.
+May 19 23:18:34 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.29' (uid=0 pid=714 comm="/usr/lib/snapd/snapd " label="unconfined")
+May 19 23:18:34 osmanubuntu systemd[1]: Starting Time & Date Service...
+May 19 23:18:34 osmanubuntu dbus-daemon[702]: [system] Successfully activated service 'org.freedesktop.timedate1'
+May 19 23:18:34 osmanubuntu systemd[1]: Started Time & Date Service.
+May 19 23:18:48 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 23:18:48 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 23:18:48 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 23:18:48 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 23:18:48 osmanubuntu systemd[4696]: Queued start job for default target Main User Target.
+May 19 23:18:48 osmanubuntu systemd[4696]: Created slice User Application Slice.
+May 19 23:18:48 osmanubuntu systemd[4696]: Created slice User Core Session Slice.
+May 19 23:18:48 osmanubuntu systemd[4696]: Started Pending report trigger for Ubuntu Report.
+May 19 23:18:48 osmanubuntu systemd[4696]: Reached target Paths.
+May 19 23:18:48 osmanubuntu systemd[4696]: Reached target Timers.
+May 19 23:18:48 osmanubuntu systemd[4696]: Starting D-Bus User Message Bus Socket...
+May 19 23:18:48 osmanubuntu systemd[4696]: Listening on GnuPG network certificate management daemon.
+May 19 23:18:48 osmanubuntu systemd[4696]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 23:18:48 osmanubuntu systemd[4696]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 23:18:48 osmanubuntu systemd[4696]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 23:18:48 osmanubuntu systemd[4696]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 23:18:48 osmanubuntu systemd[4696]: Listening on PipeWire Multimedia System Socket.
+May 19 23:18:48 osmanubuntu systemd[4696]: Listening on debconf communication socket.
+May 19 23:18:48 osmanubuntu systemd[4696]: Listening on Sound System.
+May 19 23:18:48 osmanubuntu systemd[4696]: Listening on REST API socket for snapd user session agent.
+May 19 23:18:48 osmanubuntu systemd[4696]: Listening on Speech Dispatcher Socket.
+May 19 23:18:48 osmanubuntu systemd[4696]: Listening on D-Bus User Message Bus Socket.
+May 19 23:18:48 osmanubuntu systemd[4696]: Reached target Sockets.
+May 19 23:18:48 osmanubuntu systemd[4696]: Reached target Basic System.
+May 19 23:18:48 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 23:18:48 osmanubuntu systemd[1]: Started Session 19 of User osman.
+May 19 23:18:48 osmanubuntu systemd[4696]: Started PipeWire Multimedia Service.
+May 19 23:18:48 osmanubuntu systemd[4696]: Started PipeWire Media Session Manager.
+May 19 23:18:48 osmanubuntu systemd[4696]: Starting Sound Service...
+May 19 23:18:48 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 1 users.
+May 19 23:18:48 osmanubuntu pipewire[4703]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 23:18:48 osmanubuntu pipewire[4703]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 23:18:48 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:18:48 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:18:48 osmanubuntu systemd[4696]: Started D-Bus User Message Bus.
+May 19 23:18:48 osmanubuntu dbus-daemon[4724]: [session uid=1000 pid=4724] AppArmor D-Bus mediation is enabled
+May 19 23:18:48 osmanubuntu pipewire-media-session[4704]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 23:18:48 osmanubuntu pipewire-media-session[4704]: mod.rt: could not make thread 4706 realtime using RTKit: Permission denied
+May 19 23:18:48 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:18:48 osmanubuntu pipewire[4703]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 23:18:48 osmanubuntu pipewire[4703]: mod.rt: could not make thread 4725 realtime using RTKit: Permission denied
+May 19 23:18:48 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.175' (uid=1000 pid=4705 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 23:18:48 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 23:18:48 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:18:48 osmanubuntu rtkit-daemon[2411]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 23:18:48 osmanubuntu systemd[4696]: Started Sound Service.
+May 19 23:18:48 osmanubuntu systemd[4696]: Reached target Main User Target.
+May 19 23:18:48 osmanubuntu systemd[4696]: Startup finished in 160ms.
+May 19 23:18:48 osmanubuntu systemd[1]: session-19.scope: Deactivated successfully.
+May 19 23:18:58 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 23:18:58 osmanubuntu systemd[4696]: Stopped target Main User Target.
+May 19 23:18:58 osmanubuntu systemd[4696]: Stopping D-Bus User Message Bus...
+May 19 23:18:58 osmanubuntu systemd[4696]: Stopping PipeWire Media Session Manager...
+May 19 23:18:58 osmanubuntu systemd[4696]: Stopped D-Bus User Message Bus.
+May 19 23:18:58 osmanubuntu systemd[4696]: Stopped PipeWire Media Session Manager.
+May 19 23:18:58 osmanubuntu systemd[4696]: Stopping PipeWire Multimedia Service...
+May 19 23:18:58 osmanubuntu systemd[4696]: Stopped PipeWire Multimedia Service.
+May 19 23:18:58 osmanubuntu systemd[4696]: Removed slice User Core Session Slice.
+May 19 23:18:58 osmanubuntu systemd[4696]: Stopped target Basic System.
+May 19 23:18:58 osmanubuntu systemd[4696]: Stopped target Paths.
+May 19 23:18:58 osmanubuntu systemd[4696]: Stopped Pending report trigger for Ubuntu Report.
+May 19 23:18:58 osmanubuntu systemd[4696]: Stopped target Sockets.
+May 19 23:18:58 osmanubuntu systemd[4696]: Stopped target Timers.
+May 19 23:18:58 osmanubuntu systemd[4696]: Closed D-Bus User Message Bus Socket.
+May 19 23:18:58 osmanubuntu systemd[4696]: Closed GnuPG network certificate management daemon.
+May 19 23:18:58 osmanubuntu systemd[4696]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 23:18:58 osmanubuntu systemd[4696]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 23:18:58 osmanubuntu systemd[4696]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 23:18:58 osmanubuntu systemd[4696]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 23:18:58 osmanubuntu systemd[4696]: Closed PipeWire Multimedia System Socket.
+May 19 23:18:58 osmanubuntu systemd[4696]: Closed debconf communication socket.
+May 19 23:18:58 osmanubuntu systemd[4696]: Closed Sound System.
+May 19 23:18:58 osmanubuntu systemd[4696]: Closed REST API socket for snapd user session agent.
+May 19 23:18:58 osmanubuntu systemd[4696]: Closed Speech Dispatcher Socket.
+May 19 23:18:58 osmanubuntu systemd[4696]: Removed slice User Application Slice.
+May 19 23:18:58 osmanubuntu systemd[4696]: Reached target Shutdown.
+May 19 23:18:58 osmanubuntu systemd[4696]: Finished Exit the Session.
+May 19 23:18:58 osmanubuntu systemd[4696]: Reached target Exit the Session.
+May 19 23:18:58 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 23:18:58 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 23:18:58 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 23:18:58 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 23:18:58 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 23:18:58 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 23:18:58 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 23:19:04 osmanubuntu systemd[1]: systemd-timedated.service: Deactivated successfully.
+May 19 23:19:17 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 23:19:17 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 23:19:17 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 23:19:17 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 23:19:17 osmanubuntu systemd[4779]: Queued start job for default target Main User Target.
+May 19 23:19:17 osmanubuntu systemd[4779]: Created slice User Application Slice.
+May 19 23:19:17 osmanubuntu systemd[4779]: Created slice User Core Session Slice.
+May 19 23:19:17 osmanubuntu systemd[4779]: Started Pending report trigger for Ubuntu Report.
+May 19 23:19:17 osmanubuntu systemd[4779]: Reached target Paths.
+May 19 23:19:17 osmanubuntu systemd[4779]: Reached target Timers.
+May 19 23:19:17 osmanubuntu systemd[4779]: Starting D-Bus User Message Bus Socket...
+May 19 23:19:17 osmanubuntu systemd[4779]: Listening on GnuPG network certificate management daemon.
+May 19 23:19:17 osmanubuntu systemd[4779]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 23:19:17 osmanubuntu systemd[4779]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 23:19:17 osmanubuntu systemd[4779]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 23:19:17 osmanubuntu systemd[4779]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 23:19:17 osmanubuntu systemd[4779]: Listening on PipeWire Multimedia System Socket.
+May 19 23:19:17 osmanubuntu systemd[4779]: Listening on debconf communication socket.
+May 19 23:19:17 osmanubuntu systemd[4779]: Listening on Sound System.
+May 19 23:19:17 osmanubuntu systemd[4779]: Listening on REST API socket for snapd user session agent.
+May 19 23:19:17 osmanubuntu systemd[4779]: Listening on Speech Dispatcher Socket.
+May 19 23:19:17 osmanubuntu systemd[4779]: Listening on D-Bus User Message Bus Socket.
+May 19 23:19:17 osmanubuntu systemd[4779]: Reached target Sockets.
+May 19 23:19:17 osmanubuntu systemd[4779]: Reached target Basic System.
+May 19 23:19:17 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 23:19:17 osmanubuntu systemd[1]: Started Session 21 of User osman.
+May 19 23:19:17 osmanubuntu systemd[4779]: Started PipeWire Multimedia Service.
+May 19 23:19:17 osmanubuntu systemd[4779]: Started PipeWire Media Session Manager.
+May 19 23:19:17 osmanubuntu systemd[4779]: Starting Sound Service...
+May 19 23:19:17 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:19:17 osmanubuntu pipewire[4786]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 23:19:17 osmanubuntu pipewire[4786]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 23:19:17 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:19:17 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:19:17 osmanubuntu systemd[4779]: Started D-Bus User Message Bus.
+May 19 23:19:17 osmanubuntu pipewire-media-session[4787]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 23:19:17 osmanubuntu pipewire-media-session[4787]: mod.rt: could not make thread 4828 realtime using RTKit: Permission denied
+May 19 23:19:17 osmanubuntu dbus-daemon[4840]: [session uid=1000 pid=4840] AppArmor D-Bus mediation is enabled
+May 19 23:19:17 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:19:17 osmanubuntu pipewire[4786]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 23:19:17 osmanubuntu pipewire[4786]: mod.rt: could not make thread 4841 realtime using RTKit: Permission denied
+May 19 23:19:17 osmanubuntu systemd[1]: session-21.scope: Deactivated successfully.
+May 19 23:19:17 osmanubuntu dbus-daemon[702]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.199' (uid=1000 pid=4788 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 23:19:17 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 23:19:17 osmanubuntu rtkit-daemon[2411]: Supervising 6 threads of 3 processes of 2 users.
+May 19 23:19:17 osmanubuntu rtkit-daemon[2411]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 23:19:17 osmanubuntu systemd[4779]: Started Sound Service.
+May 19 23:19:17 osmanubuntu systemd[4779]: Reached target Main User Target.
+May 19 23:19:17 osmanubuntu systemd[4779]: Startup finished in 171ms.
+May 19 23:19:17 osmanubuntu systemd[1]: Started Session 23 of User osman.
+May 19 23:19:17 osmanubuntu systemd[1]: session-23.scope: Deactivated successfully.
+May 19 23:19:18 osmanubuntu systemd[1]: Started Session 24 of User osman.
+May 19 23:19:18 osmanubuntu systemd[1]: session-24.scope: Deactivated successfully.
+May 19 23:19:22 osmanubuntu systemd[1]: Started Session 25 of User osman.
+May 19 23:19:22 osmanubuntu systemd[1]: session-25.scope: Deactivated successfully.
+May 19 23:19:22 osmanubuntu systemd[1]: Started Session 26 of User osman.
+May 19 23:19:22 osmanubuntu systemd[1]: session-26.scope: Deactivated successfully.
+May 19 23:19:22 osmanubuntu systemd[1]: Started Session 27 of User osman.
+May 19 23:19:22 osmanubuntu systemd[1]: session-27.scope: Deactivated successfully.
+May 19 23:19:27 osmanubuntu systemd[1]: Started Session 28 of User osman.
+May 19 23:19:27 osmanubuntu systemd[1]: session-28.scope: Deactivated successfully.
+May 19 23:19:27 osmanubuntu systemd[1]: Started Session 29 of User osman.
+May 19 23:19:27 osmanubuntu systemd[1]: session-29.scope: Deactivated successfully.
+May 19 23:19:27 osmanubuntu systemd[1]: Started Session 30 of User osman.
+May 19 23:19:27 osmanubuntu systemd[1]: session-30.scope: Deactivated successfully.
+May 19 23:19:32 osmanubuntu systemd[1]: Started Session 31 of User osman.
+May 19 23:19:32 osmanubuntu systemd[1]: session-31.scope: Deactivated successfully.
+May 19 23:19:32 osmanubuntu systemd[1]: Started Session 32 of User osman.
+May 19 23:19:32 osmanubuntu systemd[1]: session-32.scope: Deactivated successfully.
+May 19 23:19:32 osmanubuntu systemd[1]: Started Session 33 of User osman.
+May 19 23:19:32 osmanubuntu systemd[1]: session-33.scope: Deactivated successfully.
+May 19 23:19:37 osmanubuntu systemd[1]: Started Session 34 of User osman.
+May 19 23:19:37 osmanubuntu systemd[1]: session-34.scope: Deactivated successfully.
+May 19 23:19:37 osmanubuntu systemd[1]: Started Session 35 of User osman.
+May 19 23:19:37 osmanubuntu systemd[1]: session-35.scope: Deactivated successfully.
+May 19 23:19:37 osmanubuntu systemd[1]: Started Session 36 of User osman.
+May 19 23:19:37 osmanubuntu systemd[1]: session-36.scope: Deactivated successfully.
+May 19 23:19:42 osmanubuntu systemd[1]: Started Session 37 of User osman.
+May 19 23:19:42 osmanubuntu systemd[1]: session-37.scope: Deactivated successfully.
+May 19 23:19:42 osmanubuntu systemd[1]: Started Session 38 of User osman.
+May 19 23:19:42 osmanubuntu systemd[1]: session-38.scope: Deactivated successfully.
+May 19 23:19:42 osmanubuntu systemd[1]: Started Session 39 of User osman.
+May 19 23:19:42 osmanubuntu systemd[1]: session-39.scope: Deactivated successfully.
+May 19 23:19:47 osmanubuntu systemd[1]: Started Session 40 of User osman.
+May 19 23:19:47 osmanubuntu systemd[1]: session-40.scope: Deactivated successfully.
+May 19 23:19:47 osmanubuntu systemd[1]: Started Session 41 of User osman.
+May 19 23:19:47 osmanubuntu systemd[1]: session-41.scope: Deactivated successfully.
+May 19 23:19:47 osmanubuntu systemd[1]: Started Session 42 of User osman.
+May 19 23:19:47 osmanubuntu systemd[1]: session-42.scope: Deactivated successfully.
+May 19 23:19:52 osmanubuntu systemd[1]: Started Session 43 of User osman.
+May 19 23:19:52 osmanubuntu systemd[1]: session-43.scope: Deactivated successfully.
+May 19 23:19:52 osmanubuntu systemd[1]: Started Session 44 of User osman.
+May 19 23:19:52 osmanubuntu systemd[1]: session-44.scope: Deactivated successfully.
+May 19 23:19:52 osmanubuntu systemd[1]: Started Session 45 of User osman.
+May 19 23:19:52 osmanubuntu systemd[1]: session-45.scope: Deactivated successfully.
+May 19 23:19:57 osmanubuntu systemd[1]: Started Session 46 of User osman.
+May 19 23:19:57 osmanubuntu systemd[1]: session-46.scope: Deactivated successfully.
+May 19 23:19:57 osmanubuntu systemd[1]: Started Session 47 of User osman.
+May 19 23:19:57 osmanubuntu systemd[1]: session-47.scope: Deactivated successfully.
+May 19 23:20:02 osmanubuntu systemd[1]: Started Session 48 of User osman.
+May 19 23:20:02 osmanubuntu systemd[1]: session-48.scope: Deactivated successfully.
+May 19 23:20:02 osmanubuntu systemd[1]: Started Session 49 of User osman.
+May 19 23:20:02 osmanubuntu systemd[1]: session-49.scope: Deactivated successfully.
+May 19 23:20:07 osmanubuntu systemd[1]: Started Session 50 of User osman.
+May 19 23:20:07 osmanubuntu systemd[1]: session-50.scope: Deactivated successfully.
+May 19 23:20:07 osmanubuntu systemd[1]: Started Session 51 of User osman.
+May 19 23:20:07 osmanubuntu systemd[1]: session-51.scope: Deactivated successfully.
+May 19 23:20:12 osmanubuntu systemd[1]: Started Session 52 of User osman.
+May 19 23:20:12 osmanubuntu systemd[1]: session-52.scope: Deactivated successfully.
+May 19 23:20:12 osmanubuntu systemd[1]: Started Session 53 of User osman.
+May 19 23:20:12 osmanubuntu systemd[1]: session-53.scope: Deactivated successfully.
+May 19 23:20:17 osmanubuntu systemd[1]: Started Session 54 of User osman.
+May 19 23:20:17 osmanubuntu systemd[1]: session-54.scope: Deactivated successfully.
+May 19 23:20:17 osmanubuntu systemd[1]: Started Session 55 of User osman.
+May 19 23:20:17 osmanubuntu systemd[1]: session-55.scope: Deactivated successfully.
+May 19 23:20:22 osmanubuntu systemd[1]: Started Session 56 of User osman.
+May 19 23:20:22 osmanubuntu systemd[1]: session-56.scope: Deactivated successfully.
+May 19 23:20:22 osmanubuntu systemd[1]: Started Session 57 of User osman.
+May 19 23:20:22 osmanubuntu systemd[1]: session-57.scope: Deactivated successfully.
+May 19 23:20:27 osmanubuntu systemd[1]: Started Session 58 of User osman.
+May 19 23:20:27 osmanubuntu systemd[1]: session-58.scope: Deactivated successfully.
+May 19 23:20:27 osmanubuntu systemd[1]: Started Session 59 of User osman.
+May 19 23:20:27 osmanubuntu systemd[1]: session-59.scope: Deactivated successfully.
+May 19 23:20:32 osmanubuntu systemd[1]: Started Session 60 of User osman.
+May 19 23:20:32 osmanubuntu systemd[1]: session-60.scope: Deactivated successfully.
+May 19 23:20:32 osmanubuntu systemd[1]: Started Session 61 of User osman.
+May 19 23:20:32 osmanubuntu systemd[1]: session-61.scope: Deactivated successfully.
+May 19 23:20:37 osmanubuntu systemd[1]: Started Session 62 of User osman.
+May 19 23:20:37 osmanubuntu systemd[1]: session-62.scope: Deactivated successfully.
+May 19 23:20:37 osmanubuntu systemd[1]: Started Session 63 of User osman.
+May 19 23:20:37 osmanubuntu systemd[1]: session-63.scope: Deactivated successfully.
+May 19 23:20:42 osmanubuntu systemd[1]: Started Session 64 of User osman.
+May 19 23:20:42 osmanubuntu systemd[1]: session-64.scope: Deactivated successfully.
+May 19 23:20:42 osmanubuntu systemd[1]: Started Session 65 of User osman.
+May 19 23:20:42 osmanubuntu systemd[1]: session-65.scope: Deactivated successfully.
+May 19 23:20:47 osmanubuntu systemd[1]: Started Session 66 of User osman.
+May 19 23:20:47 osmanubuntu systemd[1]: session-66.scope: Deactivated successfully.
+May 19 23:20:47 osmanubuntu systemd[1]: Started Session 67 of User osman.
+May 19 23:20:47 osmanubuntu systemd[1]: session-67.scope: Deactivated successfully.
+May 19 23:20:52 osmanubuntu systemd[1]: Started Session 68 of User osman.
+May 19 23:20:52 osmanubuntu systemd[1]: session-68.scope: Deactivated successfully.
+May 19 23:20:52 osmanubuntu systemd[1]: Started Session 69 of User osman.
+May 19 23:20:52 osmanubuntu systemd[1]: session-69.scope: Deactivated successfully.
+May 19 23:20:57 osmanubuntu systemd[1]: Started Session 70 of User osman.
+May 19 23:20:57 osmanubuntu systemd[1]: session-70.scope: Deactivated successfully.
+May 19 23:20:57 osmanubuntu systemd[1]: Started Session 71 of User osman.
+May 19 23:20:57 osmanubuntu systemd[1]: session-71.scope: Deactivated successfully.
+May 19 23:21:02 osmanubuntu systemd[1]: Started Session 72 of User osman.
+May 19 23:21:02 osmanubuntu systemd[1]: session-72.scope: Deactivated successfully.
+May 19 23:21:02 osmanubuntu systemd[1]: Started Session 73 of User osman.
+May 19 23:21:02 osmanubuntu systemd[1]: session-73.scope: Deactivated successfully.
+May 19 23:21:07 osmanubuntu systemd[1]: Started Session 74 of User osman.
+May 19 23:21:07 osmanubuntu systemd[1]: session-74.scope: Deactivated successfully.
+May 19 23:21:07 osmanubuntu systemd[1]: Started Session 75 of User osman.
+May 19 23:21:07 osmanubuntu systemd[1]: session-75.scope: Deactivated successfully.
+May 19 23:21:12 osmanubuntu systemd[1]: Started Session 76 of User osman.
+May 19 23:21:12 osmanubuntu systemd[1]: session-76.scope: Deactivated successfully.
+May 19 23:21:12 osmanubuntu systemd[1]: Started Session 77 of User osman.
+May 19 23:21:12 osmanubuntu systemd[1]: session-77.scope: Deactivated successfully.
+May 19 23:21:17 osmanubuntu systemd[1]: Started Session 78 of User osman.
+May 19 23:21:17 osmanubuntu systemd[1]: session-78.scope: Deactivated successfully.
+May 19 23:21:17 osmanubuntu systemd[1]: Started Session 79 of User osman.
+May 19 23:21:17 osmanubuntu systemd[1]: session-79.scope: Deactivated successfully.
+May 19 23:21:22 osmanubuntu systemd[1]: Started Session 80 of User osman.
+May 19 23:21:22 osmanubuntu systemd[1]: session-80.scope: Deactivated successfully.
+May 19 23:21:22 osmanubuntu systemd[1]: Started Session 81 of User osman.
+May 19 23:21:22 osmanubuntu systemd[1]: session-81.scope: Deactivated successfully.
+May 19 23:21:27 osmanubuntu systemd[1]: Started Session 82 of User osman.
+May 19 23:21:27 osmanubuntu systemd[1]: session-82.scope: Deactivated successfully.
+May 19 23:21:27 osmanubuntu systemd[1]: Started Session 83 of User osman.
+May 19 23:21:27 osmanubuntu systemd[1]: session-83.scope: Deactivated successfully.
+May 19 23:21:32 osmanubuntu systemd[1]: Started Session 84 of User osman.
+May 19 23:21:32 osmanubuntu systemd[1]: session-84.scope: Deactivated successfully.
+May 19 23:21:32 osmanubuntu systemd[1]: Started Session 85 of User osman.
+May 19 23:21:32 osmanubuntu systemd[1]: session-85.scope: Deactivated successfully.
+May 19 23:21:37 osmanubuntu systemd[1]: Started Session 86 of User osman.
+May 19 23:21:37 osmanubuntu systemd[1]: session-86.scope: Deactivated successfully.
+May 19 23:21:37 osmanubuntu systemd[1]: Started Session 87 of User osman.
+May 19 23:21:37 osmanubuntu systemd[1]: session-87.scope: Deactivated successfully.
+May 19 23:21:43 osmanubuntu systemd[1]: Started Session 88 of User osman.
+May 19 23:21:43 osmanubuntu systemd[1]: session-88.scope: Deactivated successfully.
+May 19 23:21:43 osmanubuntu systemd[1]: Started Session 89 of User osman.
+May 19 23:21:43 osmanubuntu systemd[1]: session-89.scope: Deactivated successfully.
+May 19 23:21:43 osmanubuntu systemd[1]: Started Session 90 of User osman.
+May 19 23:21:43 osmanubuntu systemd[1]: session-90.scope: Deactivated successfully.
+May 19 23:21:47 osmanubuntu systemd[1]: Started Session 91 of User osman.
+May 19 23:21:47 osmanubuntu systemd[1]: session-91.scope: Deactivated successfully.
+May 19 23:21:47 osmanubuntu systemd[1]: Started Session 92 of User osman.
+May 19 23:21:47 osmanubuntu systemd[1]: session-92.scope: Deactivated successfully.
+May 19 23:21:47 osmanubuntu systemd[1]: Started Session 93 of User osman.
+May 19 23:21:48 osmanubuntu systemd[1]: session-93.scope: Deactivated successfully.
+May 19 23:21:52 osmanubuntu systemd[1]: Started Session 94 of User osman.
+May 19 23:21:52 osmanubuntu systemd[1]: session-94.scope: Deactivated successfully.
+May 19 23:21:52 osmanubuntu systemd[1]: Started Session 95 of User osman.
+May 19 23:21:52 osmanubuntu systemd[1]: session-95.scope: Deactivated successfully.
+May 19 23:21:52 osmanubuntu systemd[1]: Started Session 96 of User osman.
+May 19 23:21:52 osmanubuntu systemd[1]: session-96.scope: Deactivated successfully.
+May 19 23:21:57 osmanubuntu systemd[1]: Started Session 97 of User osman.
+May 19 23:21:57 osmanubuntu systemd[1]: session-97.scope: Deactivated successfully.
+May 19 23:21:57 osmanubuntu systemd[1]: Started Session 98 of User osman.
+May 19 23:21:58 osmanubuntu systemd[1]: session-98.scope: Deactivated successfully.
+May 19 23:21:58 osmanubuntu systemd[1]: Started Session 99 of User osman.
+May 19 23:21:58 osmanubuntu systemd[1]: session-99.scope: Deactivated successfully.
+May 19 23:22:02 osmanubuntu systemd[1]: Started Session 100 of User osman.
+May 19 23:22:02 osmanubuntu systemd[1]: session-100.scope: Deactivated successfully.
+May 19 23:22:02 osmanubuntu systemd[1]: Started Session 101 of User osman.
+May 19 23:22:02 osmanubuntu systemd[1]: session-101.scope: Deactivated successfully.
+May 19 23:22:02 osmanubuntu systemd[1]: Started Session 102 of User osman.
+May 19 23:22:03 osmanubuntu systemd[1]: session-102.scope: Deactivated successfully.
+May 19 23:22:07 osmanubuntu systemd[1]: Started Session 103 of User osman.
+May 19 23:22:07 osmanubuntu systemd[1]: session-103.scope: Deactivated successfully.
+May 19 23:22:07 osmanubuntu systemd[1]: Started Session 104 of User osman.
+May 19 23:22:07 osmanubuntu systemd[1]: session-104.scope: Deactivated successfully.
+May 19 23:22:07 osmanubuntu systemd[1]: Started Session 105 of User osman.
+May 19 23:22:08 osmanubuntu systemd[1]: session-105.scope: Deactivated successfully.
+May 19 23:22:12 osmanubuntu systemd[1]: Started Session 106 of User osman.
+May 19 23:22:12 osmanubuntu systemd[1]: session-106.scope: Deactivated successfully.
+May 19 23:22:12 osmanubuntu systemd[1]: Started Session 107 of User osman.
+May 19 23:22:12 osmanubuntu systemd[1]: session-107.scope: Deactivated successfully.
+May 19 23:22:12 osmanubuntu systemd[1]: Started Session 108 of User osman.
+May 19 23:22:13 osmanubuntu systemd[1]: session-108.scope: Deactivated successfully.
+May 19 23:22:17 osmanubuntu systemd[1]: Started Session 109 of User osman.
+May 19 23:22:17 osmanubuntu systemd[1]: session-109.scope: Deactivated successfully.
+May 19 23:22:17 osmanubuntu systemd[1]: Started Session 110 of User osman.
+May 19 23:22:17 osmanubuntu systemd[1]: session-110.scope: Deactivated successfully.
+May 19 23:22:17 osmanubuntu systemd[1]: Started Session 111 of User osman.
+May 19 23:22:17 osmanubuntu systemd[1]: session-111.scope: Deactivated successfully.
+May 19 23:22:22 osmanubuntu systemd[1]: Started Session 112 of User osman.
+May 19 23:22:22 osmanubuntu systemd[1]: session-112.scope: Deactivated successfully.
+May 19 23:22:22 osmanubuntu systemd[1]: Started Session 113 of User osman.
+May 19 23:22:22 osmanubuntu systemd[1]: session-113.scope: Deactivated successfully.
+May 19 23:22:22 osmanubuntu systemd[1]: Started Session 114 of User osman.
+May 19 23:22:23 osmanubuntu systemd[1]: session-114.scope: Deactivated successfully.
+May 19 23:22:24 osmanubuntu systemd[1]: Started Session 115 of User osman.
+May 19 23:22:24 osmanubuntu systemd[1]: session-115.scope: Deactivated successfully.
+May 19 23:22:25 osmanubuntu systemd[1]: Started Session 116 of User osman.
+May 19 23:22:25 osmanubuntu systemd[1]: session-116.scope: Deactivated successfully.
+May 19 23:22:25 osmanubuntu systemd[1]: Started Session 117 of User osman.
+May 19 23:22:25 osmanubuntu systemd[1]: session-117.scope: Deactivated successfully.
+May 19 23:22:26 osmanubuntu systemd[1]: Started Session 118 of User osman.
+May 19 23:22:26 osmanubuntu systemd[1]: session-118.scope: Deactivated successfully.
+May 19 23:22:26 osmanubuntu systemd[1]: Started Session 119 of User osman.
+May 19 23:22:27 osmanubuntu systemd[1]: session-119.scope: Deactivated successfully.
+May 19 23:22:27 osmanubuntu systemd[1]: Started Session 120 of User osman.
+May 19 23:22:27 osmanubuntu systemd[1]: session-120.scope: Deactivated successfully.
+May 19 23:22:30 osmanubuntu systemd[1]: Started Session 121 of User osman.
+May 19 23:22:30 osmanubuntu systemd[1]: session-121.scope: Deactivated successfully.
+May 19 23:22:31 osmanubuntu systemd[1]: Started Session 122 of User osman.
+May 19 23:22:32 osmanubuntu systemd[1]: session-122.scope: Deactivated successfully.
+May 19 23:22:32 osmanubuntu systemd[1]: Started Session 123 of User osman.
+May 19 23:22:32 osmanubuntu systemd[1]: session-123.scope: Deactivated successfully.
+May 19 23:22:36 osmanubuntu systemd[1]: Started Session 124 of User osman.
+May 19 23:22:36 osmanubuntu systemd[1]: session-124.scope: Deactivated successfully.
+May 19 23:22:36 osmanubuntu systemd[1]: Started Session 125 of User osman.
+May 19 23:22:36 osmanubuntu systemd[1]: session-125.scope: Deactivated successfully.
+May 19 23:22:41 osmanubuntu systemd[1]: Started Session 126 of User osman.
+May 19 23:22:41 osmanubuntu systemd[1]: session-126.scope: Deactivated successfully.
+May 19 23:22:41 osmanubuntu systemd[1]: Started Session 127 of User osman.
+May 19 23:22:41 osmanubuntu systemd[1]: session-127.scope: Deactivated successfully.
+May 19 23:22:46 osmanubuntu systemd[1]: Started Session 128 of User osman.
+May 19 23:22:46 osmanubuntu systemd[1]: session-128.scope: Deactivated successfully.
+May 19 23:22:46 osmanubuntu systemd[1]: Started Session 129 of User osman.
+May 19 23:22:46 osmanubuntu systemd[1]: session-129.scope: Deactivated successfully.
+May 19 23:22:51 osmanubuntu systemd[1]: Started Session 130 of User osman.
+May 19 23:22:51 osmanubuntu systemd[1]: session-130.scope: Deactivated successfully.
+May 19 23:22:51 osmanubuntu systemd[1]: Started Session 131 of User osman.
+May 19 23:22:51 osmanubuntu systemd[1]: session-131.scope: Deactivated successfully.
+May 19 23:22:51 osmanubuntu systemd[1]: Started Session 132 of User osman.
+May 19 23:22:51 osmanubuntu systemd[1]: session-132.scope: Deactivated successfully.
+May 19 23:22:52 osmanubuntu systemd[1]: Started Session 133 of User osman.
+May 19 23:22:53 osmanubuntu systemd[1]: session-133.scope: Deactivated successfully.
+May 19 23:22:53 osmanubuntu systemd[1]: Started Session 134 of User osman.
+May 19 23:22:53 osmanubuntu systemd[1]: session-134.scope: Deactivated successfully.
+May 19 23:22:53 osmanubuntu systemd[1]: Started Session 135 of User osman.
+May 19 23:22:53 osmanubuntu systemd[1]: session-135.scope: Deactivated successfully.
+May 19 23:22:57 osmanubuntu systemd[1]: Started Session 136 of User osman.
+May 19 23:22:57 osmanubuntu systemd[1]: session-136.scope: Deactivated successfully.
+May 19 23:22:57 osmanubuntu systemd[1]: Started Session 137 of User osman.
+May 19 23:22:57 osmanubuntu systemd[1]: session-137.scope: Deactivated successfully.
+May 19 23:22:57 osmanubuntu systemd[1]: Started Session 138 of User osman.
+May 19 23:22:57 osmanubuntu systemd[1]: session-138.scope: Deactivated successfully.
+May 19 23:23:02 osmanubuntu systemd[1]: Started Session 139 of User osman.
+May 19 23:23:02 osmanubuntu systemd[1]: session-139.scope: Deactivated successfully.
+May 19 23:23:02 osmanubuntu systemd[1]: Started Session 140 of User osman.
+May 19 23:23:02 osmanubuntu systemd[1]: session-140.scope: Deactivated successfully.
+May 19 23:23:03 osmanubuntu systemd[1]: Started Session 141 of User osman.
+May 19 23:23:03 osmanubuntu systemd[1]: session-141.scope: Deactivated successfully.
+May 19 23:23:07 osmanubuntu systemd[1]: Started Session 142 of User osman.
+May 19 23:23:07 osmanubuntu systemd[1]: session-142.scope: Deactivated successfully.
+May 19 23:23:07 osmanubuntu systemd[1]: Started Session 143 of User osman.
+May 19 23:23:07 osmanubuntu systemd[1]: session-143.scope: Deactivated successfully.
+May 19 23:23:07 osmanubuntu systemd[1]: Started Session 144 of User osman.
+May 19 23:23:07 osmanubuntu systemd[1]: session-144.scope: Deactivated successfully.
+May 19 23:23:12 osmanubuntu systemd[1]: Started Session 145 of User osman.
+May 19 23:23:12 osmanubuntu systemd[1]: session-145.scope: Deactivated successfully.
+May 19 23:23:12 osmanubuntu systemd[1]: Started Session 146 of User osman.
+May 19 23:23:12 osmanubuntu systemd[1]: session-146.scope: Deactivated successfully.
+May 19 23:23:12 osmanubuntu systemd[1]: Started Session 147 of User osman.
+May 19 23:23:12 osmanubuntu systemd[1]: session-147.scope: Deactivated successfully.
+May 19 23:23:17 osmanubuntu systemd[1]: Started Session 148 of User osman.
+May 19 23:23:17 osmanubuntu systemd[1]: session-148.scope: Deactivated successfully.
+May 19 23:23:17 osmanubuntu systemd[1]: Started Session 149 of User osman.
+May 19 23:23:17 osmanubuntu systemd[1]: session-149.scope: Deactivated successfully.
+May 19 23:23:17 osmanubuntu systemd[1]: Started Session 150 of User osman.
+May 19 23:23:17 osmanubuntu systemd[1]: session-150.scope: Deactivated successfully.
+May 19 23:23:22 osmanubuntu systemd[1]: Started Session 151 of User osman.
+May 19 23:23:22 osmanubuntu systemd[1]: session-151.scope: Deactivated successfully.
+May 19 23:23:22 osmanubuntu systemd[1]: Started Session 152 of User osman.
+May 19 23:23:22 osmanubuntu systemd[1]: session-152.scope: Deactivated successfully.
+May 19 23:23:22 osmanubuntu systemd[1]: Started Session 153 of User osman.
+May 19 23:23:22 osmanubuntu systemd[1]: session-153.scope: Deactivated successfully.
+May 19 23:23:27 osmanubuntu systemd[1]: Started Session 154 of User osman.
+May 19 23:23:27 osmanubuntu systemd[1]: session-154.scope: Deactivated successfully.
+May 19 23:23:27 osmanubuntu systemd[1]: Started Session 155 of User osman.
+May 19 23:23:27 osmanubuntu systemd[1]: session-155.scope: Deactivated successfully.
+May 19 23:23:27 osmanubuntu systemd[1]: Started Session 156 of User osman.
+May 19 23:23:27 osmanubuntu systemd[1]: session-156.scope: Deactivated successfully.
+May 19 23:23:28 osmanubuntu systemd[1]: Started Session 157 of User osman.
+May 19 23:23:28 osmanubuntu systemd[1]: session-157.scope: Deactivated successfully.
+May 19 23:23:28 osmanubuntu systemd[1]: Started Session 158 of User osman.
+May 19 23:23:29 osmanubuntu systemd[1]: session-158.scope: Deactivated successfully.
+May 19 23:23:29 osmanubuntu systemd[1]: Started Session 159 of User osman.
+May 19 23:23:29 osmanubuntu systemd[1]: session-159.scope: Deactivated successfully.
+May 19 23:23:30 osmanubuntu systemd[1]: Started Session 160 of User osman.
+May 19 23:23:30 osmanubuntu systemd[1]: session-160.scope: Deactivated successfully.
+May 19 23:23:30 osmanubuntu systemd[1]: Started Session 161 of User osman.
+May 19 23:23:30 osmanubuntu systemd[1]: session-161.scope: Deactivated successfully.
+May 19 23:23:34 osmanubuntu systemd[1]: Started Session 162 of User osman.
+May 19 23:23:34 osmanubuntu systemd[1]: session-162.scope: Deactivated successfully.
+May 19 23:23:34 osmanubuntu systemd[1]: Started Session 163 of User osman.
+May 19 23:23:34 osmanubuntu systemd[1]: session-163.scope: Deactivated successfully.
+May 19 23:23:34 osmanubuntu systemd[1]: Started Session 164 of User osman.
+May 19 23:23:34 osmanubuntu systemd[1]: session-164.scope: Deactivated successfully.
+May 19 23:23:39 osmanubuntu systemd[1]: Started Session 165 of User osman.
+May 19 23:23:39 osmanubuntu systemd[1]: session-165.scope: Deactivated successfully.
+May 19 23:23:39 osmanubuntu systemd[1]: Started Session 166 of User osman.
+May 19 23:23:39 osmanubuntu systemd[1]: session-166.scope: Deactivated successfully.
+May 19 23:23:44 osmanubuntu systemd[1]: Started Session 167 of User osman.
+May 19 23:23:44 osmanubuntu systemd[1]: session-167.scope: Deactivated successfully.
+May 19 23:23:44 osmanubuntu systemd[1]: Started Session 168 of User osman.
+May 19 23:23:44 osmanubuntu systemd[1]: session-168.scope: Deactivated successfully.
+May 19 23:23:49 osmanubuntu systemd[1]: Started Session 169 of User osman.
+May 19 23:23:49 osmanubuntu systemd[1]: session-169.scope: Deactivated successfully.
+May 19 23:23:49 osmanubuntu systemd[1]: Started Session 170 of User osman.
+May 19 23:23:49 osmanubuntu systemd[1]: session-170.scope: Deactivated successfully.
+May 19 23:23:54 osmanubuntu systemd[1]: Started Session 171 of User osman.
+May 19 23:23:54 osmanubuntu systemd[1]: session-171.scope: Deactivated successfully.
+May 19 23:23:54 osmanubuntu systemd[1]: Started Session 172 of User osman.
+May 19 23:23:54 osmanubuntu systemd[1]: session-172.scope: Deactivated successfully.
+May 19 23:23:59 osmanubuntu systemd[1]: Started Session 173 of User osman.
+May 19 23:23:59 osmanubuntu systemd[1]: session-173.scope: Deactivated successfully.
+May 19 23:23:59 osmanubuntu systemd[1]: Started Session 174 of User osman.
+May 19 23:23:59 osmanubuntu systemd[1]: session-174.scope: Deactivated successfully.
+May 19 23:24:04 osmanubuntu systemd[1]: Started Session 175 of User osman.
+May 19 23:24:04 osmanubuntu systemd[1]: session-175.scope: Deactivated successfully.
+May 19 23:24:04 osmanubuntu systemd[1]: Started Session 176 of User osman.
+May 19 23:24:04 osmanubuntu systemd[1]: session-176.scope: Deactivated successfully.
+May 19 23:24:09 osmanubuntu systemd[1]: Started Session 177 of User osman.
+May 19 23:24:09 osmanubuntu systemd[1]: session-177.scope: Deactivated successfully.
+May 19 23:24:09 osmanubuntu systemd[1]: Started Session 178 of User osman.
+May 19 23:24:09 osmanubuntu systemd[1]: session-178.scope: Deactivated successfully.
+May 19 23:24:14 osmanubuntu systemd[1]: Started Session 179 of User osman.
+May 19 23:24:14 osmanubuntu systemd[1]: session-179.scope: Deactivated successfully.
+May 19 23:24:14 osmanubuntu systemd[1]: Started Session 180 of User osman.
+May 19 23:24:14 osmanubuntu systemd[1]: session-180.scope: Deactivated successfully.
+May 19 23:24:19 osmanubuntu systemd[1]: Started Session 181 of User osman.
+May 19 23:24:19 osmanubuntu systemd[1]: session-181.scope: Deactivated successfully.
+May 19 23:24:19 osmanubuntu systemd[1]: Started Session 182 of User osman.
+May 19 23:24:19 osmanubuntu systemd[1]: session-182.scope: Deactivated successfully.
+May 19 23:24:24 osmanubuntu systemd[1]: Started Session 183 of User osman.
+May 19 23:24:24 osmanubuntu systemd[1]: session-183.scope: Deactivated successfully.
+May 19 23:24:24 osmanubuntu systemd[1]: Started Session 184 of User osman.
+May 19 23:24:24 osmanubuntu systemd[1]: session-184.scope: Deactivated successfully.
+May 19 23:24:29 osmanubuntu systemd[1]: Started Session 185 of User osman.
+May 19 23:24:29 osmanubuntu systemd[1]: session-185.scope: Deactivated successfully.
+May 19 23:24:29 osmanubuntu systemd[1]: Started Session 186 of User osman.
+May 19 23:24:29 osmanubuntu systemd[1]: session-186.scope: Deactivated successfully.
+May 19 23:24:34 osmanubuntu systemd[1]: Started Session 187 of User osman.
+May 19 23:24:34 osmanubuntu systemd[1]: session-187.scope: Deactivated successfully.
+May 19 23:24:34 osmanubuntu systemd[1]: Started Session 188 of User osman.
+May 19 23:24:34 osmanubuntu systemd[1]: session-188.scope: Deactivated successfully.
+May 19 23:24:39 osmanubuntu systemd[1]: Started Session 189 of User osman.
+May 19 23:24:39 osmanubuntu systemd[1]: session-189.scope: Deactivated successfully.
+May 19 23:24:39 osmanubuntu systemd[1]: Started Session 190 of User osman.
+May 19 23:24:39 osmanubuntu systemd[1]: session-190.scope: Deactivated successfully.
+May 19 23:24:39 osmanubuntu systemd[1]: Started Session 191 of User osman.
+May 19 23:24:39 osmanubuntu systemd[1]: session-191.scope: Deactivated successfully.
+May 19 23:24:44 osmanubuntu systemd[1]: Started Session 192 of User osman.
+May 19 23:24:44 osmanubuntu systemd[1]: session-192.scope: Deactivated successfully.
+May 19 23:24:44 osmanubuntu systemd[1]: Started Session 193 of User osman.
+May 19 23:24:44 osmanubuntu systemd[1]: session-193.scope: Deactivated successfully.
+May 19 23:24:44 osmanubuntu systemd[1]: Started Session 194 of User osman.
+May 19 23:24:44 osmanubuntu systemd[1]: session-194.scope: Deactivated successfully.
+May 19 23:24:49 osmanubuntu systemd[1]: Started Session 195 of User osman.
+May 19 23:24:49 osmanubuntu systemd[1]: session-195.scope: Deactivated successfully.
+May 19 23:24:49 osmanubuntu systemd[1]: Started Session 196 of User osman.
+May 19 23:24:49 osmanubuntu systemd[1]: session-196.scope: Deactivated successfully.
+May 19 23:24:49 osmanubuntu systemd[1]: Started Session 197 of User osman.
+May 19 23:24:49 osmanubuntu systemd[1]: session-197.scope: Deactivated successfully.
+May 19 23:24:54 osmanubuntu systemd[1]: Started Session 198 of User osman.
+May 19 23:24:54 osmanubuntu systemd[1]: session-198.scope: Deactivated successfully.
+May 19 23:24:54 osmanubuntu systemd[1]: Started Session 199 of User osman.
+May 19 23:24:54 osmanubuntu systemd[1]: session-199.scope: Deactivated successfully.
+May 19 23:24:54 osmanubuntu systemd[1]: Started Session 200 of User osman.
+May 19 23:24:54 osmanubuntu systemd[1]: session-200.scope: Deactivated successfully.
+May 19 23:24:59 osmanubuntu systemd[1]: Started Session 201 of User osman.
+May 19 23:24:59 osmanubuntu systemd[1]: session-201.scope: Deactivated successfully.
+May 19 23:24:59 osmanubuntu systemd[1]: Started Session 202 of User osman.
+May 19 23:24:59 osmanubuntu systemd[1]: session-202.scope: Deactivated successfully.
+May 19 23:24:59 osmanubuntu systemd[1]: Started Session 203 of User osman.
+May 19 23:24:59 osmanubuntu systemd[1]: session-203.scope: Deactivated successfully.
+May 19 23:25:04 osmanubuntu systemd[1]: Started Session 204 of User osman.
+May 19 23:25:04 osmanubuntu systemd[1]: session-204.scope: Deactivated successfully.
+May 19 23:25:04 osmanubuntu systemd[1]: Started Session 205 of User osman.
+May 19 23:25:04 osmanubuntu systemd[1]: session-205.scope: Deactivated successfully.
+May 19 23:25:04 osmanubuntu systemd[1]: Started Session 206 of User osman.
+May 19 23:25:04 osmanubuntu systemd[1]: session-206.scope: Deactivated successfully.
+May 19 23:25:09 osmanubuntu systemd[1]: Started Session 207 of User osman.
+May 19 23:25:09 osmanubuntu systemd[1]: session-207.scope: Deactivated successfully.
+May 19 23:25:09 osmanubuntu systemd[1]: Started Session 208 of User osman.
+May 19 23:25:09 osmanubuntu systemd[1]: session-208.scope: Deactivated successfully.
+May 19 23:25:09 osmanubuntu systemd[1]: Started Session 209 of User osman.
+May 19 23:25:09 osmanubuntu systemd[1]: session-209.scope: Deactivated successfully.
+May 19 23:25:12 osmanubuntu systemd[1]: Started Session 210 of User osman.
+May 19 23:25:12 osmanubuntu systemd[1]: session-210.scope: Deactivated successfully.
+May 19 23:25:13 osmanubuntu systemd[1]: Started Session 211 of User osman.
+May 19 23:25:13 osmanubuntu systemd[1]: session-211.scope: Deactivated successfully.
+May 19 23:25:13 osmanubuntu systemd[1]: Started Session 212 of User osman.
+May 19 23:25:13 osmanubuntu systemd[1]: session-212.scope: Deactivated successfully.
+May 19 23:25:17 osmanubuntu systemd[1]: Started Session 213 of User osman.
+May 19 23:25:17 osmanubuntu systemd[1]: session-213.scope: Deactivated successfully.
+May 19 23:25:17 osmanubuntu systemd[1]: Started Session 214 of User osman.
+May 19 23:25:17 osmanubuntu systemd[1]: session-214.scope: Deactivated successfully.
+May 19 23:25:22 osmanubuntu systemd[1]: Started Session 215 of User osman.
+May 19 23:25:22 osmanubuntu systemd[1]: session-215.scope: Deactivated successfully.
+May 19 23:25:22 osmanubuntu systemd[1]: Started Session 216 of User osman.
+May 19 23:25:22 osmanubuntu systemd[1]: session-216.scope: Deactivated successfully.
+May 19 23:25:27 osmanubuntu systemd[1]: Started Session 217 of User osman.
+May 19 23:25:27 osmanubuntu systemd[1]: session-217.scope: Deactivated successfully.
+May 19 23:25:27 osmanubuntu systemd[1]: Started Session 218 of User osman.
+May 19 23:25:27 osmanubuntu systemd[1]: session-218.scope: Deactivated successfully.
+May 19 23:25:32 osmanubuntu systemd[1]: Started Session 219 of User osman.
+May 19 23:25:32 osmanubuntu systemd[1]: session-219.scope: Deactivated successfully.
+May 19 23:25:32 osmanubuntu systemd[1]: Started Session 220 of User osman.
+May 19 23:25:32 osmanubuntu systemd[1]: session-220.scope: Deactivated successfully.
+May 19 23:25:37 osmanubuntu systemd[1]: Started Session 221 of User osman.
+May 19 23:25:37 osmanubuntu systemd[1]: session-221.scope: Deactivated successfully.
+May 19 23:25:37 osmanubuntu systemd[1]: Started Session 222 of User osman.
+May 19 23:25:37 osmanubuntu systemd[1]: session-222.scope: Deactivated successfully.
+May 19 23:25:42 osmanubuntu systemd[1]: Started Session 223 of User osman.
+May 19 23:25:42 osmanubuntu systemd[1]: session-223.scope: Deactivated successfully.
+May 19 23:25:42 osmanubuntu systemd[1]: Started Session 224 of User osman.
+May 19 23:25:42 osmanubuntu systemd[1]: session-224.scope: Deactivated successfully.
+May 19 23:25:47 osmanubuntu systemd[1]: Started Session 225 of User osman.
+May 19 23:25:47 osmanubuntu systemd[1]: session-225.scope: Deactivated successfully.
+May 19 23:25:47 osmanubuntu systemd[1]: Started Session 226 of User osman.
+May 19 23:25:47 osmanubuntu systemd[1]: session-226.scope: Deactivated successfully.
+May 19 23:25:52 osmanubuntu systemd[1]: Started Session 227 of User osman.
+May 19 23:25:52 osmanubuntu systemd[1]: session-227.scope: Deactivated successfully.
+May 19 23:25:52 osmanubuntu systemd[1]: Started Session 228 of User osman.
+May 19 23:25:52 osmanubuntu systemd[1]: session-228.scope: Deactivated successfully.
+May 19 23:25:57 osmanubuntu systemd[1]: Started Session 229 of User osman.
+May 19 23:25:57 osmanubuntu systemd[1]: session-229.scope: Deactivated successfully.
+May 19 23:25:57 osmanubuntu systemd[1]: Started Session 230 of User osman.
+May 19 23:25:57 osmanubuntu systemd[1]: session-230.scope: Deactivated successfully.
+May 19 23:26:02 osmanubuntu systemd[1]: Started Session 231 of User osman.
+May 19 23:26:02 osmanubuntu systemd[1]: session-231.scope: Deactivated successfully.
+May 19 23:26:02 osmanubuntu systemd[1]: Started Session 232 of User osman.
+May 19 23:26:02 osmanubuntu systemd[1]: session-232.scope: Deactivated successfully.
+May 19 23:26:07 osmanubuntu systemd[1]: Started Session 233 of User osman.
+May 19 23:26:07 osmanubuntu systemd[1]: session-233.scope: Deactivated successfully.
+May 19 23:26:07 osmanubuntu systemd[1]: Started Session 234 of User osman.
+May 19 23:26:07 osmanubuntu systemd[1]: session-234.scope: Deactivated successfully.
+May 19 23:26:12 osmanubuntu systemd[1]: Started Session 235 of User osman.
+May 19 23:26:12 osmanubuntu systemd[1]: session-235.scope: Deactivated successfully.
+May 19 23:26:12 osmanubuntu systemd[1]: Started Session 236 of User osman.
+May 19 23:26:12 osmanubuntu systemd[1]: session-236.scope: Deactivated successfully.
+May 19 23:26:17 osmanubuntu systemd[1]: Started Session 237 of User osman.
+May 19 23:26:17 osmanubuntu systemd[1]: session-237.scope: Deactivated successfully.
+May 19 23:26:17 osmanubuntu systemd[1]: Started Session 238 of User osman.
+May 19 23:26:17 osmanubuntu systemd[1]: session-238.scope: Deactivated successfully.
+May 19 23:26:22 osmanubuntu systemd[1]: Started Session 239 of User osman.
+May 19 23:26:22 osmanubuntu systemd[1]: session-239.scope: Deactivated successfully.
+May 19 23:26:22 osmanubuntu systemd[1]: Started Session 240 of User osman.
+May 19 23:26:22 osmanubuntu systemd[1]: session-240.scope: Deactivated successfully.
+May 19 23:26:27 osmanubuntu systemd[1]: Started Session 241 of User osman.
+May 19 23:26:27 osmanubuntu systemd[1]: session-241.scope: Deactivated successfully.
+May 19 23:26:27 osmanubuntu systemd[1]: Started Session 242 of User osman.
+May 19 23:26:27 osmanubuntu systemd[1]: session-242.scope: Deactivated successfully.
+May 19 23:26:32 osmanubuntu systemd[1]: Started Session 243 of User osman.
+May 19 23:26:32 osmanubuntu systemd[1]: session-243.scope: Deactivated successfully.
+May 19 23:26:32 osmanubuntu systemd[1]: Started Session 244 of User osman.
+May 19 23:26:32 osmanubuntu systemd[1]: session-244.scope: Deactivated successfully.
+May 19 23:26:37 osmanubuntu systemd[1]: Started Session 245 of User osman.
+May 19 23:26:37 osmanubuntu systemd[1]: session-245.scope: Deactivated successfully.
+May 19 23:26:37 osmanubuntu systemd[1]: Started Session 246 of User osman.
+May 19 23:26:37 osmanubuntu systemd[1]: session-246.scope: Deactivated successfully.
+May 19 23:26:42 osmanubuntu systemd[1]: Started Session 247 of User osman.
+May 19 23:26:42 osmanubuntu systemd[1]: session-247.scope: Deactivated successfully.
+May 19 23:26:42 osmanubuntu systemd[1]: Started Session 248 of User osman.
+May 19 23:26:42 osmanubuntu systemd[1]: session-248.scope: Deactivated successfully.
+May 19 23:26:47 osmanubuntu systemd[1]: Started Session 249 of User osman.
+May 19 23:26:47 osmanubuntu systemd[1]: session-249.scope: Deactivated successfully.
+May 19 23:26:47 osmanubuntu systemd[1]: Started Session 250 of User osman.
+May 19 23:26:47 osmanubuntu systemd[1]: session-250.scope: Deactivated successfully.
+May 19 23:26:52 osmanubuntu systemd[1]: Started Session 251 of User osman.
+May 19 23:26:52 osmanubuntu systemd[1]: session-251.scope: Deactivated successfully.
+May 19 23:26:52 osmanubuntu systemd[1]: Started Session 252 of User osman.
+May 19 23:26:52 osmanubuntu systemd[1]: session-252.scope: Deactivated successfully.
+May 19 23:26:57 osmanubuntu systemd[1]: Started Session 253 of User osman.
+May 19 23:26:57 osmanubuntu systemd[1]: session-253.scope: Deactivated successfully.
+May 19 23:26:57 osmanubuntu systemd[1]: Started Session 254 of User osman.
+May 19 23:26:57 osmanubuntu systemd[1]: session-254.scope: Deactivated successfully.
+May 19 23:27:02 osmanubuntu systemd[1]: Started Session 255 of User osman.
+May 19 23:27:02 osmanubuntu systemd[1]: session-255.scope: Deactivated successfully.
+May 19 23:27:02 osmanubuntu systemd[1]: Started Session 256 of User osman.
+May 19 23:27:02 osmanubuntu systemd[1]: session-256.scope: Deactivated successfully.
+May 19 23:27:07 osmanubuntu systemd[1]: Started Session 257 of User osman.
+May 19 23:27:07 osmanubuntu systemd[1]: session-257.scope: Deactivated successfully.
+May 19 23:27:07 osmanubuntu systemd[1]: Started Session 258 of User osman.
+May 19 23:27:07 osmanubuntu systemd[1]: session-258.scope: Deactivated successfully.
+May 19 23:27:12 osmanubuntu systemd[1]: Started Session 259 of User osman.
+May 19 23:27:12 osmanubuntu systemd[1]: session-259.scope: Deactivated successfully.
+May 19 23:27:12 osmanubuntu systemd[1]: Started Session 260 of User osman.
+May 19 23:27:12 osmanubuntu systemd[1]: session-260.scope: Deactivated successfully.
+May 19 23:27:17 osmanubuntu systemd[1]: Started Session 261 of User osman.
+May 19 23:27:17 osmanubuntu systemd[1]: session-261.scope: Deactivated successfully.
+May 19 23:27:17 osmanubuntu systemd[1]: Started Session 262 of User osman.
+May 19 23:27:17 osmanubuntu systemd[1]: session-262.scope: Deactivated successfully.
+May 19 23:27:22 osmanubuntu systemd[1]: Started Session 263 of User osman.
+May 19 23:27:22 osmanubuntu systemd[1]: session-263.scope: Deactivated successfully.
+May 19 23:27:22 osmanubuntu systemd[1]: Started Session 264 of User osman.
+May 19 23:27:22 osmanubuntu systemd[1]: session-264.scope: Deactivated successfully.
+May 19 23:27:27 osmanubuntu systemd[1]: Started Session 265 of User osman.
+May 19 23:27:27 osmanubuntu systemd[1]: session-265.scope: Deactivated successfully.
+May 19 23:27:27 osmanubuntu systemd[1]: Started Session 266 of User osman.
+May 19 23:27:27 osmanubuntu systemd[1]: session-266.scope: Deactivated successfully.
+May 19 23:27:32 osmanubuntu systemd[1]: Started Session 267 of User osman.
+May 19 23:27:32 osmanubuntu systemd[1]: session-267.scope: Deactivated successfully.
+May 19 23:27:32 osmanubuntu systemd[1]: Started Session 268 of User osman.
+May 19 23:27:32 osmanubuntu systemd[1]: session-268.scope: Deactivated successfully.
+May 19 23:27:37 osmanubuntu systemd[1]: Started Session 269 of User osman.
+May 19 23:27:37 osmanubuntu systemd[1]: session-269.scope: Deactivated successfully.
+May 19 23:27:37 osmanubuntu systemd[1]: Started Session 270 of User osman.
+May 19 23:27:37 osmanubuntu systemd[1]: session-270.scope: Deactivated successfully.
+May 19 23:27:42 osmanubuntu systemd[1]: Started Session 271 of User osman.
+May 19 23:27:42 osmanubuntu systemd[1]: session-271.scope: Deactivated successfully.
+May 19 23:27:42 osmanubuntu systemd[1]: Started Session 272 of User osman.
+May 19 23:27:42 osmanubuntu systemd[1]: session-272.scope: Deactivated successfully.
+May 19 23:27:47 osmanubuntu systemd[1]: Started Session 273 of User osman.
+May 19 23:27:47 osmanubuntu systemd[1]: session-273.scope: Deactivated successfully.
+May 19 23:27:47 osmanubuntu systemd[1]: Started Session 274 of User osman.
+May 19 23:27:47 osmanubuntu systemd[1]: session-274.scope: Deactivated successfully.
+May 19 23:27:52 osmanubuntu systemd[1]: Started Session 275 of User osman.
+May 19 23:27:52 osmanubuntu systemd[1]: session-275.scope: Deactivated successfully.
+May 19 23:27:52 osmanubuntu systemd[1]: Started Session 276 of User osman.
+May 19 23:27:52 osmanubuntu systemd[1]: session-276.scope: Deactivated successfully.
+May 19 23:27:57 osmanubuntu systemd[1]: Started Session 277 of User osman.
+May 19 23:27:57 osmanubuntu systemd[1]: session-277.scope: Deactivated successfully.
+May 19 23:27:57 osmanubuntu systemd[1]: Started Session 278 of User osman.
+May 19 23:27:57 osmanubuntu systemd[1]: session-278.scope: Deactivated successfully.
+May 19 23:28:02 osmanubuntu systemd[1]: Started Session 279 of User osman.
+May 19 23:28:02 osmanubuntu systemd[1]: session-279.scope: Deactivated successfully.
+May 19 23:28:02 osmanubuntu systemd[1]: Started Session 280 of User osman.
+May 19 23:28:02 osmanubuntu systemd[1]: session-280.scope: Deactivated successfully.
+May 19 23:28:07 osmanubuntu systemd[1]: Started Session 281 of User osman.
+May 19 23:28:07 osmanubuntu systemd[1]: session-281.scope: Deactivated successfully.
+May 19 23:28:07 osmanubuntu systemd[1]: Started Session 282 of User osman.
+May 19 23:28:07 osmanubuntu systemd[1]: session-282.scope: Deactivated successfully.
+May 19 23:28:16 osmanubuntu systemd[1]: Started Session 283 of User osman.
+May 19 23:28:17 osmanubuntu systemd[1]: session-283.scope: Deactivated successfully.
+May 19 23:28:17 osmanubuntu systemd[1]: Started Session 284 of User osman.
+May 19 23:28:17 osmanubuntu systemd[1]: session-284.scope: Deactivated successfully.
+May 19 23:28:17 osmanubuntu systemd[1]: Started Session 285 of User osman.
+May 19 23:28:17 osmanubuntu systemd[1]: session-285.scope: Deactivated successfully.
+May 19 23:28:21 osmanubuntu systemd[1]: Started Session 286 of User osman.
+May 19 23:28:21 osmanubuntu systemd[1]: session-286.scope: Deactivated successfully.
+May 19 23:28:21 osmanubuntu systemd[1]: Started Session 287 of User osman.
+May 19 23:28:21 osmanubuntu systemd[1]: session-287.scope: Deactivated successfully.
+May 19 23:28:26 osmanubuntu systemd[1]: Starting Cleanup of Temporary Directories...
+May 19 23:28:26 osmanubuntu systemd[1]: Started Session 288 of User osman.
+May 19 23:28:26 osmanubuntu systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+May 19 23:28:26 osmanubuntu systemd[1]: Finished Cleanup of Temporary Directories.
+May 19 23:28:26 osmanubuntu systemd[1]: session-288.scope: Deactivated successfully.
+May 19 23:28:26 osmanubuntu systemd[1]: Started Session 289 of User osman.
+May 19 23:28:26 osmanubuntu systemd[1]: session-289.scope: Deactivated successfully.
+May 19 23:28:31 osmanubuntu systemd[1]: Started Session 290 of User osman.
+May 19 23:28:31 osmanubuntu systemd[1]: session-290.scope: Deactivated successfully.
+May 19 23:28:31 osmanubuntu systemd[1]: Started Session 291 of User osman.
+May 19 23:28:31 osmanubuntu systemd[1]: session-291.scope: Deactivated successfully.
+May 19 23:28:36 osmanubuntu systemd[1]: Started Session 292 of User osman.
+May 19 23:28:36 osmanubuntu systemd[1]: session-292.scope: Deactivated successfully.
+May 19 23:28:36 osmanubuntu systemd[1]: Started Session 293 of User osman.
+May 19 23:28:36 osmanubuntu systemd[1]: session-293.scope: Deactivated successfully.
+May 19 23:28:41 osmanubuntu systemd[1]: Started Session 294 of User osman.
+May 19 23:28:41 osmanubuntu systemd[1]: session-294.scope: Deactivated successfully.
+May 19 23:28:41 osmanubuntu systemd[1]: Started Session 295 of User osman.
+May 19 23:28:41 osmanubuntu systemd[1]: session-295.scope: Deactivated successfully.
+May 19 23:28:46 osmanubuntu systemd[1]: Started Session 296 of User osman.
+May 19 23:28:46 osmanubuntu systemd[1]: session-296.scope: Deactivated successfully.
+May 19 23:28:46 osmanubuntu systemd[1]: Started Session 297 of User osman.
+May 19 23:28:46 osmanubuntu systemd[1]: session-297.scope: Deactivated successfully.
+May 19 23:28:47 osmanubuntu systemd[1]: Started Session 298 of User osman.
+May 19 23:28:47 osmanubuntu systemd[1]: session-298.scope: Deactivated successfully.
+May 19 23:28:47 osmanubuntu systemd[1]: Started Session 299 of User osman.
+May 19 23:28:47 osmanubuntu systemd[1]: session-299.scope: Deactivated successfully.
+May 19 23:28:47 osmanubuntu systemd[1]: Started Session 300 of User osman.
+May 19 23:28:47 osmanubuntu systemd[1]: session-300.scope: Deactivated successfully.
+May 19 23:28:51 osmanubuntu systemd[1]: Started Session 301 of User osman.
+May 19 23:28:51 osmanubuntu systemd[1]: session-301.scope: Deactivated successfully.
+May 19 23:28:51 osmanubuntu systemd[1]: Started Session 302 of User osman.
+May 19 23:28:51 osmanubuntu systemd[1]: session-302.scope: Deactivated successfully.
+May 19 23:28:56 osmanubuntu systemd[1]: Started Session 303 of User osman.
+May 19 23:28:56 osmanubuntu systemd[1]: session-303.scope: Deactivated successfully.
+May 19 23:28:56 osmanubuntu systemd[1]: Started Session 304 of User osman.
+May 19 23:28:56 osmanubuntu systemd[1]: session-304.scope: Deactivated successfully.
+May 19 23:29:01 osmanubuntu systemd[1]: Started Session 305 of User osman.
+May 19 23:29:01 osmanubuntu systemd[1]: session-305.scope: Deactivated successfully.
+May 19 23:29:01 osmanubuntu systemd[1]: Started Session 306 of User osman.
+May 19 23:29:01 osmanubuntu systemd[1]: session-306.scope: Deactivated successfully.
+May 19 23:29:05 osmanubuntu systemd[1]: Started Session 307 of User osman.
+May 19 23:29:05 osmanubuntu systemd[1]: session-307.scope: Deactivated successfully.
+May 19 23:29:06 osmanubuntu systemd[1]: Started Session 308 of User osman.
+May 19 23:29:06 osmanubuntu systemd[1]: session-308.scope: Deactivated successfully.
+May 19 23:29:06 osmanubuntu systemd[1]: Started Session 309 of User osman.
+May 19 23:29:06 osmanubuntu systemd[1]: session-309.scope: Deactivated successfully.
+May 19 23:29:07 osmanubuntu systemd[1]: Started Session 310 of User osman.
+May 19 23:29:07 osmanubuntu systemd[1]: session-310.scope: Deactivated successfully.
+May 19 23:29:11 osmanubuntu systemd[1]: Started Session 311 of User osman.
+May 19 23:29:11 osmanubuntu systemd[1]: session-311.scope: Deactivated successfully.
+May 19 23:29:11 osmanubuntu systemd[1]: Started Session 312 of User osman.
+May 19 23:29:11 osmanubuntu systemd[1]: session-312.scope: Deactivated successfully.
+May 19 23:29:11 osmanubuntu systemd[1]: Started Session 313 of User osman.
+May 19 23:29:11 osmanubuntu systemd[1]: session-313.scope: Deactivated successfully.
+May 19 23:29:16 osmanubuntu systemd[1]: Started Session 314 of User osman.
+May 19 23:29:16 osmanubuntu systemd[1]: session-314.scope: Deactivated successfully.
+May 19 23:29:16 osmanubuntu systemd[1]: Started Session 315 of User osman.
+May 19 23:29:16 osmanubuntu systemd[1]: session-315.scope: Deactivated successfully.
+May 19 23:29:16 osmanubuntu systemd[1]: Started Session 316 of User osman.
+May 19 23:29:16 osmanubuntu systemd[1]: session-316.scope: Deactivated successfully.
+May 19 23:29:21 osmanubuntu systemd[1]: Started Session 317 of User osman.
+May 19 23:29:21 osmanubuntu systemd[1]: session-317.scope: Deactivated successfully.
+May 19 23:29:21 osmanubuntu systemd[1]: Started Session 318 of User osman.
+May 19 23:29:21 osmanubuntu systemd[1]: session-318.scope: Deactivated successfully.
+May 19 23:29:21 osmanubuntu systemd[1]: Started Session 319 of User osman.
+May 19 23:29:21 osmanubuntu systemd[1]: session-319.scope: Deactivated successfully.
+May 19 23:29:26 osmanubuntu systemd[1]: Started Session 320 of User osman.
+May 19 23:29:26 osmanubuntu systemd[1]: session-320.scope: Deactivated successfully.
+May 19 23:29:26 osmanubuntu systemd[1]: Started Session 321 of User osman.
+May 19 23:29:26 osmanubuntu systemd[1]: session-321.scope: Deactivated successfully.
+May 19 23:29:26 osmanubuntu systemd[1]: Started Session 322 of User osman.
+May 19 23:29:26 osmanubuntu systemd[1]: session-322.scope: Deactivated successfully.
+May 19 23:29:31 osmanubuntu systemd[1]: Started Session 323 of User osman.
+May 19 23:29:31 osmanubuntu systemd[1]: session-323.scope: Deactivated successfully.
+May 19 23:29:31 osmanubuntu systemd[1]: Started Session 324 of User osman.
+May 19 23:29:31 osmanubuntu systemd[1]: session-324.scope: Deactivated successfully.
+May 19 23:29:31 osmanubuntu systemd[1]: Started Session 325 of User osman.
+May 19 23:29:31 osmanubuntu systemd[1]: session-325.scope: Deactivated successfully.
+May 19 23:29:37 osmanubuntu systemd[1]: Started Session 326 of User osman.
+May 19 23:29:37 osmanubuntu systemd[1]: session-326.scope: Deactivated successfully.
+May 19 23:29:37 osmanubuntu systemd[1]: Started Session 327 of User osman.
+May 19 23:29:37 osmanubuntu systemd[1]: session-327.scope: Deactivated successfully.
+May 19 23:29:37 osmanubuntu systemd[1]: Started Session 328 of User osman.
+May 19 23:29:37 osmanubuntu systemd[1]: session-328.scope: Deactivated successfully.
+May 19 23:29:41 osmanubuntu systemd[1]: Started Session 329 of User osman.
+May 19 23:29:41 osmanubuntu systemd[1]: session-329.scope: Deactivated successfully.
+May 19 23:29:41 osmanubuntu systemd[1]: Started Session 330 of User osman.
+May 19 23:29:41 osmanubuntu systemd[1]: session-330.scope: Deactivated successfully.
+May 19 23:29:41 osmanubuntu systemd[1]: Started Session 331 of User osman.
+May 19 23:29:41 osmanubuntu systemd[1]: session-331.scope: Deactivated successfully.
+May 19 23:29:47 osmanubuntu systemd[1]: Started Session 332 of User osman.
+May 19 23:29:47 osmanubuntu systemd[1]: session-332.scope: Deactivated successfully.
+May 19 23:29:47 osmanubuntu systemd[1]: Started Session 333 of User osman.
+May 19 23:29:47 osmanubuntu systemd[1]: session-333.scope: Deactivated successfully.
+May 19 23:29:47 osmanubuntu systemd[1]: Started Session 334 of User osman.
+May 19 23:29:48 osmanubuntu systemd[1]: session-334.scope: Deactivated successfully.
+May 19 23:29:51 osmanubuntu systemd[1]: Started Session 335 of User osman.
+May 19 23:29:51 osmanubuntu systemd[1]: session-335.scope: Deactivated successfully.
+May 19 23:29:51 osmanubuntu systemd[1]: Started Session 336 of User osman.
+May 19 23:29:51 osmanubuntu systemd[1]: session-336.scope: Deactivated successfully.
+May 19 23:29:51 osmanubuntu systemd[1]: Started Session 337 of User osman.
+May 19 23:29:51 osmanubuntu systemd[1]: session-337.scope: Deactivated successfully.
+May 19 23:29:56 osmanubuntu systemd[1]: Started Session 338 of User osman.
+May 19 23:29:56 osmanubuntu systemd[1]: session-338.scope: Deactivated successfully.
+May 19 23:29:56 osmanubuntu systemd[1]: Started Session 339 of User osman.
+May 19 23:29:56 osmanubuntu systemd[1]: session-339.scope: Deactivated successfully.
+May 19 23:29:56 osmanubuntu systemd[1]: Started Session 340 of User osman.
+May 19 23:29:56 osmanubuntu systemd[1]: session-340.scope: Deactivated successfully.
+May 19 23:30:01 osmanubuntu systemd[1]: Started Session 341 of User osman.
+May 19 23:30:01 osmanubuntu systemd[1]: session-341.scope: Deactivated successfully.
+May 19 23:30:01 osmanubuntu systemd[1]: Started Session 342 of User osman.
+May 19 23:30:01 osmanubuntu systemd[1]: session-342.scope: Deactivated successfully.
+May 19 23:30:01 osmanubuntu CRON[21438]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+May 19 23:30:06 osmanubuntu systemd[1]: Started Session 344 of User osman.
+May 19 23:30:06 osmanubuntu systemd[1]: session-344.scope: Deactivated successfully.
+May 19 23:30:06 osmanubuntu systemd[1]: Started Session 345 of User osman.
+May 19 23:30:06 osmanubuntu systemd[1]: session-345.scope: Deactivated successfully.
+May 19 23:30:11 osmanubuntu systemd[1]: Started Session 346 of User osman.
+May 19 23:30:11 osmanubuntu systemd[1]: session-346.scope: Deactivated successfully.
+May 19 23:30:11 osmanubuntu systemd[1]: Started Session 347 of User osman.
+May 19 23:30:11 osmanubuntu systemd[1]: session-347.scope: Deactivated successfully.
+May 19 23:30:16 osmanubuntu systemd[1]: Started Session 348 of User osman.
+May 19 23:30:16 osmanubuntu systemd[1]: session-348.scope: Deactivated successfully.
+May 19 23:30:16 osmanubuntu systemd[1]: Started Session 349 of User osman.
+May 19 23:30:16 osmanubuntu systemd[1]: session-349.scope: Deactivated successfully.
+May 19 23:30:18 osmanubuntu systemd[1]: Started Session 350 of User osman.
+May 19 23:30:18 osmanubuntu systemd[1]: session-350.scope: Deactivated successfully.
+May 19 23:30:18 osmanubuntu systemd[1]: Started Session 351 of User osman.

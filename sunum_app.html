@@ -1602,8 +1602,9 @@ window.onload = function() {
                 +'</td></tr>';
               });
               
-              // Only update DOM if table is active to save resources
-              if (archivePage && archivePage.classList.contains('active')) {
+              // Only update DOM if table is active and no detail panel is currently open to prevent resetting user state
+              var openPanel = tbody.querySelector('.raw-json-panel:not([style*="display: none"]), .ai-interp-panel:not([style*="display: none"])');
+              if (archivePage && archivePage.classList.contains('active') && !openPanel) {
                 tbody.innerHTML = rowsHtml;
               }
               
