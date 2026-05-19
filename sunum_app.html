@@ -1136,7 +1136,7 @@ function loadAIPage() {
       injectAIAdvice('kern-findings', kernMatch ? kernMatch[1] : '');
       
       var fullReportFormatted = formatMarkdownToHTML(rpt);
-      el.innerHTML = '<div style="color:var(--ok); background:rgba(16,185,129,0.1); padding:16px; border-radius:8px; margin-bottom:20px; border:1px solid rgba(16,185,129,0.2);"> Otonom Yapay Zeka analizini tamamladı. Orijinal Markdown raporu aşağıda görselleştirilmiştir.</div><div style="background:rgba(0,0,0,0.3); padding:24px; border-radius:12px; border:1px solid var(--border); font-size:0.9rem; line-height:1.6;">' + fullReportFormatted + '</div>';
+      el.innerHTML = '<div style="font-size:0.68rem; font-weight:700; color:var(--t3); text-transform:uppercase; letter-spacing:0.7px; margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid var(--border);">Analiz Raporu</div><div style="font-size:0.85rem; line-height:1.8; color:var(--t1);">' + fullReportFormatted + '</div>';
     } else {
       el.innerHTML = '<div style="text-align:center; padding: 40px; color: var(--t2);">Henüz üretilmiş bir rapor bulunmuyor.</div>';
     }
@@ -1177,7 +1177,7 @@ function renderAlerts(arr) {
       var aiBtnHtml = '<div style="background:rgba(0,0,0,0.4); border:1px solid var(--border); padding:12px; border-radius:8px; margin-bottom:12px; display:flex; gap:10px; align-items:center;">' + 
                         '<button onclick="analyzeSingleAlert(this, \'' + encodeURIComponent(jsonStr) + '\')" class="btn-primary" style="width:auto; padding:8px 16px; font-size:0.75rem;"> Manuel Yorumla</button>' +
                       '</div>';
-      var aiResHtml = '<div class="ai-single-res" style="display:none;margin-bottom:12px;padding:16px;background:rgba(16,185,129,0.08);border-left:3px solid var(--ok);border-radius:0 8px 8px 0;font-size:0.85rem;color:var(--t1);line-height:1.6;"></div>';
+      var aiResHtml = '<div class="ai-single-res" style="display:none;margin-bottom:12px;padding:14px;background:var(--bg-card);border:1px solid var(--border);border-left:2px solid var(--blue);border-radius:4px;font-size:0.82rem;color:var(--t1);line-height:1.6;"></div>';
 
       div.innerHTML = 
         '<div class="alert-header">' +
@@ -1192,7 +1192,7 @@ function renderAlerts(arr) {
 
       if (isCrit) {
         var autoBox = document.createElement('div');
-        autoBox.style.cssText = 'margin-top:12px;padding:16px;background:rgba(244,63,94,0.1);border-left:3px solid var(--crit);border-radius:0 8px 8px 0;font-size:0.85rem;color:var(--t1);';
+        autoBox.style.cssText = 'margin-top:10px;padding:12px;background:var(--bg-row);border:1px solid var(--border);border-left:2px solid var(--blue);border-radius:4px;font-size:0.8rem;color:var(--t1);';
         autoBox.innerHTML = '<div style="animation:pulse 1s infinite;color:var(--crit);font-weight:600;margin-bottom:6px;"> Kritik tehdit için Otonom AI devrede...</div>';
         div.appendChild(autoBox);
 
@@ -1202,9 +1202,9 @@ function renderAlerts(arr) {
           body: JSON.stringify({ api_key: '', llm_provider: provider, raw: jsonStr })
         }).then(r=>r.json()).then(res=>{
           if(res.ok) {
-            autoBox.style.background = 'rgba(16,185,129,0.08)'; autoBox.style.borderLeftColor = 'var(--ok)';
+            autoBox.style.background = 'var(--bg-card)'; autoBox.style.border = '1px solid var(--border)'; autoBox.style.borderLeft = '2px solid var(--blue)';
             var txt = res.explanation.replace(/\*\*(.*?)\*\*/g, '<strong style="color:#fff">$1</strong>').replace(/\n/g, '<br>');
-            autoBox.innerHTML = '<div style="color:var(--ok);font-weight:600;margin-bottom:8px;"> Anlık AI Görüşü ve Tavsiye:</div><div style="line-height:1.6;color:#e2e8f0">' + txt + '</div>';
+            autoBox.innerHTML = '<div style="font-size:0.65rem;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:0.7px;margin-bottom:8px;">LLM ANALIZI</div><div style="line-height:1.6;color:#e2e8f0">' + txt + '</div>';
           } else {
             autoBox.innerHTML = '<span style="color:var(--warn)"> AI Analizi yapılamadı.</span>';
           }
@@ -1286,10 +1286,11 @@ function showSudoAlert() {
         var div = document.createElement('div');
         div.className = 'alert-card l10';
         
-        var aiBtnHtml = '<div style="background:rgba(0,0,0,0.4); border:1px solid var(--border); padding:12px; border-radius:8px; margin-bottom:12px; display:flex; gap:10px; align-items:center;">' + 
-                          '<button onclick="analyzeSingleAlert(this, \'' + encodeURIComponent(jsonStr) + '\')" class="btn-primary" style="width:auto; padding:8px 16px; font-size:0.75rem;"> Manuel Yorumla</button>' +
+        var aiBtnHtml = '<div style="background:var(--bg-row); border:1px solid var(--border); padding:10px 14px; border-radius:4px; margin-bottom:10px; display:flex; gap:8px; align-items:center;">' + 
+                          '<button onclick="analyzeSingleAlert(this, \'' + encodeURIComponent(jsonStr) + '\')" style="padding:6px 14px; background:var(--blue); border:none; border-radius:3px; color:#fff; font-family:var(--font-sans); font-size:0.72rem; font-weight:700; cursor:pointer; text-transform:uppercase; letter-spacing:0.4px;"> Manuel Yorumla</button>' +
+                          '<button onclick="toggleJsonPanel(this)" data-json=\'' + encodeURIComponent(jsonStr) + '\' style="padding:6px 14px; background:transparent; border:1px solid var(--border); border-radius:3px; color:var(--t2); font-family:var(--font-sans); font-size:0.72rem; font-weight:700; cursor:pointer; text-transform:uppercase; letter-spacing:0.4px; transition:all 0.15s;"> JSON</button>' +
                         '</div>';
-        var aiResHtml = '<div class="ai-single-res" style="display:none;margin-bottom:12px;padding:16px;background:rgba(16,185,129,0.08);border-left:3px solid var(--ok);border-radius:0 8px 8px 0;font-size:0.85rem;color:var(--t1);line-height:1.6;"></div>';
+        var aiResHtml = '<div class="ai-single-res" style="display:none;margin-bottom:12px;padding:14px;background:var(--bg-card);border:1px solid var(--border);border-left:2px solid var(--blue);border-radius:4px;font-size:0.82rem;color:var(--t1);line-height:1.6;"></div>';
 
         div.innerHTML = 
           '<div class="alert-header">' +
@@ -1304,7 +1305,7 @@ function showSudoAlert() {
         feed.appendChild(div);
 
         var autoBox = document.createElement('div');
-        autoBox.style.cssText = 'margin-top:12px;padding:16px;background:rgba(244,63,94,0.1);border-left:3px solid var(--crit);border-radius:0 8px 8px 0;font-size:0.85rem;color:var(--t1);';
+        autoBox.style.cssText = 'margin-top:10px;padding:12px;background:var(--bg-row);border:1px solid var(--border);border-left:2px solid var(--blue);border-radius:4px;font-size:0.8rem;color:var(--t1);';
         autoBox.innerHTML = '<div style="animation:pulse 1s infinite;color:var(--crit);font-weight:600;margin-bottom:6px;"> Yetki Yükseltme tespit edildi. Otonom AI devrede...</div>';
         div.appendChild(autoBox);
 
@@ -1314,9 +1315,9 @@ function showSudoAlert() {
           body: JSON.stringify({ api_key: '', llm_provider: provider, raw: jsonStr })
         }).then(r=>r.json()).then(res=>{
           if(res.ok) {
-            autoBox.style.background = 'rgba(16,185,129,0.08)'; autoBox.style.borderLeftColor = 'var(--ok)';
+            autoBox.style.background = 'var(--bg-card)'; autoBox.style.border = '1px solid var(--border)'; autoBox.style.borderLeft = '2px solid var(--blue)';
             var txt = res.explanation.replace(/\*\*(.*?)\*\*/g, '<strong style="color:#fff">$1</strong>').replace(/\n/g, '<br>');
-            autoBox.innerHTML = '<div style="color:var(--ok);font-weight:600;margin-bottom:8px;"> Anlık AI Görüşü ve Tavsiye:</div><div style="line-height:1.6;color:#e2e8f0">' + txt + '</div>';
+            autoBox.innerHTML = '<div style="font-size:0.65rem;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:0.7px;margin-bottom:8px;">LLM ANALIZI</div><div style="line-height:1.6;color:#e2e8f0">' + txt + '</div>';
           } else {
             autoBox.innerHTML = '<span style="color:var(--warn)"> AI Analizi yapılamadı.</span>';
           }
@@ -1326,12 +1327,26 @@ function showSudoAlert() {
   });
 }
 
+function toggleJsonPanel(btn) {
+  var container = btn.closest('.alert-card') || btn.parentElement.parentElement;
+  var existing = container.querySelector('.json-raw-panel');
+  if (existing) { existing.remove(); btn.style.color = 'var(--t2)'; btn.style.borderColor = 'var(--border)'; return; }
+  var json = decodeURIComponent(btn.getAttribute('data-json') || '{}');
+  var panel = document.createElement('pre');
+  panel.className = 'json-raw-panel';
+  panel.style.cssText = 'background:#04080f; border:1px solid var(--border); border-radius:4px; padding:12px; font-family:var(--font-mono); font-size:0.68rem; color:#7fb3d3; white-space:pre-wrap; word-wrap:break-word; margin:6px 0; max-height:220px; overflow-y:auto;';
+  try { panel.textContent = JSON.stringify(JSON.parse(json), null, 2); } catch(e) { panel.textContent = json; }
+  btn.parentElement.insertAdjacentElement('afterend', panel);
+  btn.style.color = 'var(--blue)';
+  btn.style.borderColor = 'var(--blue)';
+}
+
 function analyzeSingleAlert(btn, encodedJson) {
   var resDiv = btn.parentElement.nextElementSibling;
-  btn.textContent = '⏳ Bekleyin...';
+  if (resDiv && resDiv.classList.contains('json-raw-panel')) resDiv = resDiv.nextElementSibling;
+  btn.textContent = 'Bekleyin...';
   btn.disabled = true;
-  resDiv.style.display = 'block';
-  resDiv.innerHTML = '<span style="color:var(--blue);animation:pulse 1s infinite;">LLM API isteği işleniyor...</span>';
+  if (resDiv) { resDiv.style.display = 'block'; resDiv.innerHTML = '<span style="color:var(--blue);font-size:0.72rem;font-family:var(--font-mono);">LLM analiz ediyor...</span>'; }
   
   var jsonStr = decodeURIComponent(encodedJson);
   var jsonData;
@@ -1353,7 +1368,7 @@ function analyzeSingleAlert(btn, encodedJson) {
                  .replace(/\*\*(.*?)\*\*/g, '<strong style="color:#fff">$1</strong>')
                  .replace(/`(.*?)`/g, '<code style="background:rgba(0,0,0,0.5);color:var(--ok);padding:2px 6px;border-radius:4px;">$1</code>')
                  .replace(/\n/g, '<br>');
-      resDiv.innerHTML = '<div style="color:var(--ok);font-weight:600;margin-bottom:8px;">LLM Yorumu:</div><div style="line-height:1.6">' + txt + '</div>';
+      resDiv.innerHTML = '<div style="font-size:0.65rem;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:0.7px;margin-bottom:8px;">LLM ANALIZI</div><div style="line-height:1.6">' + txt + '</div>';
     } else {
       resDiv.innerHTML = '<span style="color:var(--crit)"> Hata: ' + (res.error || 'Bilinmeyen hata') + '</span>';
     }

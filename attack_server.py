@@ -249,37 +249,43 @@ class Handler(BaseHTTPRequestHandler):
                 llm_provider = data.get("llm_provider", "gemini")
                 from log_analyzer import LLMAnalyzer
                 analyzer = LLMAnalyzer(provider=llm_provider, api_key=api_key)
+
+                rule_desc = alert_data.get("rule", {}).get("description", "Bilinmeyen olay")
+                rule_id   = alert_data.get("rule", {}).get("id", "?")
+                full_log  = alert_data.get("full_log", alert_data.get("raw", rule_desc))
+                mitre_ids = alert_data.get("rule", {}).get("mitre", {}).get("id", [])
+                mitre_str = ", ".join(mitre_ids) if mitre_ids else "—"
+
+                # Short, directive prompt — works well even with 1-3B models
                 prompt = (
-                    "Sen bir Siber Güvenlik Uzmanısın. Sana Wazuh tarafından üretilmiş ham bir JSON Alert veriyorum.\n"
-                    "Lütfen bu uyarıyı teknik olmayan birine ÇOK KISA (maksimum 2 cümle) açıkla.\n\n"
-                    "KOMUT KURALLARI (Uydurma komut yazma!):\n"
-                    "- Kural 'Brute Force' (5712/5710) ise bash komutu olarak: `sudo ufw deny from [JSON_ICINDEKI_IP_ADRESI]` ver.\n"
-                    "- Kural 'Sudo' (5402) ise bash komutu olarak: `sudo passwd -l root` veya log incelemesi için `tail -n 50 /var/log/auth.log` ver.\n"
-                    "- Başka bir kural ise veya emin değilsen ASLA uydurma komut yazma! Sadece şu komutu ver: `cat /var/ossec/logs/alerts/alerts.log | grep [ID]`\n\n"
-                    "Cevabını KESİNLİKLE şu formatta ver:\n"
-                    "**🚨 Tehdit Nedir?** [1-2 cümlelik kısa özet]\n"
-                    "**🛠️ Ne Yapılmalı?** [Sadece en önemli eylemi kısaca yaz]\n"
-                    "```bash\n[Tam bash komutu]\n```\n\n"
-                    f"İşte Alert JSON verisi:\n```json\n{json.dumps(alert_data, indent=2)}\n```\n"
+                    "Sen bir Linux siber guvenlik uzmanisinin. Asagida bir Wazuh guvenlik alarmi var.\n"
+                    "Turkce olarak, sadece asagidaki iki baslik ile yanit ver. Kisa ve net ol.\n\n"
+                    f"Kural: {rule_id} — {rule_desc}\n"
+                    f"MITRE: {mitre_str}\n"
+                    f"Log: {str(full_log)[:300]}\n\n"
+                    "**Tehdit Nedir?** (1-2 cumle, teknik olmayan dilde)\n"
+                    "**Ne Yapilmali?** (en onemli 1 eylem + bash komutu)\n"
                 )
+
                 if llm_provider == "ollama":
                     explanation = analyzer._call_ollama(prompt)
                     if explanation.startswith("[OLLAMA HATASI]"):
-                        rule_desc = alert_data.get("rule", {}).get("description", "Bilinmeyen Tehdit")
-                        explanation = f"**🚨 Tehdit Nedir?** {rule_desc} (Ollama kapalı, kural tabanlı motor kullanılıyor)\n**🛠️ Ne Yapılmalı?** Lütfen bu kaynağı engelleyin veya sistemi kontrol edin."
-                else:
+                        explanation = (
+                            f"**Tehdit Nedir?** {rule_desc}\n"
+                            f"**Ne Yapilmali?** Ollama servisi yanit vermedi. "
+                            f"Terminal'de: `ollama serve` komutunu calistirin."
+                        )
+                elif llm_provider == "openai":
+                    explanation = analyzer._call_openai(prompt)
+                    if explanation.startswith("[OPENAI HATASI]"):
+                        explanation = f"**Tehdit Nedir?** {rule_desc}\n**Ne Yapilmali?** OpenAI API hatasi."
+                else:  # gemini
                     if not analyzer.api_key:
-                        explanation = "⚠️ API Anahtarı bulunamadı."
-                    elif llm_provider == "openai":
-                        explanation = analyzer._call_openai(prompt)
-                        if explanation.startswith("[OPENAI HATASI]"):
-                            rule_desc = alert_data.get("rule", {}).get("description", "Bilinmeyen Tehdit")
-                            explanation = f"**🚨 Tehdit Nedir?** {rule_desc} (OpenAI API Hatası, yerel motor kullanılıyor)\n**🛠️ Ne Yapılmalı?** Lütfen bu kaynağı engelleyin veya sistemi kontrol edin."
+                        explanation = f"**Tehdit Nedir?** {rule_desc}\n**Ne Yapilmali?** GEMINI_API_KEY ayarlanmamis."
                     else:
                         explanation = analyzer._call_gemini(prompt)
                         if explanation.startswith("[GEMINI HATASI]"):
-                            rule_desc = alert_data.get("rule", {}).get("description", "Bilinmeyen Tehdit")
-                            explanation = f"**🚨 Tehdit Nedir?** {rule_desc} (Gemini API kotası doldu, yerel motor kullanılıyor)\n**🛠️ Ne Yapılmalı?** Lütfen bu kaynağı engelleyin veya sistemi kontrol edin."
+                            explanation = f"**Tehdit Nedir?** {rule_desc}\n**Ne Yapilmali?** Gemini API kotasi doldu veya hata olustu."
                 self.send_json({"ok": True, "explanation": explanation})
             except Exception as e:
                 self.send_json({"ok": False, "error": str(e)})
