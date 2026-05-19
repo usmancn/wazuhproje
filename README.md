@@ -1,142 +1,81 @@
-# 🛡️ Wazuh SIEM - Log Analizi ve Siber Saldırı Simülasyonu
+# 🛡️ Wazuh AI SIEM Dashboard
+**Yapay Zeka Destekli Sistem Log Analiz ve Tehdit Algılama Aracı**
 
-Bu proje, geleneksel SIEM sistemlerindeki **"Alarm Yorgunluğu" (Alert Fatigue)** problemini göstermek, siber saldırıları (Brute-Force, Privilege Escalation) simüle etmek ve bu saldırıların ham JSON loglarını Açıklanabilir Yapay Zeka (XAI) modelleri için hazırlamak amacıyla geliştirilmiş akademik bir güvenlik projesidir.
+Bu proje, açık kaynaklı Wazuh SIEM altyapısını kullanarak sistem güvenlik loglarını (auth.log, syslog, kern.log) toplayan, gerçek zamanlı saldırı simülasyonları gerçekleştiren ve elde edilen verileri **Yerel (Ollama Llama 3.2)** ve **Bulut (Google Gemini 2.5 Flash)** Büyük Dil Modelleri (LLM) ile analiz edip otonom güvenlik raporları üreten profesyonel bir siber güvenlik projesidir.
 
-## ✨ Özellikler
+---
 
-*   **Canlı Saldırı Simülasyonu:** Arka planda çalışan Ubuntu 22.04 sanal makinesi üzerindeki Wazuh SIEM'e anlık SSH Brute-Force ve Sudo yetki yükseltme saldırıları düzenler.
-*   **Gerçek Zamanlı Log Akışı:** Wazuh'un ürettiği güvenlik kurallarını (Rule 5712, Rule 5402 vb.) anında arayüze yansıtır.
-*   **Çevrimdışı (Offline) Destek:** Eğer sanal makine (Ubuntu) kapalıysa veya projeyi başka bir bilgisayarda çalıştırıyorsanız, sistem otomatik olarak "Çevrimdışı Mod"a geçer ve önceden toplanmış yüzlerce saldırı logunu (XAI analizi için) `all_alerts.json` dosyasından arayüze aktarır.
-*   **İnteraktif Dashboard:** Toplam log sayısını, kritik alarmları ve JSON çıktılarını tek bir ekranda gösteren modern arayüz.
-*   **Yapay Zeka Destekli Offline Log Analizi:** `log_analyzer.py` aracı ile internet bağlantısı gerektirmeden, kural tabanlı bir yapay zeka simülasyonu çalıştırarak loglardaki tehditleri analiz eder, risk seviyelerini belirler ve Türkçe müdahale önerileri (AI tavsiyeleri) üretir.
+## 🏗️ Sistem Mimarisi ve Altyapı
+Sistem, sanallaştırma mimarisi üzerinde birbirine bağlı iki farklı bileşenden oluşmaktadır:
 
-## 🚀 Nasıl Çalıştırılır? (Tüm Sistemler İçin)
+- **Host Makine:** MacBook Air (Apple Silicon M4)
+- **Sanallaştırma Platformu:** UTM
+- **Guest İşletim Sistemi:** Ubuntu 22.04 LTS ARM64 (IP: 192.168.64.4)
+- **SIEM Çözümü:** Wazuh Manager v4.8.0 (Kaynaktan Derleme)
 
-Projeyi kendi bilgisayarınızda (Windows, Mac veya Linux) incelemek veya hocaya sunmak için aşağıdaki adımları izlemeniz yeterlidir:
+Wazuh, arka planda `/var/log/auth.log` ve `journald` üzerinden gerçek zamanlı log toplamaktadır. Tespit edilen şüpheli olaylar `alerts.json` olarak dışa aktarılmış ve Python tabanlı AI entegrasyonuna bağlanmıştır.
+
+---
+
+## 🚀 Proje Özellikleri
+
+### 1. ⚡ Canlı Saldırı Simülasyonu
+Dashboard üzerinden tek tıkla sanal makineye **SSH Brute-Force (Kaba Kuvvet)** ve **Sudo (Yetki Yükseltme)** saldırıları simüle edilebilir.
+- **Rule 5712 (Level 10):** Brute-Force saldırıları saniyeler içinde tespit edilir ve Kritik tehdit olarak loglanır.
+- **Rule 5402 (Level 3):** Başarılı `sudo` kullanımları, MITRE ATT&CK T1548.003 (Sudo and Sudo Caching) kapsamında izlenir.
+
+### 2. 🧠 Hibrit Yapay Zeka Analizi
+Güvenlik logları, iki farklı LLM stratejisi kullanılarak otonom bir şekilde analiz edilir:
+- **Bulut (Gemini 2.5 Flash):** Hızlı ve yüksek kapasiteli küresel analizler.
+- **Yerel (Ollama / Llama 3.2):** Veri gizliliğinin (Data Privacy) kritik olduğu durumlar için internet bağlantısına ihtiyaç duymayan "Zero-Trust" (Sıfır Güven) analizi.
+- **Deduplication Algoritması:** Aynı tipteki yüzlerce saldırı logu, AI modelinin bağlam limitini (Context Window) aşmamak adına `event_count` bazlı akıllı bir algoritma ile tekilleştirilir.
+
+### 3. 🛡️ Halüsinasyon Önleyici (Anti-Hallucination) Prompt Mimarisi
+Küçük yerel modellerin yanlış bash komutları üretmesini (halüsinasyon) engellemek amacıyla **"Cheat Sheet" (Kopya Kağıdı)** bazlı özel bir prompt mühendisliği uygulanmıştır. 
+Sistem; IP engelleme (`ufw deny`), hesap kilitleme (`passwd -l`) gibi **Kesin Çözüm Komutlarını (Acil Müdahale Adımları)** doğrudan tespit edilen Kural ID'lerine göre otonom olarak tavsiye eder.
+
+### 4. 📊 Dinamik ve Responsive Dashboard
+Tamamen Vanilla JS/CSS kullanılarak geliştirilen sunum arayüzü; Markdown analizleri, kod blokları ve tabloları anlık renderlayabilen yüksek performanslı bir izleme ekranı sunar.
+
+---
+
+## 🛠️ Kurulum ve Çalıştırma
 
 ### Gereksinimler
-Sadece **Python 3**'ün sisteminizde kurulu olması yeterlidir. Ekstra bir kütüphane (pip install vb.) gerektirmez.
+- Python 3.8+
+- Ollama (Yerel LLM için)
+- UTM üzerinde çalışan yapılandırılmış Ubuntu 22.04 LTS (Wazuh Yüklü)
 
-### Adım Adım Kurulum
-
-1.  Bu projeyi (klasörü) bilgisayarınıza indirin ve klasörün içine girin.
-2.  Terminal veya Komut İstemcisi'ni (cmd) açarak bulunduğunuz dizine gidin:
-    ```bash
-    cd /klasor/yolu/guvenlik
-    ```
-3.  Python API sunucusunu başlatın:
-    ```bash
-    python3 attack_server.py
-    ```
-    *(Windows kullanıyorsanız sadece `python attack_server.py` yazmanız gerekebilir.)*
-4.  Sunucu çalışmaya başladıktan sonra tarayıcınızı açın ve aşağıdaki adrese gidin:
-    ```text
-    http://localhost:8877
-    ```
-    Veya alternatif olarak klasör içindeki `sunum_app.html` dosyasına çift tıklayarak tarayıcıda açabilirsiniz.
-
-### 🤖 Gerçek Yapay Zeka Log Analiz Aracını Çalıştırmak
-
-Projenin kalbi olan Python aracı, tespit edilen siber güvenlik bulgularını doğrudan Google Gemini veya OpenAI'a göndererek profesyonel bir XAI raporu üretir.
-
-**Ön Hazırlık (Kütüphanelerin Kurulumu):**
+### 1. Bağımlılıkların Kurulması
+Projeyi klonladıktan sonra gerekli Python kütüphanelerini kurun:
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
-**Aracı Çalıştırmak:**
+### 2. API Anahtarının Tanımlanması
+Gizlilik ve güvenlik ilkeleri gereği API anahtarları kaynak koda gömülmemiştir. Sunucuyu başlatmadan önce terminalinizde çevre değişkenini (Environment Variable) ayarlayın:
 ```bash
-# 🟢 Ollama ile (Ücretsiz, Çevrimdışı — Önerilen):
-#   Önce: ollama pull llama3
-python3 log_analyzer.py \
-  --auth sample_logs/auth.log \
-  --syslog sample_logs/syslog \
-  --kern sample_logs/kern.log \
-  --llm ollama --model llama3
-
-# 🔵 Google Gemini ile:
-python3 log_analyzer.py \
-  --auth sample_logs/auth.log \
-  --syslog sample_logs/syslog \
-  --kern sample_logs/kern.log \
-  --llm gemini --api-key BURAYA_API_KEY_YAZIN
-
-# 🟡 OpenAI (ChatGPT) ile:
-python3 log_analyzer.py \
-  --auth sample_logs/auth.log \
-  --syslog sample_logs/syslog \
-  --kern sample_logs/kern.log \
-  --llm openai --api-key BURAYA_API_KEY_YAZIN
-
-# ⚪ API key olmadan (kural tabanlı, internet gerektirmez):
-python3 log_analyzer.py \
-  --auth sample_logs/auth.log \
-  --syslog sample_logs/syslog \
-  --kern sample_logs/kern.log
+export GEMINI_API_KEY="AIzaSyC...Sizin_Google_Gemini_Anahtariniz"
 ```
 
-Bu komut:
-1. `sample_logs/` klasöründeki gerçekçi Linux loglarını okur ve Regex parser ile ayrıştırır.
-2. Brute-Force, Sudo yetki aşımı, DDoS izleri, şüpheli Cron gibi tehditleri tespit eder (CRITICAL / HIGH / MEDIUM).
-3. Bulguları seçilen LLM'e (Ollama / Gemini / OpenAI) gönderir.
-4. Türkçe olarak MITRE ATT&CK eşleştirmesi içeren profesyonel bir güvenlik raporu üretir.
-5. Sonuçları `reports/` klasörüne Markdown ve JSON formatında arşivler.
-
-*(API anahtarı yoksa veya internet yoksa araç otomatik olarak kural tabanlı offline rapora geçer.)*
-
-## 📌 Modlar Arası Farklar
-
-*   **Canlı Mod:** Projeyi asıl cihazda açarsanız sol üstte "Canlı" yazar. "Canlı Saldırı Demo" butonları gerçek saldırı üretir.
-*   **Çevrimdışı (Offline) Mod:** Github'dan indirip başka cihazda açarsanız "Bağlantı Yok" yazar. Saldırı butonları çalışmaz fakat **Tüm Log Arşivi**, JSON çıktıları ve istatistikler önceki saldırılardan kaydedildiği haliyle çalışır.
-
-## ⚙️ Teknik Altyapı
-*   **SIEM:** Wazuh 4.14.5 (Ubuntu 22.04 ARM64)
-*   **Backend:** Python 3 (HTTP Sunucusu & SSH Tünelleme)
-*   **LLM:** Ollama (llama3) / Google Gemini / OpenAI GPT
-*   **Frontend:** HTML5, Vanilla CSS, Vanilla JS
-*   **Log Kaynakları:** `journald`, `/var/log/auth.log`, `syslog`, `kern.log`
-
-## 📁 Proje Yapısı
-
+### 3. Backend Sunucusunun Başlatılması
+```bash
+python3 attack_server.py
 ```
-guvenlik/
-├── log_analyzer.py          # CLI: Yapay Zeka Destekli Log Analiz Aracı
-├── attack_server.py         # Web sunum sunucusu & saldırı simülatörü
-├── sunum_app.html           # İnteraktif sunum arayüzü
-├── sample_logs/
-│   ├── auth.log             # Örnek kimlik doğrulama logları
-│   ├── syslog               # Örnek sistem logları
-│   └── kern.log             # Örnek çekirdek logları
-├── reports/                 # LLM rapor çıktıları (JSON + Markdown)
-├── all_alerts.json          # Wazuh'tan toplanan gerçek saldırı logları
-└── requirements.txt         # Python bağımlılıkları
-```
+> **Not:** Arka planda sürekli çalışması için `nohup python3 attack_server.py > server.log 2>&1 &` komutunu kullanabilirsiniz.
 
-## 📚 Akademik Çıktılar
+### 4. Arayüzün Açılması
+Web tarayıcınızda `sunum_app.html` dosyasını çalıştırarak projeyi kullanmaya başlayabilirsiniz.
 
-Yapay zeka aracının oluşturduğu örnek analiz raporları `reports/` klasöründe mevcuttur. Bu raporlar; SIEM sistemlerinin çalışma prensipleri, Linux log dosyalarının yapısı ve AI destekli analizin geleneksel yöntemlere göre avantajlarını somut bulgularla göstermektedir.
+---
 
+## 📂 Proje Dizin Yapısı
+- `attack_server.py`: REST API ve canlı saldırı otomasyonlarını sağlayan Flask/HTTP sunucusu.
+- `log_analyzer.py`: Log tekilleştirme ve LLM entegrasyon motoru.
+- `sunum_app.html`: Son kullanıcı arayüzü (UI) ve Dashboard frontend.
+- `sample_logs/`: Analiz için kullanılan statik log dosyaları arşivi.
+- `reports/`: AI tarafından oluşturulmuş geçmiş analiz (Markdown/JSON) çıktıları.
 
-Bu komut:
-1. `sample_logs` klasöründeki gerçekçi Linux loglarını okur ve Regex parser ile ayrıştırır.
-2. Brute-Force, Sudo yetki aşımları, DDoS izleri (conntrack table full) gibi tehditleri tespit eder ve seviyelendirir (CRITICAL/HIGH/MEDIUM).
-3. Bulguları API aracılığıyla Google Gemini veya ChatGPT'ye gönderir.
-4. Ekrana Türkçe olarak bir "Gerçek Yapay Zeka Analiz Raporu" basar.
-5. Sonuçları `/reports` klasörüne Markdown formatında arşivler.
+---
 
-*(Eğer API anahtarınız yoksa veya internet bağlantınız koparsa araç otomatik olarak Offline-AI Moduna geçer ve kural tabanlı rapor üretir.)*
-
-## 📌 Modlar Arası Farklar
-
-*   **Canlı Mod:** Eğer projeyi asıl kurulduğu cihazda açarsanız, sol üstte "Canlı" yazar. "Canlı Saldırı Demo" sekmesindeki butonlar gerçekten saldırı üretir.
-*   **Çevrimdışı (Offline) Mod:** Projeyi Github'dan indirip başka bir cihazda açarsanız sol üstte kırmızı renkli "Bağlantı Yok" yazar. "Saldırı Demo" butonları çalışmaz fakat **Tüm Log Arşivi**, JSON çıktıları ve istatistikler önceki saldırılardan kaydedildiği haliyle %100 sorunsuz çalışır.
-
-## ⚙️ Teknik Altyapı
-*   **SIEM:** Wazuh 4.14.5 (Ubuntu 22.04 ARM64 üzerinde yapılandırıldı)
-*   **Backend:** Python 3 (Soket Sunucusu & SSH Tünelleme)
-*   **Frontend:** HTML5, Vanilla CSS, Vanilla JS
-*   **Log Kaynakları:** `journald` ve `/var/log/auth.log`
-
-## 📚 Akademik Çıktılar
-
-Proje kapsamında hazırlanan ve SIEM, Linux log yapıları, AI destekli analizin avantajlarını anlatan detaylı araştırma makalesine [ARASTIRMA_MAKALESI.md](ARASTIRMA_MAKALESI.md) dosyasından ulaşabilirsiniz. Ayrıca yapay zeka aracının oluşturduğu örnek bir analiz raporu `reports/` klasöründe yer almaktadır.
+**Akademik Final Projesi Kapsamında Geliştirilmiştir.** 🎓
