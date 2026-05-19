@@ -203,6 +203,20 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_json({"ok": False, "error": "Henüz per-source analiz yok"})
         elif p == "/api/analyze_status":
             self.send_json(dict(analyze_state))
+        elif p == "/api/raw_logs":
+            result = {"ok": True}
+            for logname in ["auth.log", "syslog", "kern.log"]:
+                logpath = os.path.join("sample_logs", logname)
+                if os.path.exists(logpath):
+                    try:
+                        with open(logpath, encoding="utf-8", errors="replace") as f:
+                            lines = f.readlines()
+                        result[logname] = [l.rstrip() for l in lines[-80:]]
+                    except Exception as e:
+                        result[logname] = [f"[Okuma hatası: {e}]"]
+                else:
+                    result[logname] = ["[Dosya bulunamadı]"]
+            self.send_json(result)
         else:
             self.send_response(404); self.end_headers()
 

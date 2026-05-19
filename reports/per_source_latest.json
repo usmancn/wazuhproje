@@ -49,7 +49,7 @@
       "description": "AppArmor güvenlik duvarı 'sys_nice' programının çalışmasını engelledi.",
       "mitre": "T1068 — Exploitation for Privilege Escalation",
       "source": "kern.log",
-      "event_count": 6
+      "event_count": 7
     },
     {
       "type": "APPARMOR_BLOCK",
@@ -65,7 +65,7 @@
       "description": "AppArmor güvenlik duvarı 'net_admin' programının çalışmasını engelledi.",
       "mitre": "T1068 — Exploitation for Privilege Escalation",
       "source": "kern.log",
-      "event_count": 5
+      "event_count": 6
     }
   ]
 }

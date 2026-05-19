@@ -2718,3 +2718,538 @@ May 18 19:16:59 osmanubuntu kernel: [   17.661583] input: spice vdagent tablet a
 May 18 19:22:12 osmanubuntu kernel: [  331.207628] loop3: detected capacity change from 0 to 122008
 May 19 00:00:23 osmanubuntu kernel: [17022.109239] audit: type=1400 audit(1779148823.826:48): apparmor="DENIED" operation="capable" profile="/usr/sbin/cupsd" pid=33788 comm="cupsd" capability=12  capname="net_admin"
 May 19 00:00:24 osmanubuntu kernel: [17022.504767] audit: type=1400 audit(1779148824.218:49): apparmor="DENIED" operation="capable" profile="/usr/sbin/cups-browsed" pid=33801 comm="cups-browsed" capability=23  capname="sys_nice"
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Booting Linux on physical CPU 0x0000000000 [0x610f0000]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Linux version 5.15.0-179-generic (buildd@bos03-arm64-021) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #189-Ubuntu SMP Thu May 7 16:39:18 UTC 2026 (Ubuntu 5.15.0-179.189-generic 5.15.199)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] efi: EFI v2.70 by EDK II
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] efi: SMBIOS 3.0=0x23f810000 MEMATTR=0x23e803118 ACPI 2.0=0x23c150018 MOKvar=0x23c060000 RNG=0x23c15e698 MEMRESERVE=0x23c483618 
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] random: crng init done
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] secureboot: Secure boot disabled
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: Early table checksum verification disabled
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: RSDP 0x000000023C150018 000024 (v02 BOCHS )
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: XSDT 0x000000023C15FE98 00006C (v01 BOCHS  BXPC     00000001      01000013)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: FACP 0x000000023C15FA98 000114 (v06 BOCHS  BXPC     00000001 BXPC 00000001)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: DSDT 0x000000023C157518 0014A2 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: APIC 0x000000023C15FC18 00019C (v04 BOCHS  BXPC     00000001 BXPC 00000001)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: PPTT 0x000000023C15D898 000088 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: GTDT 0x000000023C15E818 000068 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: MCFG 0x000000023C15E918 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: SPCR 0x000000023C15FF98 000050 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: DBG2 0x000000023C15E418 000057 (v00 BOCHS  BXPC     00000001 BXPC 00000001)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: IORT 0x000000023C15E718 000080 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: BGRT 0x000000023C15E498 000038 (v01 INTEL  EDK2     00000002      01000013)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: SPCR: console: pl011,mmio32,0x9000000,9600
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] NUMA: Failed to initialise from firmware
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x000000023fffffff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] NUMA: NODE_DATA [mem 0x23ee4af80-0x23ee4ffff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Zone ranges:
+May 19 22:04:59 osmanubuntu kernel: [    0.000000]   DMA      [mem 0x0000000040000000-0x00000000ffffffff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000]   DMA32    empty
+May 19 22:04:59 osmanubuntu kernel: [    0.000000]   Normal   [mem 0x0000000100000000-0x000000023fffffff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000]   Device   empty
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Movable zone start for each node
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Early memory node ranges
+May 19 22:04:59 osmanubuntu kernel: [    0.000000]   node   0: [mem 0x0000000040000000-0x000000023c05ffff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000]   node   0: [mem 0x000000023c060000-0x000000023c06ffff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000]   node   0: [mem 0x000000023c070000-0x000000023c15ffff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000]   node   0: [mem 0x000000023c160000-0x000000023c47ffff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000]   node   0: [mem 0x000000023c480000-0x000000023f75ffff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000]   node   0: [mem 0x000000023f760000-0x000000023f7effff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000]   node   0: [mem 0x000000023f7f0000-0x000000023f7fffff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000]   node   0: [mem 0x000000023f800000-0x000000023f91ffff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000]   node   0: [mem 0x000000023f920000-0x000000023fffffff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x000000023fffffff]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] cma: Reserved 32 MiB at 0x00000000fe000000
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] psci: probing for conduit method from ACPI.
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] psci: PSCIv1.1 detected in firmware.
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] psci: Using standard PSCI v0.2 function IDs
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] psci: Trusted OS migration not required
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] psci: SMC Calling Convention v1.0
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ACPI: SRAT not present
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] percpu: Embedded 31 pages/cpu s88792 r8192 d29992 u126976
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] pcpu-alloc: s88792 r8192 d29992 u126976 alloc=31*4096
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Detected PIPT I-cache on CPU0
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] CPU features: detected: Address authentication (IMP DEF algorithm)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] CPU features: detected: Spectre-v4
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] CPU features: detected: Spectre-BHB
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] alternatives: patching kernel code
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 2064384
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Policy zone: Normal
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Kernel command line: BOOT_IMAGE=/vmlinuz-5.15.0-179-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] mem auto-init: stack:off, heap alloc:on, heap free:off
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] software IO TLB: mapped [mem 0x00000000fa000000-0x00000000fe000000] (64MB)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Memory: 7972884K/8388608K available (17536K kernel code, 4602K rwdata, 14112K rodata, 9664K init, 1193K bss, 382956K reserved, 32768K cma-reserved)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ftrace: allocating 54682 entries in 214 pages
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] ftrace: allocated 214 pages with 5 groups
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] trace event string verifier disabled
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] rcu: Hierarchical RCU implementation.
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=4.
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] 	Rude variant of Tasks RCU enabled.
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] 	Tracing variant of Tasks RCU enabled.
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] Root IRQ handler: gic_handle_irq
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] GICv2m: ACPI overriding V2M MSI_TYPER (base:80, num:64)
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] arch_timer: cp15 timer(s) running at 24.00MHz (virt).
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+May 19 22:04:59 osmanubuntu kernel: [    0.000000] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+May 19 22:04:59 osmanubuntu kernel: [    0.000026] Console: colour dummy device 80x25
+May 19 22:04:59 osmanubuntu kernel: [    0.000040] ACPI: Core revision 20210730
+May 19 22:04:59 osmanubuntu kernel: [    0.000068] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=96000)
+May 19 22:04:59 osmanubuntu kernel: [    0.000070] pid_max: default: 32768 minimum: 301
+May 19 22:04:59 osmanubuntu kernel: [    0.000080] LSM: Security Framework initializing
+May 19 22:04:59 osmanubuntu kernel: [    0.000084] landlock: Up and running.
+May 19 22:04:59 osmanubuntu kernel: [    0.000084] Yama: becoming mindful.
+May 19 22:04:59 osmanubuntu kernel: [    0.000096] AppArmor: AppArmor initialized
+May 19 22:04:59 osmanubuntu kernel: [    0.000122] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+May 19 22:04:59 osmanubuntu kernel: [    0.000134] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+May 19 22:04:59 osmanubuntu kernel: [    0.000335] rcu: Hierarchical SRCU implementation.
+May 19 22:04:59 osmanubuntu kernel: [    0.000432] Remapping and enabling EFI services.
+May 19 22:04:59 osmanubuntu kernel: [    0.000545] smp: Bringing up secondary CPUs ...
+May 19 22:04:59 osmanubuntu kernel: [    0.000688] Detected PIPT I-cache on CPU1
+May 19 22:04:59 osmanubuntu kernel: [    0.001041] CPU1: Booted secondary processor 0x0000000001 [0x610f0000]
+May 19 22:04:59 osmanubuntu kernel: [    0.001322] Detected PIPT I-cache on CPU2
+May 19 22:04:59 osmanubuntu kernel: [    0.001418] CPU2: Booted secondary processor 0x0000000002 [0x610f0000]
+May 19 22:04:59 osmanubuntu kernel: [    0.001671] Detected PIPT I-cache on CPU3
+May 19 22:04:59 osmanubuntu kernel: [    0.001796] CPU3: Booted secondary processor 0x0000000003 [0x610f0000]
+May 19 22:04:59 osmanubuntu kernel: [    0.002019] smp: Brought up 1 node, 4 CPUs
+May 19 22:04:59 osmanubuntu kernel: [    0.002021] SMP: Total of 4 processors activated.
+May 19 22:04:59 osmanubuntu kernel: [    0.002021] CPU features: detected: Branch Target Identification
+May 19 22:04:59 osmanubuntu kernel: [    0.002022] CPU features: detected: ARMv8.4 Translation Table Level
+May 19 22:04:59 osmanubuntu kernel: [    0.002023] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+May 19 22:04:59 osmanubuntu kernel: [    0.002023] CPU features: detected: Common not Private translations
+May 19 22:04:59 osmanubuntu kernel: [    0.002023] CPU features: detected: CRC32 instructions
+May 19 22:04:59 osmanubuntu kernel: [    0.002024] CPU features: detected: Data cache clean to Point of Deep Persistence
+May 19 22:04:59 osmanubuntu kernel: [    0.002024] CPU features: detected: Data cache clean to Point of Persistence
+May 19 22:04:59 osmanubuntu kernel: [    0.002024] CPU features: detected: E0PD
+May 19 22:04:59 osmanubuntu kernel: [    0.002025] CPU features: detected: Enhanced Privileged Access Never
+May 19 22:04:59 osmanubuntu kernel: [    0.002025] CPU features: detected: Generic authentication (IMP DEF algorithm)
+May 19 22:04:59 osmanubuntu kernel: [    0.002025] CPU features: detected: RCpc load-acquire (LDAPR)
+May 19 22:04:59 osmanubuntu kernel: [    0.002025] CPU features: detected: LSE atomic instructions
+May 19 22:04:59 osmanubuntu kernel: [    0.002026] CPU features: detected: Privileged Access Never
+May 19 22:04:59 osmanubuntu kernel: [    0.002026] CPU features: detected: RAS Extension Support
+May 19 22:04:59 osmanubuntu kernel: [    0.002026] CPU features: detected: Speculation barrier (SB)
+May 19 22:04:59 osmanubuntu kernel: [    0.002027] CPU features: detected: TLB range maintenance instructions
+May 19 22:04:59 osmanubuntu kernel: [    0.018613] CPU: All CPU(s) started at EL1
+May 19 22:04:59 osmanubuntu kernel: [    0.020102] devtmpfs: initialized
+May 19 22:04:59 osmanubuntu kernel: [    0.020512] setend instruction emulation is not supported on this system
+May 19 22:04:59 osmanubuntu kernel: [    0.020570] KASLR enabled
+May 19 22:04:59 osmanubuntu kernel: [    0.020591] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+May 19 22:04:59 osmanubuntu kernel: [    0.020600] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+May 19 22:04:59 osmanubuntu kernel: [    0.020665] pinctrl core: initialized pinctrl subsystem
+May 19 22:04:59 osmanubuntu kernel: [    0.020727] SMBIOS 3.0.0 present.
+May 19 22:04:59 osmanubuntu kernel: [    0.020728] DMI: QEMU QEMU Virtual Machine, BIOS 0.0.0 02/06/2015
+May 19 22:04:59 osmanubuntu kernel: [    0.020967] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+May 19 22:04:59 osmanubuntu kernel: [    0.023064] DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+May 19 22:04:59 osmanubuntu kernel: [    0.023601] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+May 19 22:04:59 osmanubuntu kernel: [    0.023942] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+May 19 22:04:59 osmanubuntu kernel: [    0.023949] audit: initializing netlink subsys (disabled)
+May 19 22:04:59 osmanubuntu kernel: [    0.024200] audit: type=2000 audit(0.024:1): state=initialized audit_enabled=0 res=1
+May 19 22:04:59 osmanubuntu kernel: [    0.024235] thermal_sys: Registered thermal governor 'fair_share'
+May 19 22:04:59 osmanubuntu kernel: [    0.024238] thermal_sys: Registered thermal governor 'bang_bang'
+May 19 22:04:59 osmanubuntu kernel: [    0.024239] thermal_sys: Registered thermal governor 'step_wise'
+May 19 22:04:59 osmanubuntu kernel: [    0.024239] thermal_sys: Registered thermal governor 'user_space'
+May 19 22:04:59 osmanubuntu kernel: [    0.024239] thermal_sys: Registered thermal governor 'power_allocator'
+May 19 22:04:59 osmanubuntu kernel: [    0.024294] cpuidle: using governor ladder
+May 19 22:04:59 osmanubuntu kernel: [    0.024297] cpuidle: using governor menu
+May 19 22:04:59 osmanubuntu kernel: [    0.024309] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+May 19 22:04:59 osmanubuntu kernel: [    0.024471] ASID allocator initialised with 65536 entries
+May 19 22:04:59 osmanubuntu kernel: [    0.024534] ACPI: bus type PCI registered
+May 19 22:04:59 osmanubuntu kernel: [    0.024537] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+May 19 22:04:59 osmanubuntu kernel: [    0.024570] Serial: AMBA PL011 UART driver
+May 19 22:04:59 osmanubuntu kernel: [    0.025587] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+May 19 22:04:59 osmanubuntu kernel: [    0.025589] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+May 19 22:04:59 osmanubuntu kernel: [    0.025589] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+May 19 22:04:59 osmanubuntu kernel: [    0.025590] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+May 19 22:04:59 osmanubuntu kernel: [    0.038314] ACPI: Added _OSI(Module Device)
+May 19 22:04:59 osmanubuntu kernel: [    0.038315] ACPI: Added _OSI(Processor Device)
+May 19 22:04:59 osmanubuntu kernel: [    0.038316] ACPI: Added _OSI(Processor Aggregator Device)
+May 19 22:04:59 osmanubuntu kernel: [    0.038316] ACPI: Added _OSI(Linux-Dell-Video)
+May 19 22:04:59 osmanubuntu kernel: [    0.038317] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+May 19 22:04:59 osmanubuntu kernel: [    0.038317] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+May 19 22:04:59 osmanubuntu kernel: [    0.038516] ACPI: 1 ACPI AML tables successfully acquired and loaded
+May 19 22:04:59 osmanubuntu kernel: [    0.038744] ACPI: Interpreter enabled
+May 19 22:04:59 osmanubuntu kernel: [    0.038745] ACPI: Using GIC for interrupt routing
+May 19 22:04:59 osmanubuntu kernel: [    0.038751] ACPI: MCFG table detected, 1 entries
+May 19 22:04:59 osmanubuntu kernel: [    0.039261] ARMH0011:00: ttyAMA0 at MMIO 0x9000000 (irq = 12, base_baud = 0) is a SBSA
+May 19 22:04:59 osmanubuntu kernel: [    0.203252] printk: console [ttyAMA0] enabled
+May 19 22:04:59 osmanubuntu kernel: [    0.204797] ACPI: PCI: Interrupt link L000 configured for IRQ 35
+May 19 22:04:59 osmanubuntu kernel: [    0.205401] ACPI: PCI: Interrupt link L001 configured for IRQ 36
+May 19 22:04:59 osmanubuntu kernel: [    0.206061] ACPI: PCI: Interrupt link L002 configured for IRQ 37
+May 19 22:04:59 osmanubuntu kernel: [    0.206594] ACPI: PCI: Interrupt link L003 configured for IRQ 38
+May 19 22:04:59 osmanubuntu kernel: [    0.207392] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+May 19 22:04:59 osmanubuntu kernel: [    0.208418] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+May 19 22:04:59 osmanubuntu kernel: [    0.209856] acpi PNP0A08:00: _OSC: platform does not support [LTR DPC]
+May 19 22:04:59 osmanubuntu kernel: [    0.210669] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability]
+May 19 22:04:59 osmanubuntu kernel: [    0.212148] acpi PNP0A08:00: ECAM area [mem 0x4010000000-0x401fffffff] reserved by PNP0C02:00
+May 19 22:04:59 osmanubuntu kernel: [    0.213203] acpi PNP0A08:00: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+May 19 22:04:59 osmanubuntu kernel: [    0.214334] ACPI: Remapped I/O 0x000000003eff0000 to [io  0x0000-0xffff window]
+May 19 22:04:59 osmanubuntu kernel: [    0.215239] PCI host bridge to bus 0000:00
+May 19 22:04:59 osmanubuntu kernel: [    0.215713] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff window]
+May 19 22:04:59 osmanubuntu kernel: [    0.216556] pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+May 19 22:04:59 osmanubuntu kernel: [    0.217436] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff window]
+May 19 22:04:59 osmanubuntu kernel: [    0.218621] pci_bus 0000:00: root bus resource [bus 00-ff]
+May 19 22:04:59 osmanubuntu kernel: [    0.219267] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+May 19 22:04:59 osmanubuntu kernel: [    0.220537] pci 0000:00:01.0: [1af4:1000] type 00 class 0x020000
+May 19 22:04:59 osmanubuntu kernel: [    0.221548] pci 0000:00:01.0: reg 0x10: [io  0x00e0-0x00ff]
+May 19 22:04:59 osmanubuntu kernel: [    0.222240] pci 0000:00:01.0: reg 0x14: [mem 0x10048000-0x10048fff]
+May 19 22:04:59 osmanubuntu kernel: [    0.223046] pci 0000:00:01.0: reg 0x20: [mem 0x8000000000-0x8000003fff 64bit pref]
+May 19 22:04:59 osmanubuntu kernel: [    0.224155] pci 0000:00:01.0: reg 0x30: [mem 0xfffc0000-0xffffffff pref]
+May 19 22:04:59 osmanubuntu kernel: [    0.225534] pci 0000:00:02.0: [1af4:1050] type 00 class 0x038000
+May 19 22:04:59 osmanubuntu kernel: [    0.226653] pci 0000:00:02.0: reg 0x14: [mem 0x10047000-0x10047fff]
+May 19 22:04:59 osmanubuntu kernel: [    0.227441] pci 0000:00:02.0: reg 0x20: [mem 0x8000004000-0x8000007fff 64bit pref]
+May 19 22:04:59 osmanubuntu kernel: [    0.230477] pci 0000:00:03.0: [8086:2668] type 00 class 0x040300
+May 19 22:04:59 osmanubuntu kernel: [    0.232569] pci 0000:00:03.0: reg 0x10: [mem 0x10040000-0x10043fff]
+May 19 22:04:59 osmanubuntu kernel: [    0.235463] pci 0000:00:04.0: [1033:0194] type 00 class 0x0c0330
+May 19 22:04:59 osmanubuntu kernel: [    0.236815] pci 0000:00:04.0: reg 0x10: [mem 0x8000018000-0x800001bfff 64bit]
+May 19 22:04:59 osmanubuntu kernel: [    0.239137] pci 0000:00:04.0: enabling Extended Tags
+May 19 22:04:59 osmanubuntu kernel: [    0.241231] pci 0000:00:05.0: [1b36:000d] type 00 class 0x0c0330
+May 19 22:04:59 osmanubuntu kernel: [    0.242326] pci 0000:00:05.0: reg 0x10: [mem 0x8000014000-0x8000017fff 64bit]
+May 19 22:04:59 osmanubuntu kernel: [    0.243757] pci 0000:00:05.0: enabling Extended Tags
+May 19 22:04:59 osmanubuntu kernel: [    0.245212] pci 0000:00:06.0: [1af4:1001] type 00 class 0x010000
+May 19 22:04:59 osmanubuntu kernel: [    0.246977] pci 0000:00:06.0: reg 0x10: [io  0x0000-0x007f]
+May 19 22:04:59 osmanubuntu kernel: [    0.247764] pci 0000:00:06.0: reg 0x14: [mem 0x10046000-0x10046fff]
+May 19 22:04:59 osmanubuntu kernel: [    0.248649] pci 0000:00:06.0: reg 0x20: [mem 0x8000008000-0x800000bfff 64bit pref]
+May 19 22:04:59 osmanubuntu kernel: [    0.250117] pci 0000:00:07.0: [1af4:1003] type 00 class 0x078000
+May 19 22:04:59 osmanubuntu kernel: [    0.251302] pci 0000:00:07.0: reg 0x10: [io  0x0080-0x00bf]
+May 19 22:04:59 osmanubuntu kernel: [    0.252069] pci 0000:00:07.0: reg 0x14: [mem 0x10045000-0x10045fff]
+May 19 22:04:59 osmanubuntu kernel: [    0.253004] pci 0000:00:07.0: reg 0x20: [mem 0x800000c000-0x800000ffff 64bit pref]
+May 19 22:04:59 osmanubuntu kernel: [    0.254578] pci 0000:00:08.0: [1af4:1005] type 00 class 0x00ff00
+May 19 22:04:59 osmanubuntu kernel: [    0.255738] pci 0000:00:08.0: reg 0x10: [io  0x00c0-0x00df]
+May 19 22:04:59 osmanubuntu kernel: [    0.256530] pci 0000:00:08.0: reg 0x14: [mem 0x10044000-0x10044fff]
+May 19 22:04:59 osmanubuntu kernel: [    0.257271] pci 0000:00:08.0: reg 0x20: [mem 0x8000010000-0x8000013fff 64bit pref]
+May 19 22:04:59 osmanubuntu kernel: [    0.258944] pci 0000:00:01.0: BAR 6: assigned [mem 0x10000000-0x1003ffff pref]
+May 19 22:04:59 osmanubuntu kernel: [    0.259866] pci 0000:00:01.0: BAR 4: assigned [mem 0x8000000000-0x8000003fff 64bit pref]
+May 19 22:04:59 osmanubuntu kernel: [    0.260969] pci 0000:00:02.0: BAR 4: assigned [mem 0x8000004000-0x8000007fff 64bit pref]
+May 19 22:04:59 osmanubuntu kernel: [    0.262054] pci 0000:00:03.0: BAR 0: assigned [mem 0x10040000-0x10043fff]
+May 19 22:04:59 osmanubuntu kernel: [    0.263785] pci 0000:00:04.0: BAR 0: assigned [mem 0x8000008000-0x800000bfff 64bit]
+May 19 22:04:59 osmanubuntu kernel: [    0.264791] pci 0000:00:05.0: BAR 0: assigned [mem 0x800000c000-0x800000ffff 64bit]
+May 19 22:04:59 osmanubuntu kernel: [    0.267347] pci 0000:00:06.0: BAR 4: assigned [mem 0x8000010000-0x8000013fff 64bit pref]
+May 19 22:04:59 osmanubuntu kernel: [    0.270050] pci 0000:00:07.0: BAR 4: assigned [mem 0x8000014000-0x8000017fff 64bit pref]
+May 19 22:04:59 osmanubuntu kernel: [    0.271733] pci 0000:00:08.0: BAR 4: assigned [mem 0x8000018000-0x800001bfff 64bit pref]
+May 19 22:04:59 osmanubuntu kernel: [    0.272960] pci 0000:00:01.0: BAR 1: assigned [mem 0x10044000-0x10044fff]
+May 19 22:04:59 osmanubuntu kernel: [    0.273098] pci 0000:00:02.0: BAR 1: assigned [mem 0x10045000-0x10045fff]
+May 19 22:04:59 osmanubuntu kernel: [    0.273337] pci 0000:00:06.0: BAR 1: assigned [mem 0x10046000-0x10046fff]
+May 19 22:04:59 osmanubuntu kernel: [    0.274363] pci 0000:00:07.0: BAR 1: assigned [mem 0x10047000-0x10047fff]
+May 19 22:04:59 osmanubuntu kernel: [    0.274500] pci 0000:00:08.0: BAR 1: assigned [mem 0x10048000-0x10048fff]
+May 19 22:04:59 osmanubuntu kernel: [    0.275347] pci 0000:00:06.0: BAR 0: assigned [io  0x1000-0x107f]
+May 19 22:04:59 osmanubuntu kernel: [    0.276561] pci 0000:00:07.0: BAR 0: assigned [io  0x1080-0x10bf]
+May 19 22:04:59 osmanubuntu kernel: [    0.277524] pci 0000:00:01.0: BAR 0: assigned [io  0x10c0-0x10df]
+May 19 22:04:59 osmanubuntu kernel: [    0.278641] pci 0000:00:08.0: BAR 0: assigned [io  0x10e0-0x10ff]
+May 19 22:04:59 osmanubuntu kernel: [    0.279904] pci_bus 0000:00: resource 4 [mem 0x10000000-0x3efeffff window]
+May 19 22:04:59 osmanubuntu kernel: [    0.281279] pci_bus 0000:00: resource 5 [io  0x0000-0xffff window]
+May 19 22:04:59 osmanubuntu kernel: [    0.282238] pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff window]
+May 19 22:04:59 osmanubuntu kernel: [    0.283850] iommu: Default domain type: Translated 
+May 19 22:04:59 osmanubuntu kernel: [    0.284184] iommu: DMA domain TLB invalidation policy: strict mode 
+May 19 22:04:59 osmanubuntu kernel: [    0.285062] SCSI subsystem initialized
+May 19 22:04:59 osmanubuntu kernel: [    0.285582] libata version 3.00 loaded.
+May 19 22:04:59 osmanubuntu kernel: [    0.285728] vgaarb: loaded
+May 19 22:04:59 osmanubuntu kernel: [    0.286358] ACPI: bus type USB registered
+May 19 22:04:59 osmanubuntu kernel: [    0.286711] usbcore: registered new interface driver usbfs
+May 19 22:04:59 osmanubuntu kernel: [    0.287627] usbcore: registered new interface driver hub
+May 19 22:04:59 osmanubuntu kernel: [    0.288513] usbcore: registered new device driver usb
+May 19 22:04:59 osmanubuntu kernel: [    0.289295] pps_core: LinuxPPS API ver. 1 registered
+May 19 22:04:59 osmanubuntu kernel: [    0.290181] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+May 19 22:04:59 osmanubuntu kernel: [    0.291856] PTP clock support registered
+May 19 22:04:59 osmanubuntu kernel: [    0.292639] EDAC MC: Ver: 3.0.0
+May 19 22:04:59 osmanubuntu kernel: [    0.293642] Registered efivars operations
+May 19 22:04:59 osmanubuntu kernel: [    0.294948] NetLabel: Initializing
+May 19 22:04:59 osmanubuntu kernel: [    0.295205] NetLabel:  domain hash size = 128
+May 19 22:04:59 osmanubuntu kernel: [    0.295542] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+May 19 22:04:59 osmanubuntu kernel: [    0.296078] NetLabel:  unlabeled traffic allowed by default
+May 19 22:04:59 osmanubuntu kernel: [    0.297170] clocksource: Switched to clocksource arch_sys_counter
+May 19 22:04:59 osmanubuntu kernel: [    0.301892] VFS: Disk quotas dquot_6.6.0
+May 19 22:04:59 osmanubuntu kernel: [    0.302293] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+May 19 22:04:59 osmanubuntu kernel: [    0.304019] AppArmor: AppArmor Filesystem Enabled
+May 19 22:04:59 osmanubuntu kernel: [    0.304918] pnp: PnP ACPI init
+May 19 22:04:59 osmanubuntu kernel: [    0.305253] system 00:00: [mem 0x4010000000-0x401fffffff window] could not be reserved
+May 19 22:04:59 osmanubuntu kernel: [    0.305584] pnp: PnP ACPI: found 1 devices
+May 19 22:04:59 osmanubuntu kernel: [    0.312699] NET: Registered PF_INET protocol family
+May 19 22:04:59 osmanubuntu kernel: [    0.313914] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+May 19 22:04:59 osmanubuntu kernel: [    0.316289] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+May 19 22:04:59 osmanubuntu kernel: [    0.317920] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+May 19 22:04:59 osmanubuntu kernel: [    0.320424] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+May 19 22:04:59 osmanubuntu kernel: [    0.320729] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+May 19 22:04:59 osmanubuntu kernel: [    0.320930] TCP: Hash tables configured (established 65536 bind 65536)
+May 19 22:04:59 osmanubuntu kernel: [    0.321147] MPTCP token hash table entries: 8192 (order: 6, 196608 bytes, linear)
+May 19 22:04:59 osmanubuntu kernel: [    0.321505] UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+May 19 22:04:59 osmanubuntu kernel: [    0.322815] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+May 19 22:04:59 osmanubuntu kernel: [    0.323555] NET: Registered PF_UNIX/PF_LOCAL protocol family
+May 19 22:04:59 osmanubuntu kernel: [    0.324395] NET: Registered PF_XDP protocol family
+May 19 22:04:59 osmanubuntu kernel: [    0.325792] pci 0000:00:04.0: enabling device (0000 -> 0002)
+May 19 22:04:59 osmanubuntu kernel: [    0.326438] pci 0000:00:05.0: enabling device (0000 -> 0002)
+May 19 22:04:59 osmanubuntu kernel: [    0.327993] PCI: CLS 0 bytes, default 64
+May 19 22:04:59 osmanubuntu kernel: [    0.329354] Trying to unpack rootfs image as initramfs...
+May 19 22:04:59 osmanubuntu kernel: [    0.337405] kvm [1]: HYP mode not available
+May 19 22:04:59 osmanubuntu kernel: [    0.338009] Initialise system trusted keyrings
+May 19 22:04:59 osmanubuntu kernel: [    0.338469] Key type blacklist registered
+May 19 22:04:59 osmanubuntu kernel: [    0.338883] workingset: timestamp_bits=40 max_order=21 bucket_order=0
+May 19 22:04:59 osmanubuntu kernel: [    0.339687] zbud: loaded
+May 19 22:04:59 osmanubuntu kernel: [    0.340421] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+May 19 22:04:59 osmanubuntu kernel: [    0.341542] fuse: init (API version 7.34)
+May 19 22:04:59 osmanubuntu kernel: [    0.342034] integrity: Platform Keyring initialized
+May 19 22:04:59 osmanubuntu kernel: [    0.349107] Key type asymmetric registered
+May 19 22:04:59 osmanubuntu kernel: [    0.349832] Asymmetric key parser 'x509' registered
+May 19 22:04:59 osmanubuntu kernel: [    0.350589] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+May 19 22:04:59 osmanubuntu kernel: [    0.351813] io scheduler mq-deadline registered
+May 19 22:04:59 osmanubuntu kernel: [    0.353721] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+May 19 22:04:59 osmanubuntu kernel: [    0.355317] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0
+May 19 22:04:59 osmanubuntu kernel: [    0.356880] ACPI: button: Power Button [PWRB]
+May 19 22:04:59 osmanubuntu kernel: [    0.358973] ACPI: \_SB_.L001: Enabled at IRQ 36
+May 19 22:04:59 osmanubuntu kernel: [    0.359122] virtio-pci 0000:00:01.0: enabling device (0000 -> 0003)
+May 19 22:04:59 osmanubuntu kernel: [    0.360113] ACPI: \_SB_.L002: Enabled at IRQ 37
+May 19 22:04:59 osmanubuntu kernel: [    0.363624] virtio-pci 0000:00:06.0: enabling device (0005 -> 0007)
+May 19 22:04:59 osmanubuntu kernel: [    0.364952] ACPI: \_SB_.L003: Enabled at IRQ 38
+May 19 22:04:59 osmanubuntu kernel: [    0.365559] virtio-pci 0000:00:07.0: enabling device (0000 -> 0003)
+May 19 22:04:59 osmanubuntu kernel: [    0.366504] ACPI: \_SB_.L000: Enabled at IRQ 35
+May 19 22:04:59 osmanubuntu kernel: [    0.366696] virtio-pci 0000:00:08.0: enabling device (0005 -> 0007)
+May 19 22:04:59 osmanubuntu kernel: [    0.367574] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+May 19 22:04:59 osmanubuntu kernel: [    0.372645] SuperH (H)SCI(F) driver initialized
+May 19 22:04:59 osmanubuntu kernel: [    0.373252] msm_serial: driver initialized
+May 19 22:04:59 osmanubuntu kernel: [    0.385670] loop: module loaded
+May 19 22:04:59 osmanubuntu kernel: [    0.386038] SPI driver altr_a10sr has no spi_device_id for altr,a10sr
+May 19 22:04:59 osmanubuntu kernel: [    0.388043] tun: Universal TUN/TAP device driver, 1.6
+May 19 22:04:59 osmanubuntu kernel: [    0.389364] PPP generic driver version 2.4.2
+May 19 22:04:59 osmanubuntu kernel: [    0.390323] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+May 19 22:04:59 osmanubuntu kernel: [    0.391350] ehci-pci: EHCI PCI platform driver
+May 19 22:04:59 osmanubuntu kernel: [    0.391478] ehci-orion: EHCI orion driver
+May 19 22:04:59 osmanubuntu kernel: [    0.391867] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+May 19 22:04:59 osmanubuntu kernel: [    0.393053] ohci-pci: OHCI PCI platform driver
+May 19 22:04:59 osmanubuntu kernel: [    0.393921] uhci_hcd: USB Universal Host Controller Interface driver
+May 19 22:04:59 osmanubuntu kernel: [    0.395588] mousedev: PS/2 mouse device common for all mice
+May 19 22:04:59 osmanubuntu kernel: [    0.397910] rtc-efi rtc-efi.0: registered as rtc0
+May 19 22:04:59 osmanubuntu kernel: [    0.398855] rtc-efi rtc-efi.0: setting system clock to 2026-05-19T22:04:54 UTC (1779228294)
+May 19 22:04:59 osmanubuntu kernel: [    0.400568] i2c_dev: i2c /dev entries driver
+May 19 22:04:59 osmanubuntu kernel: [    0.401824] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+May 19 22:04:59 osmanubuntu kernel: [    0.403885] device-mapper: uevent: version 1.0.3
+May 19 22:04:59 osmanubuntu kernel: [    0.404874] device-mapper: ioctl: 4.45.0-ioctl (2021-03-22) initialised: dm-devel@redhat.com
+May 19 22:04:59 osmanubuntu kernel: [    0.406552] ledtrig-cpu: registered to indicate activity on CPUs
+May 19 22:04:59 osmanubuntu kernel: [    0.408026] drop_monitor: Initializing network drop monitor service
+May 19 22:04:59 osmanubuntu kernel: [    0.409541] NET: Registered PF_INET6 protocol family
+May 19 22:04:59 osmanubuntu kernel: [    0.659281] Freeing initrd memory: 103820K
+May 19 22:04:59 osmanubuntu kernel: [    0.664281] Segment Routing with IPv6
+May 19 22:04:59 osmanubuntu kernel: [    0.664860] In-situ OAM (IOAM) with IPv6
+May 19 22:04:59 osmanubuntu kernel: [    0.665500] NET: Registered PF_PACKET protocol family
+May 19 22:04:59 osmanubuntu kernel: [    0.665875] Key type dns_resolver registered
+May 19 22:04:59 osmanubuntu kernel: [    0.666336] registered taskstats version 1
+May 19 22:04:59 osmanubuntu kernel: [    0.668733] Loading compiled-in X.509 certificates
+May 19 22:04:59 osmanubuntu kernel: [    0.670073] Loaded X.509 cert 'Build time autogenerated kernel key: ff18566744b262d4d040947ec559aee7439f707c'
+May 19 22:04:59 osmanubuntu kernel: [    0.670773] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing 2025 Kmod: d541cef61dc7e793b7eb7e899970a2eef0b5dc8c'
+May 19 22:04:59 osmanubuntu kernel: [    0.671440] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+May 19 22:04:59 osmanubuntu kernel: [    0.672114] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing 2025 Kmod: 4627603d2357a2a3f81006370894c221175893e9'
+May 19 22:04:59 osmanubuntu kernel: [    0.672831] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+May 19 22:04:59 osmanubuntu kernel: [    0.673552] blacklist: Loading compiled-in revocation X.509 certificates
+May 19 22:04:59 osmanubuntu kernel: [    0.674455] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+May 19 22:04:59 osmanubuntu kernel: [    0.674952] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+May 19 22:04:59 osmanubuntu kernel: [    0.675457] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+May 19 22:04:59 osmanubuntu kernel: [    0.675946] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+May 19 22:04:59 osmanubuntu kernel: [    0.676396] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+May 19 22:04:59 osmanubuntu kernel: [    0.676883] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+May 19 22:04:59 osmanubuntu kernel: [    0.677646] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+May 19 22:04:59 osmanubuntu kernel: [    0.678201] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+May 19 22:04:59 osmanubuntu kernel: [    0.678845] zswap: loaded using pool lzo/zbud
+May 19 22:04:59 osmanubuntu kernel: [    0.680647] Key type .fscrypt registered
+May 19 22:04:59 osmanubuntu kernel: [    0.681261] Key type fscrypt-provisioning registered
+May 19 22:04:59 osmanubuntu kernel: [    0.690055] cryptd: max_cpu_qlen set to 1000
+May 19 22:04:59 osmanubuntu kernel: [    0.702676] Key type encrypted registered
+May 19 22:04:59 osmanubuntu kernel: [    0.702883] AppArmor: AppArmor sha1 policy hashing enabled
+May 19 22:04:59 osmanubuntu kernel: [    0.704218] integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+May 19 22:04:59 osmanubuntu kernel: [    0.705401] integrity: Loaded X.509 cert 'Canonical Ltd. Master Certificate Authority: ad91990bc22ab1f517048c23b6655a268e345a63'
+May 19 22:04:59 osmanubuntu kernel: [    0.706203] ima: No TPM chip found, activating TPM-bypass!
+May 19 22:04:59 osmanubuntu kernel: [    0.706434] Loading compiled-in module X.509 certificates
+May 19 22:04:59 osmanubuntu kernel: [    0.706863] Loaded X.509 cert 'Build time autogenerated kernel key: ff18566744b262d4d040947ec559aee7439f707c'
+May 19 22:04:59 osmanubuntu kernel: [    0.707349] ima: Allocated hash algorithm: sha1
+May 19 22:04:59 osmanubuntu kernel: [    0.707578] ima: No architecture policies found
+May 19 22:04:59 osmanubuntu kernel: [    0.707841] evm: Initialising EVM extended attributes:
+May 19 22:04:59 osmanubuntu kernel: [    0.708236] evm: security.selinux
+May 19 22:04:59 osmanubuntu kernel: [    0.708418] evm: security.SMACK64
+May 19 22:04:59 osmanubuntu kernel: [    0.708555] evm: security.SMACK64EXEC
+May 19 22:04:59 osmanubuntu kernel: [    0.708777] evm: security.SMACK64TRANSMUTE
+May 19 22:04:59 osmanubuntu kernel: [    0.709055] evm: security.SMACK64MMAP
+May 19 22:04:59 osmanubuntu kernel: [    0.709878] evm: security.apparmor
+May 19 22:04:59 osmanubuntu kernel: [    0.710079] evm: security.ima
+May 19 22:04:59 osmanubuntu kernel: [    0.710428] evm: security.capability
+May 19 22:04:59 osmanubuntu kernel: [    0.710659] evm: HMAC attrs: 0x1
+May 19 22:04:59 osmanubuntu kernel: [    0.711632] clk: Disabling unused clocks
+May 19 22:04:59 osmanubuntu kernel: [    0.713870] Freeing unused kernel memory: 9664K
+May 19 22:04:59 osmanubuntu kernel: [    0.719879] Checked W+X mappings: passed, no W+X pages found
+May 19 22:04:59 osmanubuntu kernel: [    0.720498] Run /init as init process
+May 19 22:04:59 osmanubuntu kernel: [    0.720842]   with arguments:
+May 19 22:04:59 osmanubuntu kernel: [    0.720843]     /init
+May 19 22:04:59 osmanubuntu kernel: [    0.720843]   with environment:
+May 19 22:04:59 osmanubuntu kernel: [    0.720844]     HOME=/
+May 19 22:04:59 osmanubuntu kernel: [    0.720844]     TERM=linux
+May 19 22:04:59 osmanubuntu kernel: [    0.774889] xhci_hcd 0000:00:04.0: xHCI Host Controller
+May 19 22:04:59 osmanubuntu kernel: [    0.776286] xhci_hcd 0000:00:04.0: new USB bus registered, assigned bus number 1
+May 19 22:04:59 osmanubuntu kernel: [    0.778419] xhci_hcd 0000:00:04.0: hcc params 0x00087001 hci version 0x100 quirks 0x0000000000000014
+May 19 22:04:59 osmanubuntu kernel: [    0.780881] xhci_hcd 0000:00:04.0: xHCI Host Controller
+May 19 22:04:59 osmanubuntu kernel: [    0.781094] xhci_hcd 0000:00:04.0: new USB bus registered, assigned bus number 2
+May 19 22:04:59 osmanubuntu kernel: [    0.781345] xhci_hcd 0000:00:04.0: Host supports USB 3.0 SuperSpeed
+May 19 22:04:59 osmanubuntu kernel: [    0.781510] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.15
+May 19 22:04:59 osmanubuntu kernel: [    0.781734] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+May 19 22:04:59 osmanubuntu kernel: [    0.782030] usb usb1: Product: xHCI Host Controller
+May 19 22:04:59 osmanubuntu kernel: [    0.782181] virtio_blk virtio2: [vda] 83886080 512-byte logical blocks (42.9 GB/40.0 GiB)
+May 19 22:04:59 osmanubuntu kernel: [    0.782189] usb usb1: Manufacturer: Linux 5.15.0-179-generic xhci-hcd
+May 19 22:04:59 osmanubuntu kernel: [    0.782610] usb usb1: SerialNumber: 0000:00:04.0
+May 19 22:04:59 osmanubuntu kernel: [    0.782927] hub 1-0:1.0: USB hub found
+May 19 22:04:59 osmanubuntu kernel: [    0.783013] hub 1-0:1.0: 4 ports detected
+May 19 22:04:59 osmanubuntu kernel: [    0.783158] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+May 19 22:04:59 osmanubuntu kernel: [    0.783383] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.15
+May 19 22:04:59 osmanubuntu kernel: [    0.783719] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+May 19 22:04:59 osmanubuntu kernel: [    0.783956] usb usb2: Product: xHCI Host Controller
+May 19 22:04:59 osmanubuntu kernel: [    0.784050] usb usb2: Manufacturer: Linux 5.15.0-179-generic xhci-hcd
+May 19 22:04:59 osmanubuntu kernel: [    0.784223] usb usb2: SerialNumber: 0000:00:04.0
+May 19 22:04:59 osmanubuntu kernel: [    0.784743] hub 2-0:1.0: USB hub found
+May 19 22:04:59 osmanubuntu kernel: [    0.784862] hub 2-0:1.0: 4 ports detected
+May 19 22:04:59 osmanubuntu kernel: [    0.785222] xhci_hcd 0000:00:05.0: xHCI Host Controller
+May 19 22:04:59 osmanubuntu kernel: [    0.785385] xhci_hcd 0000:00:05.0: new USB bus registered, assigned bus number 3
+May 19 22:04:59 osmanubuntu kernel: [    0.785589] xhci_hcd 0000:00:05.0: hcc params 0x00087001 hci version 0x100 quirks 0x0000000000000010
+May 19 22:04:59 osmanubuntu kernel: [    0.785951] xhci_hcd 0000:00:05.0: xHCI Host Controller
+May 19 22:04:59 osmanubuntu kernel: [    0.786056] xhci_hcd 0000:00:05.0: new USB bus registered, assigned bus number 4
+May 19 22:04:59 osmanubuntu kernel: [    0.786219] xhci_hcd 0000:00:05.0: Host supports USB 3.0 SuperSpeed
+May 19 22:04:59 osmanubuntu kernel: [    0.786376] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.15
+May 19 22:04:59 osmanubuntu kernel: [    0.786551] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+May 19 22:04:59 osmanubuntu kernel: [    0.786708] usb usb3: Product: xHCI Host Controller
+May 19 22:04:59 osmanubuntu kernel: [    0.786838] usb usb3: Manufacturer: Linux 5.15.0-179-generic xhci-hcd
+May 19 22:04:59 osmanubuntu kernel: [    0.786984] usb usb3: SerialNumber: 0000:00:05.0
+May 19 22:04:59 osmanubuntu kernel: [    0.794411] hub 3-0:1.0: USB hub found
+May 19 22:04:59 osmanubuntu kernel: [    0.794511] hub 3-0:1.0: 4 ports detected
+May 19 22:04:59 osmanubuntu kernel: [    0.796564] usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+May 19 22:04:59 osmanubuntu kernel: [    0.796765] usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.15
+May 19 22:04:59 osmanubuntu kernel: [    0.796963] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+May 19 22:04:59 osmanubuntu kernel: [    0.797146] usb usb4: Product: xHCI Host Controller
+May 19 22:04:59 osmanubuntu kernel: [    0.797307] usb usb4: Manufacturer: Linux 5.15.0-179-generic xhci-hcd
+May 19 22:04:59 osmanubuntu kernel: [    0.797438] usb usb4: SerialNumber: 0000:00:05.0
+May 19 22:04:59 osmanubuntu kernel: [    0.797649] hub 4-0:1.0: USB hub found
+May 19 22:04:59 osmanubuntu kernel: [    0.797730] hub 4-0:1.0: 4 ports detected
+May 19 22:04:59 osmanubuntu kernel: [    0.803276] [drm] pci: virtio-gpu-pci detected at 0000:00:02.0
+May 19 22:04:59 osmanubuntu kernel: [    0.803497] [drm] features: +virgl +edid -resource_blob -host_visible
+May 19 22:04:59 osmanubuntu kernel: [    0.803981] [drm] number of scanouts: 1
+May 19 22:04:59 osmanubuntu kernel: [    0.804083] [drm] number of cap sets: 2
+May 19 22:04:59 osmanubuntu kernel: [    0.805681] [drm] cap set 0: id 1, max-version 1, max-size 308
+May 19 22:04:59 osmanubuntu kernel: [    0.805989]  vda: vda1 vda2 vda3
+May 19 22:04:59 osmanubuntu kernel: [    0.806836] [drm] cap set 1: id 2, max-version 2, max-size 1376
+May 19 22:04:59 osmanubuntu kernel: [    0.807538] [drm] Initialized virtio_gpu 0.1.0 0 for virtio1 on minor 0
+May 19 22:04:59 osmanubuntu kernel: [    0.808117] virtio_net virtio0 enp0s1: renamed from eth0
+May 19 22:04:59 osmanubuntu kernel: [    0.809022] fbcon: Deferring console take-over
+May 19 22:04:59 osmanubuntu kernel: [    0.809224] virtio_gpu virtio1: [drm] fb0: virtio_gpudrmfb frame buffer device
+May 19 22:04:59 osmanubuntu kernel: [    1.117950] usb 1-1: new high-speed USB device number 2 using xhci_hcd
+May 19 22:04:59 osmanubuntu kernel: [    1.133164] raid6: neonx8   gen() 45136 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    1.201163] raid6: neonx8   xor() 38998 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    1.266213] usb 1-1: New USB device found, idVendor=0627, idProduct=0001, bcdDevice= 0.00
+May 19 22:04:59 osmanubuntu kernel: [    1.266379] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=10
+May 19 22:04:59 osmanubuntu kernel: [    1.266524] usb 1-1: Product: QEMU USB Tablet
+May 19 22:04:59 osmanubuntu kernel: [    1.266612] usb 1-1: Manufacturer: QEMU
+May 19 22:04:59 osmanubuntu kernel: [    1.266690] usb 1-1: SerialNumber: 28754-0000:00:04.0-1
+May 19 22:04:59 osmanubuntu kernel: [    1.269195] raid6: neonx4   gen() 45587 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    1.337164] raid6: neonx4   xor() 39709 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    1.393941] usb 1-2: new high-speed USB device number 3 using xhci_hcd
+May 19 22:04:59 osmanubuntu kernel: [    1.405162] raid6: neonx2   gen() 46568 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    1.473164] raid6: neonx2   xor() 39438 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    1.541165] raid6: neonx1   gen() 46002 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    1.542221] usb 1-2: New USB device found, idVendor=0627, idProduct=0001, bcdDevice= 0.00
+May 19 22:04:59 osmanubuntu kernel: [    1.542386] usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=9
+May 19 22:04:59 osmanubuntu kernel: [    1.542529] usb 1-2: Product: QEMU USB Mouse
+May 19 22:04:59 osmanubuntu kernel: [    1.542616] usb 1-2: Manufacturer: QEMU
+May 19 22:04:59 osmanubuntu kernel: [    1.542693] usb 1-2: SerialNumber: 89126-0000:00:04.0-2
+May 19 22:04:59 osmanubuntu kernel: [    1.609162] raid6: neonx1   xor() 29606 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    1.669934] usb 1-3: new high-speed USB device number 4 using xhci_hcd
+May 19 22:04:59 osmanubuntu kernel: [    1.677162] raid6: int64x8  gen() 21253 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    1.745164] raid6: int64x8  xor() 11397 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    1.813171] raid6: int64x4  gen() 20670 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    1.818890] usb 1-3: New USB device found, idVendor=0627, idProduct=0001, bcdDevice= 0.00
+May 19 22:04:59 osmanubuntu kernel: [    1.819541] usb 1-3: New USB device strings: Mfr=1, Product=4, SerialNumber=11
+May 19 22:04:59 osmanubuntu kernel: [    1.820052] usb 1-3: Product: QEMU USB Keyboard
+May 19 22:04:59 osmanubuntu kernel: [    1.820356] usb 1-3: Manufacturer: QEMU
+May 19 22:04:59 osmanubuntu kernel: [    1.820603] usb 1-3: SerialNumber: 68284-0000:00:04.0-3
+May 19 22:04:59 osmanubuntu kernel: [    1.881178] raid6: int64x4  xor() 10678 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    1.949167] raid6: int64x2  gen() 17865 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    1.949955] usb 1-4: new full-speed USB device number 5 using xhci_hcd
+May 19 22:04:59 osmanubuntu kernel: [    2.017170] raid6: int64x2  xor()  9787 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    2.085171] raid6: int64x1  gen() 15295 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    2.098890] usb 1-4: New USB device found, idVendor=0409, idProduct=55aa, bcdDevice= 1.01
+May 19 22:04:59 osmanubuntu kernel: [    2.099496] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+May 19 22:04:59 osmanubuntu kernel: [    2.100055] usb 1-4: Product: QEMU USB Hub
+May 19 22:04:59 osmanubuntu kernel: [    2.100375] usb 1-4: Manufacturer: QEMU
+May 19 22:04:59 osmanubuntu kernel: [    2.100710] usb 1-4: SerialNumber: 314159-0000:00:04.0-4
+May 19 22:04:59 osmanubuntu kernel: [    2.101464] hub 1-4:1.0: USB hub found
+May 19 22:04:59 osmanubuntu kernel: [    2.101946] hub 1-4:1.0: 8 ports detected
+May 19 22:04:59 osmanubuntu kernel: [    2.106293] hid: raw HID events driver (C) Jiri Kosina
+May 19 22:04:59 osmanubuntu kernel: [    2.109530] usbcore: registered new interface driver usbhid
+May 19 22:04:59 osmanubuntu kernel: [    2.110200] usbhid: USB HID core driver
+May 19 22:04:59 osmanubuntu kernel: [    2.111457] input: QEMU QEMU USB Tablet as /devices/pci0000:00/0000:00:04.0/usb1/1-1/1-1:1.0/0003:0627:0001.0001/input/input1
+May 19 22:04:59 osmanubuntu kernel: [    2.113563] hid-generic 0003:0627:0001.0001: input,hidraw0: USB HID v0.01 Mouse [QEMU QEMU USB Tablet] on usb-0000:00:04.0-1/input0
+May 19 22:04:59 osmanubuntu kernel: [    2.114750] input: QEMU QEMU USB Mouse as /devices/pci0000:00/0000:00:04.0/usb1/1-2/1-2:1.0/0003:0627:0001.0002/input/input2
+May 19 22:04:59 osmanubuntu kernel: [    2.115967] hid-generic 0003:0627:0001.0002: input,hidraw1: USB HID v0.01 Mouse [QEMU QEMU USB Mouse] on usb-0000:00:04.0-2/input0
+May 19 22:04:59 osmanubuntu kernel: [    2.117570] input: QEMU QEMU USB Keyboard as /devices/pci0000:00/0000:00:04.0/usb1/1-3/1-3:1.0/0003:0627:0001.0003/input/input3
+May 19 22:04:59 osmanubuntu kernel: [    2.153176] raid6: int64x1  xor()  7890 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    2.153663] raid6: using algorithm neonx2 gen() 46568 MB/s
+May 19 22:04:59 osmanubuntu kernel: [    2.154775] raid6: .... xor() 39438 MB/s, rmw enabled
+May 19 22:04:59 osmanubuntu kernel: [    2.155775] raid6: using neon recovery algorithm
+May 19 22:04:59 osmanubuntu kernel: [    2.157775] xor: measuring software checksum speed
+May 19 22:04:59 osmanubuntu kernel: [    2.159061]    8regs           : 45594 MB/sec
+May 19 22:04:59 osmanubuntu kernel: [    2.160477]    32regs          : 65022 MB/sec
+May 19 22:04:59 osmanubuntu kernel: [    2.161612]    arm64_neon      : 59293 MB/sec
+May 19 22:04:59 osmanubuntu kernel: [    2.162431] xor: using function: 32regs (65022 MB/sec)
+May 19 22:04:59 osmanubuntu kernel: [    2.163793] async_tx: api initialized (async)
+May 19 22:04:59 osmanubuntu kernel: [    2.182286] hid-generic 0003:0627:0001.0003: input,hidraw2: USB HID v1.11 Keyboard [QEMU QEMU USB Keyboard] on usb-0000:00:04.0-3/input0
+May 19 22:04:59 osmanubuntu kernel: [    2.259682] Btrfs loaded, crc32c=crc32c-generic, zoned=yes, fsverity=yes
+May 19 22:04:59 osmanubuntu kernel: [    2.401301] usb 1-4.1: new full-speed USB device number 6 using xhci_hcd
+May 19 22:04:59 osmanubuntu kernel: [    2.509847] usb 1-4.1: not running at top speed; connect to a high speed hub
+May 19 22:04:59 osmanubuntu kernel: [    2.510647] usb 1-4.1: New USB device found, idVendor=46f4, idProduct=0001, bcdDevice= 0.00
+May 19 22:04:59 osmanubuntu kernel: [    2.511119] usb 1-4.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+May 19 22:04:59 osmanubuntu kernel: [    2.511429] usb 1-4.1: Product: QEMU USB HARDDRIVE
+May 19 22:04:59 osmanubuntu kernel: [    2.511614] usb 1-4.1: Manufacturer: QEMU
+May 19 22:04:59 osmanubuntu kernel: [    2.511786] usb 1-4.1: SerialNumber: 1-0000:00:04.0-4.1
+May 19 22:04:59 osmanubuntu kernel: [    2.514302] usb-storage 1-4.1:1.0: USB Mass Storage device detected
+May 19 22:04:59 osmanubuntu kernel: [    2.514866] scsi host0: usb-storage 1-4.1:1.0
+May 19 22:04:59 osmanubuntu kernel: [    2.515201] usbcore: registered new interface driver usb-storage
+May 19 22:04:59 osmanubuntu kernel: [    2.517396] usbcore: registered new interface driver uas
+May 19 22:04:59 osmanubuntu kernel: [    2.524126] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+May 19 22:04:59 osmanubuntu kernel: [    2.789929] pstore: Using crash dump compression: deflate
+May 19 22:04:59 osmanubuntu kernel: [    2.790547] pstore: Registered efi as persistent store backend
+May 19 22:04:59 osmanubuntu kernel: [    2.793237] EXT4-fs (dm-0): re-mounted. Opts: (null). Quota mode: none.
+May 19 22:04:59 osmanubuntu kernel: [    2.811204] alua: device handler registered
+May 19 22:04:59 osmanubuntu kernel: [    2.815724] emc: device handler registered
+May 19 22:04:59 osmanubuntu kernel: [    2.819617] rdac: device handler registered
+May 19 22:04:59 osmanubuntu kernel: [    2.862086] loop0: detected capacity change from 0 to 8
+May 19 22:04:59 osmanubuntu kernel: [    2.863371] loop1: detected capacity change from 0 to 122368
+May 19 22:04:59 osmanubuntu kernel: [    2.865900] loop2: detected capacity change from 0 to 122008
+May 19 22:04:59 osmanubuntu kernel: [    2.867136] loop3: detected capacity change from 0 to 69032
+May 19 22:04:59 osmanubuntu kernel: [    3.074225] EXT4-fs (vda2): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+May 19 22:04:59 osmanubuntu kernel: [    3.086533] snd_hda_intel 0000:00:03.0: enabling device (0000 -> 0002)
+May 19 22:04:59 osmanubuntu kernel: [    3.086649] snd_hda_intel 0000:00:03.0: Force to snoop mode by module option
+May 19 22:04:59 osmanubuntu kernel: [    3.106817] snd_hda_codec_generic hdaudioC0D0: autoconfig for Generic: line_outs=1 (0x3/0x0/0x0/0x0/0x0) type:line
+May 19 22:04:59 osmanubuntu kernel: [    3.106820] snd_hda_codec_generic hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+May 19 22:04:59 osmanubuntu kernel: [    3.106821] snd_hda_codec_generic hdaudioC0D0:    hp_outs=0 (0x0/0x0/0x0/0x0/0x0)
+May 19 22:04:59 osmanubuntu kernel: [    3.106821] snd_hda_codec_generic hdaudioC0D0:    mono: mono_out=0x0
+May 19 22:04:59 osmanubuntu kernel: [    3.106822] snd_hda_codec_generic hdaudioC0D0:    inputs:
+May 19 22:04:59 osmanubuntu kernel: [    3.106822] snd_hda_codec_generic hdaudioC0D0:      Line=0x5
+May 19 22:04:59 osmanubuntu kernel: [    3.114843] audit: type=1400 audit(1779228297.212:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=633 comm="apparmor_parser"
+May 19 22:04:59 osmanubuntu kernel: [    3.114927] audit: type=1400 audit(1779228297.212:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=634 comm="apparmor_parser"
+May 19 22:04:59 osmanubuntu kernel: [    3.114954] audit: type=1400 audit(1779228297.212:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=634 comm="apparmor_parser"
+May 19 22:04:59 osmanubuntu kernel: [    3.124320] audit: type=1400 audit(1779228297.220:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=635 comm="apparmor_parser"
+May 19 22:04:59 osmanubuntu kernel: [    3.124322] audit: type=1400 audit(1779228297.220:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=635 comm="apparmor_parser"
+May 19 22:04:59 osmanubuntu kernel: [    3.124323] audit: type=1400 audit(1779228297.220:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=635 comm="apparmor_parser"
+May 19 22:04:59 osmanubuntu kernel: [    3.124323] audit: type=1400 audit(1779228297.220:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/{,usr/}sbin/dhclient" pid=635 comm="apparmor_parser"
+May 19 22:04:59 osmanubuntu kernel: [    3.124426] audit: type=1400 audit(1779228297.220:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=636 comm="apparmor_parser"
+May 19 22:04:59 osmanubuntu kernel: [    3.130788] audit: type=1400 audit(1779228297.228:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache" pid=639 comm="apparmor_parser"
+May 19 22:04:59 osmanubuntu kernel: [    3.529455] scsi 0:0:0:0: CD-ROM            QEMU     QEMU CD-ROM      2.5+ PQ: 0 ANSI: 5
+May 19 22:04:59 osmanubuntu kernel: [    3.529871] sr 0:0:0:0: [sr0] scsi3-mmc drive: 16x/50x cd/rw xa/form2 cdda tray
+May 19 22:04:59 osmanubuntu kernel: [    3.529886] cdrom: Uniform CD-ROM driver Revision: 3.20
+May 19 22:04:59 osmanubuntu kernel: [    3.530160] sr 0:0:0:0: Attached scsi CD-ROM sr0
+May 19 22:04:59 osmanubuntu kernel: [    3.530186] sr 0:0:0:0: Attached scsi generic sg0 type 5
+May 19 22:04:59 osmanubuntu kernel: [    5.716270] kauditd_printk_skb: 32 callbacks suppressed
+May 19 22:04:59 osmanubuntu kernel: [    5.716271] audit: type=1400 audit(1779228299.812:43): apparmor="DENIED" operation="capable" profile="/usr/sbin/cupsd" pid=765 comm="cupsd" capability=12  capname="net_admin"
+May 19 22:04:59 osmanubuntu kernel: [    5.782160] loop4: detected capacity change from 0 to 8
+May 19 22:04:59 osmanubuntu kernel: [    5.785982] audit: type=1400 audit(1779228299.884:44): apparmor="DENIED" operation="capable" profile="/usr/sbin/cups-browsed" pid=803 comm="cups-browsed" capability=23  capname="sys_nice"
+May 19 22:05:00 osmanubuntu kernel: [    5.906516] audit: type=1400 audit(1779228300.004:45): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=899 comm="apparmor_parser"
+May 19 22:05:00 osmanubuntu kernel: [    5.926592] audit: type=1400 audit(1779228300.024:46): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=899 comm="apparmor_parser"
+May 19 22:05:10 osmanubuntu kernel: [   16.296083] virtio_gpu virtio1: [drm] drm_plane_enable_fb_damage_clips() not called
+May 19 22:05:11 osmanubuntu kernel: [   17.274486] rfkill: input handler disabled
+May 19 22:05:11 osmanubuntu kernel: [   17.576178] input: spice vdagent tablet as /devices/virtual/input/input4
