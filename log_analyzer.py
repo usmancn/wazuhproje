@@ -294,7 +294,7 @@ class LLMAnalyzer:
         return res.strip() + acil_mudahale
 
     def _call_ollama(self, prompt):
-        model = self.model or "llama3.2"
+        model = self.model or "mistral"
         print(f"{Colors.OKCYAN}[*] Ollama ({model}) ile analiz yapılıyor...{Colors.ENDC}")
         try:
             data = json.dumps({"model": model, "prompt": prompt, "stream": False}).encode()

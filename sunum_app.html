@@ -1174,8 +1174,9 @@ function renderAlerts(arr) {
       var div = document.createElement('div');
       div.className = 'alert-card ' + cls;
       
-      var aiBtnHtml = '<div style="background:rgba(0,0,0,0.4); border:1px solid var(--border); padding:12px; border-radius:8px; margin-bottom:12px; display:flex; gap:10px; align-items:center;">' + 
-                        '<button onclick="analyzeSingleAlert(this, \'' + encodeURIComponent(jsonStr) + '\')" class="btn-primary" style="width:auto; padding:8px 16px; font-size:0.75rem;"> Manuel Yorumla</button>' +
+      var aiBtnHtml = '<div style="background:var(--bg-row); border:1px solid var(--border); padding:10px 14px; border-radius:4px; margin-bottom:10px; display:flex; gap:8px; align-items:center;">' + 
+                        '<button onclick="analyzeSingleAlert(this, \'' + encodeURIComponent(jsonStr) + '\')" style="padding:6px 14px; background:var(--blue); border:none; border-radius:3px; color:#fff; font-family:var(--font-sans); font-size:0.72rem; font-weight:700; cursor:pointer; text-transform:uppercase; letter-spacing:0.4px;"> Manuel Yorumla</button>' +
+                        '<button onclick="toggleJsonPanel(this)" data-json=\'' + encodeURIComponent(jsonStr) + '\' style="padding:6px 14px; background:transparent; border:1px solid var(--border); border-radius:3px; color:var(--t2); font-family:var(--font-sans); font-size:0.72rem; font-weight:700; cursor:pointer; text-transform:uppercase; letter-spacing:0.4px; transition:all 0.15s;"> JSON</button>' +
                       '</div>';
       var aiResHtml = '<div class="ai-single-res" style="display:none;margin-bottom:12px;padding:14px;background:var(--bg-card);border:1px solid var(--border);border-left:2px solid var(--blue);border-radius:4px;font-size:0.82rem;color:var(--t1);line-height:1.6;"></div>';
 
