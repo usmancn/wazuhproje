@@ -417,7 +417,7 @@ strong { color: var(--t1); }
       </div>
       <div style="display:flex; align-items:center; gap:8px; background:rgba(46,204,113,0.1); border:1px solid rgba(46,204,113,0.2); padding:6px 12px; border-radius:4px; font-size:0.7rem; font-weight:700; color:#2ecc71; letter-spacing:0.5px; text-transform:uppercase;">
         <span style="width:6px; height:6px; background:#2ecc71; border-radius:50%; display:inline-block; animation:pulse 1.5s infinite;"></span>
-        Canli Veri Akisi
+        Canlı Veri Akışı
       </div>
     </div>
     
@@ -902,12 +902,21 @@ function renderLogFindings(containerId, badgeId, findings, logSource) {
     var countStr = (f.event_count > 1 ? f.event_count : '1') + ' olay';
     var sourceLabel = '<span style="color:var(--blue); font-weight:600;">' + logSource + '</span>';
 
+    var rawLogHtml = '';
+    if (f.sample_log) {
+      rawLogHtml = '<div style="margin-top:10px; padding:8px 10px; background:#04080f; border:1px solid var(--border-soft); border-radius:3px; font-family:var(--font-mono); font-size:0.68rem; color:#7fb3d3; white-space:pre-wrap; word-wrap:break-word; overflow-x:auto; line-height:1.4;">' +
+                     '<span style="font-size:0.58rem; font-weight:700; color:var(--t3); display:block; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:4px;">Tetikleyen Kanıt Logu</span>' +
+                     f.sample_log +
+                   '</div>';
+    }
+
     detCol.innerHTML =
       '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">' +
         '<span style="font-size:0.65rem; font-weight:700; padding:2px 7px; border-radius:2px; background:'+sevColor+'22; color:'+sevColor+'; border:1px solid '+sevColor+'44; text-transform:uppercase; letter-spacing:0.4px;">'+sevTr+'</span>' +
         (f.mitre ? '<code style="font-size:0.65rem; color:var(--t3);">'+f.mitre+'</code>' : '') +
       '</div>' +
       '<div style="font-size:0.8rem; font-weight:600; color:var(--t1); line-height:1.4; margin-bottom:10px;">'+f.description+'</div>' +
+      rawLogHtml +
       '<div style="font-size:0.68rem; color:var(--t3); font-family:var(--font-mono); display:flex; justify-content:space-between; border-top:1px solid var(--border-soft); padding-top:6px; margin-top:8px;">' +
         '<span>' + countStr + '</span>' +
         '<span>Dosya: ' + sourceLabel + '</span>' +

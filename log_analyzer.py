@@ -77,10 +77,15 @@ class ThreatDetector:
 
     def analyze_auth(self, parsed):
         ip_fail = defaultdict(int)
+        ip_sample = {}
         for a in parsed.get('failed_login', []):
-            ip_fail[a['data'].get('ip')] += 1
+            ip = a['data'].get('ip')
+            ip_fail[ip] += 1
+            ip_sample[ip] = a.get('raw', '')
         for a in parsed.get('invalid_user', []):
-            ip_fail[a['data'].get('ip')] += 1
+            ip = a['data'].get('ip')
+            ip_fail[ip] += 1
+            ip_sample[ip] = a.get('raw', '')
 
         for ip, cnt in ip_fail.items():
             sev = 'CRITICAL' if cnt >= 10 else 'HIGH' if cnt >= 5 else 'MEDIUM'
@@ -90,7 +95,8 @@ class ThreatDetector:
                 'description': f"{ip} adresinden {cnt} başarısız SSH giriş denemesi. Bu IP sisteme kaba kuvvet saldırısı yapıyor.",
                 'mitre': 'T1110.001 — Brute Force: Password Guessing',
                 'source': 'auth.log',
-                'event_count': cnt
+                'event_count': cnt,
+                'sample_log': ip_sample.get(ip, '')
             })
 
         for f in parsed.get('sudo_fail', []):
@@ -100,7 +106,8 @@ class ThreatDetector:
                 'description': f"'{f['data'].get('user')}' kullanıcısı yetkisiz şekilde '{f['data'].get('cmd')}' komutunu root olarak çalıştırmaya çalıştı ama başarısız oldu.",
                 'mitre': 'T1548.003 — Sudo and Sudo Caching',
                 'source': 'auth.log',
-                'event_count': 1
+                'event_count': 1,
+                'sample_log': f.get('raw', '')
             })
 
         for f in parsed.get('sudo_success', []):
@@ -111,7 +118,8 @@ class ThreatDetector:
                     'description': f"'{f['data'].get('user')}' kullanıcısı sudo komutuyla root (yönetici) yetkisi aldı. Çalıştırılan komut: {f['data'].get('cmd')}",
                     'mitre': 'T1548.003 — Sudo and Sudo Caching',
                     'source': 'auth.log',
-                    'event_count': 1
+                    'event_count': 1,
+                    'sample_log': f.get('raw', '')
                 })
 
     def analyze_syslog(self, parsed):
@@ -123,7 +131,8 @@ class ThreatDetector:
                 'description': f"Ağ bağlantı tablosu (nf_conntrack) doldu — {len(ct)} kez tekrarlandı. Bu durum DDoS saldırısına veya aşırı bağlantı yüküne işaret eder.",
                 'mitre': 'T1498 — Network Denial of Service',
                 'source': 'syslog',
-                'event_count': len(ct)
+                'event_count': len(ct),
+                'sample_log': ct[-1].get('raw', '')
             })
         for cron in parsed.get('cron_job', []):
             cmd = cron['data'].get('cmd', '')
@@ -134,7 +143,8 @@ class ThreatDetector:
                     'description': f"Şüpheli zamanlanmış görev (cron job) tespit edildi: `{cmd}` — Bu komut arka kapı (backdoor) kurma girişimi olabilir.",
                     'mitre': 'T1053.003 — Scheduled Task/Job: Cron',
                     'source': 'syslog',
-                    'event_count': 1
+                    'event_count': 1,
+                    'sample_log': cron.get('raw', '')
                 })
 
     def analyze_kern(self, parsed):
@@ -145,7 +155,8 @@ class ThreatDetector:
                 'description': f"Sistem belleği doldu ve Linux çekirdeği '{oom['data'].get('process')}' programını zorla kapattı. Sistem kararsızlığa girebilir.",
                 'mitre': 'T1499 — Endpoint Denial of Service',
                 'source': 'kern.log',
-                'event_count': 1
+                'event_count': 1,
+                'sample_log': oom.get('raw', '')
             })
         for aa in parsed.get('apparmor', []):
             proc = aa['data'].get('process', '')
@@ -159,7 +170,8 @@ class ThreatDetector:
                 'description': f"AppArmor güvenlik duvarı '{proc}' programının çalışmasını engelledi.",
                 'mitre': 'T1068 — Exploitation for Privilege Escalation',
                 'source': 'kern.log',
-                'event_count': 1
+                'event_count': 1,
+                'sample_log': aa.get('raw', '')
             })
 
     def get_findings(self):
