@@ -27517,3 +27517,987 @@ May 19 00:54:06 osmanubuntu systemd[1]: session-904.scope: Deactivated successfu
 May 19 00:54:11 osmanubuntu systemd[1]: Started Session 905 of User osman.
 May 19 00:54:11 osmanubuntu systemd[1]: session-905.scope: Deactivated successfully.
 May 19 00:54:11 osmanubuntu systemd[1]: Started Session 906 of User osman.
+May 19 00:54:11 osmanubuntu systemd[1]: session-906.scope: Deactivated successfully.
+May 19 00:54:11 osmanubuntu systemd[1]: Started Session 907 of User osman.
+May 19 00:54:11 osmanubuntu systemd[1]: session-907.scope: Deactivated successfully.
+May 19 00:54:21 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 00:54:21 osmanubuntu systemd[46247]: Stopped target Main User Target.
+May 19 00:54:21 osmanubuntu systemd[46247]: Stopping D-Bus User Message Bus...
+May 19 00:54:21 osmanubuntu systemd[46247]: Stopping PipeWire Media Session Manager...
+May 19 00:54:21 osmanubuntu systemd[46247]: Stopped D-Bus User Message Bus.
+May 19 00:54:21 osmanubuntu systemd[46247]: Stopped PipeWire Media Session Manager.
+May 19 00:54:21 osmanubuntu systemd[46247]: Stopping PipeWire Multimedia Service...
+May 19 00:54:21 osmanubuntu systemd[46247]: Stopped PipeWire Multimedia Service.
+May 19 00:54:21 osmanubuntu systemd[46247]: Removed slice User Core Session Slice.
+May 19 00:54:21 osmanubuntu systemd[46247]: Stopped target Basic System.
+May 19 00:54:21 osmanubuntu systemd[46247]: Stopped target Paths.
+May 19 00:54:21 osmanubuntu systemd[46247]: Stopped Pending report trigger for Ubuntu Report.
+May 19 00:54:21 osmanubuntu systemd[46247]: Stopped target Sockets.
+May 19 00:54:21 osmanubuntu systemd[46247]: Stopped target Timers.
+May 19 00:54:21 osmanubuntu systemd[46247]: Closed D-Bus User Message Bus Socket.
+May 19 00:54:21 osmanubuntu systemd[46247]: Closed GnuPG network certificate management daemon.
+May 19 00:54:21 osmanubuntu systemd[46247]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 00:54:21 osmanubuntu systemd[46247]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 00:54:21 osmanubuntu systemd[46247]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 00:54:21 osmanubuntu systemd[46247]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 00:54:21 osmanubuntu systemd[46247]: Closed PipeWire Multimedia System Socket.
+May 19 00:54:21 osmanubuntu systemd[46247]: Closed debconf communication socket.
+May 19 00:54:21 osmanubuntu systemd[46247]: Closed Sound System.
+May 19 00:54:21 osmanubuntu systemd[46247]: Closed REST API socket for snapd user session agent.
+May 19 00:54:21 osmanubuntu systemd[46247]: Closed Speech Dispatcher Socket.
+May 19 00:54:21 osmanubuntu systemd[46247]: Removed slice User Application Slice.
+May 19 00:54:21 osmanubuntu systemd[46247]: Reached target Shutdown.
+May 19 00:54:21 osmanubuntu systemd[46247]: Finished Exit the Session.
+May 19 00:54:21 osmanubuntu systemd[46247]: Reached target Exit the Session.
+May 19 00:54:21 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 00:54:21 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 00:54:21 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 00:54:21 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 00:54:21 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 00:54:21 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 00:54:21 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 00:55:33 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 00:55:33 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 00:55:33 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 00:55:33 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 00:55:33 osmanubuntu systemd[46627]: Queued start job for default target Main User Target.
+May 19 00:55:33 osmanubuntu systemd[46627]: Created slice User Application Slice.
+May 19 00:55:33 osmanubuntu systemd[46627]: Created slice User Core Session Slice.
+May 19 00:55:33 osmanubuntu systemd[46627]: Started Pending report trigger for Ubuntu Report.
+May 19 00:55:33 osmanubuntu systemd[46627]: Reached target Paths.
+May 19 00:55:33 osmanubuntu systemd[46627]: Reached target Timers.
+May 19 00:55:33 osmanubuntu systemd[46627]: Starting D-Bus User Message Bus Socket...
+May 19 00:55:33 osmanubuntu systemd[46627]: Listening on GnuPG network certificate management daemon.
+May 19 00:55:33 osmanubuntu systemd[46627]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 00:55:33 osmanubuntu systemd[46627]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 00:55:33 osmanubuntu systemd[46627]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 00:55:33 osmanubuntu systemd[46627]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 00:55:33 osmanubuntu systemd[46627]: Listening on PipeWire Multimedia System Socket.
+May 19 00:55:33 osmanubuntu systemd[46627]: Listening on debconf communication socket.
+May 19 00:55:33 osmanubuntu systemd[46627]: Listening on Sound System.
+May 19 00:55:33 osmanubuntu systemd[46627]: Listening on REST API socket for snapd user session agent.
+May 19 00:55:33 osmanubuntu systemd[46627]: Listening on Speech Dispatcher Socket.
+May 19 00:55:33 osmanubuntu systemd[46627]: Listening on D-Bus User Message Bus Socket.
+May 19 00:55:33 osmanubuntu systemd[46627]: Reached target Sockets.
+May 19 00:55:33 osmanubuntu systemd[46627]: Reached target Basic System.
+May 19 00:55:33 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 00:55:33 osmanubuntu systemd[1]: Started Session 908 of User osman.
+May 19 00:55:33 osmanubuntu systemd[46627]: Started PipeWire Multimedia Service.
+May 19 00:55:33 osmanubuntu systemd[46627]: Started PipeWire Media Session Manager.
+May 19 00:55:33 osmanubuntu systemd[46627]: Starting Sound Service...
+May 19 00:55:33 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 1 users.
+May 19 00:55:33 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:55:33 osmanubuntu pipewire[46634]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 00:55:33 osmanubuntu pipewire[46634]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 00:55:33 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:55:33 osmanubuntu pipewire-media-session[46635]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 00:55:33 osmanubuntu pipewire-media-session[46635]: mod.rt: could not make thread 46637 realtime using RTKit: Permission denied
+May 19 00:55:33 osmanubuntu systemd[46627]: Started D-Bus User Message Bus.
+May 19 00:55:33 osmanubuntu dbus-daemon[46655]: [session uid=1000 pid=46655] AppArmor D-Bus mediation is enabled
+May 19 00:55:33 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:55:33 osmanubuntu pipewire[46634]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 00:55:33 osmanubuntu pipewire[46634]: mod.rt: could not make thread 46656 realtime using RTKit: Permission denied
+May 19 00:55:33 osmanubuntu dbus-daemon[708]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.5290' (uid=1000 pid=46636 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 00:55:33 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 00:55:33 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:55:33 osmanubuntu rtkit-daemon[2635]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 00:55:33 osmanubuntu systemd[46627]: Started Sound Service.
+May 19 00:55:33 osmanubuntu systemd[46627]: Reached target Main User Target.
+May 19 00:55:33 osmanubuntu systemd[46627]: Startup finished in 150ms.
+May 19 00:55:33 osmanubuntu systemd[1]: session-908.scope: Deactivated successfully.
+May 19 00:55:35 osmanubuntu systemd[1]: Started Session 910 of User osman.
+May 19 00:55:35 osmanubuntu systemd[1]: session-910.scope: Deactivated successfully.
+May 19 00:55:45 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 00:55:45 osmanubuntu systemd[46627]: Stopped target Main User Target.
+May 19 00:55:45 osmanubuntu systemd[46627]: Stopping D-Bus User Message Bus...
+May 19 00:55:45 osmanubuntu systemd[46627]: Stopping PipeWire Media Session Manager...
+May 19 00:55:45 osmanubuntu systemd[46627]: Stopped D-Bus User Message Bus.
+May 19 00:55:45 osmanubuntu systemd[46627]: Stopped PipeWire Media Session Manager.
+May 19 00:55:45 osmanubuntu systemd[46627]: Stopping PipeWire Multimedia Service...
+May 19 00:55:45 osmanubuntu systemd[46627]: Stopped PipeWire Multimedia Service.
+May 19 00:55:45 osmanubuntu systemd[46627]: Removed slice User Core Session Slice.
+May 19 00:55:45 osmanubuntu systemd[46627]: Stopped target Basic System.
+May 19 00:55:45 osmanubuntu systemd[46627]: Stopped target Paths.
+May 19 00:55:45 osmanubuntu systemd[46627]: Stopped Pending report trigger for Ubuntu Report.
+May 19 00:55:45 osmanubuntu systemd[46627]: Stopped target Sockets.
+May 19 00:55:45 osmanubuntu systemd[46627]: Stopped target Timers.
+May 19 00:55:45 osmanubuntu systemd[46627]: Closed D-Bus User Message Bus Socket.
+May 19 00:55:45 osmanubuntu systemd[46627]: Closed GnuPG network certificate management daemon.
+May 19 00:55:45 osmanubuntu systemd[46627]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 00:55:45 osmanubuntu systemd[46627]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 00:55:45 osmanubuntu systemd[46627]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 00:55:45 osmanubuntu systemd[46627]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 00:55:45 osmanubuntu systemd[46627]: Closed PipeWire Multimedia System Socket.
+May 19 00:55:45 osmanubuntu systemd[46627]: Closed debconf communication socket.
+May 19 00:55:45 osmanubuntu systemd[46627]: Closed Sound System.
+May 19 00:55:45 osmanubuntu systemd[46627]: Closed REST API socket for snapd user session agent.
+May 19 00:55:45 osmanubuntu systemd[46627]: Closed Speech Dispatcher Socket.
+May 19 00:55:45 osmanubuntu systemd[46627]: Removed slice User Application Slice.
+May 19 00:55:45 osmanubuntu systemd[46627]: Reached target Shutdown.
+May 19 00:55:45 osmanubuntu systemd[46627]: Finished Exit the Session.
+May 19 00:55:45 osmanubuntu systemd[46627]: Reached target Exit the Session.
+May 19 00:55:45 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 00:55:45 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 00:55:45 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 00:55:45 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 00:55:45 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 00:55:45 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 00:55:45 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 00:57:46 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 00:57:46 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 00:57:46 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 00:57:46 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 00:57:46 osmanubuntu systemd[46760]: Queued start job for default target Main User Target.
+May 19 00:57:46 osmanubuntu systemd[46760]: Created slice User Application Slice.
+May 19 00:57:46 osmanubuntu systemd[46760]: Created slice User Core Session Slice.
+May 19 00:57:46 osmanubuntu systemd[46760]: Started Pending report trigger for Ubuntu Report.
+May 19 00:57:46 osmanubuntu systemd[46760]: Reached target Paths.
+May 19 00:57:46 osmanubuntu systemd[46760]: Reached target Timers.
+May 19 00:57:46 osmanubuntu systemd[46760]: Starting D-Bus User Message Bus Socket...
+May 19 00:57:46 osmanubuntu systemd[46760]: Listening on GnuPG network certificate management daemon.
+May 19 00:57:46 osmanubuntu systemd[46760]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 00:57:46 osmanubuntu systemd[46760]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 00:57:46 osmanubuntu systemd[46760]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 00:57:46 osmanubuntu systemd[46760]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 00:57:46 osmanubuntu systemd[46760]: Listening on PipeWire Multimedia System Socket.
+May 19 00:57:46 osmanubuntu systemd[46760]: Listening on debconf communication socket.
+May 19 00:57:46 osmanubuntu systemd[46760]: Listening on Sound System.
+May 19 00:57:46 osmanubuntu systemd[46760]: Listening on REST API socket for snapd user session agent.
+May 19 00:57:46 osmanubuntu systemd[46760]: Listening on Speech Dispatcher Socket.
+May 19 00:57:46 osmanubuntu systemd[46760]: Listening on D-Bus User Message Bus Socket.
+May 19 00:57:46 osmanubuntu systemd[46760]: Reached target Sockets.
+May 19 00:57:46 osmanubuntu systemd[46760]: Reached target Basic System.
+May 19 00:57:46 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 00:57:46 osmanubuntu systemd[1]: Started Session 911 of User osman.
+May 19 00:57:46 osmanubuntu systemd[46760]: Started PipeWire Multimedia Service.
+May 19 00:57:46 osmanubuntu systemd[46760]: Started PipeWire Media Session Manager.
+May 19 00:57:46 osmanubuntu systemd[46760]: Starting Sound Service...
+May 19 00:57:46 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:57:46 osmanubuntu pipewire[46767]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 00:57:46 osmanubuntu pipewire[46767]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 00:57:46 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:57:46 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:57:46 osmanubuntu systemd[46760]: Started D-Bus User Message Bus.
+May 19 00:57:46 osmanubuntu pipewire-media-session[46768]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 00:57:46 osmanubuntu pipewire-media-session[46768]: mod.rt: could not make thread 46787 realtime using RTKit: Permission denied
+May 19 00:57:46 osmanubuntu dbus-daemon[46788]: [session uid=1000 pid=46788] AppArmor D-Bus mediation is enabled
+May 19 00:57:46 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:57:46 osmanubuntu pipewire[46767]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 00:57:46 osmanubuntu pipewire[46767]: mod.rt: could not make thread 46789 realtime using RTKit: Permission denied
+May 19 00:57:46 osmanubuntu dbus-daemon[708]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.5315' (uid=1000 pid=46769 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 00:57:46 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 00:57:46 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:57:46 osmanubuntu rtkit-daemon[2635]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 00:57:46 osmanubuntu systemd[46760]: Started Sound Service.
+May 19 00:57:46 osmanubuntu systemd[46760]: Reached target Main User Target.
+May 19 00:57:46 osmanubuntu systemd[46760]: Startup finished in 127ms.
+May 19 00:57:47 osmanubuntu systemd[1]: session-911.scope: Deactivated successfully.
+May 19 00:57:47 osmanubuntu systemd[1]: Started Session 913 of User osman.
+May 19 00:57:47 osmanubuntu systemd[1]: session-913.scope: Deactivated successfully.
+May 19 00:57:47 osmanubuntu systemd[1]: Started Session 914 of User osman.
+May 19 00:57:47 osmanubuntu systemd[1]: session-914.scope: Deactivated successfully.
+May 19 00:57:57 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 00:57:57 osmanubuntu systemd[46760]: Stopped target Main User Target.
+May 19 00:57:57 osmanubuntu systemd[46760]: Stopping D-Bus User Message Bus...
+May 19 00:57:57 osmanubuntu systemd[46760]: Stopping PipeWire Media Session Manager...
+May 19 00:57:57 osmanubuntu systemd[46760]: Stopped D-Bus User Message Bus.
+May 19 00:57:57 osmanubuntu systemd[46760]: Stopped PipeWire Media Session Manager.
+May 19 00:57:57 osmanubuntu systemd[46760]: Stopping PipeWire Multimedia Service...
+May 19 00:57:57 osmanubuntu systemd[46760]: Stopped PipeWire Multimedia Service.
+May 19 00:57:57 osmanubuntu systemd[46760]: Removed slice User Core Session Slice.
+May 19 00:57:57 osmanubuntu systemd[46760]: Stopped target Basic System.
+May 19 00:57:57 osmanubuntu systemd[46760]: Stopped target Paths.
+May 19 00:57:57 osmanubuntu systemd[46760]: Stopped Pending report trigger for Ubuntu Report.
+May 19 00:57:57 osmanubuntu systemd[46760]: Stopped target Sockets.
+May 19 00:57:57 osmanubuntu systemd[46760]: Stopped target Timers.
+May 19 00:57:57 osmanubuntu systemd[46760]: Closed D-Bus User Message Bus Socket.
+May 19 00:57:57 osmanubuntu systemd[46760]: Closed GnuPG network certificate management daemon.
+May 19 00:57:57 osmanubuntu systemd[46760]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 00:57:57 osmanubuntu systemd[46760]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 00:57:57 osmanubuntu systemd[46760]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 00:57:57 osmanubuntu systemd[46760]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 00:57:57 osmanubuntu systemd[46760]: Closed PipeWire Multimedia System Socket.
+May 19 00:57:57 osmanubuntu systemd[46760]: Closed debconf communication socket.
+May 19 00:57:57 osmanubuntu systemd[46760]: Closed Sound System.
+May 19 00:57:57 osmanubuntu systemd[46760]: Closed REST API socket for snapd user session agent.
+May 19 00:57:57 osmanubuntu systemd[46760]: Closed Speech Dispatcher Socket.
+May 19 00:57:57 osmanubuntu systemd[46760]: Removed slice User Application Slice.
+May 19 00:57:57 osmanubuntu systemd[46760]: Reached target Shutdown.
+May 19 00:57:57 osmanubuntu systemd[46760]: Finished Exit the Session.
+May 19 00:57:57 osmanubuntu systemd[46760]: Reached target Exit the Session.
+May 19 00:57:57 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 00:57:57 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 00:57:57 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 00:57:57 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 00:57:57 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 00:57:57 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 00:57:57 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 00:59:05 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 00:59:05 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 00:59:05 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 00:59:05 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 00:59:05 osmanubuntu systemd[46948]: Queued start job for default target Main User Target.
+May 19 00:59:05 osmanubuntu systemd[46948]: Created slice User Application Slice.
+May 19 00:59:05 osmanubuntu systemd[46948]: Created slice User Core Session Slice.
+May 19 00:59:05 osmanubuntu systemd[46948]: Started Pending report trigger for Ubuntu Report.
+May 19 00:59:05 osmanubuntu systemd[46948]: Reached target Paths.
+May 19 00:59:05 osmanubuntu systemd[46948]: Reached target Timers.
+May 19 00:59:05 osmanubuntu systemd[46948]: Starting D-Bus User Message Bus Socket...
+May 19 00:59:05 osmanubuntu systemd[46948]: Listening on GnuPG network certificate management daemon.
+May 19 00:59:05 osmanubuntu systemd[46948]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 00:59:05 osmanubuntu systemd[46948]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 00:59:05 osmanubuntu systemd[46948]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 00:59:05 osmanubuntu systemd[46948]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 00:59:05 osmanubuntu systemd[46948]: Listening on PipeWire Multimedia System Socket.
+May 19 00:59:05 osmanubuntu systemd[46948]: Listening on debconf communication socket.
+May 19 00:59:05 osmanubuntu systemd[46948]: Listening on Sound System.
+May 19 00:59:05 osmanubuntu systemd[46948]: Listening on REST API socket for snapd user session agent.
+May 19 00:59:05 osmanubuntu systemd[46948]: Listening on Speech Dispatcher Socket.
+May 19 00:59:05 osmanubuntu systemd[46948]: Listening on D-Bus User Message Bus Socket.
+May 19 00:59:05 osmanubuntu systemd[46948]: Reached target Sockets.
+May 19 00:59:05 osmanubuntu systemd[46948]: Reached target Basic System.
+May 19 00:59:05 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 00:59:05 osmanubuntu systemd[46948]: Started PipeWire Multimedia Service.
+May 19 00:59:05 osmanubuntu systemd[1]: Started Session 915 of User osman.
+May 19 00:59:05 osmanubuntu systemd[46948]: Started PipeWire Media Session Manager.
+May 19 00:59:05 osmanubuntu systemd[46948]: Starting Sound Service...
+May 19 00:59:05 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:59:05 osmanubuntu pipewire[46955]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 00:59:05 osmanubuntu pipewire[46955]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 00:59:05 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:59:05 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:59:05 osmanubuntu pipewire-media-session[46956]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 00:59:05 osmanubuntu pipewire-media-session[46956]: mod.rt: could not make thread 46975 realtime using RTKit: Permission denied
+May 19 00:59:05 osmanubuntu systemd[46948]: Started D-Bus User Message Bus.
+May 19 00:59:05 osmanubuntu dbus-daemon[46976]: [session uid=1000 pid=46976] AppArmor D-Bus mediation is enabled
+May 19 00:59:05 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:59:05 osmanubuntu pipewire[46955]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 00:59:05 osmanubuntu pipewire[46955]: mod.rt: could not make thread 46977 realtime using RTKit: Permission denied
+May 19 00:59:05 osmanubuntu dbus-daemon[708]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.5342' (uid=1000 pid=46957 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 00:59:05 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 00:59:05 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 00:59:05 osmanubuntu rtkit-daemon[2635]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 00:59:05 osmanubuntu systemd[46948]: Started Sound Service.
+May 19 00:59:05 osmanubuntu systemd[46948]: Reached target Main User Target.
+May 19 00:59:05 osmanubuntu systemd[46948]: Startup finished in 124ms.
+May 19 00:59:06 osmanubuntu systemd[1]: session-915.scope: Deactivated successfully.
+May 19 00:59:06 osmanubuntu systemd[1]: Started Session 917 of User osman.
+May 19 00:59:06 osmanubuntu systemd[1]: session-917.scope: Deactivated successfully.
+May 19 00:59:06 osmanubuntu systemd[1]: Started Session 918 of User osman.
+May 19 00:59:06 osmanubuntu systemd[1]: session-918.scope: Deactivated successfully.
+May 19 00:59:16 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 00:59:16 osmanubuntu systemd[46948]: Stopped target Main User Target.
+May 19 00:59:16 osmanubuntu systemd[46948]: Stopping D-Bus User Message Bus...
+May 19 00:59:16 osmanubuntu systemd[46948]: Stopping PipeWire Media Session Manager...
+May 19 00:59:16 osmanubuntu systemd[46948]: Stopped PipeWire Media Session Manager.
+May 19 00:59:16 osmanubuntu systemd[46948]: Stopped D-Bus User Message Bus.
+May 19 00:59:16 osmanubuntu systemd[46948]: Stopping PipeWire Multimedia Service...
+May 19 00:59:16 osmanubuntu systemd[46948]: Stopped PipeWire Multimedia Service.
+May 19 00:59:16 osmanubuntu systemd[46948]: Removed slice User Core Session Slice.
+May 19 00:59:16 osmanubuntu systemd[46948]: Stopped target Basic System.
+May 19 00:59:16 osmanubuntu systemd[46948]: Stopped target Paths.
+May 19 00:59:16 osmanubuntu systemd[46948]: Stopped Pending report trigger for Ubuntu Report.
+May 19 00:59:16 osmanubuntu systemd[46948]: Stopped target Sockets.
+May 19 00:59:16 osmanubuntu systemd[46948]: Stopped target Timers.
+May 19 00:59:16 osmanubuntu systemd[46948]: Closed D-Bus User Message Bus Socket.
+May 19 00:59:16 osmanubuntu systemd[46948]: Closed GnuPG network certificate management daemon.
+May 19 00:59:16 osmanubuntu systemd[46948]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 00:59:16 osmanubuntu systemd[46948]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 00:59:16 osmanubuntu systemd[46948]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 00:59:16 osmanubuntu systemd[46948]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 00:59:16 osmanubuntu systemd[46948]: Closed PipeWire Multimedia System Socket.
+May 19 00:59:16 osmanubuntu systemd[46948]: Closed debconf communication socket.
+May 19 00:59:16 osmanubuntu systemd[46948]: Closed Sound System.
+May 19 00:59:16 osmanubuntu systemd[46948]: Closed REST API socket for snapd user session agent.
+May 19 00:59:16 osmanubuntu systemd[46948]: Closed Speech Dispatcher Socket.
+May 19 00:59:16 osmanubuntu systemd[46948]: Removed slice User Application Slice.
+May 19 00:59:16 osmanubuntu systemd[46948]: Reached target Shutdown.
+May 19 00:59:16 osmanubuntu systemd[46948]: Finished Exit the Session.
+May 19 00:59:16 osmanubuntu systemd[46948]: Reached target Exit the Session.
+May 19 00:59:16 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 00:59:16 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 00:59:16 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 00:59:16 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 00:59:16 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 00:59:16 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 00:59:16 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 01:00:45 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 01:00:45 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 01:00:45 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 01:00:45 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 01:00:45 osmanubuntu systemd[47143]: Queued start job for default target Main User Target.
+May 19 01:00:45 osmanubuntu systemd[47143]: Created slice User Application Slice.
+May 19 01:00:45 osmanubuntu systemd[47143]: Created slice User Core Session Slice.
+May 19 01:00:45 osmanubuntu systemd[47143]: Started Pending report trigger for Ubuntu Report.
+May 19 01:00:45 osmanubuntu systemd[47143]: Reached target Paths.
+May 19 01:00:45 osmanubuntu systemd[47143]: Reached target Timers.
+May 19 01:00:45 osmanubuntu systemd[47143]: Starting D-Bus User Message Bus Socket...
+May 19 01:00:45 osmanubuntu systemd[47143]: Listening on GnuPG network certificate management daemon.
+May 19 01:00:45 osmanubuntu systemd[47143]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:00:45 osmanubuntu systemd[47143]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:00:45 osmanubuntu systemd[47143]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:00:45 osmanubuntu systemd[47143]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 01:00:45 osmanubuntu systemd[47143]: Listening on PipeWire Multimedia System Socket.
+May 19 01:00:45 osmanubuntu systemd[47143]: Listening on debconf communication socket.
+May 19 01:00:45 osmanubuntu systemd[47143]: Listening on Sound System.
+May 19 01:00:45 osmanubuntu systemd[47143]: Listening on REST API socket for snapd user session agent.
+May 19 01:00:45 osmanubuntu systemd[47143]: Listening on Speech Dispatcher Socket.
+May 19 01:00:45 osmanubuntu systemd[47143]: Listening on D-Bus User Message Bus Socket.
+May 19 01:00:45 osmanubuntu systemd[47143]: Reached target Sockets.
+May 19 01:00:45 osmanubuntu systemd[47143]: Reached target Basic System.
+May 19 01:00:45 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 01:00:45 osmanubuntu systemd[47143]: Started PipeWire Multimedia Service.
+May 19 01:00:45 osmanubuntu systemd[1]: Started Session 919 of User osman.
+May 19 01:00:45 osmanubuntu systemd[47143]: Started PipeWire Media Session Manager.
+May 19 01:00:45 osmanubuntu systemd[47143]: Starting Sound Service...
+May 19 01:00:45 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:00:45 osmanubuntu pipewire[47150]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:00:45 osmanubuntu pipewire[47150]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 01:00:45 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:00:45 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:00:45 osmanubuntu systemd[47143]: Started D-Bus User Message Bus.
+May 19 01:00:45 osmanubuntu pipewire-media-session[47151]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:00:45 osmanubuntu pipewire-media-session[47151]: mod.rt: could not make thread 47170 realtime using RTKit: Permission denied
+May 19 01:00:45 osmanubuntu dbus-daemon[47171]: [session uid=1000 pid=47171] AppArmor D-Bus mediation is enabled
+May 19 01:00:45 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:00:45 osmanubuntu pipewire[47150]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:00:45 osmanubuntu pipewire[47150]: mod.rt: could not make thread 47172 realtime using RTKit: Permission denied
+May 19 01:00:45 osmanubuntu dbus-daemon[708]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.5369' (uid=1000 pid=47152 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 01:00:45 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 01:00:45 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:00:45 osmanubuntu rtkit-daemon[2635]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 01:00:45 osmanubuntu systemd[47143]: Started Sound Service.
+May 19 01:00:45 osmanubuntu systemd[47143]: Reached target Main User Target.
+May 19 01:00:45 osmanubuntu systemd[47143]: Startup finished in 133ms.
+May 19 01:00:45 osmanubuntu systemd[1]: session-919.scope: Deactivated successfully.
+May 19 01:00:45 osmanubuntu systemd[1]: Started Session 921 of User osman.
+May 19 01:00:45 osmanubuntu systemd[1]: session-921.scope: Deactivated successfully.
+May 19 01:00:45 osmanubuntu systemd[1]: Started Session 922 of User osman.
+May 19 01:00:45 osmanubuntu systemd[1]: session-922.scope: Deactivated successfully.
+May 19 01:00:55 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 01:00:55 osmanubuntu systemd[47143]: Stopped target Main User Target.
+May 19 01:00:55 osmanubuntu systemd[47143]: Stopping D-Bus User Message Bus...
+May 19 01:00:55 osmanubuntu systemd[47143]: Stopping PipeWire Media Session Manager...
+May 19 01:00:55 osmanubuntu systemd[47143]: Stopped D-Bus User Message Bus.
+May 19 01:00:55 osmanubuntu systemd[47143]: Stopped PipeWire Media Session Manager.
+May 19 01:00:55 osmanubuntu systemd[47143]: Stopping PipeWire Multimedia Service...
+May 19 01:00:55 osmanubuntu systemd[47143]: Stopped PipeWire Multimedia Service.
+May 19 01:00:55 osmanubuntu systemd[47143]: Removed slice User Core Session Slice.
+May 19 01:00:55 osmanubuntu systemd[47143]: Stopped target Basic System.
+May 19 01:00:55 osmanubuntu systemd[47143]: Stopped target Paths.
+May 19 01:00:55 osmanubuntu systemd[47143]: Stopped Pending report trigger for Ubuntu Report.
+May 19 01:00:55 osmanubuntu systemd[47143]: Stopped target Sockets.
+May 19 01:00:55 osmanubuntu systemd[47143]: Stopped target Timers.
+May 19 01:00:55 osmanubuntu systemd[47143]: Closed D-Bus User Message Bus Socket.
+May 19 01:00:55 osmanubuntu systemd[47143]: Closed GnuPG network certificate management daemon.
+May 19 01:00:55 osmanubuntu systemd[47143]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:00:55 osmanubuntu systemd[47143]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:00:55 osmanubuntu systemd[47143]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:00:55 osmanubuntu systemd[47143]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 01:00:55 osmanubuntu systemd[47143]: Closed PipeWire Multimedia System Socket.
+May 19 01:00:55 osmanubuntu systemd[47143]: Closed debconf communication socket.
+May 19 01:00:55 osmanubuntu systemd[47143]: Closed Sound System.
+May 19 01:00:55 osmanubuntu systemd[47143]: Closed REST API socket for snapd user session agent.
+May 19 01:00:55 osmanubuntu systemd[47143]: Closed Speech Dispatcher Socket.
+May 19 01:00:55 osmanubuntu systemd[47143]: Removed slice User Application Slice.
+May 19 01:00:55 osmanubuntu systemd[47143]: Reached target Shutdown.
+May 19 01:00:55 osmanubuntu systemd[47143]: Finished Exit the Session.
+May 19 01:00:55 osmanubuntu systemd[47143]: Reached target Exit the Session.
+May 19 01:00:55 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 01:00:55 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 01:00:55 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 01:00:55 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 01:00:55 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 01:00:55 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 01:00:55 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 01:01:03 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 01:01:03 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 01:01:03 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 01:01:03 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 01:01:03 osmanubuntu systemd[47329]: Queued start job for default target Main User Target.
+May 19 01:01:03 osmanubuntu systemd[47329]: Created slice User Application Slice.
+May 19 01:01:03 osmanubuntu systemd[47329]: Created slice User Core Session Slice.
+May 19 01:01:03 osmanubuntu systemd[47329]: Started Pending report trigger for Ubuntu Report.
+May 19 01:01:03 osmanubuntu systemd[47329]: Reached target Paths.
+May 19 01:01:03 osmanubuntu systemd[47329]: Reached target Timers.
+May 19 01:01:03 osmanubuntu systemd[47329]: Starting D-Bus User Message Bus Socket...
+May 19 01:01:03 osmanubuntu systemd[47329]: Listening on GnuPG network certificate management daemon.
+May 19 01:01:03 osmanubuntu systemd[47329]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:01:03 osmanubuntu systemd[47329]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:01:03 osmanubuntu systemd[47329]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:01:03 osmanubuntu systemd[47329]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 01:01:03 osmanubuntu systemd[47329]: Listening on PipeWire Multimedia System Socket.
+May 19 01:01:03 osmanubuntu systemd[47329]: Listening on debconf communication socket.
+May 19 01:01:03 osmanubuntu systemd[47329]: Listening on Sound System.
+May 19 01:01:03 osmanubuntu systemd[47329]: Listening on REST API socket for snapd user session agent.
+May 19 01:01:03 osmanubuntu systemd[47329]: Listening on Speech Dispatcher Socket.
+May 19 01:01:03 osmanubuntu systemd[47329]: Listening on D-Bus User Message Bus Socket.
+May 19 01:01:03 osmanubuntu systemd[47329]: Reached target Sockets.
+May 19 01:01:03 osmanubuntu systemd[47329]: Reached target Basic System.
+May 19 01:01:03 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 01:01:03 osmanubuntu systemd[47329]: Started PipeWire Multimedia Service.
+May 19 01:01:03 osmanubuntu systemd[47329]: Started PipeWire Media Session Manager.
+May 19 01:01:03 osmanubuntu systemd[1]: Started Session 923 of User osman.
+May 19 01:01:03 osmanubuntu systemd[47329]: Starting Sound Service...
+May 19 01:01:03 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:01:03 osmanubuntu pipewire[47336]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:01:03 osmanubuntu pipewire[47336]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 01:01:03 osmanubuntu systemd[1]: session-923.scope: Deactivated successfully.
+May 19 01:01:03 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:01:03 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:01:03 osmanubuntu systemd[47329]: Started D-Bus User Message Bus.
+May 19 01:01:03 osmanubuntu dbus-daemon[47390]: [session uid=1000 pid=47390] AppArmor D-Bus mediation is enabled
+May 19 01:01:03 osmanubuntu pipewire-media-session[47337]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:01:03 osmanubuntu pipewire-media-session[47337]: mod.rt: could not make thread 47388 realtime using RTKit: Permission denied
+May 19 01:01:03 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:01:03 osmanubuntu pipewire[47336]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:01:03 osmanubuntu pipewire[47336]: mod.rt: could not make thread 47391 realtime using RTKit: Permission denied
+May 19 01:01:03 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:01:03 osmanubuntu rtkit-daemon[2635]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 01:01:03 osmanubuntu systemd[47329]: Started Sound Service.
+May 19 01:01:03 osmanubuntu systemd[47329]: Reached target Main User Target.
+May 19 01:01:03 osmanubuntu systemd[47329]: Startup finished in 153ms.
+May 19 01:01:10 osmanubuntu pulseaudio[47338]: GetManagedObjects() failed: org.freedesktop.DBus.Error.TimedOut: Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+May 19 01:01:13 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopped target Main User Target.
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopping D-Bus User Message Bus...
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopping PipeWire Media Session Manager...
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopping Sound Service...
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopped D-Bus User Message Bus.
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopped PipeWire Media Session Manager.
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopping PipeWire Multimedia Service...
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopped PipeWire Multimedia Service.
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopped Sound Service.
+May 19 01:01:13 osmanubuntu systemd[47329]: Removed slice User Core Session Slice.
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopped target Basic System.
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopped target Paths.
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopped Pending report trigger for Ubuntu Report.
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopped target Sockets.
+May 19 01:01:13 osmanubuntu systemd[47329]: Stopped target Timers.
+May 19 01:01:13 osmanubuntu systemd[47329]: Closed D-Bus User Message Bus Socket.
+May 19 01:01:13 osmanubuntu systemd[47329]: Closed GnuPG network certificate management daemon.
+May 19 01:01:13 osmanubuntu systemd[47329]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:01:13 osmanubuntu systemd[47329]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:01:13 osmanubuntu systemd[47329]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:01:13 osmanubuntu systemd[47329]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 01:01:13 osmanubuntu systemd[47329]: Closed PipeWire Multimedia System Socket.
+May 19 01:01:13 osmanubuntu systemd[47329]: Closed debconf communication socket.
+May 19 01:01:13 osmanubuntu systemd[47329]: Closed Sound System.
+May 19 01:01:13 osmanubuntu systemd[47329]: Closed REST API socket for snapd user session agent.
+May 19 01:01:13 osmanubuntu systemd[47329]: Closed Speech Dispatcher Socket.
+May 19 01:01:13 osmanubuntu systemd[47329]: Removed slice User Application Slice.
+May 19 01:01:13 osmanubuntu systemd[47329]: Reached target Shutdown.
+May 19 01:01:13 osmanubuntu systemd[47329]: Finished Exit the Session.
+May 19 01:01:13 osmanubuntu systemd[47329]: Reached target Exit the Session.
+May 19 01:01:13 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 01:01:13 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 01:01:13 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 01:01:13 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 01:01:13 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 01:01:13 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 01:01:13 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 01:05:56 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 01:05:56 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 01:05:56 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 01:05:56 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 01:05:56 osmanubuntu systemd[47411]: Queued start job for default target Main User Target.
+May 19 01:05:56 osmanubuntu systemd[47411]: Created slice User Application Slice.
+May 19 01:05:56 osmanubuntu systemd[47411]: Created slice User Core Session Slice.
+May 19 01:05:56 osmanubuntu systemd[47411]: Started Pending report trigger for Ubuntu Report.
+May 19 01:05:56 osmanubuntu systemd[47411]: Reached target Paths.
+May 19 01:05:56 osmanubuntu systemd[47411]: Reached target Timers.
+May 19 01:05:56 osmanubuntu systemd[47411]: Starting D-Bus User Message Bus Socket...
+May 19 01:05:56 osmanubuntu systemd[47411]: Listening on GnuPG network certificate management daemon.
+May 19 01:05:56 osmanubuntu systemd[47411]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:05:56 osmanubuntu systemd[47411]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:05:56 osmanubuntu systemd[47411]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:05:56 osmanubuntu systemd[47411]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 01:05:56 osmanubuntu systemd[47411]: Listening on PipeWire Multimedia System Socket.
+May 19 01:05:56 osmanubuntu systemd[47411]: Listening on debconf communication socket.
+May 19 01:05:56 osmanubuntu systemd[47411]: Listening on Sound System.
+May 19 01:05:56 osmanubuntu systemd[47411]: Listening on REST API socket for snapd user session agent.
+May 19 01:05:56 osmanubuntu systemd[47411]: Listening on Speech Dispatcher Socket.
+May 19 01:05:56 osmanubuntu systemd[47411]: Listening on D-Bus User Message Bus Socket.
+May 19 01:05:56 osmanubuntu systemd[47411]: Reached target Sockets.
+May 19 01:05:56 osmanubuntu systemd[47411]: Reached target Basic System.
+May 19 01:05:56 osmanubuntu systemd[47411]: Started PipeWire Multimedia Service.
+May 19 01:05:56 osmanubuntu systemd[47411]: Started PipeWire Media Session Manager.
+May 19 01:05:56 osmanubuntu systemd[47411]: Starting Sound Service...
+May 19 01:05:56 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 01:05:56 osmanubuntu systemd[1]: Started Session 925 of User osman.
+May 19 01:05:56 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:05:56 osmanubuntu pipewire[47418]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:05:56 osmanubuntu pipewire[47418]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 01:05:56 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:05:56 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:05:56 osmanubuntu systemd[47411]: Started D-Bus User Message Bus.
+May 19 01:05:56 osmanubuntu dbus-daemon[47439]: [session uid=1000 pid=47439] AppArmor D-Bus mediation is enabled
+May 19 01:05:56 osmanubuntu pipewire-media-session[47419]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:05:56 osmanubuntu pipewire-media-session[47419]: mod.rt: could not make thread 47438 realtime using RTKit: Permission denied
+May 19 01:05:56 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:05:56 osmanubuntu pipewire[47418]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:05:56 osmanubuntu pipewire[47418]: mod.rt: could not make thread 47440 realtime using RTKit: Permission denied
+May 19 01:05:56 osmanubuntu dbus-daemon[708]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.5419' (uid=1000 pid=47420 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 01:05:56 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 01:05:56 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:05:56 osmanubuntu rtkit-daemon[2635]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 01:05:56 osmanubuntu systemd[47411]: Started Sound Service.
+May 19 01:05:56 osmanubuntu systemd[47411]: Reached target Main User Target.
+May 19 01:05:56 osmanubuntu systemd[47411]: Startup finished in 116ms.
+May 19 01:05:56 osmanubuntu systemd[1]: session-925.scope: Deactivated successfully.
+May 19 01:05:56 osmanubuntu systemd[1]: Started Session 927 of User osman.
+May 19 01:05:56 osmanubuntu systemd[1]: session-927.scope: Deactivated successfully.
+May 19 01:05:56 osmanubuntu systemd[1]: Started Session 928 of User osman.
+May 19 01:05:56 osmanubuntu systemd[1]: session-928.scope: Deactivated successfully.
+May 19 01:06:06 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 01:06:06 osmanubuntu systemd[47411]: Stopped target Main User Target.
+May 19 01:06:06 osmanubuntu systemd[47411]: Stopping D-Bus User Message Bus...
+May 19 01:06:06 osmanubuntu systemd[47411]: Stopping PipeWire Media Session Manager...
+May 19 01:06:06 osmanubuntu systemd[47411]: Stopped D-Bus User Message Bus.
+May 19 01:06:06 osmanubuntu systemd[47411]: Stopped PipeWire Media Session Manager.
+May 19 01:06:06 osmanubuntu systemd[47411]: Stopping PipeWire Multimedia Service...
+May 19 01:06:06 osmanubuntu systemd[47411]: Stopped PipeWire Multimedia Service.
+May 19 01:06:06 osmanubuntu systemd[47411]: Removed slice User Core Session Slice.
+May 19 01:06:06 osmanubuntu systemd[47411]: Stopped target Basic System.
+May 19 01:06:06 osmanubuntu systemd[47411]: Stopped target Paths.
+May 19 01:06:06 osmanubuntu systemd[47411]: Stopped Pending report trigger for Ubuntu Report.
+May 19 01:06:06 osmanubuntu systemd[47411]: Stopped target Sockets.
+May 19 01:06:06 osmanubuntu systemd[47411]: Stopped target Timers.
+May 19 01:06:06 osmanubuntu systemd[47411]: Closed D-Bus User Message Bus Socket.
+May 19 01:06:06 osmanubuntu systemd[47411]: Closed GnuPG network certificate management daemon.
+May 19 01:06:06 osmanubuntu systemd[47411]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:06:06 osmanubuntu systemd[47411]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:06:06 osmanubuntu systemd[47411]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:06:06 osmanubuntu systemd[47411]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 01:06:06 osmanubuntu systemd[47411]: Closed PipeWire Multimedia System Socket.
+May 19 01:06:06 osmanubuntu systemd[47411]: Closed debconf communication socket.
+May 19 01:06:06 osmanubuntu systemd[47411]: Closed Sound System.
+May 19 01:06:06 osmanubuntu systemd[47411]: Closed REST API socket for snapd user session agent.
+May 19 01:06:06 osmanubuntu systemd[47411]: Closed Speech Dispatcher Socket.
+May 19 01:06:06 osmanubuntu systemd[47411]: Removed slice User Application Slice.
+May 19 01:06:06 osmanubuntu systemd[47411]: Reached target Shutdown.
+May 19 01:06:06 osmanubuntu systemd[47411]: Finished Exit the Session.
+May 19 01:06:06 osmanubuntu systemd[47411]: Reached target Exit the Session.
+May 19 01:06:06 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 01:06:06 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 01:06:06 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 01:06:06 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 01:06:06 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 01:06:06 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 01:06:06 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 01:11:44 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 01:11:44 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 01:11:44 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 01:11:44 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 01:11:44 osmanubuntu systemd[47613]: Queued start job for default target Main User Target.
+May 19 01:11:44 osmanubuntu systemd[47613]: Created slice User Application Slice.
+May 19 01:11:44 osmanubuntu systemd[47613]: Created slice User Core Session Slice.
+May 19 01:11:44 osmanubuntu systemd[47613]: Started Pending report trigger for Ubuntu Report.
+May 19 01:11:44 osmanubuntu systemd[47613]: Reached target Paths.
+May 19 01:11:44 osmanubuntu systemd[47613]: Reached target Timers.
+May 19 01:11:44 osmanubuntu systemd[47613]: Starting D-Bus User Message Bus Socket...
+May 19 01:11:44 osmanubuntu systemd[47613]: Listening on GnuPG network certificate management daemon.
+May 19 01:11:44 osmanubuntu systemd[47613]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:11:44 osmanubuntu systemd[47613]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:11:44 osmanubuntu systemd[47613]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:11:44 osmanubuntu systemd[47613]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 01:11:44 osmanubuntu systemd[47613]: Listening on PipeWire Multimedia System Socket.
+May 19 01:11:44 osmanubuntu systemd[47613]: Listening on debconf communication socket.
+May 19 01:11:44 osmanubuntu systemd[47613]: Listening on Sound System.
+May 19 01:11:44 osmanubuntu systemd[47613]: Listening on REST API socket for snapd user session agent.
+May 19 01:11:44 osmanubuntu systemd[47613]: Listening on Speech Dispatcher Socket.
+May 19 01:11:44 osmanubuntu systemd[47613]: Listening on D-Bus User Message Bus Socket.
+May 19 01:11:44 osmanubuntu systemd[47613]: Reached target Sockets.
+May 19 01:11:44 osmanubuntu systemd[47613]: Reached target Basic System.
+May 19 01:11:44 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 01:11:44 osmanubuntu systemd[47613]: Started PipeWire Multimedia Service.
+May 19 01:11:44 osmanubuntu systemd[1]: Started Session 929 of User osman.
+May 19 01:11:44 osmanubuntu systemd[47613]: Started PipeWire Media Session Manager.
+May 19 01:11:44 osmanubuntu systemd[47613]: Starting Sound Service...
+May 19 01:11:44 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 1 users.
+May 19 01:11:44 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 1 users.
+May 19 01:11:44 osmanubuntu pipewire-media-session[47623]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:11:44 osmanubuntu pipewire-media-session[47623]: mod.rt: could not make thread 47625 realtime using RTKit: Permission denied
+May 19 01:11:44 osmanubuntu systemd[47613]: Started D-Bus User Message Bus.
+May 19 01:11:44 osmanubuntu dbus-daemon[47643]: [session uid=1000 pid=47643] AppArmor D-Bus mediation is enabled
+May 19 01:11:44 osmanubuntu pipewire[47622]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:11:44 osmanubuntu pipewire[47622]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 01:11:44 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:11:44 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:11:44 osmanubuntu pipewire[47622]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:11:44 osmanubuntu pipewire[47622]: mod.rt: could not make thread 47644 realtime using RTKit: Permission denied
+May 19 01:11:44 osmanubuntu dbus-daemon[708]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.5446' (uid=1000 pid=47624 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 01:11:44 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 01:11:44 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:11:44 osmanubuntu rtkit-daemon[2635]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 01:11:44 osmanubuntu systemd[47613]: Started Sound Service.
+May 19 01:11:44 osmanubuntu systemd[47613]: Reached target Main User Target.
+May 19 01:11:44 osmanubuntu systemd[47613]: Startup finished in 160ms.
+May 19 01:11:44 osmanubuntu systemd[1]: session-929.scope: Deactivated successfully.
+May 19 01:11:54 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 01:11:54 osmanubuntu systemd[47613]: Stopped target Main User Target.
+May 19 01:11:54 osmanubuntu systemd[47613]: Stopping D-Bus User Message Bus...
+May 19 01:11:54 osmanubuntu systemd[47613]: Stopping PipeWire Media Session Manager...
+May 19 01:11:54 osmanubuntu systemd[47613]: Stopped D-Bus User Message Bus.
+May 19 01:11:54 osmanubuntu systemd[47613]: Stopped PipeWire Media Session Manager.
+May 19 01:11:54 osmanubuntu systemd[47613]: Stopping PipeWire Multimedia Service...
+May 19 01:11:54 osmanubuntu systemd[47613]: Stopped PipeWire Multimedia Service.
+May 19 01:11:54 osmanubuntu systemd[47613]: Removed slice User Core Session Slice.
+May 19 01:11:54 osmanubuntu systemd[47613]: Stopped target Basic System.
+May 19 01:11:54 osmanubuntu systemd[47613]: Stopped target Paths.
+May 19 01:11:54 osmanubuntu systemd[47613]: Stopped Pending report trigger for Ubuntu Report.
+May 19 01:11:54 osmanubuntu systemd[47613]: Stopped target Sockets.
+May 19 01:11:54 osmanubuntu systemd[47613]: Stopped target Timers.
+May 19 01:11:54 osmanubuntu systemd[47613]: Closed D-Bus User Message Bus Socket.
+May 19 01:11:54 osmanubuntu systemd[47613]: Closed GnuPG network certificate management daemon.
+May 19 01:11:54 osmanubuntu systemd[47613]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:11:54 osmanubuntu systemd[47613]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:11:54 osmanubuntu systemd[47613]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:11:54 osmanubuntu systemd[47613]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 01:11:54 osmanubuntu systemd[47613]: Closed PipeWire Multimedia System Socket.
+May 19 01:11:54 osmanubuntu systemd[47613]: Closed debconf communication socket.
+May 19 01:11:54 osmanubuntu systemd[47613]: Closed Sound System.
+May 19 01:11:54 osmanubuntu systemd[47613]: Closed REST API socket for snapd user session agent.
+May 19 01:11:54 osmanubuntu systemd[47613]: Closed Speech Dispatcher Socket.
+May 19 01:11:54 osmanubuntu systemd[47613]: Removed slice User Application Slice.
+May 19 01:11:54 osmanubuntu systemd[47613]: Reached target Shutdown.
+May 19 01:11:54 osmanubuntu systemd[47613]: Finished Exit the Session.
+May 19 01:11:54 osmanubuntu systemd[47613]: Reached target Exit the Session.
+May 19 01:11:54 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 01:11:54 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 01:11:54 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 01:11:54 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 01:11:54 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 01:11:54 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 01:11:54 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 01:12:01 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 01:12:01 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 01:12:01 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 01:12:01 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 01:12:01 osmanubuntu systemd[47698]: Queued start job for default target Main User Target.
+May 19 01:12:01 osmanubuntu systemd[47698]: Created slice User Application Slice.
+May 19 01:12:01 osmanubuntu systemd[47698]: Created slice User Core Session Slice.
+May 19 01:12:01 osmanubuntu systemd[47698]: Started Pending report trigger for Ubuntu Report.
+May 19 01:12:01 osmanubuntu systemd[47698]: Reached target Paths.
+May 19 01:12:01 osmanubuntu systemd[47698]: Reached target Timers.
+May 19 01:12:01 osmanubuntu systemd[47698]: Starting D-Bus User Message Bus Socket...
+May 19 01:12:01 osmanubuntu systemd[47698]: Listening on GnuPG network certificate management daemon.
+May 19 01:12:01 osmanubuntu systemd[47698]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:12:01 osmanubuntu systemd[47698]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:12:01 osmanubuntu systemd[47698]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:12:01 osmanubuntu systemd[47698]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 01:12:01 osmanubuntu systemd[47698]: Listening on PipeWire Multimedia System Socket.
+May 19 01:12:01 osmanubuntu systemd[47698]: Listening on debconf communication socket.
+May 19 01:12:01 osmanubuntu systemd[47698]: Listening on Sound System.
+May 19 01:12:01 osmanubuntu systemd[47698]: Listening on REST API socket for snapd user session agent.
+May 19 01:12:01 osmanubuntu systemd[47698]: Listening on Speech Dispatcher Socket.
+May 19 01:12:01 osmanubuntu systemd[47698]: Listening on D-Bus User Message Bus Socket.
+May 19 01:12:01 osmanubuntu systemd[47698]: Reached target Sockets.
+May 19 01:12:01 osmanubuntu systemd[47698]: Reached target Basic System.
+May 19 01:12:01 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 01:12:01 osmanubuntu systemd[1]: Started Session 931 of User osman.
+May 19 01:12:01 osmanubuntu systemd[47698]: Started PipeWire Multimedia Service.
+May 19 01:12:01 osmanubuntu systemd[47698]: Started PipeWire Media Session Manager.
+May 19 01:12:01 osmanubuntu systemd[47698]: Starting Sound Service...
+May 19 01:12:01 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:12:01 osmanubuntu pipewire[47706]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:12:01 osmanubuntu pipewire[47706]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 01:12:01 osmanubuntu systemd[1]: session-931.scope: Deactivated successfully.
+May 19 01:12:01 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:12:01 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:12:01 osmanubuntu systemd[47698]: Started D-Bus User Message Bus.
+May 19 01:12:01 osmanubuntu dbus-daemon[47760]: [session uid=1000 pid=47760] AppArmor D-Bus mediation is enabled
+May 19 01:12:01 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:12:01 osmanubuntu pipewire-media-session[47707]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:12:01 osmanubuntu pipewire-media-session[47707]: mod.rt: could not make thread 47756 realtime using RTKit: Permission denied
+May 19 01:12:01 osmanubuntu pipewire[47706]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:12:01 osmanubuntu pipewire[47706]: mod.rt: could not make thread 47761 realtime using RTKit: Permission denied
+May 19 01:12:01 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:12:01 osmanubuntu rtkit-daemon[2635]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 01:12:01 osmanubuntu systemd[47698]: Started Sound Service.
+May 19 01:12:01 osmanubuntu systemd[47698]: Reached target Main User Target.
+May 19 01:12:01 osmanubuntu systemd[47698]: Startup finished in 160ms.
+May 19 01:12:02 osmanubuntu systemd[1]: Started Session 933 of User osman.
+May 19 01:12:02 osmanubuntu systemd[1]: session-933.scope: Deactivated successfully.
+May 19 01:12:10 osmanubuntu systemd[1]: Started Session 934 of User osman.
+May 19 01:12:10 osmanubuntu systemd[1]: session-934.scope: Deactivated successfully.
+May 19 01:12:20 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 01:12:20 osmanubuntu systemd[47698]: Stopped target Main User Target.
+May 19 01:12:20 osmanubuntu systemd[47698]: Stopping D-Bus User Message Bus...
+May 19 01:12:20 osmanubuntu systemd[47698]: Stopping PipeWire Media Session Manager...
+May 19 01:12:20 osmanubuntu systemd[47698]: Stopped D-Bus User Message Bus.
+May 19 01:12:20 osmanubuntu systemd[47698]: Stopped PipeWire Media Session Manager.
+May 19 01:12:20 osmanubuntu systemd[47698]: Stopping PipeWire Multimedia Service...
+May 19 01:12:20 osmanubuntu systemd[47698]: Stopped PipeWire Multimedia Service.
+May 19 01:12:20 osmanubuntu systemd[47698]: Removed slice User Core Session Slice.
+May 19 01:12:20 osmanubuntu systemd[47698]: Stopped target Basic System.
+May 19 01:12:20 osmanubuntu systemd[47698]: Stopped target Paths.
+May 19 01:12:20 osmanubuntu systemd[47698]: Stopped Pending report trigger for Ubuntu Report.
+May 19 01:12:20 osmanubuntu systemd[47698]: Stopped target Sockets.
+May 19 01:12:20 osmanubuntu systemd[47698]: Stopped target Timers.
+May 19 01:12:20 osmanubuntu systemd[47698]: Closed D-Bus User Message Bus Socket.
+May 19 01:12:20 osmanubuntu systemd[47698]: Closed GnuPG network certificate management daemon.
+May 19 01:12:20 osmanubuntu systemd[47698]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:12:20 osmanubuntu systemd[47698]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:12:20 osmanubuntu systemd[47698]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:12:20 osmanubuntu systemd[47698]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 01:12:20 osmanubuntu systemd[47698]: Closed PipeWire Multimedia System Socket.
+May 19 01:12:20 osmanubuntu systemd[47698]: Closed debconf communication socket.
+May 19 01:12:20 osmanubuntu systemd[47698]: Closed Sound System.
+May 19 01:12:20 osmanubuntu systemd[47698]: Closed REST API socket for snapd user session agent.
+May 19 01:12:20 osmanubuntu systemd[47698]: Closed Speech Dispatcher Socket.
+May 19 01:12:20 osmanubuntu systemd[47698]: Removed slice User Application Slice.
+May 19 01:12:20 osmanubuntu systemd[47698]: Reached target Shutdown.
+May 19 01:12:20 osmanubuntu systemd[47698]: Finished Exit the Session.
+May 19 01:12:20 osmanubuntu systemd[47698]: Reached target Exit the Session.
+May 19 01:12:20 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 01:12:20 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 01:12:20 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 01:12:20 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 01:12:20 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 01:12:20 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 01:12:20 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 01:12:33 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 01:12:33 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 01:12:33 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 01:12:33 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 01:12:33 osmanubuntu systemd[47872]: Queued start job for default target Main User Target.
+May 19 01:12:33 osmanubuntu systemd[47872]: Created slice User Application Slice.
+May 19 01:12:33 osmanubuntu systemd[47872]: Created slice User Core Session Slice.
+May 19 01:12:33 osmanubuntu systemd[47872]: Started Pending report trigger for Ubuntu Report.
+May 19 01:12:33 osmanubuntu systemd[47872]: Reached target Paths.
+May 19 01:12:33 osmanubuntu systemd[47872]: Reached target Timers.
+May 19 01:12:33 osmanubuntu systemd[47872]: Starting D-Bus User Message Bus Socket...
+May 19 01:12:33 osmanubuntu systemd[47872]: Listening on GnuPG network certificate management daemon.
+May 19 01:12:33 osmanubuntu systemd[47872]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:12:33 osmanubuntu systemd[47872]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:12:33 osmanubuntu systemd[47872]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:12:33 osmanubuntu systemd[47872]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 01:12:33 osmanubuntu systemd[47872]: Listening on PipeWire Multimedia System Socket.
+May 19 01:12:33 osmanubuntu systemd[47872]: Listening on debconf communication socket.
+May 19 01:12:33 osmanubuntu systemd[47872]: Listening on Sound System.
+May 19 01:12:33 osmanubuntu systemd[47872]: Listening on REST API socket for snapd user session agent.
+May 19 01:12:33 osmanubuntu systemd[47872]: Listening on Speech Dispatcher Socket.
+May 19 01:12:33 osmanubuntu systemd[47872]: Listening on D-Bus User Message Bus Socket.
+May 19 01:12:33 osmanubuntu systemd[47872]: Reached target Sockets.
+May 19 01:12:33 osmanubuntu systemd[47872]: Reached target Basic System.
+May 19 01:12:33 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 01:12:33 osmanubuntu systemd[47872]: Started PipeWire Multimedia Service.
+May 19 01:12:33 osmanubuntu systemd[1]: Started Session 935 of User osman.
+May 19 01:12:33 osmanubuntu systemd[47872]: Started PipeWire Media Session Manager.
+May 19 01:12:33 osmanubuntu systemd[47872]: Starting Sound Service...
+May 19 01:12:33 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:12:33 osmanubuntu pipewire[47879]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:12:33 osmanubuntu pipewire[47879]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 01:12:33 osmanubuntu systemd[1]: session-935.scope: Deactivated successfully.
+May 19 01:12:33 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:12:33 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:12:33 osmanubuntu systemd[47872]: Started D-Bus User Message Bus.
+May 19 01:12:33 osmanubuntu dbus-daemon[47935]: [session uid=1000 pid=47935] AppArmor D-Bus mediation is enabled
+May 19 01:12:33 osmanubuntu pipewire-media-session[47880]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:12:33 osmanubuntu pipewire-media-session[47880]: mod.rt: could not make thread 47929 realtime using RTKit: Permission denied
+May 19 01:12:33 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:12:33 osmanubuntu pipewire[47879]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:12:33 osmanubuntu pipewire[47879]: mod.rt: could not make thread 47936 realtime using RTKit: Permission denied
+May 19 01:12:33 osmanubuntu dbus-daemon[708]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.5497' (uid=1000 pid=47881 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 01:12:33 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 01:12:33 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:12:33 osmanubuntu rtkit-daemon[2635]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 01:12:33 osmanubuntu systemd[47872]: Started Sound Service.
+May 19 01:12:33 osmanubuntu systemd[47872]: Reached target Main User Target.
+May 19 01:12:33 osmanubuntu systemd[47872]: Startup finished in 140ms.
+May 19 01:12:34 osmanubuntu systemd[1]: Started Session 937 of User osman.
+May 19 01:12:34 osmanubuntu systemd[1]: session-937.scope: Deactivated successfully.
+May 19 01:12:34 osmanubuntu systemd[1]: Started Session 938 of User osman.
+May 19 01:12:34 osmanubuntu systemd[1]: session-938.scope: Deactivated successfully.
+May 19 01:12:42 osmanubuntu gnome-shell[2651]: Failed to store clipboard: Operation was cancelled
+May 19 01:12:45 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 01:12:45 osmanubuntu systemd[47872]: Stopped target Main User Target.
+May 19 01:12:45 osmanubuntu systemd[47872]: Stopping D-Bus User Message Bus...
+May 19 01:12:45 osmanubuntu systemd[47872]: Stopping PipeWire Media Session Manager...
+May 19 01:12:45 osmanubuntu systemd[47872]: Stopped D-Bus User Message Bus.
+May 19 01:12:45 osmanubuntu systemd[47872]: Stopped PipeWire Media Session Manager.
+May 19 01:12:45 osmanubuntu systemd[47872]: Stopping PipeWire Multimedia Service...
+May 19 01:12:45 osmanubuntu systemd[47872]: Stopped PipeWire Multimedia Service.
+May 19 01:12:45 osmanubuntu systemd[47872]: Removed slice User Core Session Slice.
+May 19 01:12:45 osmanubuntu systemd[47872]: Stopped target Basic System.
+May 19 01:12:45 osmanubuntu systemd[47872]: Stopped target Paths.
+May 19 01:12:45 osmanubuntu systemd[47872]: Stopped Pending report trigger for Ubuntu Report.
+May 19 01:12:45 osmanubuntu systemd[47872]: Stopped target Sockets.
+May 19 01:12:45 osmanubuntu systemd[47872]: Stopped target Timers.
+May 19 01:12:45 osmanubuntu systemd[47872]: Closed D-Bus User Message Bus Socket.
+May 19 01:12:45 osmanubuntu systemd[47872]: Closed GnuPG network certificate management daemon.
+May 19 01:12:45 osmanubuntu systemd[47872]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:12:45 osmanubuntu systemd[47872]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:12:45 osmanubuntu systemd[47872]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:12:45 osmanubuntu systemd[47872]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 01:12:45 osmanubuntu systemd[47872]: Closed PipeWire Multimedia System Socket.
+May 19 01:12:45 osmanubuntu systemd[47872]: Closed debconf communication socket.
+May 19 01:12:45 osmanubuntu systemd[47872]: Closed Sound System.
+May 19 01:12:45 osmanubuntu systemd[47872]: Closed REST API socket for snapd user session agent.
+May 19 01:12:45 osmanubuntu systemd[47872]: Closed Speech Dispatcher Socket.
+May 19 01:12:45 osmanubuntu systemd[47872]: Removed slice User Application Slice.
+May 19 01:12:45 osmanubuntu systemd[47872]: Reached target Shutdown.
+May 19 01:12:45 osmanubuntu systemd[47872]: Finished Exit the Session.
+May 19 01:12:45 osmanubuntu systemd[47872]: Reached target Exit the Session.
+May 19 01:12:45 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 01:12:45 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 01:12:45 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 01:12:45 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 01:12:45 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 01:12:45 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 01:12:45 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 01:13:39 osmanubuntu systemd[1]: Starting Daily man-db regeneration...
+May 19 01:13:39 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 01:13:39 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 01:13:39 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 01:13:39 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 01:13:39 osmanubuntu systemd[48050]: Queued start job for default target Main User Target.
+May 19 01:13:39 osmanubuntu systemd[48050]: Created slice User Application Slice.
+May 19 01:13:39 osmanubuntu systemd[48050]: Created slice User Core Session Slice.
+May 19 01:13:39 osmanubuntu systemd[48050]: Started Pending report trigger for Ubuntu Report.
+May 19 01:13:39 osmanubuntu systemd[48050]: Reached target Paths.
+May 19 01:13:39 osmanubuntu systemd[48050]: Reached target Timers.
+May 19 01:13:39 osmanubuntu systemd[48050]: Starting D-Bus User Message Bus Socket...
+May 19 01:13:39 osmanubuntu systemd[48050]: Listening on GnuPG network certificate management daemon.
+May 19 01:13:39 osmanubuntu systemd[48050]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:13:39 osmanubuntu systemd[48050]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:13:39 osmanubuntu systemd[48050]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:13:39 osmanubuntu systemd[48050]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 01:13:39 osmanubuntu systemd[48050]: Listening on PipeWire Multimedia System Socket.
+May 19 01:13:39 osmanubuntu systemd[48050]: Listening on debconf communication socket.
+May 19 01:13:39 osmanubuntu systemd[48050]: Listening on Sound System.
+May 19 01:13:39 osmanubuntu systemd[48050]: Listening on REST API socket for snapd user session agent.
+May 19 01:13:39 osmanubuntu systemd[48050]: Listening on Speech Dispatcher Socket.
+May 19 01:13:39 osmanubuntu systemd[48050]: Listening on D-Bus User Message Bus Socket.
+May 19 01:13:39 osmanubuntu systemd[48050]: Reached target Sockets.
+May 19 01:13:39 osmanubuntu systemd[48050]: Reached target Basic System.
+May 19 01:13:39 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 01:13:39 osmanubuntu systemd[1]: Started Session 939 of User osman.
+May 19 01:13:39 osmanubuntu systemd[48050]: Started PipeWire Multimedia Service.
+May 19 01:13:39 osmanubuntu systemd[48050]: Started PipeWire Media Session Manager.
+May 19 01:13:39 osmanubuntu systemd[48050]: Starting Sound Service...
+May 19 01:13:39 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:13:39 osmanubuntu pipewire[48058]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:13:39 osmanubuntu pipewire[48058]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 01:13:39 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:13:39 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:13:39 osmanubuntu systemd[48050]: Started D-Bus User Message Bus.
+May 19 01:13:39 osmanubuntu dbus-daemon[48079]: [session uid=1000 pid=48079] AppArmor D-Bus mediation is enabled
+May 19 01:13:39 osmanubuntu pipewire-media-session[48059]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:13:39 osmanubuntu pipewire-media-session[48059]: mod.rt: could not make thread 48078 realtime using RTKit: Permission denied
+May 19 01:13:39 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:13:39 osmanubuntu pipewire[48058]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:13:39 osmanubuntu pipewire[48058]: mod.rt: could not make thread 48080 realtime using RTKit: Permission denied
+May 19 01:13:39 osmanubuntu dbus-daemon[708]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.5523' (uid=1000 pid=48060 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 01:13:39 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 01:13:39 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:13:39 osmanubuntu rtkit-daemon[2635]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 01:13:39 osmanubuntu systemd[48050]: Started Sound Service.
+May 19 01:13:39 osmanubuntu systemd[48050]: Reached target Main User Target.
+May 19 01:13:39 osmanubuntu systemd[48050]: Startup finished in 154ms.
+May 19 01:13:39 osmanubuntu systemd[1]: session-939.scope: Deactivated successfully.
+May 19 01:13:40 osmanubuntu systemd[1]: man-db.service: Deactivated successfully.
+May 19 01:13:40 osmanubuntu systemd[1]: Finished Daily man-db regeneration.
+May 19 01:13:49 osmanubuntu systemd[1]: Stopping User Manager for UID 1000...
+May 19 01:13:49 osmanubuntu systemd[48050]: Stopped target Main User Target.
+May 19 01:13:49 osmanubuntu systemd[48050]: Stopping D-Bus User Message Bus...
+May 19 01:13:49 osmanubuntu systemd[48050]: Stopping PipeWire Media Session Manager...
+May 19 01:13:49 osmanubuntu systemd[48050]: Stopped D-Bus User Message Bus.
+May 19 01:13:49 osmanubuntu systemd[48050]: Stopped PipeWire Media Session Manager.
+May 19 01:13:49 osmanubuntu systemd[48050]: Stopping PipeWire Multimedia Service...
+May 19 01:13:49 osmanubuntu systemd[48050]: Stopped PipeWire Multimedia Service.
+May 19 01:13:49 osmanubuntu systemd[48050]: Removed slice User Core Session Slice.
+May 19 01:13:49 osmanubuntu systemd[48050]: Stopped target Basic System.
+May 19 01:13:49 osmanubuntu systemd[48050]: Stopped target Paths.
+May 19 01:13:49 osmanubuntu systemd[48050]: Stopped Pending report trigger for Ubuntu Report.
+May 19 01:13:49 osmanubuntu systemd[48050]: Stopped target Sockets.
+May 19 01:13:49 osmanubuntu systemd[48050]: Stopped target Timers.
+May 19 01:13:49 osmanubuntu systemd[48050]: Closed D-Bus User Message Bus Socket.
+May 19 01:13:49 osmanubuntu systemd[48050]: Closed GnuPG network certificate management daemon.
+May 19 01:13:49 osmanubuntu systemd[48050]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:13:49 osmanubuntu systemd[48050]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:13:49 osmanubuntu systemd[48050]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:13:49 osmanubuntu systemd[48050]: Closed GnuPG cryptographic agent and passphrase cache.
+May 19 01:13:49 osmanubuntu systemd[48050]: Closed PipeWire Multimedia System Socket.
+May 19 01:13:49 osmanubuntu systemd[48050]: Closed debconf communication socket.
+May 19 01:13:49 osmanubuntu systemd[48050]: Closed Sound System.
+May 19 01:13:49 osmanubuntu systemd[48050]: Closed REST API socket for snapd user session agent.
+May 19 01:13:49 osmanubuntu systemd[48050]: Closed Speech Dispatcher Socket.
+May 19 01:13:49 osmanubuntu systemd[48050]: Removed slice User Application Slice.
+May 19 01:13:49 osmanubuntu systemd[48050]: Reached target Shutdown.
+May 19 01:13:49 osmanubuntu systemd[48050]: Finished Exit the Session.
+May 19 01:13:49 osmanubuntu systemd[48050]: Reached target Exit the Session.
+May 19 01:13:49 osmanubuntu systemd[1]: user@1000.service: Deactivated successfully.
+May 19 01:13:49 osmanubuntu systemd[1]: Stopped User Manager for UID 1000.
+May 19 01:13:49 osmanubuntu systemd[1]: Stopping User Runtime Directory /run/user/1000...
+May 19 01:13:49 osmanubuntu systemd[1]: run-user-1000.mount: Deactivated successfully.
+May 19 01:13:49 osmanubuntu systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+May 19 01:13:49 osmanubuntu systemd[1]: Stopped User Runtime Directory /run/user/1000.
+May 19 01:13:49 osmanubuntu systemd[1]: Removed slice User Slice of UID 1000.
+May 19 01:15:41 osmanubuntu systemd[1]: Created slice User Slice of UID 1000.
+May 19 01:15:41 osmanubuntu systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 19 01:15:41 osmanubuntu systemd[1]: Finished User Runtime Directory /run/user/1000.
+May 19 01:15:41 osmanubuntu systemd[1]: Starting User Manager for UID 1000...
+May 19 01:15:41 osmanubuntu systemd[48132]: Queued start job for default target Main User Target.
+May 19 01:15:41 osmanubuntu systemd[48132]: Created slice User Application Slice.
+May 19 01:15:41 osmanubuntu systemd[48132]: Created slice User Core Session Slice.
+May 19 01:15:41 osmanubuntu systemd[48132]: Started Pending report trigger for Ubuntu Report.
+May 19 01:15:41 osmanubuntu systemd[48132]: Reached target Paths.
+May 19 01:15:41 osmanubuntu systemd[48132]: Reached target Timers.
+May 19 01:15:41 osmanubuntu systemd[48132]: Starting D-Bus User Message Bus Socket...
+May 19 01:15:41 osmanubuntu systemd[48132]: Listening on GnuPG network certificate management daemon.
+May 19 01:15:41 osmanubuntu systemd[48132]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 19 01:15:41 osmanubuntu systemd[48132]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 19 01:15:41 osmanubuntu systemd[48132]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 19 01:15:41 osmanubuntu systemd[48132]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 19 01:15:41 osmanubuntu systemd[48132]: Listening on PipeWire Multimedia System Socket.
+May 19 01:15:41 osmanubuntu systemd[48132]: Listening on debconf communication socket.
+May 19 01:15:41 osmanubuntu systemd[48132]: Listening on Sound System.
+May 19 01:15:41 osmanubuntu systemd[48132]: Listening on REST API socket for snapd user session agent.
+May 19 01:15:41 osmanubuntu systemd[48132]: Listening on Speech Dispatcher Socket.
+May 19 01:15:41 osmanubuntu systemd[48132]: Listening on D-Bus User Message Bus Socket.
+May 19 01:15:41 osmanubuntu systemd[48132]: Reached target Sockets.
+May 19 01:15:41 osmanubuntu systemd[48132]: Reached target Basic System.
+May 19 01:15:41 osmanubuntu systemd[1]: Started User Manager for UID 1000.
+May 19 01:15:41 osmanubuntu systemd[48132]: Started PipeWire Multimedia Service.
+May 19 01:15:41 osmanubuntu systemd[1]: Started Session 941 of User osman.
+May 19 01:15:41 osmanubuntu systemd[48132]: Started PipeWire Media Session Manager.
+May 19 01:15:41 osmanubuntu systemd[48132]: Starting Sound Service...
+May 19 01:15:41 osmanubuntu pipewire[48139]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:15:41 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:15:41 osmanubuntu pipewire[48139]: mod.rt: could not set nice-level to -11: Permission denied
+May 19 01:15:41 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:15:41 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:15:41 osmanubuntu systemd[48132]: Started D-Bus User Message Bus.
+May 19 01:15:41 osmanubuntu pipewire-media-session[48140]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:15:41 osmanubuntu pipewire-media-session[48140]: mod.rt: could not make thread 48159 realtime using RTKit: Permission denied
+May 19 01:15:41 osmanubuntu dbus-daemon[48160]: [session uid=1000 pid=48160] AppArmor D-Bus mediation is enabled
+May 19 01:15:41 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:15:41 osmanubuntu pipewire[48139]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+May 19 01:15:41 osmanubuntu pipewire[48139]: mod.rt: could not make thread 48161 realtime using RTKit: Permission denied
+May 19 01:15:41 osmanubuntu dbus-daemon[708]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.5546' (uid=1000 pid=48141 comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo" label="unconfined")
+May 19 01:15:41 osmanubuntu systemd[1]: Condition check resulted in Bluetooth service being skipped.
+May 19 01:15:41 osmanubuntu rtkit-daemon[2635]: Supervising 6 threads of 3 processes of 2 users.
+May 19 01:15:41 osmanubuntu rtkit-daemon[2635]: message repeated 4 times: [ Supervising 6 threads of 3 processes of 2 users.]
+May 19 01:15:41 osmanubuntu systemd[48132]: Started Sound Service.
+May 19 01:15:41 osmanubuntu systemd[48132]: Reached target Main User Target.
+May 19 01:15:41 osmanubuntu systemd[48132]: Startup finished in 159ms.
+May 19 01:15:41 osmanubuntu systemd[1]: session-941.scope: Deactivated successfully.
+May 19 01:15:42 osmanubuntu systemd[1]: Started Session 943 of User osman.
+May 19 01:15:42 osmanubuntu systemd[1]: session-943.scope: Deactivated successfully.
+May 19 01:15:42 osmanubuntu systemd[1]: Started Session 944 of User osman.
+May 19 01:15:42 osmanubuntu systemd[1]: session-944.scope: Deactivated successfully.
+May 19 01:15:43 osmanubuntu systemd[1]: Started Session 945 of User osman.
+May 19 01:15:43 osmanubuntu systemd[1]: session-945.scope: Deactivated successfully.
+May 19 01:15:43 osmanubuntu systemd[1]: Started Session 946 of User osman.
+May 19 01:15:43 osmanubuntu systemd[1]: session-946.scope: Deactivated successfully.
+May 19 01:15:43 osmanubuntu systemd[1]: Started Session 947 of User osman.
+May 19 01:15:43 osmanubuntu systemd[1]: session-947.scope: Deactivated successfully.
+May 19 01:15:44 osmanubuntu systemd[1]: Started Session 948 of User osman.
+May 19 01:15:44 osmanubuntu systemd[1]: session-948.scope: Deactivated successfully.
+May 19 01:15:44 osmanubuntu systemd[1]: Started Session 949 of User osman.
+May 19 01:15:44 osmanubuntu systemd[1]: session-949.scope: Deactivated successfully.
+May 19 01:15:47 osmanubuntu systemd[1]: Started Session 950 of User osman.
+May 19 01:15:47 osmanubuntu systemd[1]: session-950.scope: Deactivated successfully.
+May 19 01:15:47 osmanubuntu systemd[1]: Started Session 951 of User osman.
