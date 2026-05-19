@@ -533,22 +533,28 @@ strong { color: var(--t1); }
 
   <!-- 3. AI ANALIZ -->
   <div id="ai" class="page">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; flex-wrap:wrap; gap:16px;">
-      <div>
-        <div style="font-size:0.68rem; font-weight:700; color:var(--t3); text-transform:uppercase; letter-spacing:0.8px; margin-bottom:6px;">MODÜL — AI ANALIZ MOTORU</div>
-        <h1 style="font-size:1.1rem; font-weight:600; color:var(--t1); margin-bottom:4px;">Otonom Log Analizi</h1>
-        <p style="font-size:0.78rem; color:var(--t2);">auth.log, syslog ve kern.log dosyalarını seçili LLM ile tarayarak güvenlik raporu üretir.</p>
-      </div>
-      <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
-        <div id="ai-refresh-badge" style="font-size:0.72rem; color:var(--t2); font-family:var(--font-mono); background:var(--bg-row); padding:5px 12px; border-radius:3px; border:1px solid var(--border); white-space:nowrap;">Bekliyor</div>
-        <select id="llmProviderSel" class="modern-select" style="padding:8px 12px;">
+    <!-- Page Title -->
+    <div class="page-header" style="border-bottom:1px solid var(--border); padding-bottom:16px; margin-bottom:16px;">
+      <div style="font-size:0.65rem; font-weight:700; color:var(--t3); text-transform:uppercase; letter-spacing:0.9px; margin-bottom:6px;">MODUL — AI ANALIZ MOTORU</div>
+      <h1 style="font-size:1.1rem; font-weight:600; color:var(--t1);">Otonom Log Analizi</h1>
+      <p style="font-size:0.78rem; color:var(--t2); margin-top:3px;">auth.log, syslog ve kern.log dosyalarini secili LLM ile tarayarak Turkce guvenlik raporu uretir.</p>
+    </div>
+
+    <!-- Toolbar -->
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; background:var(--bg-card); border:1px solid var(--border); border-radius:4px; padding:10px 16px; margin-bottom:20px; flex-wrap:wrap;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <div style="font-size:0.68rem; font-weight:700; color:var(--t3); text-transform:uppercase; letter-spacing:0.6px;">Model:</div>
+        <select id="llmProviderSel" class="modern-select" style="padding:6px 10px; font-size:0.78rem; min-width:200px;">
           <option value="gemini">Gemini 2.5 Flash (Bulut)</option>
           <option value="ollama">Ollama / Llama 3.2 (Yerel)</option>
         </select>
-        <button id="btn-live-analyze" onclick="runLiveAnalysis()" class="btn-primary" style="width:auto; padding:9px 20px; background:var(--blue); border-radius:3px; box-shadow:none;">
+        <div id="ai-refresh-badge" style="font-size:0.68rem; color:var(--t3); font-family:var(--font-mono); white-space:nowrap;">Bekliyor</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <button id="btn-live-analyze" onclick="runLiveAnalysis()" style="padding:8px 20px; background:var(--blue); border:none; border-radius:3px; color:#fff; font-family:var(--font-sans); font-size:0.78rem; font-weight:700; cursor:pointer; text-transform:uppercase; letter-spacing:0.4px; transition:opacity 0.15s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
           Analizi Baslat
         </button>
-        <button onclick="exportReportPDF()" style="padding:9px 16px; background:var(--bg-row); border:1px solid var(--border); border-radius:3px; color:var(--t2); font-family:var(--font-sans); font-size:0.78rem; font-weight:600; cursor:pointer; text-transform:uppercase; letter-spacing:0.4px; white-space:nowrap;" title="Raporu PDF olarak kaydet">
+        <button onclick="exportReportPDF()" style="padding:8px 16px; background:transparent; border:1px solid var(--border); border-radius:3px; color:var(--t2); font-family:var(--font-sans); font-size:0.78rem; font-weight:600; cursor:pointer; text-transform:uppercase; letter-spacing:0.4px; transition:all 0.15s;" onmouseover="this.style.borderColor='var(--blue)';this.style.color='var(--blue)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--t2)'">
           PDF Indir
         </button>
       </div>
