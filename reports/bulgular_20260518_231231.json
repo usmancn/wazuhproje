@@ -1,0 +1,152 @@
+[
+  {
+    "type": "SSH_BRUTE_FORCE",
+    "severity": "CRITICAL",
+    "description": "192.168.64.1 IP adresinden 81 başarısız SSH giriş denemesi tespit edildi.",
+    "mitre": "T1110.001 — Brute Force: Password Guessing"
+  },
+  {
+    "type": "PRIVILEGE_ESCALATION_SUCCESS",
+    "severity": "CRITICAL",
+    "description": "'osman' kullanıcısı sudo ile ROOT yetkisi aldı. Komut: /usr/bin/tail -f /var/ossec/logs/alerts/alerts.json",
+    "mitre": "T1548.003 — Sudo and Sudo Caching"
+  },
+  {
+    "type": "PRIVILEGE_ESCALATION_SUCCESS",
+    "severity": "CRITICAL",
+    "description": "'osman' kullanıcısı sudo ile ROOT yetkisi aldı. Komut: /usr/bin/tail -f /var/ossec/logs/alerts/alerts.json",
+    "mitre": "T1548.003 — Sudo and Sudo Caching"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor 'sys_nice' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/proc/pressure/memory' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/proc/pressure/memory' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/proc/pressure/memory' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/proc/pressure/memory' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/proc/pressure/memory' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/proc/pressure/memory' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/proc/pressure/memory' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/proc/pressure/memory' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/proc/pressure/memory' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/proc/pressure/memory' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/proc/pressure/memory' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/proc/pressure/memory' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/proc/pressure/memory' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor 'sys_nice' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor 'net_admin' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor 'sys_nice' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor 'net_admin' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor 'sys_nice' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor 'net_admin' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor 'net_admin' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor 'sys_nice' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  }
+]

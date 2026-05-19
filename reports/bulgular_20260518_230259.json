@@ -1,0 +1,86 @@
+[
+  {
+    "type": "SSH_BRUTE_FORCE",
+    "severity": "CRITICAL",
+    "description": "185.220.101.47 IP adresinden 20 başarısız SSH giriş denemesi tespit edildi.",
+    "mitre": "T1110.001 — Brute Force: Password Guessing"
+  },
+  {
+    "type": "SSH_BRUTE_FORCE",
+    "severity": "CRITICAL",
+    "description": "198.51.100.22 IP adresinden 10 başarısız SSH giriş denemesi tespit edildi.",
+    "mitre": "T1110.001 — Brute Force: Password Guessing"
+  },
+  {
+    "type": "SSH_BRUTE_FORCE",
+    "severity": "CRITICAL",
+    "description": "192.168.64.1 IP adresinden 16 başarısız SSH giriş denemesi tespit edildi.",
+    "mitre": "T1110.001 — Brute Force: Password Guessing"
+  },
+  {
+    "type": "SSH_BRUTE_FORCE",
+    "severity": "CRITICAL",
+    "description": "91.92.252.18 IP adresinden 12 başarısız SSH giriş denemesi tespit edildi.",
+    "mitre": "T1110.001 — Brute Force: Password Guessing"
+  },
+  {
+    "type": "PRIVILEGE_ESCALATION_SUCCESS",
+    "severity": "CRITICAL",
+    "description": "'osman' kullanıcısı sudo ile ROOT yetkisi aldı. Komut: /bin/cat /var/log/auth.log",
+    "mitre": "T1548.003 — Sudo and Sudo Caching"
+  },
+  {
+    "type": "PRIVILEGE_ESCALATION_SUCCESS",
+    "severity": "CRITICAL",
+    "description": "'osman' kullanıcısı sudo ile ROOT yetkisi aldı. Komut: /usr/bin/apt update",
+    "mitre": "T1548.003 — Sudo and Sudo Caching"
+  },
+  {
+    "type": "PRIVILEGE_ESCALATION_SUCCESS",
+    "severity": "CRITICAL",
+    "description": "'osman' kullanıcısı sudo ile ROOT yetkisi aldı. Komut: /bin/systemctl status wazuh-manager",
+    "mitre": "T1548.003 — Sudo and Sudo Caching"
+  },
+  {
+    "type": "PRIVILEGE_ESCALATION_SUCCESS",
+    "severity": "CRITICAL",
+    "description": "'osman' kullanıcısı sudo ile ROOT yetkisi aldı. Komut: /usr/bin/wc -l /var/ossec/logs/alerts/alerts.json",
+    "mitre": "T1548.003 — Sudo and Sudo Caching"
+  },
+  {
+    "type": "NETWORK_OVERLOAD",
+    "severity": "CRITICAL",
+    "description": "Ağ bağlantı tablosu (nf_conntrack) dolu. Olası DDoS/SYN-Flood saldırısı. Tespit: 3 kez.",
+    "mitre": "T1498 — Network Denial of Service"
+  },
+  {
+    "type": "SSH_BRUTE_FORCE",
+    "severity": "HIGH",
+    "description": "203.0.113.99 IP adresinden 5 başarısız SSH giriş denemesi tespit edildi.",
+    "mitre": "T1110.001 — Brute Force: Password Guessing"
+  },
+  {
+    "type": "PRIVILEGE_ESCALATION_ATTEMPT",
+    "severity": "HIGH",
+    "description": "'attacker' kullanıcısı yetkisiz sudo ile '/bin/bash' çalıştırmayı denedi.",
+    "mitre": "T1548.003 — Sudo and Sudo Caching"
+  },
+  {
+    "type": "SUSPICIOUS_CRON",
+    "severity": "HIGH",
+    "description": "Şüpheli cron görevi: `/tmp/.hidden_script.sh 2>/dev/null`",
+    "mitre": "T1053.003 — Scheduled Task/Job: Cron"
+  },
+  {
+    "type": "OUT_OF_MEMORY",
+    "severity": "HIGH",
+    "description": "OOM Killer 'java' işlemini sonlandırdı. Sistem belleği tükendi.",
+    "mitre": "T1499 — Endpoint Denial of Service"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor '/tmp/.hidden_script.sh' işlemini engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation"
+  }
+]

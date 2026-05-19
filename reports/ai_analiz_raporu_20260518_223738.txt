@@ -1,0 +1,42 @@
+🤖 YAPAY ZEKA (OFFLINE) GÜVENLİK ANALİZ RAPORU
+==================================================
+Sistemde toplam 11 güvenlik ihlali tespit edildi.
+Dağılım: 4 KRİTİK, 3 YÜKSEK risk.
+
+🔍 DETAYLI BULGULAR VE MÜDAHALE ÖNERİLERİ:
+--------------------------------------------------
+[CRITICAL] BULGU 1: 185.220.101.47 IP adresinden 10 başarısız SSH giriş denemesi tespit edildi.
+💡 AI Önerisi: İlgili IP adresinin (Fail2Ban aracılığıyla veya UFW ile) derhal engellenmesi, SSH portunun (22) değiştirilmesi veya sadece VPN üzerinden erişime açılması önerilir.
+--------------------------------------------------
+[CRITICAL] BULGU 2: 192.168.64.1 IP adresinden 8 başarısız SSH giriş denemesi tespit edildi.
+💡 AI Önerisi: İlgili IP adresinin (Fail2Ban aracılığıyla veya UFW ile) derhal engellenmesi, SSH portunun (22) değiştirilmesi veya sadece VPN üzerinden erişime açılması önerilir.
+--------------------------------------------------
+[CRITICAL] BULGU 3: 91.92.252.18 IP adresinden 6 başarısız SSH giriş denemesi tespit edildi.
+💡 AI Önerisi: İlgili IP adresinin (Fail2Ban aracılığıyla veya UFW ile) derhal engellenmesi, SSH portunun (22) değiştirilmesi veya sadece VPN üzerinden erişime açılması önerilir.
+--------------------------------------------------
+[CRITICAL] BULGU 4: Sistem ağ tablosu (nf_conntrack) doldu. DDoS saldırısı veya aşırı yük altında olabilir (Tespit Sayısı: 3).
+💡 AI Önerisi: Ağ güvenlik duvarı üzerinden rate-limiting kuralları (iptables) devreye alınmalı, tcp_syncookies aktifleştirilmelidir.
+--------------------------------------------------
+[HIGH] BULGU 5: 'r' kullanıcısı yetkisiz sudo komutu (/bin/bash) çalıştırmayı denedi.
+💡 AI Önerisi: Sudo yetkisi olmayan kullanıcıların sudo konfigürasyonu (/etc/sudoers) üzerinden izole edilmesi ve hesap şifrelerinin yenilenmesi gerekmektedir.
+--------------------------------------------------
+[HIGH] BULGU 6: Şüpheli zamanlanmış görev (Cron) tespit edildi: /tmp/.hidden_script.sh 2>/dev/null
+💡 AI Önerisi: Zararlı olabilecek cron görevi derhal silinmeli, makinede rootkit taraması (rkhunter/chkrootkit) yapılmalıdır.
+--------------------------------------------------
+[HIGH] BULGU 7: Sistemde bellek tükendi. 'java' işlemi Linux OOM Killer tarafından sonlandırıldı.
+💡 AI Önerisi: Sistem kaynakları artırılmalı, bellek kaçağı yaratan uygulamanın (memory leak) logları ayrıca incelenmelidir.
+--------------------------------------------------
+[MEDIUM] BULGU 8: 'hacker' kullanıcısı 'root' hesabı için şifreyi yanlış girdi.
+💡 AI Önerisi: Kullanıcı hesabının güvenliği risk altındadır. Kullanıcıya MFA (Çok Faktörlü Kimlik Doğrulama) zorunluluğu getirilmeli.
+--------------------------------------------------
+[MEDIUM] BULGU 9: 'hacker' kullanıcısı 'root' hesabı için şifreyi yanlış girdi.
+💡 AI Önerisi: Kullanıcı hesabının güvenliği risk altındadır. Kullanıcıya MFA (Çok Faktörlü Kimlik Doğrulama) zorunluluğu getirilmeli.
+--------------------------------------------------
+[MEDIUM] BULGU 10: 'hacker' kullanıcısı 'root' hesabı için şifreyi yanlış girdi.
+💡 AI Önerisi: Kullanıcı hesabının güvenliği risk altındadır. Kullanıcıya MFA (Çok Faktörlü Kimlik Doğrulama) zorunluluğu getirilmeli.
+--------------------------------------------------
+[MEDIUM] BULGU 11: AppArmor güvenlik politikası, bir işlemin (/tmp/.hidden_script.sh) çalışmasını engelledi.
+💡 AI Önerisi: Eğer bu işlem sistemin yasal bir işleyişi ise AppArmor profili güncellenmeli, aksi takdirde çalıştırılan dosyanın analizi yapılmalıdır.
+--------------------------------------------------
+
+📌 Genel Sistem Durumu: Acil müdahale gerektiriyor!

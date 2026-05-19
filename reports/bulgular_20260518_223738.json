@@ -1,0 +1,102 @@
+{
+    "timestamp": "20260518_223738",
+    "findings": [
+        {
+            "type": "SSH_BRUTE_FORCE",
+            "severity": "CRITICAL",
+            "description": "185.220.101.47 IP adresinden 10 başarısız SSH giriş denemesi tespit edildi.",
+            "details": {
+                "ip": "185.220.101.47",
+                "count": 10
+            }
+        },
+        {
+            "type": "SSH_BRUTE_FORCE",
+            "severity": "CRITICAL",
+            "description": "192.168.64.1 IP adresinden 8 başarısız SSH giriş denemesi tespit edildi.",
+            "details": {
+                "ip": "192.168.64.1",
+                "count": 8
+            }
+        },
+        {
+            "type": "SSH_BRUTE_FORCE",
+            "severity": "CRITICAL",
+            "description": "91.92.252.18 IP adresinden 6 başarısız SSH giriş denemesi tespit edildi.",
+            "details": {
+                "ip": "91.92.252.18",
+                "count": 6
+            }
+        },
+        {
+            "type": "NETWORK_OVERLOAD",
+            "severity": "CRITICAL",
+            "description": "Sistem ağ tablosu (nf_conntrack) doldu. DDoS saldırısı veya aşırı yük altında olabilir (Tespit Sayısı: 3).",
+            "details": {
+                "count": 3
+            }
+        },
+        {
+            "type": "PRIVILEGE_ESCALATION_ATTEMPT",
+            "severity": "HIGH",
+            "description": "'r' kullanıcısı yetkisiz sudo komutu (/bin/bash) çalıştırmayı denedi.",
+            "details": {
+                "user": "r",
+                "target": "root",
+                "cmd": "/bin/bash"
+            }
+        },
+        {
+            "type": "SUSPICIOUS_CRON",
+            "severity": "HIGH",
+            "description": "Şüpheli zamanlanmış görev (Cron) tespit edildi: /tmp/.hidden_script.sh 2>/dev/null",
+            "details": {
+                "user": "root",
+                "cmd": "/tmp/.hidden_script.sh 2>/dev/null"
+            }
+        },
+        {
+            "type": "OUT_OF_MEMORY",
+            "severity": "HIGH",
+            "description": "Sistemde bellek tükendi. 'java' işlemi Linux OOM Killer tarafından sonlandırıldı.",
+            "details": {
+                "process": "java"
+            }
+        },
+        {
+            "type": "UNAUTHORIZED_SU_ATTEMPT",
+            "severity": "MEDIUM",
+            "description": "'hacker' kullanıcısı 'root' hesabı için şifreyi yanlış girdi.",
+            "details": {
+                "target": "root",
+                "user": "hacker"
+            }
+        },
+        {
+            "type": "UNAUTHORIZED_SU_ATTEMPT",
+            "severity": "MEDIUM",
+            "description": "'hacker' kullanıcısı 'root' hesabı için şifreyi yanlış girdi.",
+            "details": {
+                "target": "root",
+                "user": "hacker"
+            }
+        },
+        {
+            "type": "UNAUTHORIZED_SU_ATTEMPT",
+            "severity": "MEDIUM",
+            "description": "'hacker' kullanıcısı 'root' hesabı için şifreyi yanlış girdi.",
+            "details": {
+                "target": "root",
+                "user": "hacker"
+            }
+        },
+        {
+            "type": "SECURITY_POLICY_VIOLATION",
+            "severity": "MEDIUM",
+            "description": "AppArmor güvenlik politikası, bir işlemin (/tmp/.hidden_script.sh) çalışmasını engelledi.",
+            "details": {
+                "process": "/tmp/.hidden_script.sh"
+            }
+        }
+    ]
+}
