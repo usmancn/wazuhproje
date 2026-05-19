@@ -2,7 +2,7 @@
 """Wazuh Sunum - Saldiri Simülasyonu Sunucusu"""
 
 import json, subprocess, threading, time, os
-from http.server import HTTPServer, BaseHTTPRequestHandler
+from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 
 UBUNTU_IP = "192.168.64.4"
 SSH_KEY   = os.path.expanduser("~/.ssh/ubuntu_wazuh")
@@ -96,7 +96,7 @@ def run_live_analysis(api_key="", llm_provider="gemini"):
             "--syslog", logs["syslog"],
             "--kern",   logs["kern"],
             "--llm",    llm_provider,
-            "--model",  "gemini-2.5-flash" if llm_provider == "gemini" else ("gpt-4o-mini" if llm_provider == "openai" else "mistral"),
+            "--model",  "gemini-2.5-flash" if llm_provider == "gemini" else ("gpt-4o-mini" if llm_provider == "openai" else "mistral:7b"),
             "--output", os.path.join(base, "reports"),
         ]
         if api_key:
@@ -298,7 +298,7 @@ if __name__ == "__main__":
     print(f"  http://localhost:{PORT}")
     print(f"  Ubuntu: {UBUNTU_IP}")
     print(f"{'='*50}\n")
-    server = HTTPServer(("0.0.0.0", PORT), Handler)
+    server = ThreadingHTTPServer(("0.0.0.0", PORT), Handler)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

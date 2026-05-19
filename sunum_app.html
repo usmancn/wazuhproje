@@ -1379,7 +1379,7 @@ function analyzeSingleAlert(btn, encodedJson) {
   var jsonData;
   try { jsonData = JSON.parse(jsonStr); } catch(e) { jsonData = {"raw": jsonStr}; }
   
-  var providerEl = document.getElementById('liveLLMSelector');
+  var providerEl = btn.parentElement.querySelector('.singleLLMSelector') || document.getElementById('liveLLMSelector');
   if (providerEl) { jsonData.llm_provider = providerEl.value; }
   
   if (jsonData.llm_provider === 'gemini') jsonData.api_key = '';

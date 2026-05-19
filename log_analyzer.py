@@ -306,18 +306,18 @@ class LLMAnalyzer:
         return res.strip() + acil_mudahale
 
     def _call_ollama(self, prompt):
-        model = self.model or "mistral"
+        model = self.model or "mistral:7b"
         print(f"{Colors.OKCYAN}[*] Ollama ({model}) ile analiz yapılıyor...{Colors.ENDC}")
         try:
             data = json.dumps({"model": model, "prompt": prompt, "stream": False}).encode()
             req  = urllib.request.Request(
-                "http://localhost:11434/api/generate",
+                "http://127.0.0.1:11434/api/generate",
                 data=data, headers={"Content-Type": "application/json"}, method="POST"
             )
             with urllib.request.urlopen(req, timeout=120) as resp:
                 return json.loads(resp.read().decode()).get("response", "[Yanıt alınamadı]")
-        except urllib.error.URLError:
-            print(f"{Colors.FAIL}[!] Ollama çalışmıyor. `ollama serve` çalıştırın.{Colors.ENDC}")
+        except urllib.error.URLError as e:
+            print(f"{Colors.FAIL}[!] Ollama çalışmıyor. `ollama serve` çalıştırın. Hata: {e}{Colors.ENDC}")
             return "[OLLAMA HATASI] Bağlantı reddedildi"
         except Exception as e:
             return f"[OLLAMA HATASI]: {e}"
