@@ -1153,11 +1153,6 @@ function loadAIPage() {
       el.innerHTML = '<div style="text-align:center; padding: 40px; color: var(--t2);">Henüz üretilmiş bir rapor bulunmuyor.</div>';
     }
   }).catch(()=>{});
-
-  if (_aiRefreshTimer) clearTimeout(_aiRefreshTimer);
-  _aiRefreshTimer = setTimeout(function(){
-    if (document.getElementById('ai').classList.contains('active')) loadAIPage();
-  }, 30000);
 }
 
 function addLog(msg, color) {
