@@ -1,0 +1,74 @@
+[
+  {
+    "type": "SSH_BRUTE_FORCE",
+    "severity": "CRITICAL",
+    "description": "192.168.64.1 adresinden 659 başarısız SSH giriş denemesi. Bu IP sisteme kaba kuvvet saldırısı yapıyor.",
+    "mitre": "T1110.001 — Brute Force: Password Guessing",
+    "source": "auth.log",
+    "event_count": 659,
+    "sample_log": "May 20 00:25:53 osmanubuntu sshd: Invalid user hacker from 192.168.64.1 port 55007"
+  },
+  {
+    "type": "PRIVILEGE_ESCALATION_SUCCESS",
+    "severity": "CRITICAL",
+    "description": "'osman' kullanıcısı sudo komutuyla root (yönetici) yetkisi aldı. Çalıştırılan komut: /usr/bin/tail -f /var/ossec/logs/alerts/alerts.json",
+    "mitre": "T1548.003 — Sudo and Sudo Caching",
+    "source": "auth.log",
+    "event_count": 2,
+    "sample_log": "May 17 17:19:04 osmanubuntu sudo:    osman : TTY=pts/1 ; PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/tail -f /var/ossec/logs/alerts/alerts.json"
+  },
+  {
+    "type": "SSH_BRUTE_FORCE",
+    "severity": "MEDIUM",
+    "description": "1.1.1.1' adresinden 1 başarısız SSH giriş denemesi. Bu IP sisteme kaba kuvvet saldırısı yapıyor.",
+    "mitre": "T1110.001 — Brute Force: Password Guessing",
+    "source": "auth.log",
+    "event_count": 1,
+    "sample_log": "May 18 21:03:18 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/logger -t sshd 'Invalid user test_hacker from 1.1.1.1'"
+  },
+  {
+    "type": "SSH_BRUTE_FORCE",
+    "severity": "MEDIUM",
+    "description": "1.1.1.2' adresinden 1 başarısız SSH giriş denemesi. Bu IP sisteme kaba kuvvet saldırısı yapıyor.",
+    "mitre": "T1110.001 — Brute Force: Password Guessing",
+    "source": "auth.log",
+    "event_count": 1,
+    "sample_log": "May 18 21:03:29 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/logger -p auth.info -t sshd 'Invalid user test_hacker from 1.1.1.2'"
+  },
+  {
+    "type": "SSH_BRUTE_FORCE",
+    "severity": "MEDIUM",
+    "description": "1.1.1.2 adresinden 1 başarısız SSH giriş denemesi. Bu IP sisteme kaba kuvvet saldırısı yapıyor.",
+    "mitre": "T1110.001 — Brute Force: Password Guessing",
+    "source": "auth.log",
+    "event_count": 1,
+    "sample_log": "May 18 21:03:29 osmanubuntu sshd: Invalid user test_hacker from 1.1.1.2"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor güvenlik duvarı 'sys_nice' programının çalışmasını engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation",
+    "source": "kern.log",
+    "event_count": 11,
+    "sample_log": "May 17 11:40:43 osmanubuntu kernel: [    5.202137] audit: type=1400 audit(1779018043.280:71): apparmor=\"DENIED\" operation=\"capable\" profile=\"/usr/sbin/cups-browsed\" pid=866 comm=\"cups-browsed\" capability=23  capname=\"sys_nice\""
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor güvenlik duvarı '/proc/pressure/memory' programının çalışmasını engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation",
+    "source": "kern.log",
+    "event_count": 13,
+    "sample_log": "May 17 11:45:56 osmanubuntu kernel: [  129.469163] audit: type=1400 audit(1779018356.964:74): apparmor=\"DENIED\" operation=\"open\" profile=\"snap.firefox.firefox\" name=\"/proc/pressure/memory\" pid=1994 comm=\"firefox\" requested_mask=\"r\" denied_mask=\"r\" fsuid=1000 ouid=0"
+  },
+  {
+    "type": "APPARMOR_BLOCK",
+    "severity": "MEDIUM",
+    "description": "AppArmor güvenlik duvarı 'net_admin' programının çalışmasını engelledi.",
+    "mitre": "T1068 — Exploitation for Privilege Escalation",
+    "source": "kern.log",
+    "event_count": 10,
+    "sample_log": "May 17 16:24:44 osmanubuntu kernel: [    5.150536] audit: type=1400 audit(1779035084.232:43): apparmor=\"DENIED\" operation=\"capable\" profile=\"/usr/sbin/cupsd\" pid=771 comm=\"cupsd\" capability=12  capname=\"net_admin\""
+  }
+]

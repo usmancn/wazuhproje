@@ -1363,7 +1363,8 @@ function analyzeSingleAlert(btn, encodedJson) {
     if(res.ok && res.explanation) {
       var txt = res.explanation.trim()
                  .replace(/\*\*(.*?)\*\*/g, '<strong style="color:#fff">$1</strong>')
-                 .replace(/`(.*?)`/g, '<code style="background:rgba(0,0,0,0.5);color:var(--ok);padding:2px 6px;border-radius:4px;">$1</code>')
+                 .replace(/```[a-zA-Z]*[ \r\n]*([\s\S]*?)```/g, '<pre style="background:var(--bg);border:1px solid var(--border);border-radius:3px;padding:8px;font-size:0.7rem;margin:6px 0;overflow-x:auto;color:#7fb3d3;">$1</pre>')
+                 .replace(/`([^`]+)`/g, '<code style="background:rgba(0,0,0,0.5);color:var(--ok);padding:2px 6px;border-radius:4px;">$1</code>')
                  .replace(/\n/g, '<br>');
       resDiv.innerHTML = '<div style="font-size:0.65rem;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:0.7px;margin-bottom:8px;">LLM ANALIZI</div><div style="line-height:1.6">' + txt + '</div>';
     } else {
@@ -1408,7 +1409,7 @@ function triggerCardAnalysis(btn, encodedJson) {
     if(res.ok && res.explanation) {
       var txt = res.explanation.trim()
                  .replace(/\*\*(.*?)\*\*/g, '<strong style="color:var(--t1)">$1</strong>')
-                 .replace(/```bash\n?([\s\S]*?)```/g, '<pre style="background:var(--bg);border:1px solid var(--border);border-radius:3px;padding:8px;font-size:0.7rem;margin:6px 0;overflow-x:auto;color:#7fb3d3;">$1</pre>')
+                 .replace(/```[a-zA-Z]*[ \r\n]*([\s\S]*?)```/g, '<pre style="background:var(--bg);border:1px solid var(--border);border-radius:3px;padding:8px;font-size:0.7rem;margin:6px 0;overflow-x:auto;color:#7fb3d3;">$1</pre>')
                  .replace(/`([^`]+)`/g, '<code>$1</code>')
                  .replace(/\n/g, '<br>');
       resContent.innerHTML = txt;
