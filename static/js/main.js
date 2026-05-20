@@ -319,10 +319,12 @@
                 formatted += '<div style="color:var(--purple);font-weight:700;font-size:1.2rem;margin:20px 0 10px 0;">' + l.substring(3) + '</div>';
               } else if (l.startsWith('### ')) {
                 var h = l.replace('### ', '');
-                var icon = '';
                 var color = '#fff';
-                if (h.includes('[CRITICAL]')) { icon = ''; color = 'var(--crit)'; h = h.replace('', '').replace('[CRITICAL]', '').trim(); }
-                else if (h.includes('[HIGH]')) { icon = ''; color = 'var(--warn)'; h = h.replace('', '').replace('[HIGH]', '').trim(); }
+                if (h.includes('[CRITICAL]')) { color = 'var(--crit)'; h = h.replace('[CRITICAL]', '').trim(); }
+                else if (h.includes('[HIGH]')) { color = 'var(--warn)'; h = h.replace('[HIGH]', '').trim(); }
+                else if (h.includes('[MEDIUM]')) { color = 'var(--accent)'; h = h.replace('[MEDIUM]', '').trim(); }
+                else if (h.includes('[LOW]')) { color = 'var(--ok)'; h = h.replace('[LOW]', '').trim(); }
+                formatted += '<div style="color:' + color + ';font-weight:700;margin-top:16px;margin-bottom:8px;font-size:0.95rem;display:flex;align-items:center;gap:6px;">' + h + '</div>';
               } else if (l.toLowerCase().startsWith('- ne oldu:') || l.toLowerCase().startsWith('- **ne oldu:**') || l.toLowerCase().startsWith('- tehdit özeti:') || l.toLowerCase().startsWith('- **tehdit özeti:**') || l.toLowerCase().startsWith('tehdit özeti:') || l.toLowerCase().startsWith('**tehdit özeti:**')) {
                 var textCont = l.replace(/^[-* ]*Ne [Oo]ldu:?\** ?/i, '').replace(/^[-* ]*Tehdit Özeti:?\** ?/i, '').trim();
                 formatted += '<div style="margin-bottom:4px;padding-left:12px;border-left:2px solid rgba(255,255,255,0.1);"><strong style="color:var(--t2);">Özet:</strong> <span style="color:#e2e8f0;line-height:1.5;display:inline-block;margin-top:2px;">' + textCont + '</span></div>';
