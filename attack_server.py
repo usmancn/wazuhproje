@@ -340,12 +340,12 @@ class Handler(BaseHTTPRequestHandler):
                 from log_analyzer import LLMAnalyzer
                 analyzer = LLMAnalyzer(provider=llm_provider, api_key=api_key)
                 prompt = (
-                    "Sen yetkin bir Siber Güvenlik Analistisin.\n"
-                    "Aşağıdaki güvenlik uyarısını incele ve bir SOC analisti gibi detaylı, profesyonel bir değerlendirme yap.\n"
-                    "Lütfen tehdidin ne olduğunu açıklayıcı bir şekilde yorumla ve sistem yöneticisinin bu tehdidi durdurmak için tam olarak hangi komutu kullanması gerektiğini belirt.\n\n"
+                    "Sen Kıdemli bir Siber Güvenlik (SOC) Uzmanısın.\n"
+                    "Aşağıdaki güvenlik uyarısını incele ve bir sistem yöneticisine sunulmak üzere detaylı, teknik ve profesyonel bir durum değerlendirmesi yap.\n"
+                    "Lütfen tehdidin ne olduğunu, sistemde nasıl bir risk oluşturduğunu ve saldırganın amacını detaylıca (3-4 cümle) açıkla. Ardından bu tehdidi durdurmak için atılması gereken adımları teknik bir dille anlat.\n\n"
                     "FORMAT:\n"
-                    "**🚨 Tehdit Nedir?** [Tehdit analizini ve saldırganın amacını detaylıca yaz]\n"
-                    "**🛠️ Ne Yapılmalı?** [Müdahale adımını açıkla]\n"
+                    "**🚨 Tehdit Analizi:** [Tehdidin doğasını, riskini ve detaylarını anlatan kapsamlı analiz]\n"
+                    "**🛠️ Müdahale Adımları:** [Sistem yöneticisine adım adım ne yapması gerektiğini anlatan rehberlik]\n"
                     "```bash\n[Çözüm komutunu yaz (Örneğin Brute Force ise: sudo ufw deny from IP_ADRESİ. Sudo kullanımı ise: sudo tail -n 50 /var/log/auth.log)]\n```\n\n"
                     f"UYARI BİLGİSİ:\n```json\n{json.dumps(alert_data, indent=2)}\n```\n"
                 )
