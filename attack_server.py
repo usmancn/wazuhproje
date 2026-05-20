@@ -2,7 +2,7 @@
 """Wazuh Sunum - Saldiri Simülasyonu Sunucusu"""
 
 import json, subprocess, threading, time, os
-from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
+from http.server import HTTPServer, BaseHTTPRequestHandler
 
 UBUNTU_IP = "192.168.64.4"
 SSH_KEY   = os.path.expanduser("~/.ssh/ubuntu_wazuh")
@@ -27,10 +27,11 @@ def ssh(cmd, timeout=15):
         return str(e), False
 
 def get_status():
-    # CPU yoğun AI analizlerinde Ubuntu sanal makinesini SSH ile boğmamak için 
-    # durumu yerel dosya üzerinden hesaplıyoruz.
-    count = len(load_alerts())
-    return {"ok": True, "version": "4.8.0 (Aktif)", "count": str(count)}
+    out, ok = ssh("dpkg -l wazuh-manager 2>/dev/null | grep '^ii' | awk '{print $3}'")
+    version = out.strip() if ok and out.strip() else "?"
+    count_out, _ = ssh("sudo wc -l /var/ossec/logs/alerts/alerts.json 2>/dev/null")
+    count = count_out.split()[0] if count_out else "?"
+    return {"ok": ok and version != "?", "version": version, "count": count}
 
 def load_alerts():
     alerts = []
@@ -95,12 +96,12 @@ def run_live_analysis(api_key="", llm_provider="gemini"):
             "--syslog", logs["syslog"],
             "--kern",   logs["kern"],
             "--llm",    llm_provider,
-            "--model",  "gemini-2.5-flash" if llm_provider == "gemini" else ("gpt-4o-mini" if llm_provider == "openai" else "mistral:7b"),
+            "--model",  "gemini-2.5-flash" if llm_provider == "gemini" else ("gpt-4o-mini" if llm_provider == "openai" else "llama3.2"),
             "--output", os.path.join(base, "reports"),
         ]
         if api_key:
             cmd += ["--api-key", api_key]
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
         if result.returncode != 0:
             analyze_state["error"] = result.stderr[-500:] if result.stderr else "Bilinmeyen hata"
         analyze_state["step"] = "Tamamlandı ✅"
@@ -119,15 +120,12 @@ class Handler(BaseHTTPRequestHandler):
 
     def send_json(self, data, code=200):
         body = json.dumps(data, ensure_ascii=False).encode()
-        try:
-            self.send_response(code)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.send_header("Content-Length", str(len(body)))
-            self.end_headers()
-            self.wfile.write(body)
-        except (BrokenPipeError, ConnectionResetError):
-            pass
+        self.send_response(code)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
 
     def send_html(self, path):
         try:
@@ -137,8 +135,6 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Content-Length", str(len(body)))
             self.end_headers()
             self.wfile.write(body)
-        except (BrokenPipeError, ConnectionResetError):
-            pass
         except:
             self.send_response(404); self.end_headers()
 
@@ -207,20 +203,6 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_json({"ok": False, "error": "Henüz per-source analiz yok"})
         elif p == "/api/analyze_status":
             self.send_json(dict(analyze_state))
-        elif p == "/api/raw_logs":
-            result = {"ok": True}
-            for logname in ["auth.log", "syslog", "kern.log"]:
-                logpath = os.path.join("sample_logs", logname)
-                if os.path.exists(logpath):
-                    try:
-                        with open(logpath, encoding="utf-8", errors="replace") as f:
-                            lines = f.readlines()
-                        result[logname] = [l.rstrip() for l in lines[-80:]]
-                    except Exception as e:
-                        result[logname] = [f"[Okuma hatası: {e}]"]
-                else:
-                    result[logname] = ["[Dosya bulunamadı]"]
-            self.send_json(result)
         else:
             self.send_response(404); self.end_headers()
 
@@ -253,43 +235,37 @@ class Handler(BaseHTTPRequestHandler):
                 llm_provider = data.get("llm_provider", "gemini")
                 from log_analyzer import LLMAnalyzer
                 analyzer = LLMAnalyzer(provider=llm_provider, api_key=api_key)
-
-                rule_desc = alert_data.get("rule", {}).get("description", "Bilinmeyen olay")
-                rule_id   = alert_data.get("rule", {}).get("id", "?")
-                full_log  = alert_data.get("full_log", alert_data.get("raw", rule_desc))
-                mitre_ids = alert_data.get("rule", {}).get("mitre", {}).get("id", [])
-                mitre_str = ", ".join(mitre_ids) if mitre_ids else "—"
-
-                # Short, directive prompt — works well even with 1-3B models
                 prompt = (
-                    "Sen bir Linux siber guvenlik uzmanisinin. Asagida bir Wazuh guvenlik alarmi var.\n"
-                    "Turkce olarak, sadece asagidaki iki baslik ile yanit ver. Kisa ve net ol.\n\n"
-                    f"Kural: {rule_id} — {rule_desc}\n"
-                    f"MITRE: {mitre_str}\n"
-                    f"Log: {str(full_log)[:300]}\n\n"
-                    "**Tehdit Nedir?** (1-2 cumle, teknik olmayan dilde)\n"
-                    "**Ne Yapilmali?** (en onemli 1 eylem + bash komutu)\n"
+                    "Sen bir Siber Güvenlik Uzmanısın. Sana Wazuh tarafından üretilmiş ham bir JSON Alert veriyorum.\n"
+                    "Lütfen bu uyarıyı teknik olmayan birine ÇOK KISA (maksimum 2 cümle) açıkla.\n\n"
+                    "KOMUT KURALLARI (Uydurma komut yazma!):\n"
+                    "- Kural 'Brute Force' (5712/5710) ise bash komutu olarak: `sudo ufw deny from [JSON_ICINDEKI_IP_ADRESI]` ver.\n"
+                    "- Kural 'Sudo' (5402) ise bash komutu olarak: `sudo passwd -l root` veya log incelemesi için `tail -n 50 /var/log/auth.log` ver.\n"
+                    "- Başka bir kural ise veya emin değilsen ASLA uydurma komut yazma! Sadece şu komutu ver: `cat /var/ossec/logs/alerts/alerts.log | grep [ID]`\n\n"
+                    "Cevabını KESİNLİKLE şu formatta ver:\n"
+                    "**🚨 Tehdit Nedir?** [1-2 cümlelik kısa özet]\n"
+                    "**🛠️ Ne Yapılmalı?** [Sadece en önemli eylemi kısaca yaz]\n"
+                    "```bash\n[Tam bash komutu]\n```\n\n"
+                    f"İşte Alert JSON verisi:\n```json\n{json.dumps(alert_data, indent=2)}\n```\n"
                 )
-
                 if llm_provider == "ollama":
                     explanation = analyzer._call_ollama(prompt)
                     if explanation.startswith("[OLLAMA HATASI]"):
-                        explanation = (
-                            f"**Tehdit Nedir?** {rule_desc}\n"
-                            f"**Ne Yapilmali?** Ollama servisi yanit vermedi. "
-                            f"Terminal'de: `ollama serve` komutunu calistirin."
-                        )
-                elif llm_provider == "openai":
-                    explanation = analyzer._call_openai(prompt)
-                    if explanation.startswith("[OPENAI HATASI]"):
-                        explanation = f"**Tehdit Nedir?** {rule_desc}\n**Ne Yapilmali?** OpenAI API hatasi."
-                else:  # gemini
+                        rule_desc = alert_data.get("rule", {}).get("description", "Bilinmeyen Tehdit")
+                        explanation = f"**🚨 Tehdit Nedir?** {rule_desc} (Ollama kapalı, kural tabanlı motor kullanılıyor)\n**🛠️ Ne Yapılmalı?** Lütfen bu kaynağı engelleyin veya sistemi kontrol edin."
+                else:
                     if not analyzer.api_key:
-                        explanation = f"**Tehdit Nedir?** {rule_desc}\n**Ne Yapilmali?** GEMINI_API_KEY ayarlanmamis."
+                        explanation = "⚠️ API Anahtarı bulunamadı."
+                    elif llm_provider == "openai":
+                        explanation = analyzer._call_openai(prompt)
+                        if explanation.startswith("[OPENAI HATASI]"):
+                            rule_desc = alert_data.get("rule", {}).get("description", "Bilinmeyen Tehdit")
+                            explanation = f"**🚨 Tehdit Nedir?** {rule_desc} (OpenAI API Hatası, yerel motor kullanılıyor)\n**🛠️ Ne Yapılmalı?** Lütfen bu kaynağı engelleyin veya sistemi kontrol edin."
                     else:
                         explanation = analyzer._call_gemini(prompt)
                         if explanation.startswith("[GEMINI HATASI]"):
-                            explanation = f"**Tehdit Nedir?** {rule_desc}\n**Ne Yapilmali?** Gemini API kotasi doldu veya hata olustu."
+                            rule_desc = alert_data.get("rule", {}).get("description", "Bilinmeyen Tehdit")
+                            explanation = f"**🚨 Tehdit Nedir?** {rule_desc} (Gemini API kotası doldu, yerel motor kullanılıyor)\n**🛠️ Ne Yapılmalı?** Lütfen bu kaynağı engelleyin veya sistemi kontrol edin."
                 self.send_json({"ok": True, "explanation": explanation})
             except Exception as e:
                 self.send_json({"ok": False, "error": str(e)})
@@ -302,7 +278,7 @@ if __name__ == "__main__":
     print(f"  http://localhost:{PORT}")
     print(f"  Ubuntu: {UBUNTU_IP}")
     print(f"{'='*50}\n")
-    server = ThreadingHTTPServer(("0.0.0.0", PORT), Handler)
+    server = HTTPServer(("0.0.0.0", PORT), Handler)
     try:
         server.serve_forever()
     except KeyboardInterrupt:
