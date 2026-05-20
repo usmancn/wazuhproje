@@ -8,6 +8,14 @@ import os, re, json, argparse, urllib.request, urllib.error
 from collections import defaultdict
 from datetime import datetime
 
+env_path = os.path.join(os.path.dirname(__file__), ".env")
+if os.path.exists(env_path):
+    with open(env_path, 'r') as f:
+        for line in f:
+            if line.strip() and not line.startswith("#") and "=" in line:
+                key, val = line.strip().split("=", 1)
+                os.environ[key] = val.strip('"\'')
+
 try:
     from google import genai as genai_new
     HAS_GEMINI = True
@@ -205,21 +213,21 @@ class LLMAnalyzer:
             "Aşağıdaki örnek formata KESİNLİKLE uy ve listedeki HER BİR olayı AYRI AYRI değerlendir. Bulguları aynı paragrafta birleştirme!\n\n"
             "ÖRNEK FORMAT:\n"
             "## 📤 auth.log Analizi\n"
-            "### [CRITICAL] SSH_BRUTE_FORCE\n"
+            "### 🔴 [CRITICAL] SSH_BRUTE_FORCE\n"
             "- **Tehdit Özeti:** 192.168.1.5 IP adresinden 500 kez başarısız giriş denemesi yapıldı. Bu bir kaba kuvvet saldırısıdır.\n"
             "- **Müdahale Önerisi:** Saldırganın IP adresini güvenlik duvarından engellemek gerekir.\n"
             "- **Çözüm Komutu:** `sudo ufw deny from 192.168.1.5`\n\n"
             "## 📜 syslog Analizi\n"
-            "### [HIGH] CRON_ANOMALY\n"
+            "### 🟡 [HIGH] CRON_ANOMALY\n"
             "- **Tehdit Özeti:** Beklenmeyen bir zamanlanmış görev (cron) oluşturuldu.\n"
             "- **Müdahale Önerisi:** Sistemdeki yetkisiz crontab girişleri silinmelidir.\n"
             "- **Çözüm Komutu:** `sudo crontab -l -u root`\n\n"
             "## 🖥️ kern.log Analizi\n"
-            "### [MEDIUM] APPARMOR_BLOCK\n"
+            "### 🔵 [MEDIUM] APPARMOR_BLOCK\n"
             "- **Tehdit Özeti:** AppArmor güvenlik duvarı şüpheli bir işlemi engelledi.\n"
             "- **Müdahale Önerisi:** AppArmor profilleri kontrol edilmelidir.\n"
             "- **Çözüm Komutu:** `sudo apparmor_status`\n\n"
-            "Lütfen aşağıdaki bulguları hangi log dosyasına aitse (auth.log, syslog, kern.log) o başlığın altına, KESİNLİKLE yukarıdaki örnek formattaki gibi TEK TEK yaz.\n\n"
+            "Lütfen aşağıdaki bulguları hangi log dosyasına aitse o başlığın altına, yukarıdaki örnek formattaki gibi (🔴, 🟡, 🔵 emojilerini de kullanarak) TEK TEK yaz.\n\n"
             "== BULGULAR ==\n"
         )
         for source, findings in findings_by_source.items():

@@ -2,6 +2,15 @@
 """Wazuh Sunum - Saldiri Simülasyonu Sunucusu"""
 
 import json, subprocess, threading, time, os
+
+env_path = os.path.join(os.path.dirname(__file__), ".env")
+if os.path.exists(env_path):
+    with open(env_path, 'r') as f:
+        for line in f:
+            if line.strip() and not line.startswith("#") and "=" in line:
+                key, val = line.strip().split("=", 1)
+                os.environ[key] = val.strip('"\'')
+
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 
 UBUNTU_IP = "192.168.64.4"
