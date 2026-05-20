@@ -201,15 +201,19 @@ class LLMAnalyzer:
 
     def _build_prompt(self, findings_by_source):
         prompt = (
-            "Sen çok net ve çözüm odaklı bir Siber Güvenlik Analistisin.\n"
+            "Sen yetkin, profesyonel ve çözüm odaklı bir Siber Güvenlik Analistisin.\n"
             "Aşağıda Ubuntu 22.04 sunucusundan çekilen 3 farklı log dosyasının analiz bulguları var.\n"
-            "Kullanıcıya uzun uzun teorik bilgi VEYA hikaye anlatma. Doğrudan 'Ne oldu?' ve 'Nasıl Çözülür (Hangi komutla)?' sorularına cevap ver.\n\n"
+            "Lütfen bulguları ÇOK KISA, ÖZ ve AKADEMİK BİR DİLLE açıkla. Hikaye anlatma, uzatma.\n\n"
+            "ÇÖZÜM KOMUTU KURALLARI (Kesinlikle uy!):\n"
+            "- 'Brute Force' veya çoklu hatalı giriş için ASLA 'systemctl disable sshd' gibi servisi tamamen kapatan yıkıcı komutlar verme. Bunun yerine: `sudo ufw deny from [İLGİLİ_IP_ADRESİ]` komutunu öner.\n"
+            "- 'AppArmor' engellemeleri için KESİNLİKLE: `sudo apparmor_status` veya `dmesg | grep apparmor` öner. 'sudo apparmor reset' uydurma komutlarını KULLANMA!\n"
+            "- Sudo veya yetki yükseltme için KESİNLİKLE log incelemesi öner: `sudo tail -n 50 /var/log/auth.log`\n\n"
             "Rapor Formatı KESİNLİKLE şöyle olmalı:\n"
             "## 📤 auth.log Analizi\n"
             "Aşağıdaki formatı HER BİR bulgu için TEK TEK tekrarla. ASLA kısaltma yapma ('...ve devam edebilirsiniz' YAZMA!). Hepsini yaz!\n"
             "### [EMOJI] [CRITICAL/HIGH/MEDIUM] [Bulgu Türü] (EMOJI: CRITICAL için 🔴, HIGH için 🟡, MEDIUM için 🔵 kullan)\n"
-            "- **Ne Oldu:** [Kısaca tehdit özeti]\n"
-            "- **Çözüm Komutu:** `[Tam olarak kopyalayıp yapıştırılacak Ubuntu bash komutu]`\n\n"
+            "- **Ne Oldu:** [En fazla 1 cümlelik çok net profesyonel tehdit özeti]\n"
+            "- **Çözüm Komutu:** `[Sadece tam olarak kopyalayıp yapıştırılacak Ubuntu bash komutu, yanına açıklama ekleme]`\n\n"
             "## 📜 syslog Analizi\n"
             "(Aynı şekilde her bulgu için ### ile başlayan blok oluştur. Kısaltma yapma!)\n\n"
             "## 🖥️ kern.log Analizi\n"

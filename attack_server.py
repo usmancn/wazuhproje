@@ -340,16 +340,16 @@ class Handler(BaseHTTPRequestHandler):
                 from log_analyzer import LLMAnalyzer
                 analyzer = LLMAnalyzer(provider=llm_provider, api_key=api_key)
                 prompt = (
-                    "Sen bir Siber Güvenlik Uzmanısın. Sana Wazuh tarafından üretilmiş ham bir JSON Alert veriyorum.\n"
-                    "Lütfen bu uyarıyı teknik olmayan birine ÇOK KISA (maksimum 2 cümle) açıkla.\n\n"
-                    "KOMUT KURALLARI (Uydurma komut yazma!):\n"
-                    "- Kural 'Brute Force' (5712/5710) ise bash komutu olarak: `sudo ufw deny from [JSON_ICINDEKI_IP_ADRESI]` ver.\n"
-                    "- Kural 'Sudo' (5402) ise bash komutu olarak: `sudo passwd -l root` veya log incelemesi için `tail -n 50 /var/log/auth.log` ver.\n"
-                    "- Başka bir kural ise veya emin değilsen ASLA uydurma komut yazma! Sadece şu komutu ver: `cat /var/ossec/logs/alerts/alerts.log | grep [ID]`\n\n"
-                    "Cevabını KESİNLİKLE şu formatta ver:\n"
-                    "**🚨 Tehdit Nedir?** [1-2 cümlelik kısa özet]\n"
-                    "**🛠️ Ne Yapılmalı?** [Sadece en önemli eylemi kısaca yaz]\n"
-                    "```bash\n[Tam bash komutu]\n```\n\n"
+                    "Sen yetkin, net ve profesyonel bir SOC (Siber Operasyon Merkezi) Uzmanısın. Sana Wazuh SIEM tarafından üretilmiş bir JSON Alert veriyorum.\n"
+                    "Lütfen bu uyarıyı ÇOK KISA, ÖZ ve AKADEMİK/PROFESYONEL BİR DİLLE (maksimum 1 cümle) açıkla. Uzun hikayeler anlatma!\n\n"
+                    "KOMUT KURALLARI (Kesinlikle uy!):\n"
+                    "- Kural 'Brute Force' (5712/5710) ise bash komutu olarak KESİNLİKLE: `sudo ufw deny from [JSON_ICINDEKI_IP_ADRESI]` ver. ASLA SSH servisini kapatma.\n"
+                    "- Kural 'Sudo' (5402) ise bash komutu olarak KESİNLİKLE log analizi için: `sudo tail -n 50 /var/log/auth.log` ver.\n"
+                    "- Başka bir kural ise ASLA uydurma komut yazma! Sadece şu komutu ver: `cat /var/ossec/logs/alerts/alerts.log | grep [ID]`\n\n"
+                    "Cevabını KESİNLİKLE şu formatta ver (Başka hiçbir kelime ekleme!):\n"
+                    "**🚨 Tehdit Nedir?** [En fazla 1 cümlelik çok net profesyonel özet]\n"
+                    "**🛠️ Ne Yapılmalı?** [En fazla 1 cümlelik net aksiyon tavsiyesi]\n"
+                    "```bash\n[Sadece ve sadece tam bash komutu]\n```\n\n"
                     f"İşte Alert JSON verisi:\n```json\n{json.dumps(alert_data, indent=2)}\n```\n"
                 )
                 if llm_provider == "ollama":
