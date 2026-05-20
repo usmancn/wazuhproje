@@ -340,17 +340,14 @@ class Handler(BaseHTTPRequestHandler):
                 from log_analyzer import LLMAnalyzer
                 analyzer = LLMAnalyzer(provider=llm_provider, api_key=api_key)
                 prompt = (
-                    "Sen yetkin, net ve profesyonel bir SOC (Siber Operasyon Merkezi) Uzmanısın. Sana Wazuh SIEM tarafından üretilmiş bir JSON Alert veriyorum.\n"
-                    "Lütfen bu uyarıyı ÇOK KISA, ÖZ ve AKADEMİK/PROFESYONEL BİR DİLLE (maksimum 1 cümle) açıkla. Uzun hikayeler anlatma!\n\n"
-                    "KOMUT KURALLARI (Kesinlikle uy!):\n"
-                    "- Kural 'Brute Force' (5712/5710) ise bash komutu olarak KESİNLİKLE: `sudo ufw deny from [JSON_ICINDEKI_IP_ADRESI]` ver. ASLA SSH servisini kapatma.\n"
-                    "- Kural 'Sudo' (5402) ise bash komutu olarak KESİNLİKLE log analizi için: `sudo tail -n 50 /var/log/auth.log` ver.\n"
-                    "- Başka bir kural ise ASLA uydurma komut yazma! Sadece şu komutu ver: `cat /var/ossec/logs/alerts/alerts.log | grep [ID]`\n\n"
-                    "Cevabını KESİNLİKLE şu formatta ver (Başka hiçbir kelime ekleme!):\n"
-                    "**🚨 Tehdit Nedir?** [En fazla 1 cümlelik çok net profesyonel özet]\n"
-                    "**🛠️ Ne Yapılmalı?** [En fazla 1 cümlelik net aksiyon tavsiyesi]\n"
-                    "```bash\n[Sadece ve sadece tam bash komutu]\n```\n\n"
-                    f"İşte Alert JSON verisi:\n```json\n{json.dumps(alert_data, indent=2)}\n```\n"
+                    "Sen yetkin bir Siber Güvenlik Analistisin.\n"
+                    "Aşağıdaki güvenlik uyarısını incele ve bir SOC analisti gibi detaylı, profesyonel bir değerlendirme yap.\n"
+                    "Lütfen tehdidin ne olduğunu açıklayıcı bir şekilde yorumla ve sistem yöneticisinin bu tehdidi durdurmak için tam olarak hangi komutu kullanması gerektiğini belirt.\n\n"
+                    "FORMAT:\n"
+                    "**🚨 Tehdit Nedir?** [Tehdit analizini ve saldırganın amacını detaylıca yaz]\n"
+                    "**🛠️ Ne Yapılmalı?** [Müdahale adımını açıkla]\n"
+                    "```bash\n[Çözüm komutunu yaz (Örneğin Brute Force ise: sudo ufw deny from IP_ADRESİ. Sudo kullanımı ise: sudo tail -n 50 /var/log/auth.log)]\n```\n\n"
+                    f"UYARI BİLGİSİ:\n```json\n{json.dumps(alert_data, indent=2)}\n```\n"
                 )
                 if llm_provider == "ollama":
                     explanation = analyzer._call_ollama(prompt)

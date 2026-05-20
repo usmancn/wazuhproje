@@ -201,24 +201,15 @@ class LLMAnalyzer:
 
     def _build_prompt(self, findings_by_source):
         prompt = (
-            "Sen profesyonel bir Siber Güvenlik (SOC) Uzmanısın.\n"
-            "Aşağıdaki sistem log bulgularını kullanarak teknik bir analiz raporu oluştur.\n\n"
-            "ÇÖZÜM KOMUTU KURALLARI (Çok Önemli!):\n"
-            "- 'Brute Force' veya hatalı girişler için ASLA 'systemctl disable sshd' gibi servisi kapatan komutlar verme. SADECE IP engelle: `sudo ufw deny from [İLGİLİ_IP_ADRESİ]`\n"
-            "- Sudo veya yetki yükseltme denemeleri için KESİNLİKLE sadece log incelemesi öner: `sudo tail -n 50 /var/log/auth.log`\n\n"
-            "RAPOR FORMATI (Kesinlikle uy! Emojiler kullanma!):\n"
+            "Sen bir Siber Güvenlik Uzmanısın. Aşağıdaki sistem log bulgularını inceleyerek teknik bir analiz raporu oluştur.\n"
+            "Aşağıdaki örnek formata KESİNLİKLE uy ve listedeki HER BİR olayı AYRI AYRI değerlendir. Bulguları aynı paragrafta birleştirme!\n\n"
+            "ÖRNEK FORMAT:\n"
             "## 📤 auth.log Analizi\n"
-            "Aşağıdaki formatı HER BİR bulgu için TEK TEK AYRI AYRI oluştur. BULGULARI KESİNLİKLE BİRLEŞTİRME!\n"
-            "### [CRITICAL/HIGH/MEDIUM] [Bulgu Türü]\n"
-            "- **Tehdit Özeti:** [Hangi IP'nin ne yaptığını anlatan 1-2 cümlelik profesyonel analiz]\n"
-            "- **Müdahale Önerisi:** [Nasıl engelleneceğine dair 1 cümlelik tavsiye]\n"
-            "- **Çözüm Komutu:** `[Sadece tam bash komutu]`\n\n"
-            "## 📜 syslog Analizi\n"
-            "(Aynı formatı kullan)\n\n"
-            "## 🖥️ kern.log Analizi\n"
-            "(Aynı formatı kullan)\n\n"
-            "Eğer tehdit yoksa sadece '✅ Güvenlik tehdidi tespit edilmedi.' yazıp geç.\n"
-            "DİKKAT: BULGULARI ASLA TEK BİR PARAGRAFTA BİRLEŞTİRME. KAÇ TANE BULGU VARSA, O KADAR '###' BAŞLIĞI OLMALIDIR!\n\n"
+            "### [CRITICAL] SSH_BRUTE_FORCE\n"
+            "- **Tehdit Özeti:** 192.168.1.5 IP adresinden 500 kez başarısız giriş denemesi yapıldı. Bu bir kaba kuvvet saldırısıdır.\n"
+            "- **Müdahale Önerisi:** Saldırganın IP adresini güvenlik duvarından engellemek gerekir.\n"
+            "- **Çözüm Komutu:** `sudo ufw deny from 192.168.1.5`\n\n"
+            "Lütfen aşağıdaki bulgular için yukarıdaki örnek formata uygun şekilde TEK TEK ayrı başlıklar oluştur. Çözüm komutları (Brute force için: ufw deny. Sudo için: tail -n 50 /var/log/auth.log) haricinde uydurma komut yazma.\n\n"
             "== BULGULAR ==\n"
         )
         for source, findings in findings_by_source.items():
