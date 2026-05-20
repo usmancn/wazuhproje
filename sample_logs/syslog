@@ -39831,3 +39831,11 @@ May 19 23:49:34 osmanubuntu systemd[1]: session-648.scope: Deactivated successfu
 May 19 23:49:41 osmanubuntu systemd[1]: Started Session 649 of User osman.
 May 19 23:49:41 osmanubuntu systemd[1]: session-649.scope: Deactivated successfully.
 May 19 23:49:42 osmanubuntu systemd[1]: Started Session 650 of User osman.
+May 19 23:49:42 osmanubuntu systemd[1]: session-650.scope: Deactivated successfully.
+May 19 23:49:42 osmanubuntu systemd[1]: Started Session 651 of User osman.
+May 19 23:49:42 osmanubuntu systemd[1]: session-651.scope: Deactivated successfully.
+May 19 23:55:17 osmanubuntu systemd[1]: Started Session 652 of User osman.
+May 19 23:55:18 osmanubuntu systemd[1]: session-652.scope: Deactivated successfully.
+May 19 23:55:25 osmanubuntu systemd[1]: Started Session 653 of User osman.
+May 19 23:55:25 osmanubuntu systemd[1]: session-653.scope: Deactivated successfully.
+May 19 23:55:25 osmanubuntu systemd[1]: Started Session 654 of User osman.

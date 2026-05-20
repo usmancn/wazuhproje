@@ -314,7 +314,7 @@ class LLMAnalyzer:
                 "http://127.0.0.1:11434/api/generate",
                 data=data, headers={"Content-Type": "application/json"}, method="POST"
             )
-            with urllib.request.urlopen(req, timeout=120) as resp:
+            with urllib.request.urlopen(req, timeout=300) as resp:
                 return json.loads(resp.read().decode()).get("response", "[Yanıt alınamadı]")
         except urllib.error.URLError as e:
             print(f"{Colors.FAIL}[!] Ollama çalışmıyor. `ollama serve` çalıştırın. Hata: {e}{Colors.ENDC}")

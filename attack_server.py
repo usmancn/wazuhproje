@@ -100,7 +100,7 @@ def run_live_analysis(api_key="", llm_provider="gemini"):
         ]
         if api_key:
             cmd += ["--api-key", api_key]
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
         if result.returncode != 0:
             analyze_state["error"] = result.stderr[-500:] if result.stderr else "Bilinmeyen hata"
         analyze_state["step"] = "Tamamlandı ✅"
