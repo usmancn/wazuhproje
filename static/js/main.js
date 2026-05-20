@@ -846,8 +846,10 @@
       setInterval(function () {
         var overviewPage = document.getElementById('overview');
         var archivePage = document.getElementById('all-logs');
+        var aiPage = document.getElementById('ai');
         if ((overviewPage && overviewPage.classList.contains('active')) ||
-          (archivePage && archivePage.classList.contains('active'))) {
+          (archivePage && archivePage.classList.contains('active')) ||
+          (aiPage && aiPage.classList.contains('active'))) {
           // Ssshh, loadAllLogs is silent and updates everything
           var syncXhr = new XMLHttpRequest();
           syncXhr.open('GET', API + '/api/sync', true);
@@ -895,6 +897,49 @@
                     var isDrawerOpen = drawer && drawer.style.right === '0px';
                     if (!isDrawerOpen) {
                        applyArchiveFilters();
+                    }
+                  }
+
+                  if (aiPage && aiPage.classList.contains('active')) {
+                    var isAiDetailOpen = false;
+                    document.querySelectorAll('.ai-res-content').forEach(function(r) {
+                      if(r.style.display !== 'none' && r.innerHTML.trim() !== '') isAiDetailOpen = true;
+                    });
+                    if(!isAiDetailOpen) {
+                      fetch(API + '/api/per_source').then(function(r) { return r.json(); }).then(function(res) {
+                        if (res.ok && res.data) {
+                          var d = res.data;
+                          renderLogFindings('auth-findings', 'auth-badge', d['auth.log'] || [], 'auth.log');
+                          renderLogFindings('syslog-findings', 'syslog-badge', d['syslog'] || [], 'syslog');
+                          renderLogFindings('kern-findings', 'kern-badge', d['kern.log'] || [], 'kern.log');
+                          renderMitreMap(d);
+                          
+                          var crit2 = 0, high2 = 0, med2 = 0, event_sum2 = 0;
+                          ['auth.log', 'syslog', 'kern.log'].forEach(function(k) {
+                            (d[k] || []).forEach(function(f) {
+                              var c = f.event_count || 1;
+                              event_sum2 += c;
+                              var sev = (f.severity || '').toUpperCase();
+                              if (sev.includes('CRIT') || sev.includes('KRİT') || sev.includes('KRIT')) crit2 += c;
+                              else if (sev.includes('HIGH') || sev.includes('YÜK') || sev.includes('YUK')) high2 += c;
+                              else med2 += c;
+                            });
+                          });
+                          var set2 = function (id, v) { var e = document.getElementById(id); if (e) e.textContent = v || '0'; };
+                          set2('cnt-critical', crit2); set2('cnt-high', high2); set2('cnt-medium', med2); set2('cnt-total', event_sum2);
+                        }
+                      }).catch(function() {});
+                      
+                      fetch(API + '/api/raw_logs').then(function(r) { return r.json(); }).then(function(rawRes) {
+                        if (rawRes.ok) {
+                          var authEl = document.getElementById('raw-auth-log');
+                          if (authEl && rawRes['auth.log']) authEl.textContent = rawRes['auth.log'].join('\n');
+                          var sysEl = document.getElementById('raw-syslog-log');
+                          if (sysEl && rawRes['syslog']) sysEl.textContent = rawRes['syslog'].join('\n');
+                          var kernEl = document.getElementById('raw-kern-log');
+                          if (kernEl && rawRes['kern.log']) kernEl.textContent = rawRes['kern.log'].join('\n');
+                        }
+                      }).catch(function() {});
                     }
                   }
 
