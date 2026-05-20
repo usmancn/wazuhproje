@@ -207,7 +207,7 @@ class LLMAnalyzer:
             "Rapor Formatı KESİNLİKLE şöyle olmalı:\n"
             "## 📤 auth.log Analizi\n"
             "Aşağıdaki formatı HER BİR bulgu için TEK TEK tekrarla. ASLA kısaltma yapma ('...ve devam edebilirsiniz' YAZMA!). Hepsini yaz!\n"
-            "### 🔴 [CRITICAL/HIGH/MEDIUM] [Bulgu Türü]\n"
+            "### [EMOJI] [CRITICAL/HIGH/MEDIUM] [Bulgu Türü] (EMOJI: CRITICAL için 🔴, HIGH için 🟡, MEDIUM için 🔵 kullan)\n"
             "- **Ne Oldu:** [Kısaca tehdit özeti]\n"
             "- **Çözüm Komutu:** `[Tam olarak kopyalayıp yapıştırılacak Ubuntu bash komutu]`\n\n"
             "## 📜 syslog Analizi\n"
@@ -216,7 +216,7 @@ class LLMAnalyzer:
             "(Aynı şekilde her bulgu için ### ile başlayan blok oluştur. Kısaltma yapma!)\n\n"
             "Eğer bir log dosyasında tehdit yoksa, o dosyanın başlığının altına sadece '✅ Bu dosyada güvenlik tehdidi tespit edilmedi.' yazıp geç.\n"
             "ÇOK ÖNEMLİ KURALLAR:\n"
-            "1) Her bir bulgunun başlığı KESİNLİKLE '### ' ile başlamalıdır! (Örnek: ### 🔴 [CRITICAL] SSH_BRUTE_FORCE). '📌' gibi başka işaretler kullanma.\n"
+            "1) Her bir bulgunun başlığı KESİNLİKLE '### ' ile başlamalıdır! (Örnek: ### 🔴 [CRITICAL] SSH_BRUTE_FORCE veya ### 🟡 [HIGH] PORT_SCAN). '📌' gibi başka işaretler kullanma.\n"
             "2) ASLA 've devam edebilirsiniz' gibi cümleler kurup listeyi yarım bırakma. Kaç bulgu varsa Hepsini teker teker yaz!\n\n"
             "== BULGULAR ==\n"
         )

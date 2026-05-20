@@ -2,7 +2,7 @@
 """Wazuh Sunum - Saldiri Simülasyonu Sunucusu"""
 
 import json, subprocess, threading, time, os
-from http.server import HTTPServer, BaseHTTPRequestHandler
+from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 
 UBUNTU_IP = "192.168.64.4"
 SSH_KEY   = os.path.expanduser("~/.ssh/ubuntu_wazuh")
@@ -16,6 +16,43 @@ HTML_FILE = os.path.join(os.path.dirname(__file__), "sunum_app.html")
 # Canlı analiz durum takibi
 analyze_state = {"running": False, "step": "", "done": False, "error": ""}
 
+# Gerçek zamanlı log akışı için
+live_alerts_stream = []
+tail_running = False
+
+def start_tailing_wazuh():
+    global tail_running, live_alerts_stream
+    if tail_running: return
+    tail_running = True
+    print("[+] Arka planda Wazuh canlı log takibi başlatılıyor (tail -F)...")
+    cmd = [
+        "ssh", "-i", SSH_KEY, "-o", "StrictHostKeyChecking=no",
+        f"{SSH_USER}@{UBUNTU_IP}", "stdbuf -oL sudo tail -F /var/ossec/logs/alerts/alerts.json"
+    ]
+    try:
+        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, bufsize=1)
+        for line in proc.stdout:
+            line = line.strip()
+            if line:
+                try:
+                    alert = json.loads(line)
+                    # Filter out background polling noise
+                    full_log = alert.get("full_log", "")
+                    if "dpkg -l wazuh-manager" in full_log or "wc -l /var/ossec" in full_log:
+                        continue
+                    # Bazen sshd PAM logları da çok gürültü yapıyor, onları sadece gürültü olarak geçebiliriz ama şimdilik tutalım.
+                    alert['_received_at'] = time.time()
+                    live_alerts_stream.append(alert)
+                    print(f"[DEBUG] Yeni alert yakalandı: {alert.get('rule',{}).get('id')} - {alert.get('rule',{}).get('level')}")
+                    if len(live_alerts_stream) > 1000:
+                        live_alerts_stream.pop(0)
+                except Exception as ex:
+                    print("[DEBUG] Json Parse Hatasi:", ex)
+                    pass
+    except Exception as e:
+        print("[-] Canlı takip hatası:", e)
+        tail_running = False
+
 def ssh(cmd, timeout=15):
     try:
         r = subprocess.run(
@@ -26,12 +63,24 @@ def ssh(cmd, timeout=15):
     except Exception as e:
         return str(e), False
 
+status_cache = {"version": "?", "count": "0", "last_check": 0}
+
 def get_status():
-    out, ok = ssh("dpkg -l wazuh-manager 2>/dev/null | grep '^ii' | awk '{print $3}'")
-    version = out.strip() if ok and out.strip() else "?"
-    count_out, _ = ssh("sudo wc -l /var/ossec/logs/alerts/alerts.json 2>/dev/null")
-    count = count_out.split()[0] if count_out else "?"
-    return {"ok": ok and version != "?", "version": version, "count": count}
+    global status_cache
+    if time.time() - status_cache["last_check"] > 300: # 5 dakikada bir
+        out, ok = ssh("dpkg -l wazuh-manager 2>/dev/null | grep '^ii' | awk '{print $3}'")
+        if ok and out.strip():
+            status_cache["version"] = out.strip()
+        status_cache["last_check"] = time.time()
+        
+    # Count'u yerel JSON'dan al
+    try:
+        with open(ALERTS_FILE, "r") as f:
+            status_cache["count"] = str(sum(1 for _ in f))
+    except:
+        pass
+        
+    return {"ok": status_cache["version"] != "?", "version": status_cache["version"], "count": status_cache["count"]}
 
 def load_alerts():
     alerts = []
@@ -45,22 +94,19 @@ def load_alerts():
     except: pass
     return alerts
 
-def run_ssh_attack(username, attempts=8):
+def run_ssh_attack(username, attempts=8, speed=3):
     results = []
+    delay = 1.0 - (speed * 0.15)
+    if delay < 0.1: delay = 0.1
     for i in range(attempts):
         try:
-            port = 55000 + i
-            log_msg = f"Invalid user {username} from 192.168.64.1 port {port}"
             subprocess.run(
-                ["ssh", "-i", SSH_KEY, "-o", "StrictHostKeyChecking=no",
-                 "-o", "ConnectTimeout=3", "-o", "BatchMode=yes",
-                 f"osman@{UBUNTU_IP}",
-                 f"sudo logger -p auth.info -t sshd '{log_msg}'"],
-                capture_output=True, timeout=5)
-            results.append({"attempt": i+1, "target": f"{username}@{UBUNTU_IP}", "result": "REJECTED (Simulated)"})
+                ["ssh", "-o", "StrictHostKeyChecking=no", "-o", "ConnectTimeout=2", "-o", "BatchMode=yes", f"{username}@{UBUNTU_IP}"],
+                capture_output=True, timeout=4)
+            results.append({"attempt": i+1, "target": f"{username}@{UBUNTU_IP}", "result": "REJECTED"})
         except Exception as e:
             results.append({"attempt": i+1, "result": str(e)})
-        time.sleep(0.2)
+        time.sleep(delay)
     return results
 
 def run_live_analysis(api_key="", llm_provider="gemini"):
@@ -101,7 +147,7 @@ def run_live_analysis(api_key="", llm_provider="gemini"):
         ]
         if api_key:
             cmd += ["--api-key", api_key]
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
         if result.returncode != 0:
             analyze_state["error"] = result.stderr[-500:] if result.stderr else "Bilinmeyen hata"
         analyze_state["step"] = "Tamamlandı ✅"
@@ -154,6 +200,35 @@ class Handler(BaseHTTPRequestHandler):
         elif p == "/api/alerts":
             alerts = load_alerts()
             self.send_json({"alerts": alerts, "total": len(alerts)})
+        elif p == "/api/poll_alerts":
+            query = self.path.split("?")
+            since = 0
+            if len(query) > 1:
+                params = dict(q.split("=") for q in query[1].split("&") if "=" in q)
+                since = float(params.get("since", 0))
+            
+            new_alerts = [a for a in live_alerts_stream if a.get('_received_at', 0) > since]
+            self.send_json({"alerts": new_alerts, "server_time": time.time()})
+        elif p.startswith("/static/"):
+            file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), p.lstrip("/"))
+            if os.path.exists(file_path):
+                try:
+                    with open(file_path, "rb") as f:
+                        body = f.read()
+                    self.send_response(200)
+                    if p.endswith(".css"):
+                        self.send_header("Content-Type", "text/css; charset=utf-8")
+                    elif p.endswith(".js") or p.endswith(".jsx"):
+                        self.send_header("Content-Type", "application/javascript; charset=utf-8")
+                    self.send_header("Content-Length", str(len(body)))
+                    self.end_headers()
+                    self.wfile.write(body)
+                except Exception:
+                    self.send_response(500)
+                    self.end_headers()
+            else:
+                self.send_response(404)
+                self.end_headers()
         elif p == "/api/sync":
             # Ubuntu'dan alertleri çek
             out, ok = ssh("sudo cat /var/ossec/logs/alerts/alerts.json 2>/dev/null")
@@ -173,10 +248,25 @@ class Handler(BaseHTTPRequestHandler):
                     with open(files[-1], encoding="utf-8") as f:
                         findings = json.load(f)
                     self.send_json({"ok": True, "findings": findings, "file": os.path.basename(files[-1])})
-                except Exception as e:
-                    self.send_json({"ok": False, "error": str(e)})
+                except:
+                    self.send_json({"ok": False})
             else:
-                self.send_json({"ok": False, "error": "Henüz analiz yapılmadı"})
+                self.send_json({"ok": False})
+        elif p == "/api/raw_logs":
+            raw_data = {}
+            base = os.path.dirname(__file__)
+            for name, fname in [("auth.log", "auth.log"), ("syslog", "syslog"), ("kern.log", "kern.log")]:
+                path = os.path.join(base, "sample_logs", fname)
+                if os.path.exists(path):
+                    try:
+                        with open(path, "r", encoding="utf-8", errors="ignore") as f:
+                            lines = f.readlines()[-100:] # Sadece son 100 satır
+                            raw_data[name] = [l.strip() for l in lines]
+                    except:
+                        raw_data[name] = ["Log okuma hatası."]
+                else:
+                    raw_data[name] = ["Henüz analiz yapılmadı veya log yok."]
+            self.send_json({"ok": True, **raw_data})
         elif p == "/api/latest_report":
             # En son LLM rapor markdown'ını döndür
             import glob
@@ -215,7 +305,8 @@ class Handler(BaseHTTPRequestHandler):
         if self.path == "/api/attack":
             username = data.get("username", "hacker")
             attempts = int(data.get("attempts", 8))
-            threading.Thread(target=run_ssh_attack, args=(username, attempts), daemon=True).start()
+            speed = int(data.get("speed", 3))
+            threading.Thread(target=run_ssh_attack, args=(username, attempts, speed), daemon=True).start()
             self.send_json({"started": True, "msg": f"{attempts} SSH denemesi başlatıldı → {username}@{UBUNTU_IP}"})
         elif self.path == "/api/sudo_attack":
             out, _ = ssh("sudo id 2>/dev/null && sudo bash -c 'echo SUDO_OK' 2>/dev/null")
@@ -278,7 +369,11 @@ if __name__ == "__main__":
     print(f"  http://localhost:{PORT}")
     print(f"  Ubuntu: {UBUNTU_IP}")
     print(f"{'='*50}\n")
-    server = HTTPServer(("0.0.0.0", PORT), Handler)
+    
+    # Canlı takip thread'ini başlat
+    threading.Thread(target=start_tailing_wazuh, daemon=True).start()
+    
+    server = ThreadingHTTPServer(("0.0.0.0", PORT), Handler)
     try:
         server.serve_forever()
     except KeyboardInterrupt:
