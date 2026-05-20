@@ -209,7 +209,17 @@ class LLMAnalyzer:
             "- **Tehdit Özeti:** 192.168.1.5 IP adresinden 500 kez başarısız giriş denemesi yapıldı. Bu bir kaba kuvvet saldırısıdır.\n"
             "- **Müdahale Önerisi:** Saldırganın IP adresini güvenlik duvarından engellemek gerekir.\n"
             "- **Çözüm Komutu:** `sudo ufw deny from 192.168.1.5`\n\n"
-            "Lütfen aşağıdaki bulgular için yukarıdaki örnek formata uygun şekilde TEK TEK ayrı başlıklar oluştur. Çözüm komutları (Brute force için: ufw deny. Sudo için: tail -n 50 /var/log/auth.log) haricinde uydurma komut yazma.\n\n"
+            "## 📜 syslog Analizi\n"
+            "### [HIGH] CRON_ANOMALY\n"
+            "- **Tehdit Özeti:** Beklenmeyen bir zamanlanmış görev (cron) oluşturuldu.\n"
+            "- **Müdahale Önerisi:** Sistemdeki yetkisiz crontab girişleri silinmelidir.\n"
+            "- **Çözüm Komutu:** `sudo crontab -l -u root`\n\n"
+            "## 🖥️ kern.log Analizi\n"
+            "### [MEDIUM] APPARMOR_BLOCK\n"
+            "- **Tehdit Özeti:** AppArmor güvenlik duvarı şüpheli bir işlemi engelledi.\n"
+            "- **Müdahale Önerisi:** AppArmor profilleri kontrol edilmelidir.\n"
+            "- **Çözüm Komutu:** `sudo apparmor_status`\n\n"
+            "Lütfen aşağıdaki bulguları hangi log dosyasına aitse (auth.log, syslog, kern.log) o başlığın altına, KESİNLİKLE yukarıdaki örnek formattaki gibi TEK TEK yaz.\n\n"
             "== BULGULAR ==\n"
         )
         for source, findings in findings_by_source.items():
