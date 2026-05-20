@@ -326,15 +326,18 @@
                 else if (h.includes('[MEDIUM]')) { icon = ''; color = 'var(--accent)'; h = h.replace('', '').replace('[MEDIUM]', '').trim(); }
                 else if (h.includes('[LOW]')) { icon = ''; color = 'var(--ok)'; h = h.replace('', '').replace('[LOW]', '').trim(); }
                 formatted += '<div style="color:' + color + ';font-weight:700;margin-top:16px;margin-bottom:8px;font-size:0.95rem;display:flex;align-items:center;gap:6px;">' + icon + ' ' + h + '</div>';
-              } else if (l.toLowerCase().startsWith('- ne oldu:') || l.toLowerCase().startsWith('- **ne oldu:**')) {
-                var textCont = l.replace(/- \**Ne [Oo]ldu:\** ?/i, '').trim();
-                formatted += '<div style="margin-bottom:4px;padding-left:12px;border-left:2px solid rgba(255,255,255,0.1);"><strong style="color:var(--t2);">Durum:</strong> <span style="color:#e2e8f0;">' + textCont + '</span></div>';
+              } else if (l.toLowerCase().startsWith('- ne oldu:') || l.toLowerCase().startsWith('- **ne oldu:**') || l.toLowerCase().startsWith('- tehdit özeti:') || l.toLowerCase().startsWith('- **tehdit özeti:**')) {
+                var textCont = l.replace(/- \**Ne [Oo]ldu:\** ?/i, '').replace(/- \**Tehdit Özeti:\** ?/i, '').trim();
+                formatted += '<div style="margin-bottom:4px;padding-left:12px;border-left:2px solid rgba(255,255,255,0.1);"><strong style="color:var(--t2);">Özet:</strong> <span style="color:#e2e8f0;line-height:1.5;display:inline-block;margin-top:2px;">' + textCont + '</span></div>';
               } else if (l.toLowerCase().startsWith('- risk:') || l.toLowerCase().startsWith('- **risk:**')) {
                 var textCont = l.replace(/- \**Risk:\** ?/i, '').trim();
                 formatted += '<div style="margin-bottom:4px;padding-left:12px;border-left:2px solid rgba(255,255,255,0.1);"><strong style="color:var(--t2);">Risk:</strong> <span style="color:var(--warn);">' + textCont + '</span></div>';
+              } else if (l.toLowerCase().startsWith('- müdahale önerisi:') || l.toLowerCase().startsWith('- **müdahale önerisi:**')) {
+                var textCont = l.replace(/- \**Müdahale Önerisi:\** ?/i, '').trim();
+                formatted += '<div style="margin-bottom:4px;padding-left:12px;border-left:2px solid rgba(255,255,255,0.1);"><strong style="color:var(--t2);">Öneri:</strong> <span style="color:var(--blue);line-height:1.5;display:inline-block;margin-top:2px;">' + textCont + '</span></div>';
               } else if (l.toLowerCase().startsWith('- yapılacak:') || l.toLowerCase().startsWith('- **yapılacak:**') || l.toLowerCase().startsWith('- çözüm komutu:') || l.toLowerCase().startsWith('- **çözüm komutu:**')) {
                 var textCont = l.replace(/- \**Yapılacak:\** ?/i, '').replace(/- \**Çözüm Komutu:\** ?/i, '').trim();
-                formatted += '<div style="margin-bottom:12px;padding-left:12px;border-left:2px solid rgba(255,255,255,0.1);"><strong style="color:var(--t2);">Aksiyon:</strong> <span style="color:var(--ok);font-weight:600;">' + textCont + '</span></div>';
+                formatted += '<div style="margin-bottom:12px;padding-left:12px;border-left:2px solid rgba(255,255,255,0.1);"><strong style="color:var(--t2);">Komut:</strong> <span style="color:var(--ok);font-weight:600;display:inline-block;margin-top:2px;">' + textCont + '</span></div>';
               } else if (l.startsWith('- ')) {
                 formatted += '<div style="margin-bottom:4px;padding-left:12px;border-left:2px solid rgba(255,255,255,0.1);">' + l.substring(2) + '</div>';
               } else if (l.startsWith('---')) {
