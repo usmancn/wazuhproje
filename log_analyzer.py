@@ -88,7 +88,7 @@ class ThreatDetector:
             ip_sample[ip] = a.get('raw', '')
 
         for ip, cnt in ip_fail.items():
-            sev = 'CRITICAL' if cnt >= 10 else 'HIGH' if cnt >= 5 else 'MEDIUM'
+            sev = 'CRITICAL' if cnt >= 10 else 'HIGH' if cnt >= 2 else 'MEDIUM'
             self.findings.append({
                 'type': 'SSH_BRUTE_FORCE',
                 'severity': sev,

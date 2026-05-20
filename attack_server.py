@@ -98,15 +98,28 @@ def run_ssh_attack(username, attempts=8, speed=3):
     results = []
     delay = 1.0 - (speed * 0.15)
     if delay < 0.1: delay = 0.1
+    import random
+    fake_ip = f"10.0.0.{random.randint(10, 250)}"
+    fake_logs_cmd = ""
     for i in range(attempts):
         try:
             subprocess.run(
                 ["ssh", "-o", "StrictHostKeyChecking=no", "-o", "ConnectTimeout=2", "-o", "BatchMode=yes", f"{username}@{UBUNTU_IP}"],
                 capture_output=True, timeout=4)
+            
+            # Sahte IP ile log enjeksiyon komutunu hazırla
+            now_str = time.strftime("%b %d %H:%M:%S")
+            fake_logs_cmd += f"echo '{now_str} osmanubuntu sshd[9999]: Failed password for invalid user {username} from {fake_ip} port 22 ssh2' >> /var/log/auth.log; "
+            
             results.append({"attempt": i+1, "target": f"{username}@{UBUNTU_IP}", "result": "REJECTED"})
         except Exception as e:
             results.append({"attempt": i+1, "result": str(e)})
         time.sleep(delay)
+    
+    # Enjekte edilen sahte logları Ubuntu'ya gönder (Böylece AI yeni IP'yi görür)
+    if fake_logs_cmd:
+        ssh(f'sudo bash -c "{fake_logs_cmd}"')
+        
     return results
 
 def run_live_analysis(api_key="", llm_provider="gemini"):
