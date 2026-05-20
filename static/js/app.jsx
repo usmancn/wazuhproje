@@ -351,8 +351,10 @@
             const data = await res.json();
             if (data.alerts && data.alerts.length > 0) {
               const newMapped = data.alerts.map((a, i) => {
-                const isKritik = a.rule && a.rule.level >= 8;
-                let lvl = isKritik ? 'KRİTİK' : (a.rule.level >= 5 ? 'ORTA' : 'DÜŞÜK');
+                let l = (a.rule && a.rule.level) || 0;
+                if (a.rule && String(a.rule.id) === "5402") l = 10;
+                const isKritik = l >= 8;
+                let lvl = isKritik ? 'KRİTİK' : (l >= 5 ? 'ORTA' : 'DÜŞÜK');
                 let timeStr = new Date().toLocaleTimeString('tr-TR');
                 try { if(a.timestamp) timeStr = new Date(a.timestamp).toLocaleTimeString('tr-TR'); } catch(e){}
                 return {
