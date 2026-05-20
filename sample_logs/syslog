@@ -43605,3 +43605,224 @@ May 20 16:17:55 osmanubuntu systemd[1]: session-2466.scope: Deactivated successf
 May 20 16:18:05 osmanubuntu systemd[1]: Started Session 2467 of User osman.
 May 20 16:18:05 osmanubuntu systemd[1]: session-2467.scope: Deactivated successfully.
 May 20 16:18:05 osmanubuntu systemd[1]: Started Session 2468 of User osman.
+May 20 16:18:05 osmanubuntu systemd[1]: session-2468.scope: Deactivated successfully.
+May 20 16:18:06 osmanubuntu systemd[1]: Started Session 2469 of User osman.
+May 20 16:18:06 osmanubuntu systemd[1]: session-2469.scope: Deactivated successfully.
+May 20 16:21:34 osmanubuntu systemd[1]: Started Session 2470 of User osman.
+May 20 16:21:34 osmanubuntu systemd[1]: session-2470.scope: Deactivated successfully.
+May 20 16:24:38 osmanubuntu systemd[1]: Started Session 2471 of User osman.
+May 20 16:24:39 osmanubuntu systemd[1]: session-2471.scope: Deactivated successfully.
+May 20 16:24:39 osmanubuntu systemd[1]: Started Session 2472 of User osman.
+May 20 16:24:39 osmanubuntu systemd[1]: session-2472.scope: Deactivated successfully.
+May 20 16:24:44 osmanubuntu systemd[1]: Started Session 2473 of User osman.
+May 20 16:24:44 osmanubuntu systemd[1]: session-2473.scope: Deactivated successfully.
+May 20 16:24:49 osmanubuntu systemd[1]: Started Session 2474 of User osman.
+May 20 16:24:49 osmanubuntu systemd[1]: session-2474.scope: Deactivated successfully.
+May 20 16:24:54 osmanubuntu systemd[1]: Started Session 2475 of User osman.
+May 20 16:24:54 osmanubuntu systemd[1]: session-2475.scope: Deactivated successfully.
+May 20 16:24:59 osmanubuntu systemd[1]: Started Session 2476 of User osman.
+May 20 16:24:59 osmanubuntu systemd[1]: session-2476.scope: Deactivated successfully.
+May 20 16:26:13 osmanubuntu systemd[1]: Started Session 2477 of User osman.
+May 20 16:26:13 osmanubuntu systemd[1]: session-2477.scope: Deactivated successfully.
+May 20 16:26:13 osmanubuntu systemd[1]: Started Session 2478 of User osman.
+May 20 16:26:14 osmanubuntu systemd[1]: session-2478.scope: Deactivated successfully.
+May 20 16:26:19 osmanubuntu systemd[1]: Started Session 2479 of User osman.
+May 20 16:26:19 osmanubuntu systemd[1]: session-2479.scope: Deactivated successfully.
+May 20 16:26:24 osmanubuntu systemd[1]: Started Session 2480 of User osman.
+May 20 16:26:24 osmanubuntu systemd[1]: session-2480.scope: Deactivated successfully.
+May 20 16:26:29 osmanubuntu systemd[1]: Started Session 2481 of User osman.
+May 20 16:26:29 osmanubuntu systemd[1]: session-2481.scope: Deactivated successfully.
+May 20 16:26:38 osmanubuntu systemd[1]: Started Session 2482 of User osman.
+May 20 16:26:38 osmanubuntu systemd[1]: Started Session 2483 of User osman.
+May 20 16:26:38 osmanubuntu systemd[1]: session-2483.scope: Deactivated successfully.
+May 20 16:26:38 osmanubuntu systemd[1]: session-2482.scope: Deactivated successfully.
+May 20 16:26:44 osmanubuntu systemd[1]: Started Session 2484 of User osman.
+May 20 16:26:44 osmanubuntu systemd[1]: session-2484.scope: Deactivated successfully.
+May 20 16:26:50 osmanubuntu systemd[1]: Started Session 2485 of User osman.
+May 20 16:26:50 osmanubuntu systemd[1]: session-2485.scope: Deactivated successfully.
+May 20 16:26:56 osmanubuntu systemd[1]: Started Session 2486 of User osman.
+May 20 16:26:56 osmanubuntu systemd[1]: session-2486.scope: Deactivated successfully.
+May 20 16:27:02 osmanubuntu systemd[1]: Started Session 2487 of User osman.
+May 20 16:27:02 osmanubuntu systemd[1]: session-2487.scope: Deactivated successfully.
+May 20 16:27:07 osmanubuntu systemd[1]: Started Session 2488 of User osman.
+May 20 16:27:07 osmanubuntu systemd[1]: session-2488.scope: Deactivated successfully.
+May 20 16:27:12 osmanubuntu systemd[1]: Started Session 2489 of User osman.
+May 20 16:27:12 osmanubuntu systemd[1]: session-2489.scope: Deactivated successfully.
+May 20 16:27:18 osmanubuntu systemd[1]: Started Session 2490 of User osman.
+May 20 16:27:18 osmanubuntu systemd[1]: session-2490.scope: Deactivated successfully.
+May 20 16:27:24 osmanubuntu systemd[1]: Started Session 2491 of User osman.
+May 20 16:27:24 osmanubuntu systemd[1]: session-2491.scope: Deactivated successfully.
+May 20 16:27:30 osmanubuntu systemd[1]: Started Session 2492 of User osman.
+May 20 16:27:30 osmanubuntu systemd[1]: session-2492.scope: Deactivated successfully.
+May 20 16:27:42 osmanubuntu systemd[1]: Started Session 2493 of User osman.
+May 20 16:27:42 osmanubuntu systemd[1]: session-2493.scope: Deactivated successfully.
+May 20 16:30:01 osmanubuntu CRON[137818]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+May 20 16:32:34 osmanubuntu systemd[1]: Started Session 2495 of User osman.
+May 20 16:32:34 osmanubuntu systemd[1]: session-2495.scope: Deactivated successfully.
+May 20 16:33:54 osmanubuntu systemd[1]: Started Run anacron jobs.
+May 20 16:33:54 osmanubuntu anacron[137897]: Anacron 2.3 started on 2026-05-20
+May 20 16:33:54 osmanubuntu anacron[137897]: Normal exit (0 jobs run)
+May 20 16:33:54 osmanubuntu systemd[1]: anacron.service: Deactivated successfully.
+May 20 16:35:14 osmanubuntu systemd[1]: Started Session 2496 of User osman.
+May 20 16:35:14 osmanubuntu systemd[1]: session-2496.scope: Deactivated successfully.
+May 20 16:35:19 osmanubuntu systemd[1]: Started Session 2497 of User osman.
+May 20 16:35:19 osmanubuntu systemd[1]: session-2497.scope: Deactivated successfully.
+May 20 16:35:23 osmanubuntu systemd[1]: Started Session 2498 of User osman.
+May 20 16:35:24 osmanubuntu systemd[1]: session-2498.scope: Deactivated successfully.
+May 20 16:35:29 osmanubuntu systemd[1]: Started Session 2499 of User osman.
+May 20 16:35:29 osmanubuntu systemd[1]: session-2499.scope: Deactivated successfully.
+May 20 16:35:34 osmanubuntu systemd[1]: Started Session 2500 of User osman.
+May 20 16:35:34 osmanubuntu systemd[1]: session-2500.scope: Deactivated successfully.
+May 20 16:35:39 osmanubuntu systemd[1]: Started Session 2501 of User osman.
+May 20 16:35:39 osmanubuntu systemd[1]: session-2501.scope: Deactivated successfully.
+May 20 16:35:44 osmanubuntu systemd[1]: Started Session 2502 of User osman.
+May 20 16:35:44 osmanubuntu systemd[1]: session-2502.scope: Deactivated successfully.
+May 20 16:35:49 osmanubuntu systemd[1]: Started Session 2503 of User osman.
+May 20 16:35:49 osmanubuntu systemd[1]: session-2503.scope: Deactivated successfully.
+May 20 16:35:55 osmanubuntu systemd[1]: Started Session 2504 of User osman.
+May 20 16:35:55 osmanubuntu systemd[1]: session-2504.scope: Deactivated successfully.
+May 20 16:36:00 osmanubuntu systemd[1]: Started Session 2505 of User osman.
+May 20 16:36:00 osmanubuntu systemd[1]: session-2505.scope: Deactivated successfully.
+May 20 16:36:05 osmanubuntu systemd[1]: Started Session 2506 of User osman.
+May 20 16:36:05 osmanubuntu systemd[1]: session-2506.scope: Deactivated successfully.
+May 20 16:36:09 osmanubuntu systemd[1]: Started Session 2507 of User osman.
+May 20 16:36:09 osmanubuntu systemd[1]: session-2507.scope: Deactivated successfully.
+May 20 16:36:14 osmanubuntu systemd[1]: Started Session 2508 of User osman.
+May 20 16:36:15 osmanubuntu systemd[1]: session-2508.scope: Deactivated successfully.
+May 20 16:36:20 osmanubuntu systemd[1]: Started Session 2509 of User osman.
+May 20 16:36:20 osmanubuntu systemd[1]: session-2509.scope: Deactivated successfully.
+May 20 16:36:25 osmanubuntu systemd[1]: Started Session 2510 of User osman.
+May 20 16:36:25 osmanubuntu systemd[1]: session-2510.scope: Deactivated successfully.
+May 20 16:36:29 osmanubuntu systemd[1]: Started Session 2511 of User osman.
+May 20 16:36:29 osmanubuntu systemd[1]: session-2511.scope: Deactivated successfully.
+May 20 16:36:34 osmanubuntu systemd[1]: Started Session 2512 of User osman.
+May 20 16:36:34 osmanubuntu systemd[1]: session-2512.scope: Deactivated successfully.
+May 20 16:36:39 osmanubuntu systemd[1]: Started Session 2513 of User osman.
+May 20 16:36:39 osmanubuntu systemd[1]: session-2513.scope: Deactivated successfully.
+May 20 16:36:44 osmanubuntu systemd[1]: Started Session 2514 of User osman.
+May 20 16:36:44 osmanubuntu systemd[1]: session-2514.scope: Deactivated successfully.
+May 20 16:36:48 osmanubuntu systemd[1]: Started Session 2515 of User osman.
+May 20 16:36:49 osmanubuntu systemd[1]: session-2515.scope: Deactivated successfully.
+May 20 16:36:54 osmanubuntu systemd[1]: Started Session 2516 of User osman.
+May 20 16:36:54 osmanubuntu systemd[1]: session-2516.scope: Deactivated successfully.
+May 20 16:36:59 osmanubuntu systemd[1]: Started Session 2517 of User osman.
+May 20 16:36:59 osmanubuntu systemd[1]: session-2517.scope: Deactivated successfully.
+May 20 16:37:04 osmanubuntu systemd[1]: Started Session 2518 of User osman.
+May 20 16:37:04 osmanubuntu systemd[1]: session-2518.scope: Deactivated successfully.
+May 20 16:37:09 osmanubuntu systemd[1]: Started Session 2519 of User osman.
+May 20 16:37:09 osmanubuntu systemd[1]: session-2519.scope: Deactivated successfully.
+May 20 16:37:14 osmanubuntu systemd[1]: Started Session 2520 of User osman.
+May 20 16:37:14 osmanubuntu systemd[1]: session-2520.scope: Deactivated successfully.
+May 20 16:37:20 osmanubuntu systemd[1]: Started Session 2521 of User osman.
+May 20 16:37:20 osmanubuntu systemd[1]: session-2521.scope: Deactivated successfully.
+May 20 16:37:25 osmanubuntu systemd[1]: Started Session 2522 of User osman.
+May 20 16:37:25 osmanubuntu systemd[1]: session-2522.scope: Deactivated successfully.
+May 20 16:37:30 osmanubuntu systemd[1]: Started Session 2523 of User osman.
+May 20 16:37:30 osmanubuntu systemd[1]: session-2523.scope: Deactivated successfully.
+May 20 16:37:36 osmanubuntu systemd[1]: Started Session 2524 of User osman.
+May 20 16:37:36 osmanubuntu systemd[1]: Started Session 2525 of User osman.
+May 20 16:37:36 osmanubuntu systemd[1]: session-2524.scope: Deactivated successfully.
+May 20 16:37:36 osmanubuntu systemd[1]: session-2525.scope: Deactivated successfully.
+May 20 16:37:41 osmanubuntu systemd[1]: Started Session 2526 of User osman.
+May 20 16:37:41 osmanubuntu systemd[1]: session-2526.scope: Deactivated successfully.
+May 20 16:37:46 osmanubuntu systemd[1]: Started Session 2527 of User osman.
+May 20 16:37:46 osmanubuntu systemd[1]: session-2527.scope: Deactivated successfully.
+May 20 16:37:51 osmanubuntu systemd[1]: Started Session 2528 of User osman.
+May 20 16:37:51 osmanubuntu systemd[1]: session-2528.scope: Deactivated successfully.
+May 20 16:37:56 osmanubuntu systemd[1]: Started Session 2529 of User osman.
+May 20 16:37:56 osmanubuntu systemd[1]: session-2529.scope: Deactivated successfully.
+May 20 16:38:34 osmanubuntu systemd[1]: Started Session 2530 of User osman.
+May 20 16:38:34 osmanubuntu systemd[1]: session-2530.scope: Deactivated successfully.
+May 20 16:39:34 osmanubuntu systemd[1]: Started Session 2531 of User osman.
+May 20 16:39:34 osmanubuntu systemd[1]: session-2531.scope: Deactivated successfully.
+May 20 16:40:26 osmanubuntu systemd[1]: Started Session 2532 of User osman.
+May 20 16:40:26 osmanubuntu systemd[1]: session-2532.scope: Deactivated successfully.
+May 20 16:40:29 osmanubuntu systemd[1]: Started Session 2533 of User osman.
+May 20 16:40:29 osmanubuntu systemd[1]: session-2533.scope: Deactivated successfully.
+May 20 16:40:34 osmanubuntu systemd[1]: Started Session 2534 of User osman.
+May 20 16:40:34 osmanubuntu systemd[1]: session-2534.scope: Deactivated successfully.
+May 20 16:40:39 osmanubuntu systemd[1]: Started Session 2535 of User osman.
+May 20 16:40:39 osmanubuntu systemd[1]: session-2535.scope: Deactivated successfully.
+May 20 16:40:44 osmanubuntu systemd[1]: Started Session 2536 of User osman.
+May 20 16:40:44 osmanubuntu systemd[1]: session-2536.scope: Deactivated successfully.
+May 20 16:40:49 osmanubuntu systemd[1]: Started Session 2537 of User osman.
+May 20 16:40:49 osmanubuntu systemd[1]: session-2537.scope: Deactivated successfully.
+May 20 16:40:55 osmanubuntu systemd[1]: Started Session 2538 of User osman.
+May 20 16:40:55 osmanubuntu systemd[1]: session-2538.scope: Deactivated successfully.
+May 20 16:40:59 osmanubuntu systemd[1]: Started Session 2539 of User osman.
+May 20 16:40:59 osmanubuntu systemd[1]: session-2539.scope: Deactivated successfully.
+May 20 16:41:04 osmanubuntu systemd[1]: Started Session 2540 of User osman.
+May 20 16:41:04 osmanubuntu systemd[1]: session-2540.scope: Deactivated successfully.
+May 20 16:41:09 osmanubuntu systemd[1]: Started Session 2541 of User osman.
+May 20 16:41:09 osmanubuntu systemd[1]: session-2541.scope: Deactivated successfully.
+May 20 16:41:14 osmanubuntu systemd[1]: Started Session 2542 of User osman.
+May 20 16:41:14 osmanubuntu systemd[1]: session-2542.scope: Deactivated successfully.
+May 20 16:41:19 osmanubuntu systemd[1]: Started Session 2543 of User osman.
+May 20 16:41:20 osmanubuntu systemd[1]: session-2543.scope: Deactivated successfully.
+May 20 16:41:25 osmanubuntu systemd[1]: Started Session 2544 of User osman.
+May 20 16:41:25 osmanubuntu systemd[1]: session-2544.scope: Deactivated successfully.
+May 20 16:41:30 osmanubuntu systemd[1]: Started Session 2545 of User osman.
+May 20 16:41:30 osmanubuntu systemd[1]: session-2545.scope: Deactivated successfully.
+May 20 16:41:35 osmanubuntu systemd[1]: Started Session 2546 of User osman.
+May 20 16:41:35 osmanubuntu systemd[1]: session-2546.scope: Deactivated successfully.
+May 20 16:42:34 osmanubuntu systemd[1]: Started Session 2547 of User osman.
+May 20 16:42:34 osmanubuntu systemd[1]: session-2547.scope: Deactivated successfully.
+May 20 16:43:34 osmanubuntu systemd[1]: Started Session 2548 of User osman.
+May 20 16:43:34 osmanubuntu systemd[1]: Started Session 2549 of User osman.
+May 20 16:43:34 osmanubuntu systemd[1]: session-2549.scope: Deactivated successfully.
+May 20 16:43:34 osmanubuntu systemd[1]: session-2548.scope: Deactivated successfully.
+May 20 16:44:34 osmanubuntu systemd[1]: Started Session 2550 of User osman.
+May 20 16:44:34 osmanubuntu systemd[1]: session-2550.scope: Deactivated successfully.
+May 20 16:45:34 osmanubuntu systemd[1]: Started Session 2551 of User osman.
+May 20 16:45:34 osmanubuntu systemd[1]: session-2551.scope: Deactivated successfully.
+May 20 16:46:34 osmanubuntu systemd[1]: Started Session 2552 of User osman.
+May 20 16:46:34 osmanubuntu systemd[1]: session-2552.scope: Deactivated successfully.
+May 20 16:47:34 osmanubuntu systemd[1]: Started Session 2553 of User osman.
+May 20 16:47:34 osmanubuntu systemd[1]: session-2553.scope: Deactivated successfully.
+May 20 16:48:34 osmanubuntu systemd[1]: Started Session 2554 of User osman.
+May 20 16:48:34 osmanubuntu systemd[1]: session-2554.scope: Deactivated successfully.
+May 20 16:49:34 osmanubuntu systemd[1]: Started Session 2556 of User osman.
+May 20 16:49:34 osmanubuntu systemd[1]: Started Session 2555 of User osman.
+May 20 16:49:34 osmanubuntu systemd[1]: session-2556.scope: Deactivated successfully.
+May 20 16:49:34 osmanubuntu systemd[1]: session-2555.scope: Deactivated successfully.
+May 20 16:50:34 osmanubuntu systemd[1]: Started Session 2557 of User osman.
+May 20 16:50:34 osmanubuntu systemd[1]: session-2557.scope: Deactivated successfully.
+May 20 16:51:34 osmanubuntu systemd[1]: Started Session 2558 of User osman.
+May 20 16:51:34 osmanubuntu systemd[1]: session-2558.scope: Deactivated successfully.
+May 20 16:52:34 osmanubuntu systemd[1]: Started Session 2559 of User osman.
+May 20 16:52:34 osmanubuntu systemd[1]: session-2559.scope: Deactivated successfully.
+May 20 16:53:34 osmanubuntu systemd[1]: Started Session 2560 of User osman.
+May 20 16:53:34 osmanubuntu systemd[1]: session-2560.scope: Deactivated successfully.
+May 20 16:54:34 osmanubuntu systemd[1]: Started Session 2561 of User osman.
+May 20 16:54:34 osmanubuntu systemd[1]: session-2561.scope: Deactivated successfully.
+May 20 16:55:34 osmanubuntu systemd[1]: Started Session 2562 of User osman.
+May 20 16:55:34 osmanubuntu systemd[1]: Started Session 2563 of User osman.
+May 20 16:55:34 osmanubuntu systemd[1]: session-2562.scope: Deactivated successfully.
+May 20 16:55:34 osmanubuntu systemd[1]: session-2563.scope: Deactivated successfully.
+May 20 16:56:34 osmanubuntu systemd[1]: Started Session 2564 of User osman.
+May 20 16:56:34 osmanubuntu systemd[1]: session-2564.scope: Deactivated successfully.
+May 20 16:57:34 osmanubuntu systemd[1]: Started Session 2565 of User osman.
+May 20 16:57:34 osmanubuntu systemd[1]: session-2565.scope: Deactivated successfully.
+May 20 16:58:34 osmanubuntu systemd[1]: Started Session 2566 of User osman.
+May 20 16:58:34 osmanubuntu systemd[1]: session-2566.scope: Deactivated successfully.
+May 20 16:59:34 osmanubuntu systemd[1]: Started Session 2567 of User osman.
+May 20 16:59:34 osmanubuntu systemd[1]: session-2567.scope: Deactivated successfully.
+May 20 17:00:34 osmanubuntu systemd[1]: Started Session 2568 of User osman.
+May 20 17:00:34 osmanubuntu systemd[1]: session-2568.scope: Deactivated successfully.
+May 20 17:01:34 osmanubuntu systemd[1]: Started Session 2569 of User osman.
+May 20 17:01:34 osmanubuntu systemd[1]: Started Session 2570 of User osman.
+May 20 17:01:34 osmanubuntu systemd[1]: session-2570.scope: Deactivated successfully.
+May 20 17:01:34 osmanubuntu systemd[1]: session-2569.scope: Deactivated successfully.
+May 20 17:02:34 osmanubuntu systemd[1]: Started Session 2571 of User osman.
+May 20 17:02:34 osmanubuntu systemd[1]: session-2571.scope: Deactivated successfully.
+May 20 17:03:34 osmanubuntu systemd[1]: Started Session 2572 of User osman.
+May 20 17:03:34 osmanubuntu systemd[1]: session-2572.scope: Deactivated successfully.
+May 20 17:04:34 osmanubuntu systemd[1]: Started Session 2573 of User osman.
+May 20 17:04:34 osmanubuntu systemd[1]: session-2573.scope: Deactivated successfully.
+May 20 17:05:34 osmanubuntu systemd[1]: Started Session 2574 of User osman.
+May 20 17:05:34 osmanubuntu systemd[1]: session-2574.scope: Deactivated successfully.
+May 20 17:06:05 osmanubuntu systemd[1]: Started Session 2575 of User osman.
+May 20 17:06:05 osmanubuntu systemd[1]: session-2575.scope: Deactivated successfully.
+May 20 17:06:11 osmanubuntu systemd[1]: Started Session 2576 of User osman.
+May 20 17:06:11 osmanubuntu systemd[1]: session-2576.scope: Deactivated successfully.
+May 20 17:06:11 osmanubuntu systemd[1]: Started Session 2577 of User osman.

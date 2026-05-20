@@ -178,6 +178,127 @@
             transform: rotate(360deg);
           }
         }
+        /* MITRE Tooltip */
+        .mitre-tag {
+          position: relative;
+          cursor: help;
+        }
+        .mitre-tag::after {
+          content: attr(data-tooltip);
+          position: absolute;
+          bottom: 110%;
+          left: 50%;
+          transform: translateX(-50%);
+          background: rgba(0, 0, 0, 0.9);
+          color: #fff;
+          padding: 8px 12px;
+          border-radius: 6px;
+          font-size: 0.75rem;
+          white-space: nowrap;
+          text-align: center;
+          border: 1px solid var(--border);
+          box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.2s ease;
+          z-index: 100;
+          pointer-events: none;
+        }
+        .mitre-tag:hover::after {
+          opacity: 1;
+          visibility: visible;
+          bottom: 120%;
+        }
+
+        /* Terminal UI */
+        .terminal-ui {
+          background: #0d1117;
+          border: 1px solid var(--border);
+          border-radius: 8px;
+          overflow: hidden;
+          margin-bottom: 20px;
+          font-family: var(--font-mono);
+          font-size: 0.8rem;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .terminal-header {
+          background: rgba(255,255,255,0.03);
+          padding: 10px 16px;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid var(--border);
+          justify-content: space-between;
+        }
+        .terminal-dots {
+          display: flex;
+          gap: 8px;
+        }
+        .terminal-dots span {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          display: inline-block;
+        }
+        .dot-red { background: #ff5f56; }
+        .dot-yellow { background: #ffbd2e; }
+        .dot-green { background: #27c93f; }
+        
+        .terminal-body {
+          padding: 16px;
+          color: #e6edf3;
+          line-height: 1.6;
+          white-space: pre-wrap;
+          word-break: break-all;
+        }
+
+        /* JSON Highlighting Overrides */
+        .key { color: var(--blue) !important; }
+        .str { color: var(--ok) !important; }
+        .num-c { color: var(--warn) !important; }
+        .bool { color: var(--purple) !important; }
+
+        /* Fade Transition */
+        .tab-content {
+          animation: fadeIn 0.3s ease;
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(5px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Modal */
+        #jsonModal {
+          position: fixed;
+          top: 0; left: 0; width: 100vw; height: 100vh;
+          background: rgba(0,0,0,0.8);
+          z-index: 10000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          pointer-events: none;
+          transition: opacity 0.3s ease;
+        }
+        #jsonModal.show {
+          opacity: 1;
+          pointer-events: all;
+        }
+        #jsonModalContent {
+          background: #0d1117;
+          border: 1px solid var(--border);
+          border-radius: 8px;
+          width: 80%;
+          max-width: 900px;
+          height: 80vh;
+          display: flex;
+          flex-direction: column;
+          box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+          transform: scale(0.95);
+          transition: transform 0.3s ease;
+        }
+        #jsonModal.show #jsonModalContent {
+          transform: scale(1);
+        }
       </style>
 
       <div class="stats-grid" id="ai-counters">
@@ -356,16 +477,44 @@
       <div class="glass-panel">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
           <h2 style="margin: 0; border: none; padding: 0;">Tüm Wazuh Log Arşivi</h2>
-          <div
-            style="background: rgba(14, 165, 233, 0.1); color: var(--blue); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(14, 165, 233, 0.2);">
+          <div style="background: rgba(14, 165, 233, 0.1); color: var(--blue); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(14, 165, 233, 0.2);">
             <span id="totalLogsCount">0</span> Kayıt
           </div>
         </div>
-        <p style="color: var(--t2); font-size: 0.9rem; margin-bottom: 20px;">Wazuh <code>alerts.json</code> içerisindeki
-          tüm tespitler veritabanından çekilip listelenmektedir.</p>
+        <p style="color: var(--t2); font-size: 0.9rem; margin-bottom: 20px;">Wazuh <code>alerts.json</code> içerisindeki tüm tespitler veritabanından çekilip listelenmektedir.</p>
 
-        <div
-          style="border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: rgba(0,0,0,0.2);">
+        <!-- ARAMA VE FİLTRE ÇUBUĞU -->
+        <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border); padding: 16px; border-radius: 8px; margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
+            <div style="flex: 1; min-width: 200px;">
+                <input type="text" id="archiveSearch" placeholder="Açıklama, IP veya kullanıcı ara..." onkeyup="applyArchiveFilters()" style="width: 100%; padding: 8px 12px; background: rgba(0,0,0,0.4); border: 1px solid var(--border); border-radius: 4px; color: #fff; font-size: 0.8rem; font-family: var(--font-sans);">
+            </div>
+            <div>
+                <select id="archiveLevelFilter" onchange="applyArchiveFilters()" class="modern-select" style="padding: 8px 12px; font-size: 0.8rem; background: rgba(0,0,0,0.4); border: 1px solid var(--border);">
+                    <option value="ALL">Tüm Seviyeler</option>
+                    <option value="CRITICAL">Kritik (10+)</option>
+                    <option value="HIGH">Yüksek (7-9)</option>
+                    <option value="MEDIUM">Orta/Düşük (1-6)</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" id="archiveRuleFilter" placeholder="Kural ID (örn: 5712)" onkeyup="applyArchiveFilters()" style="width: 120px; padding: 8px 12px; background: rgba(0,0,0,0.4); border: 1px solid var(--border); border-radius: 4px; color: #fff; font-size: 0.8rem; font-family: var(--font-sans);">
+            </div>
+            <div>
+                <select id="archiveTimeFilter" onchange="applyArchiveFilters()" class="modern-select" style="padding: 8px 12px; font-size: 0.8rem; background: rgba(0,0,0,0.4); border: 1px solid var(--border);">
+                    <option value="ALL">Tüm Zamanlar</option>
+                    <option value="1H">Son 1 Saat</option>
+                    <option value="6H">Son 6 Saat</option>
+                    <option value="24H">Son 24 Saat</option>
+                </select>
+            </div>
+            <div style="margin-left: auto; display: flex; gap: 8px;">
+                <button onclick="downloadLogsCSV()" class="btn-primary" style="padding: 8px 12px; font-size: 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">CSV İndir</button>
+                <button onclick="downloadLogsJSON()" class="btn-primary" style="padding: 8px 12px; font-size: 0.75rem; background: rgba(14, 165, 233, 0.2); border: 1px solid var(--blue); color: var(--blue);">JSON İndir</button>
+            </div>
+        </div>
+
+        <!-- TABLO -->
+        <div style="border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: rgba(0,0,0,0.2);">
           <div style="max-height: 600px; overflow-y: auto;">
             <table class="modern-table" id="logsTable">
               <thead>
@@ -375,69 +524,104 @@
                   <th>Kural ID</th>
                   <th>Açıklama</th>
                   <th>Kullanıcı / IP</th>
+                  <th style="width: 120px; text-align: right;">Aksiyon</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="logsTableBody">
                 <tr>
-                  <td colspan="5" style="text-align:center; color: var(--t2); padding: 40px;">Wazuh Manager'dan veriler
-                    çekiliyor...</td>
+                  <td colspan="6" style="text-align:center; color: var(--t2); padding: 40px;">Wazuh Manager'dan veriler çekiliyor...</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
+
+        <!-- DURUM ÇUBUĞU / SAYFALAMA -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; padding: 12px; background: rgba(0,0,0,0.2); border-radius: 8px; border: 1px solid var(--border);">
+            <div style="color: var(--t2); font-size: 0.8rem;">
+                <span id="archiveFilterStatus">Veriler yükleniyor...</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <select id="archivePerPage" onchange="changeArchivePerPage()" class="modern-select" style="padding: 4px 8px; font-size: 0.75rem; background: rgba(0,0,0,0.4); border: 1px solid var(--border);">
+                    <option value="25">25 / Sayfa</option>
+                    <option value="50">50 / Sayfa</option>
+                    <option value="100">100 / Sayfa</option>
+                </select>
+                <button onclick="prevArchivePage()" id="btnPrevPage" class="btn-primary" style="padding: 4px 10px; font-size: 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid var(--border);">&lt; Önceki</button>
+                <span id="archivePageInfo" style="color: var(--blue); font-size: 0.8rem; font-weight: bold; font-family: var(--font-mono);">1 / 1</span>
+                <button onclick="nextArchivePage()" id="btnNextPage" class="btn-primary" style="padding: 4px 10px; font-size: 0.75rem; background: rgba(255,255,255,0.1); border: 1px solid var(--border);">Sonraki &gt;</button>
+            </div>
+        </div>
+
       </div>
     </div>
 
     <!-- 5. TEKNİK KANITLAR -->
     <div id="evidence" class="page">
       <div class="glass-panel">
-        <h2>Saldırı Senaryoları &amp; Kurulum Kanıtları</h2>
+        <h2>Teknik Kanıtlar &amp; Saldırı Senaryoları</h2>
         <p style="color: var(--t2); font-size: 0.95rem; margin-bottom: 30px; line-height: 1.6;">Bu bölüm, projenin
           arkasındaki saldırı mantığını (MITRE ATT&CK), ham JSON verilerini ve sistem bileşenlerinin çalıştığına dair
           CLI çıktılarını barındırır.</p>
 
+        <!-- KANIT ÖZETİ (EVIDENCE SUMMARY) -->
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px;">
+          <div style="background: rgba(0,0,0,0.2); border: 1px solid var(--border); border-radius: 8px; padding: 16px; text-align: center;">
+            <div style="font-size: 1.8rem; font-weight: 700; color: var(--cyan); margin-bottom: 4px; font-family: var(--font-mono);">2</div>
+            <div style="font-size: 0.75rem; color: var(--t2); text-transform: uppercase; letter-spacing: 0.5px;">Toplam Senaryo</div>
+          </div>
+          <div style="background: rgba(0,0,0,0.2); border: 1px solid var(--border); border-radius: 8px; padding: 16px; text-align: center;">
+            <div style="font-size: 1.8rem; font-weight: 700; color: var(--purple); margin-bottom: 4px; font-family: var(--font-mono);">4</div>
+            <div style="font-size: 0.75rem; color: var(--t2); text-transform: uppercase; letter-spacing: 0.5px;">MITRE Tekniği</div>
+          </div>
+          <div style="background: rgba(0,0,0,0.2); border: 1px solid var(--border); border-radius: 8px; padding: 16px; text-align: center;">
+            <div style="font-size: 1.2rem; font-weight: 700; color: var(--ok); margin-bottom: 4px; margin-top: 8px; font-family: var(--font-mono);">May 2026</div>
+            <div style="font-size: 0.75rem; color: var(--t2); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 10px;">Kurulum Tarihi</div>
+          </div>
+          <div style="background: rgba(0,0,0,0.2); border: 1px solid var(--border); border-radius: 8px; padding: 16px; text-align: center;">
+            <div style="font-size: 1rem; font-weight: 700; color: var(--warn); margin-bottom: 4px; margin-top: 10px; font-family: var(--font-mono);">Ubuntu 22.04</div>
+            <div style="font-size: 0.75rem; color: var(--t2); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 10px;">Platform (ARM64)</div>
+          </div>
+        </div>
+
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px;">
-          <div
-            style="background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 12px; padding: 24px;">
-            <h3
-              style="font-size: 1.1rem; color: var(--crit); margin-bottom: 12px; display:flex; align-items:center; gap:8px;">
-              <span
-                style="width:10px;height:10px;border-radius:50%;background:var(--crit);display:inline-block;flex-shrink:0"></span>
-              Senaryo 1: SSH Brute-Force</h3>
-            <p style="color: var(--t2); font-size: 0.9rem; line-height: 1.6; margin-bottom: 16px;">Bir IP adresinden peş
-              peşe yapılan başarısız SSH giriş denemeleri Wazuh tarafından "Rule 5712" (Level 10) olarak anında tespit
-              edilir.</p>
+          <!-- SENARYO 1 -->
+          <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 12px; padding: 24px; position: relative;">
+            <button onclick="simulateScenario('brute')" style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--t1); padding: 6px 12px; border-radius: 4px; font-size: 0.7rem; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: 0.2s;" onmouseover="this.style.background='var(--blue)'; this.style.borderColor='var(--blue)';" onmouseout="this.style.background='rgba(255,255,255,0.05)'; this.style.borderColor='var(--border)';">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Simüle Et
+            </button>
+            <h3 style="font-size: 1.1rem; color: var(--crit); margin-bottom: 12px; display:flex; align-items:center; gap:8px;">
+              <span style="width:10px;height:10px;border-radius:50%;background:var(--crit);display:inline-block;flex-shrink:0"></span>
+              Senaryo 1: SSH Brute-Force
+            </h3>
+            <p style="color: var(--t2); font-size: 0.9rem; line-height: 1.6; margin-bottom: 16px; padding-right: 80px;">Bir IP adresinden peş peşe yapılan başarısız SSH giriş denemeleri Wazuh tarafından "Rule 5712" (Level 10) olarak anında tespit edilir.</p>
             <div class="mitre">
-              <div class="mitre-tag"
-                style="background:rgba(255,255,255,0.05); padding:6px 10px; border-radius:6px; display:inline-block; font-size:0.8rem; margin-right:8px; margin-bottom:8px;">
+              <div class="mitre-tag" data-tooltip="Adversaries may use brute force techniques to gain access to accounts." style="background:rgba(255,255,255,0.05); padding:6px 10px; border-radius:6px; display:inline-block; font-size:0.8rem; margin-right:8px; margin-bottom:8px;">
                 <div class="id" style="color:var(--blue);font-weight:600;">T1110</div>
                 <div class="name">Brute Force</div>
               </div>
-              <div class="mitre-tag"
-                style="background:rgba(255,255,255,0.05); padding:6px 10px; border-radius:6px; display:inline-block; font-size:0.8rem; margin-right:8px; margin-bottom:8px;">
+              <div class="mitre-tag" data-tooltip="The Initial Access tactic consists of techniques that use various entry vectors to gain their initial foothold within a network." style="background:rgba(255,255,255,0.05); padding:6px 10px; border-radius:6px; display:inline-block; font-size:0.8rem; margin-right:8px; margin-bottom:8px;">
                 <div class="id" style="color:var(--blue);font-weight:600;">TA0001</div>
                 <div class="name">Initial Access</div>
               </div>
             </div>
           </div>
-          <div
-            style="background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 12px; padding: 24px;">
-            <h3
-              style="font-size: 1.1rem; color: var(--warn); margin-bottom: 12px; display:flex; align-items:center; gap:8px;">
-              <span
-                style="width:10px;height:10px;border-radius:50%;background:var(--warn);display:inline-block;flex-shrink:0"></span>
-              Senaryo 2: Privilege Escalation</h3>
-            <p style="color: var(--t2); font-size: 0.9rem; line-height: 1.6; margin-bottom: 16px;">Sisteme giriş yapan
-              bir kullanıcının "sudo" komutuyla ROOT yetkisine yükselmesi "Rule 5402" ile izlenir ve alarm üretilir.</p>
+          <!-- SENARYO 2 -->
+          <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 12px; padding: 24px; position: relative;">
+            <button onclick="simulateScenario('priv')" style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--t1); padding: 6px 12px; border-radius: 4px; font-size: 0.7rem; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: 0.2s;" onmouseover="this.style.background='var(--blue)'; this.style.borderColor='var(--blue)';" onmouseout="this.style.background='rgba(255,255,255,0.05)'; this.style.borderColor='var(--border)';">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Simüle Et
+            </button>
+            <h3 style="font-size: 1.1rem; color: var(--warn); margin-bottom: 12px; display:flex; align-items:center; gap:8px;">
+              <span style="width:10px;height:10px;border-radius:50%;background:var(--warn);display:inline-block;flex-shrink:0"></span>
+              Senaryo 2: Privilege Escalation
+            </h3>
+            <p style="color: var(--t2); font-size: 0.9rem; line-height: 1.6; margin-bottom: 16px; padding-right: 80px;">Sisteme giriş yapan bir kullanıcının "sudo" komutuyla ROOT yetkisine yükselmesi "Rule 5402" ile izlenir ve alarm üretilir.</p>
             <div class="mitre">
-              <div class="mitre-tag"
-                style="background:rgba(255,255,255,0.05); padding:6px 10px; border-radius:6px; display:inline-block; font-size:0.8rem; margin-right:8px; margin-bottom:8px;">
+              <div class="mitre-tag" data-tooltip="Adversaries may perform sudo caching and/or use the sudoers file to elevate privileges." style="background:rgba(255,255,255,0.05); padding:6px 10px; border-radius:6px; display:inline-block; font-size:0.8rem; margin-right:8px; margin-bottom:8px;">
                 <div class="id" style="color:var(--blue);font-weight:600;">T1548.003</div>
                 <div class="name">Sudo and Sudo Caching</div>
               </div>
-              <div class="mitre-tag"
-                style="background:rgba(255,255,255,0.05); padding:6px 10px; border-radius:6px; display:inline-block; font-size:0.8rem; margin-right:8px; margin-bottom:8px;">
+              <div class="mitre-tag" data-tooltip="The Privilege Escalation tactic consists of techniques that adversaries use to gain higher-level permissions on a system or network." style="background:rgba(255,255,255,0.05); padding:6px 10px; border-radius:6px; display:inline-block; font-size:0.8rem; margin-right:8px; margin-bottom:8px;">
                 <div class="id" style="color:var(--blue);font-weight:600;">TA0004</div>
                 <div class="name">Privilege Escalation</div>
               </div>
@@ -445,13 +629,21 @@
           </div>
         </div>
 
-        <h3 style="font-size: 1.1rem; margin-bottom: 16px; color: var(--t1);">Örnek Ham JSON (Wazuh Çıktısı)</h3>
-        <div class="tab-group">
+        <hr style="border: 0; border-top: 1px solid var(--border); margin: 40px 0;">
+
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 16px;">
+          <h3 style="font-size: 1.1rem; margin: 0; color: var(--t1);">Örnek Ham JSON (Wazuh Çıktısı)</h3>
+          <div style="display: flex; gap: 8px;">
+            <button onclick="copyElementText(document.querySelector('.tab-content.active pre'))" style="background: transparent; border: 1px solid var(--border); color: var(--t2); padding: 4px 10px; border-radius: 4px; font-size: 0.7rem; cursor: pointer;">Kopyala</button>
+            <button onclick="openJsonModal()" style="background: rgba(255,255,255,0.1); border: 1px solid var(--border); color: #fff; padding: 4px 10px; border-radius: 4px; font-size: 0.7rem; cursor: pointer;">Tam Ekran</button>
+          </div>
+        </div>
+        <div class="tab-group" style="margin-bottom: 12px;">
           <button class="tab-btn active" onclick="showTab('t1',this)">Brute-Force (Rule 5712)</button>
           <button class="tab-btn" onclick="showTab('t2',this)">Yetki Yükseltme (Rule 5402)</button>
         </div>
         <div id="t1" class="tab-content active">
-          <pre class="code-block">{
+          <pre class="code-block" style="background: #0d1117; border: 1px solid var(--border); border-radius: 8px; padding: 16px; overflow-x: auto;">{
   <span class="key">"timestamp"</span>: <span class="str">"2026-05-17T12:39:19.000+0000"</span>,
   <span class="key">"rule"</span>: {
     <span class="key">"level"</span>: <span class="num-c">10</span>,
@@ -461,8 +653,8 @@
   <span class="key">"full_log"</span>: <span class="str">"Invalid user hacker from 185.220.101.47 port 44120"</span>
 }</pre>
         </div>
-        <div id="t2" class="tab-content">
-          <pre class="code-block">{
+        <div id="t2" class="tab-content" style="display: none;">
+          <pre class="code-block" style="background: #0d1117; border: 1px solid var(--border); border-radius: 8px; padding: 16px; overflow-x: auto;">{
   <span class="key">"timestamp"</span>: <span class="str">"2026-05-17T12:41:29.000+0000"</span>,
   <span class="key">"rule"</span>: {
     <span class="key">"level"</span>: <span class="num-c">10</span>,
@@ -473,20 +665,131 @@
 }</pre>
         </div>
 
-        <h3 style="font-size: 1.1rem; margin-top: 40px; margin-bottom: 16px; color: var(--t1);">Sistem & Kurulum
-          Kanıtları</h3>
-        <div
-          style="background: rgba(0,0,0,0.3); border-radius: 12px; padding: 20px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--t2); line-height: 1.8; border: 1px solid var(--border);">
-          <strong style="color: var(--ok)">$ dpkg -l | grep wazuh-manager</strong><br>
-          ii wazuh-manager 4.8.0-1 arm64 Wazuh manager — package for managing agents<br><br>
-          <strong style="color: var(--ok)">$ ls -lh /var/ossec/logs/alerts/alerts.json</strong><br>
-          -rw-r----- 2 wazuh wazuh 492K May 17 13:00 /var/ossec/logs/alerts/alerts.json
+        <hr style="border: 0; border-top: 1px solid var(--border); margin: 40px 0;">
+
+        <h3 style="font-size: 1.1rem; margin-bottom: 16px; color: var(--t1);">Sistem & Kurulum Kanıtları</h3>
+        
+        <div class="terminal-ui">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div style="font-size: 0.7rem; color: var(--t2);">wazuh-manager-status — bash</div>
+            <button onclick="copyElementText(this.parentElement.nextElementSibling)" style="background: transparent; border: none; color: var(--t2); cursor: pointer; padding: 0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button>
+          </div>
+          <div class="terminal-body">
+<strong style="color: var(--ok)">osman@wazuh-server:~$</strong> dpkg -l | grep wazuh-manager
+ii  wazuh-manager  4.8.0-1  arm64  Wazuh manager — package for managing agents
+          </div>
+        </div>
+
+        <div class="terminal-ui">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div style="font-size: 0.7rem; color: var(--t2);">alerts-json-check — bash</div>
+            <button onclick="copyElementText(this.parentElement.nextElementSibling)" style="background: transparent; border: none; color: var(--t2); cursor: pointer; padding: 0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button>
+          </div>
+          <div class="terminal-body">
+<strong style="color: var(--ok)">osman@wazuh-server:~$</strong> ls -lh /var/ossec/logs/alerts/alerts.json
+-rw-r----- 2 wazuh wazuh 492K May 17 13:00 /var/ossec/logs/alerts/alerts.json
+          </div>
         </div>
 
       </div>
     </div>
 
   </div>
+
+  <!-- JSON Modal -->
+  <div id="jsonModal" onclick="if(event.target===this) closeJsonModal()">
+    <div id="jsonModalContent">
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <span class="dot-red" onclick="closeJsonModal()" style="cursor:pointer"></span>
+          <span class="dot-yellow"></span>
+          <span class="dot-green"></span>
+        </div>
+        <div style="font-size: 0.75rem; color: var(--t2); font-family: var(--font-mono);">alerts.json - Tam Ekran Görüntüleyici</div>
+        <button onclick="copyElementText(document.getElementById('modalPre'))" style="background: transparent; border: none; color: var(--t2); cursor: pointer; padding: 0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button>
+      </div>
+      <div style="flex: 1; overflow: auto; padding: 20px;">
+        <pre id="modalPre" class="code-block" style="margin: 0; background: transparent; border: none; font-size: 0.9rem; line-height: 1.6;"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openJsonModal() {
+      var activePre = document.querySelector('.tab-content.active pre');
+      if(activePre) {
+        document.getElementById('modalPre').innerHTML = activePre.innerHTML;
+        document.getElementById('jsonModal').classList.add('show');
+      }
+    }
+    function closeJsonModal() {
+      document.getElementById('jsonModal').classList.remove('show');
+    }
+    function simulateScenario(type) {
+      // Menüden simülasyon sayfasını aç
+      var btn = document.querySelector('button[onclick="show(\'live\', this)"]');
+      if(btn) btn.click();
+      
+      // Senaryoyu seç
+      setTimeout(function() {
+        var select = document.getElementById('scenario');
+        if(select) {
+          select.value = type === 'brute' ? 'ssh_brute_force' : 'privilege_escalation';
+        }
+      }, 50);
+    }
+    function copyElementText(el) {
+      if(!el) return;
+      var text = el.innerText || el.textContent;
+      navigator.clipboard.writeText(text).then(function() {
+        var msg = document.createElement('div');
+        msg.textContent = 'Kopyalandı!';
+        msg.style.position = 'fixed';
+        msg.style.bottom = '20px';
+        msg.style.right = '20px';
+        msg.style.background = 'var(--ok)';
+        msg.style.color = '#fff';
+        msg.style.padding = '10px 20px';
+        msg.style.borderRadius = '4px';
+        msg.style.zIndex = '100000';
+        document.body.appendChild(msg);
+        setTimeout(function(){ msg.remove(); }, 2000);
+      });
+    }
+  </script>
+
+  <!-- LOG DETAIL DRAWER -->
+  <div id="logDetailDrawer" style="position: fixed; top: 0; right: -600px; width: 500px; height: 100vh; background: #080f1c; border-left: 1px solid var(--border); box-shadow: -5px 0 30px rgba(0,0,0,0.8); transition: right 0.3s ease; z-index: 9999; display: flex; flex-direction: column; overflow: hidden;">
+    <div style="padding: 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; background: rgba(14, 165, 233, 0.05);">
+        <h3 style="margin: 0; color: var(--cyan); font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" /><polyline points="10 9 9 9 8 9" /></svg>
+            Olay Detayı
+        </h3>
+        <button onclick="closeLogDrawer()" style="background: transparent; border: none; color: var(--t2); cursor: pointer; padding: 4px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+    <div style="flex: 1; overflow-y: auto; padding: 20px;">
+        <div id="drawerContent"></div>
+    </div>
+  </div>
+
+  <script>
+    function closeLogDrawer() {
+        var drawer = document.getElementById('logDetailDrawer');
+        if(drawer) drawer.style.right = '-600px';
+    }
+  </script>
 
   <script src="static/js/main.js"></script>
 

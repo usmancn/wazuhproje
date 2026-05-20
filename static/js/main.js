@@ -128,7 +128,7 @@
           llm_provider: llmProvider,
           api_key: apiKey
         };
-        var encodedPayload = encodeURIComponent(JSON.stringify(alertPayload));
+        var encodedPayload = encodeURIComponent(JSON.stringify(alertPayload)).replace(/'/g, "%27");
         var countStr = (f.event_count > 1 ? f.event_count : '1') + ' olay';
 
         var card = document.createElement('div');
@@ -677,7 +677,8 @@
       }
 
       var triggerBox = btn.parentElement;
-      var resContent = triggerBox.parentElement.parentElement.querySelector('.ai-res-content'); // Navigate correctly based on the new HTML structure
+      var card = btn.closest('.ai-threat-card');
+      var resContent = card ? card.querySelector('.ai-res-content') : triggerBox.parentElement.parentElement.querySelector('.ai-res-content');
       var providerEl = triggerBox.querySelector('.localSelector');
       var globalProv = document.getElementById('llmProviderSel');
       var provider = providerEl ? providerEl.value : (globalProv ? globalProv.value : 'gemini');
@@ -766,58 +767,37 @@
             try {
               var data = JSON.parse(xhr.responseText);
               document.getElementById('totalLogsCount').textContent = data.total;
-              tbody.innerHTML = '';
               var crit = 0, warn = 0, sudo = 0;
-              data.alerts.reverse().forEach(function (a) {
+              var topThreats = [];
+              
+              window._allArchiveLogs = data.alerts.reverse().map(function(a) {
                 var rule = a.rule || {};
+                if (rule.id === "5402") rule.level = 10;
                 var l = rule.level || 0;
-                var d = rule.description || '-';
-                var r = rule.id || '-';
-                if (r === "5402") l = 10;
                 if (l >= 10) crit++;
                 if (l >= 5 && l < 10) warn++;
-                if (r === "5402") sudo++;
-
-                var t = a.timestamp ? new Date(a.timestamp).toLocaleString('tr-TR') : '-';
-                var dt = a.data || {};
-                var userip = (dt.srcuser || dt.dstuser || dt.username || '') + ' ' + (dt.srcip || '');
-                if (!userip.trim()) userip = '-';
-
-                var cls = l >= 10 ? 'var(--crit)' : l >= 5 ? 'var(--warn)' : 'var(--ok)';
-                var jsonStr = JSON.stringify(a, null, 2);
-
-                var tr = document.createElement('tr');
-                tr.style.cursor = 'pointer';
-                tr.innerHTML = '<td>' + t + '</td>'
-                  + '<td style="color:' + cls + ';font-weight:600">' + l + '</td>'
-                  + '<td style="font-family:var(--font-mono)">' + r + '</td>'
-                  + '<td>' + d + '</td>'
-                  + '<td style="font-family:var(--font-mono);color:var(--blue)">' + userip + ' '
-                  + '<span style="float:right;display:flex;gap:6px;">'
-                  + '<span onclick="event.stopPropagation(); var j=this.closest(\'tr\').nextElementSibling.querySelector(\'.raw-json-panel\'); j.style.display=j.style.display===\'none\'?\'block\':\'none\';" style="font-size:0.7rem;color:var(--t2);cursor:pointer;background:rgba(255,255,255,0.1);padding:4px 8px;border-radius:4px;transition:0.2s;">JSON </span>'
-                  + '<span onclick="event.stopPropagation(); var a=this.closest(\'tr\').nextElementSibling.querySelector(\'.ai-interp-panel\'); a.style.display=a.style.display===\'none\'?\'block\':\'none\';" style="font-size:0.7rem;color:#fff;cursor:pointer;background:linear-gradient(135deg,var(--accent),var(--purple));padding:4px 8px;border-radius:4px;transition:0.2s;">AI </span>'
-                  + '</span></td>';
-
-                var trJson = document.createElement('tr');
-
-                var aiBtnHtml = '<div class="ai-interp-panel" style="display:none; background:rgba(0,0,0,0.4);margin:10px;padding:15px;border-radius:8px;border:1px solid var(--border);">' +
-                  '<div style="background:rgba(255,255,255,0.05); padding:10px; border-radius:8px; margin-bottom:10px; display:flex; gap:10px; align-items:center;">' +
-                  '<select class="modern-select singleLLMSelector" style="padding:6px 12px;font-size:0.75rem;">' +
-                  '<option value="gemini">Gemini 2.5 Flash</option><option value="ollama">Ollama</option>' +
-                  '</select>' +
-                  '<button class="btn-primary" onclick="event.stopPropagation(); analyzeSingleAlert(this, \'' + encodeURIComponent(jsonStr) + '\')" style="width:auto;padding:8px 16px;font-size:0.75rem;"> Seçili Modelle Yorumla</button>' +
-                  '</div>' +
-                  '<div class="ai-single-res" style="display:none;margin-bottom:10px;padding:12px;background:var(--bg-card);border:1px solid var(--border);border-left:2px solid var(--blue);border-radius:4px;font-size:0.8rem;color:var(--t1);line-height:1.6;"></div>' +
-                  '</div>';
-
-                var jsonHtml = '<div class="raw-json-panel" style="display:none; background:rgba(0,0,0,0.4);margin:10px;padding:15px;border-radius:8px;border:1px solid var(--border);">' +
-                  '<div style="color:var(--t2);font-size:0.75rem;font-weight:600;margin-bottom:8px;">Ham Wazuh JSON Verisi:</div><pre style="margin:0;font-size:0.75rem;color:var(--blue);white-space:pre-wrap;word-wrap:break-word;">' + jsonStr + '</pre>' +
-                  '</div>';
-
-                trJson.innerHTML = '<td colspan="5" style="padding:0;border:none">' + aiBtnHtml + jsonHtml + '</td>';
-                tbody.appendChild(tr);
-                tbody.appendChild(trJson);
+                if (rule.id === "5402") sudo++;
+                
+                if (l >= 7 && topThreats.length < 10) {
+                    var sevStr = l >= 10 ? 'KRİTİK' : 'YÜKSEK';
+                    var dt2 = a.data || {};
+                    var userip2 = (dt2.srcuser || dt2.dstuser || dt2.username || '') + (dt2.srcip ? '@'+dt2.srcip : '');
+                    if (!userip2 || userip2 === '@') userip2 = 'Bilinmeyen';
+                    topThreats.push({
+                        id: topThreats.length + 1,
+                        time: a.timestamp ? new Date(a.timestamp).toLocaleTimeString('tr-TR') : '-',
+                        level: sevStr,
+                        rule: rule.id,
+                        desc: rule.description,
+                        src: userip2,
+                        raw: JSON.stringify(a)
+                    });
+                }
+                return a;
               });
+
+              applyArchiveFilters();
+
               // Live update stats with anim
               updateDashValue('dash-crit', crit);
               updateDashValue('dash-warn', warn);
@@ -831,7 +811,8 @@
                   total: data.total || 0,
                   bruteForce: crit,
                   sshFail: warn,
-                  sudo: sudo
+                  sudo: sudo,
+                  recentThreats: topThreats.slice(0, 5)
                 });
               }
             } catch (e) { tbody.innerHTML = '<tr><td colspan="5" style="color:var(--crit)">Veri hatası</td></tr>'; }
@@ -862,16 +843,12 @@
       setTimeout(checkStatus, 500);
       setTimeout(loadAllLogs, 1000);
 
-      // Dynamic background polling loop every 5 seconds
       setInterval(function () {
-        checkStatus();
-        // Only refresh logs silently in background if we are currently looking at Overview or Log Archive
         var overviewPage = document.getElementById('overview');
         var archivePage = document.getElementById('all-logs');
         if ((overviewPage && overviewPage.classList.contains('active')) ||
           (archivePage && archivePage.classList.contains('active'))) {
           // Ssshh, loadAllLogs is silent and updates everything
-          var tbody = document.querySelector('#logsTable tbody');
           var syncXhr = new XMLHttpRequest();
           syncXhr.open('GET', API + '/api/sync', true);
           syncXhr.onload = function () {
@@ -885,55 +862,40 @@
                   if (totalEl) totalEl.textContent = data.total;
 
                   var crit = 0, warn = 0, sudo = 0;
-                  var rowsHtml = '';
-                  data.alerts.slice().reverse().forEach(function (a) {
+                  var topThreats = [];
+
+                  window._allArchiveLogs = data.alerts.reverse().map(function (a) {
                     var rule = a.rule || {};
+                    if (rule.id === "5402") rule.level = 10;
                     var l = rule.level || 0;
-                    var d = rule.description || '-';
-                    var r = rule.id || '-';
-                    if (r === "5402") l = 10;
                     if (l >= 10) crit++;
                     if (l >= 5 && l < 10) warn++;
-                    if (r === "5402") sudo++;
+                    if (rule.id === "5402") sudo++;
 
-                    var t = a.timestamp ? new Date(a.timestamp).toLocaleString('tr-TR') : '-';
-                    var dt = a.data || {};
-                    var userip = (dt.srcuser || dt.dstuser || dt.username || '') + ' ' + (dt.srcip || '');
-                    if (!userip.trim()) userip = '-';
-                    var cls = l >= 10 ? 'var(--crit)' : l >= 5 ? 'var(--warn)' : 'var(--ok)';
-                    var jsonStr = JSON.stringify(a, null, 2);
-
-                    rowsHtml += '<tr style="cursor:pointer;" onclick="var j=this.nextElementSibling.querySelector(\'.raw-json-panel\'); j.style.display=j.style.display===\'none\'?\'block\':\'none\';">'
-                      + '<td>' + t + '</td>'
-                      + '<td style="color:' + cls + ';font-weight:600">' + l + '</td>'
-                      + '<td style="font-family:var(--font-mono)">' + r + '</td>'
-                      + '<td>' + d + '</td>'
-                      + '<td style="font-family:var(--font-mono);color:var(--blue)">' + userip + ' '
-                      + '<span style="float:right;display:flex;gap:6px;">'
-                      + '<span onclick="event.stopPropagation(); var j=this.closest(\'tr\').nextElementSibling.querySelector(\'.raw-json-panel\'); j.style.display=j.style.display===\'none\'?\'block\':\'none\';" style="font-size:0.7rem;color:var(--t2);cursor:pointer;background:rgba(255,255,255,0.1);padding:4px 8px;border-radius:4px;">JSON </span>'
-                      + '<span onclick="event.stopPropagation(); var a=this.closest(\'tr\').nextElementSibling.querySelector(\'.ai-interp-panel\'); a.style.display=a.style.display===\'none\'?\'block\':\'none\';" style="font-size:0.7rem;color:#fff;cursor:pointer;background:linear-gradient(135deg,var(--accent),var(--purple));padding:4px 8px;border-radius:4px;">AI </span>'
-                      + '</span></td></tr>';
-
-                    rowsHtml += '<tr><td colspan="5" style="padding:0;border:none">'
-                      + '<div class="ai-interp-panel" style="display:none; background:rgba(0,0,0,0.4);margin:10px;padding:15px;border-radius:8px;border:1px solid var(--border);">'
-                      + '<div style="background:rgba(255,255,255,0.05); padding:10px; border-radius:8px; margin-bottom:10px; display:flex; gap:10px; align-items:center;">'
-                      + '<select class="modern-select singleLLMSelector" style="padding:6px 12px;font-size:0.75rem;">'
-                      + '<option value="gemini">Gemini 2.5</option><option value="ollama">Ollama</option>'
-                      + '</select>'
-                      + '<button class="btn-primary" onclick="event.stopPropagation(); analyzeSingleAlert(this, \'' + encodeURIComponent(jsonStr) + '\')" style="width:auto;padding:8px 16px;font-size:0.75rem;"> Seçili Modelle Yorumla</button>'
-                      + '</div>'
-                      + '<div class="ai-single-res" style="display:none;margin-bottom:10px;padding:12px;background:var(--bg-card);border:1px solid var(--border);border-left:2px solid var(--blue);border-radius:4px;font-size:0.8rem;color:var(--t1);line-height:1.6;"></div>'
-                      + '</div>'
-                      + '<div class="raw-json-panel" style="display:none; background:rgba(0,0,0,0.4);margin:10px;padding:15px;border-radius:8px;border:1px solid var(--border);">'
-                      + '<div style="color:var(--t2);font-size:0.75rem;font-weight:600;margin-bottom:8px;">Ham Wazuh JSON Verisi:</div><pre style="margin:0;font-size:0.75rem;color:var(--blue);white-space:pre-wrap;word-wrap:break-word;">' + jsonStr + '</pre>'
-                      + '</div>'
-                      + '</td></tr>';
+                    if (l >= 7 && topThreats.length < 10) {
+                      var sevStr = l >= 10 ? 'KRİTİK' : 'YÜKSEK';
+                      var dt2 = a.data || {};
+                      var userip2 = (dt2.srcuser || dt2.dstuser || dt2.username || '') + (dt2.srcip ? '@' + dt2.srcip : '');
+                      if (!userip2 || userip2 === '@') userip2 = 'Bilinmeyen';
+                      topThreats.push({
+                        id: topThreats.length + 1,
+                        time: a.timestamp ? new Date(a.timestamp).toLocaleTimeString('tr-TR') : '-',
+                        level: sevStr,
+                        rule: rule.id,
+                        desc: rule.description,
+                        src: userip2,
+                        raw: JSON.stringify(a)
+                      });
+                    }
+                    return a;
                   });
 
-                  // Only update DOM if table is active and no detail panel is currently open to prevent resetting user state
-                  var openPanel = tbody.querySelector('.raw-json-panel:not([style*="display: none"]), .ai-interp-panel:not([style*="display: none"])');
-                  if (archivePage && archivePage.classList.contains('active') && !openPanel) {
-                    tbody.innerHTML = rowsHtml;
+                  if (archivePage && archivePage.classList.contains('active')) {
+                    var drawer = document.getElementById('logDetailDrawer');
+                    var isDrawerOpen = drawer && drawer.style.right === '0px';
+                    if (!isDrawerOpen) {
+                       applyArchiveFilters();
+                    }
                   }
 
                   updateDashValue('dash-crit', crit);
@@ -941,6 +903,16 @@
                   updateDashValue('dash-sudo', sudo);
                   if (data.total !== undefined) {
                     updateDashValue('dash-total', data.total);
+                  }
+                  
+                  if(window.updateReactDashboard) {
+                    window.updateReactDashboard({
+                      total: data.total || 0,
+                      bruteForce: crit,
+                      sshFail: warn,
+                      sudo: sudo,
+                      recentThreats: topThreats.slice(0, 5)
+                    });
                   }
                 } catch (e) { }
               }
@@ -1022,4 +994,249 @@
                 '</div>';
       });
       mapEl.innerHTML = html;
+    }
+
+    window._filteredArchiveLogs = [];
+    window._archiveCurrentPage = 1;
+    window._archivePerPage = 25;
+
+    function applyArchiveFilters() {
+      if (!window._allArchiveLogs) return;
+      var searchEl = document.getElementById('archiveSearch');
+      var levelEl = document.getElementById('archiveLevelFilter');
+      var ruleEl = document.getElementById('archiveRuleFilter');
+      var timeEl = document.getElementById('archiveTimeFilter');
+      
+      if(!searchEl) return; // Prevent errors if DOM isn't ready
+      
+      var text = (searchEl.value || '').toLowerCase();
+      var level = levelEl.value || 'ALL';
+      var ruleId = (ruleEl.value || '').toLowerCase();
+      var timeLimit = timeEl.value || 'ALL';
+      
+      var now = new Date();
+
+      window._filteredArchiveLogs = window._allArchiveLogs.filter(function(log) {
+         var r = log.rule || {};
+         var dt = log.data || {};
+         var l = r.level || 0;
+         if (r.id === "5402") l = 10;
+         
+         // 1. Text Filter
+         var desc = (r.description || '').toLowerCase();
+         var userip = ((dt.srcuser || dt.dstuser || dt.username || '') + ' ' + (dt.srcip || '')).toLowerCase();
+         if (text && !desc.includes(text) && !userip.includes(text) && !(log.full_log || '').toLowerCase().includes(text)) {
+           return false;
+         }
+         
+         // 2. Level Filter
+         if (level === 'CRITICAL' && l < 10) return false;
+         if (level === 'HIGH' && (l < 7 || l >= 10)) return false;
+         if (level === 'MEDIUM' && l > 6) return false;
+         
+         // 3. Rule Filter
+         if (ruleId && r.id && !r.id.toString().includes(ruleId)) return false;
+         
+         // 4. Time Filter
+         if (timeLimit !== 'ALL' && log.timestamp) {
+            var logTime = new Date(log.timestamp);
+            var diffHours = (now - logTime) / (1000 * 60 * 60);
+            if (timeLimit === '1H' && diffHours > 1) return false;
+            if (timeLimit === '6H' && diffHours > 6) return false;
+            if (timeLimit === '24H' && diffHours > 24) return false;
+         }
+         
+         return true;
+      });
+
+      window._archiveCurrentPage = 1;
+      var statusEl = document.getElementById('archiveFilterStatus');
+      if(statusEl) statusEl.textContent = window._filteredArchiveLogs.length + ' kayıt listeleniyor...';
+      renderArchiveTable();
+    }
+
+    function renderArchiveTable() {
+      var tbody = document.getElementById('logsTableBody');
+      if(!tbody) return;
+      
+      var start = (window._archiveCurrentPage - 1) * window._archivePerPage;
+      var end = start + window._archivePerPage;
+      var pageLogs = window._filteredArchiveLogs.slice(start, end);
+      
+      var totalPages = Math.ceil(window._filteredArchiveLogs.length / window._archivePerPage) || 1;
+      var pageInfo = document.getElementById('archivePageInfo');
+      if(pageInfo) pageInfo.textContent = window._archiveCurrentPage + ' / ' + totalPages;
+      
+      var btnPrev = document.getElementById('btnPrevPage');
+      var btnNext = document.getElementById('btnNextPage');
+      if(btnPrev) btnPrev.disabled = window._archiveCurrentPage <= 1;
+      if(btnNext) btnNext.disabled = window._archiveCurrentPage >= totalPages;
+
+      if (pageLogs.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--t2);padding:40px;">Aranan kriterlere uygun log bulunamadı.</td></tr>';
+        return;
+      }
+      
+      var html = '';
+      pageLogs.forEach(function(a) {
+        var rule = a.rule || {};
+        var l = rule.level || 0;
+        if (rule.id === "5402") l = 10;
+        var d = rule.description || '-';
+        var r = rule.id || '-';
+        var t = a.timestamp ? new Date(a.timestamp).toLocaleString('tr-TR') : '-';
+        
+        var dt = a.data || {};
+        var userip = (dt.srcuser || dt.dstuser || dt.username || '') + (dt.srcip ? '@'+dt.srcip : '');
+        if (!userip || userip === '@') userip = 'Bilinmeyen';
+
+        var bg = l >= 10 ? 'var(--crit)' : l >= 7 ? 'var(--warn)' : 'var(--ok)';
+        var badgeHtml = '<span style="background:' + bg + '22; color:' + bg + '; border:1px solid ' + bg + '44; padding:3px 8px; border-radius:12px; font-size:0.65rem; font-weight:bold;">' + l + '</span>';
+
+        var icon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity:0.6;margin-right:6px;vertical-align:middle"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>';
+        if (d.toLowerCase().includes('sudo') || r === '5402') {
+           icon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2" style="margin-right:6px;vertical-align:middle"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>';
+        } else if (d.toLowerCase().includes('brute') || l >= 10) {
+           icon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--crit)" stroke-width="2" style="margin-right:6px;vertical-align:middle"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>';
+        } else if (d.toLowerCase().includes('auth') || d.toLowerCase().includes('login') || d.toLowerCase().includes('session')) {
+           icon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--warn)" stroke-width="2" style="margin-right:6px;vertical-align:middle"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>';
+        }
+
+        var jsonStr = encodeURIComponent(JSON.stringify(a)).replace(/'/g, "%27");
+
+        html += '<tr style="cursor:pointer; transition:background 0.2s;" onmouseover="this.style.background=\'rgba(255,255,255,0.03)\'" onmouseout="this.style.background=\'transparent\'" onclick="openLogDrawer(\'' + jsonStr + '\')">'
+          + '<td style="color:var(--t2)">' + t + '</td>'
+          + '<td style="font-family:var(--font-mono)">' + badgeHtml + '</td>'
+          + '<td style="font-family:var(--font-mono); color:var(--cyan)">' + r + '</td>'
+          + '<td style="color:#e2e8f0">' + icon + d + '</td>'
+          + '<td style="font-family:var(--font-mono); color:var(--t2)">' + userip + '</td>'
+          + '<td style="text-align:right;">'
+          + '<span style="display:flex;gap:6px;justify-content:flex-end;">'
+          + '<span onclick="event.stopPropagation(); openLogDrawer(\'' + jsonStr + '\')" style="font-size:0.7rem;color:var(--t2);cursor:pointer;background:rgba(255,255,255,0.1);padding:4px 8px;border-radius:4px;transition:0.2s;">JSON </span>'
+          + '<span onclick="event.stopPropagation(); openLogDrawer(\'' + jsonStr + '\')" style="font-size:0.7rem;color:#fff;cursor:pointer;background:linear-gradient(135deg,var(--accent),var(--purple));padding:4px 8px;border-radius:4px;transition:0.2s;">AI </span>'
+          + '</span>'
+          + '</td>'
+          + '</tr>';
+      });
+      tbody.innerHTML = html;
+    }
+
+    function prevArchivePage() {
+      if (window._archiveCurrentPage > 1) {
+        window._archiveCurrentPage--;
+        renderArchiveTable();
+      }
+    }
+
+    function nextArchivePage() {
+      var totalPages = Math.ceil(window._filteredArchiveLogs.length / window._archivePerPage) || 1;
+      if (window._archiveCurrentPage < totalPages) {
+        window._archiveCurrentPage++;
+        renderArchiveTable();
+      }
+    }
+
+    function changeArchivePerPage() {
+      window._archivePerPage = parseInt(document.getElementById('archivePerPage').value) || 25;
+      window._archiveCurrentPage = 1;
+      renderArchiveTable();
+    }
+
+    function openLogDrawer(encodedJson) {
+      var data = JSON.parse(decodeURIComponent(encodedJson));
+      var drawer = document.getElementById('logDetailDrawer');
+      var content = document.getElementById('drawerContent');
+      if(!drawer || !content) return;
+      
+      var rule = data.rule || {};
+      var l = rule.level || 0;
+      if (rule.id === "5402") l = 10;
+      var bg = l >= 10 ? 'var(--crit)' : l >= 7 ? 'var(--warn)' : 'var(--ok)';
+      var badgeHtml = '<span style="background:' + bg + '22; color:' + bg + '; border:1px solid ' + bg + '44; padding:4px 10px; border-radius:12px; font-size:0.7rem; font-weight:bold;">Seviye ' + l + '</span>';
+
+      var t = data.timestamp ? new Date(data.timestamp).toLocaleString('tr-TR') : '-';
+
+      content.innerHTML = 
+        '<div style="margin-bottom:20px;">' +
+          '<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">' +
+            '<div style="font-family:var(--font-mono); color:var(--cyan); font-size:1.2rem; font-weight:bold;">Rule ID: ' + (rule.id || '-') + '</div>' +
+            badgeHtml +
+          '</div>' +
+          '<div style="font-size:0.9rem; color:#e2e8f0; margin-bottom:16px; line-height:1.5;">' + (rule.description || '-') + '</div>' +
+          '<div style="color:var(--t2); font-size:0.8rem; display:flex; flex-direction:column; gap:8px; margin-bottom:20px; font-family:var(--font-mono);">' +
+            '<div><strong style="color:var(--t1)">Zaman:</strong> ' + t + '</div>' +
+            '<div><strong style="color:var(--t1)">Ajan:</strong> ' + (data.agent ? data.agent.name : '-') + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div style="margin-bottom:20px;">' +
+          '<h4 style="color:var(--purple); margin-bottom:10px; font-size:0.85rem; text-transform:uppercase; border-bottom:1px solid var(--border); padding-bottom:6px; display:flex; align-items:center; gap:6px;">' +
+          '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg> AI İle Yorumla</h4>' +
+          '<div class="ai-interp-panel" style="background:rgba(0,0,0,0.2); padding:12px; border-radius:8px; border:1px solid var(--border);">' +
+            '<div style="display:flex; gap:10px; align-items:center; margin-bottom:10px;">' +
+              '<select class="modern-select singleLLMSelector" style="padding:6px 12px;font-size:0.75rem; background:rgba(0,0,0,0.5); border:1px solid var(--border);">' +
+                '<option value="gemini">Gemini 2.5 Flash</option>' +
+                '<option value="ollama">Ollama</option>' +
+              '</select>' +
+              '<button class="btn-primary" onclick="analyzeSingleAlert(this, \'' + encodedJson + '\')" style="padding:8px 16px;font-size:0.75rem; background:linear-gradient(135deg,var(--accent),var(--purple)); border:none; border-radius:4px; color:#fff; cursor:pointer;">Model ile Analiz Et</button>' +
+            '</div>' +
+            '<div class="ai-single-res" style="display:none; padding:12px; background:var(--bg-card); border:1px solid var(--border); border-left:2px solid var(--purple); border-radius:4px; font-size:0.8rem; color:var(--t1); line-height:1.6; max-height:200px; overflow-y:auto;"></div>' +
+          '</div>' +
+        '</div>' +
+        '<div style="margin-bottom:20px;">' +
+          '<h4 style="color:var(--t1); margin-bottom:10px; font-size:0.85rem; text-transform:uppercase; border-bottom:1px solid var(--border); padding-bottom:6px;">Detaylı Olay Logu</h4>' +
+          '<div style="background:var(--bg); border:1px solid var(--border); padding:12px; border-radius:6px; font-family:var(--font-mono); font-size:0.75rem; color:var(--t2); word-break:break-all; max-height:150px; overflow-y:auto;">' + (data.full_log || '-') + '</div>' +
+        '</div>' +
+        '<div style="margin-bottom:20px;">' +
+          '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; border-bottom:1px solid var(--border); padding-bottom:6px;">' +
+             '<h4 style="color:var(--t1); margin:0; font-size:0.85rem; text-transform:uppercase;">Ham JSON Verisi</h4>' +
+             '<button onclick="copyToClipboard(decodeURIComponent(\'' + encodedJson + '\'))" style="background:transparent;border:none;color:var(--blue);cursor:pointer;font-size:0.7rem;padding:4px;">Kopyala</button>' +
+          '</div>' +
+          '<pre style="background:#04080f; border:1px solid var(--border); padding:12px; border-radius:6px; font-family:var(--font-mono); font-size:0.75rem; color:#7fb3d3; overflow-x:auto;">' + JSON.stringify(data, null, 2) + '</pre>' +
+        '</div>';
+
+      drawer.style.right = '0';
+    }
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(function() {
+        // success
+      }).catch(function(err) {
+        console.error('Kopyalama hatası:', err);
+      });
+    }
+
+    function downloadLogsCSV() {
+      if(!window._filteredArchiveLogs || window._filteredArchiveLogs.length === 0) return alert('İndirilecek veri yok.');
+      var header = ['Zaman', 'Seviye', 'Kural ID', 'Açıklama', 'Tam Log'].join(',') + '\n';
+      var csv = header + window._filteredArchiveLogs.map(function(a) {
+        var r = a.rule || {};
+        var l = r.level || 0;
+        if (r.id === "5402") l = 10;
+        var desc = (r.description || '').replace(/"/g, '""');
+        var full = (a.full_log || '').replace(/"/g, '""');
+        var t = a.timestamp || '';
+        return [t, l, r.id || '', '"' + desc + '"', '"' + full + '"'].join(',');
+      }).join('\n');
+
+      var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      var url = URL.createObjectURL(blob);
+      var link = document.createElement("a");
+      link.setAttribute("href", url);
+      link.setAttribute("download", "wazuh_arsiv_export.csv");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    function downloadLogsJSON() {
+      if(!window._filteredArchiveLogs || window._filteredArchiveLogs.length === 0) return alert('İndirilecek veri yok.');
+      var jsonStr = JSON.stringify(window._filteredArchiveLogs, null, 2);
+      var blob = new Blob([jsonStr], { type: 'application/json' });
+      var url = URL.createObjectURL(blob);
+      var link = document.createElement("a");
+      link.setAttribute("href", url);
+      link.setAttribute("download", "wazuh_arsiv_export.json");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     }

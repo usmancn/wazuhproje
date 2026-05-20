@@ -39121,3 +39121,1194 @@ May 20 16:18:05 osmanubuntu sshd[136326]: pam_unix(sshd:session): session opened
 May 20 16:18:05 osmanubuntu systemd-logind[723]: New session 2467 of user osman.
 May 20 16:18:05 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
 May 20 16:18:05 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:18:05 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:18:05 osmanubuntu sshd[136374]: Received disconnect from 192.168.64.1 port 52884:11: disconnected by user
+May 20 16:18:05 osmanubuntu sshd[136374]: Disconnected from user osman 192.168.64.1 port 52884
+May 20 16:18:05 osmanubuntu sshd[136326]: pam_unix(sshd:session): session closed for user osman
+May 20 16:18:05 osmanubuntu systemd-logind[723]: Session 2467 logged out. Waiting for processes to exit.
+May 20 16:18:05 osmanubuntu systemd-logind[723]: Removed session 2467.
+May 20 16:18:05 osmanubuntu sshd[136377]: Accepted publickey for osman from 192.168.64.1 port 52885 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:18:05 osmanubuntu sshd[136377]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:18:05 osmanubuntu systemd-logind[723]: New session 2468 of user osman.
+May 20 16:18:05 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/log/syslog
+May 20 16:18:05 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:18:05 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:18:05 osmanubuntu sshd[136425]: Received disconnect from 192.168.64.1 port 52885:11: disconnected by user
+May 20 16:18:05 osmanubuntu sshd[136425]: Disconnected from user osman 192.168.64.1 port 52885
+May 20 16:18:05 osmanubuntu sshd[136377]: pam_unix(sshd:session): session closed for user osman
+May 20 16:18:05 osmanubuntu systemd-logind[723]: Session 2468 logged out. Waiting for processes to exit.
+May 20 16:18:05 osmanubuntu systemd-logind[723]: Removed session 2468.
+May 20 16:18:06 osmanubuntu sshd[136428]: Accepted publickey for osman from 192.168.64.1 port 52886 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:18:06 osmanubuntu sshd[136428]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:18:06 osmanubuntu systemd-logind[723]: New session 2469 of user osman.
+May 20 16:18:06 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/log/kern.log
+May 20 16:18:06 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:18:06 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:18:06 osmanubuntu sshd[136477]: Received disconnect from 192.168.64.1 port 52886:11: disconnected by user
+May 20 16:18:06 osmanubuntu sshd[136477]: Disconnected from user osman 192.168.64.1 port 52886
+May 20 16:18:06 osmanubuntu sshd[136428]: pam_unix(sshd:session): session closed for user osman
+May 20 16:18:06 osmanubuntu systemd-logind[723]: Session 2469 logged out. Waiting for processes to exit.
+May 20 16:18:06 osmanubuntu systemd-logind[723]: Removed session 2469.
+May 20 16:21:34 osmanubuntu sshd[136493]: Accepted publickey for osman from 192.168.64.1 port 53318 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:21:34 osmanubuntu sshd[136493]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:21:34 osmanubuntu systemd-logind[723]: New session 2470 of user osman.
+May 20 16:21:34 osmanubuntu sshd[136551]: Received disconnect from 192.168.64.1 port 53318:11: disconnected by user
+May 20 16:21:34 osmanubuntu sshd[136551]: Disconnected from user osman 192.168.64.1 port 53318
+May 20 16:21:34 osmanubuntu sshd[136493]: pam_unix(sshd:session): session closed for user osman
+May 20 16:21:34 osmanubuntu systemd-logind[723]: Session 2470 logged out. Waiting for processes to exit.
+May 20 16:21:34 osmanubuntu systemd-logind[723]: Removed session 2470.
+May 20 16:24:38 osmanubuntu sshd[136557]: Accepted publickey for osman from 192.168.64.1 port 53572 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:24:38 osmanubuntu sshd[136557]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:24:38 osmanubuntu systemd-logind[723]: New session 2471 of user osman.
+May 20 16:24:39 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:24:39 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:24:39 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:24:39 osmanubuntu sshd[136615]: Received disconnect from 192.168.64.1 port 53572:11: disconnected by user
+May 20 16:24:39 osmanubuntu sshd[136615]: Disconnected from user osman 192.168.64.1 port 53572
+May 20 16:24:39 osmanubuntu sshd[136557]: pam_unix(sshd:session): session closed for user osman
+May 20 16:24:39 osmanubuntu systemd-logind[723]: Session 2471 logged out. Waiting for processes to exit.
+May 20 16:24:39 osmanubuntu systemd-logind[723]: Removed session 2471.
+May 20 16:24:39 osmanubuntu sshd[136621]: Accepted publickey for osman from 192.168.64.1 port 53581 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:24:39 osmanubuntu sshd[136621]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:24:39 osmanubuntu systemd-logind[723]: New session 2472 of user osman.
+May 20 16:24:39 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:24:39 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:24:39 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:24:39 osmanubuntu sshd[136669]: Received disconnect from 192.168.64.1 port 53581:11: disconnected by user
+May 20 16:24:39 osmanubuntu sshd[136669]: Disconnected from user osman 192.168.64.1 port 53581
+May 20 16:24:39 osmanubuntu sshd[136621]: pam_unix(sshd:session): session closed for user osman
+May 20 16:24:39 osmanubuntu systemd-logind[723]: Session 2472 logged out. Waiting for processes to exit.
+May 20 16:24:39 osmanubuntu systemd-logind[723]: Removed session 2472.
+May 20 16:24:44 osmanubuntu sshd[136674]: Accepted publickey for osman from 192.168.64.1 port 53590 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:24:44 osmanubuntu sshd[136674]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:24:44 osmanubuntu systemd-logind[723]: New session 2473 of user osman.
+May 20 16:24:44 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:24:44 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:24:44 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:24:44 osmanubuntu sshd[136722]: Received disconnect from 192.168.64.1 port 53590:11: disconnected by user
+May 20 16:24:44 osmanubuntu sshd[136722]: Disconnected from user osman 192.168.64.1 port 53590
+May 20 16:24:44 osmanubuntu sshd[136674]: pam_unix(sshd:session): session closed for user osman
+May 20 16:24:44 osmanubuntu systemd-logind[723]: Session 2473 logged out. Waiting for processes to exit.
+May 20 16:24:44 osmanubuntu systemd-logind[723]: Removed session 2473.
+May 20 16:24:48 osmanubuntu sshd[136726]: Accepted publickey for osman from 192.168.64.1 port 53603 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:24:49 osmanubuntu sshd[136726]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:24:49 osmanubuntu systemd-logind[723]: New session 2474 of user osman.
+May 20 16:24:49 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:24:49 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:24:49 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:24:49 osmanubuntu sshd[136774]: Received disconnect from 192.168.64.1 port 53603:11: disconnected by user
+May 20 16:24:49 osmanubuntu sshd[136774]: Disconnected from user osman 192.168.64.1 port 53603
+May 20 16:24:49 osmanubuntu sshd[136726]: pam_unix(sshd:session): session closed for user osman
+May 20 16:24:49 osmanubuntu systemd-logind[723]: Session 2474 logged out. Waiting for processes to exit.
+May 20 16:24:49 osmanubuntu systemd-logind[723]: Removed session 2474.
+May 20 16:24:54 osmanubuntu sshd[136778]: Accepted publickey for osman from 192.168.64.1 port 53617 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:24:54 osmanubuntu sshd[136778]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:24:54 osmanubuntu systemd-logind[723]: New session 2475 of user osman.
+May 20 16:24:54 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:24:54 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:24:54 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:24:54 osmanubuntu sshd[136826]: Received disconnect from 192.168.64.1 port 53617:11: disconnected by user
+May 20 16:24:54 osmanubuntu sshd[136826]: Disconnected from user osman 192.168.64.1 port 53617
+May 20 16:24:54 osmanubuntu sshd[136778]: pam_unix(sshd:session): session closed for user osman
+May 20 16:24:54 osmanubuntu systemd-logind[723]: Session 2475 logged out. Waiting for processes to exit.
+May 20 16:24:54 osmanubuntu systemd-logind[723]: Removed session 2475.
+May 20 16:24:58 osmanubuntu sshd[136830]: Accepted publickey for osman from 192.168.64.1 port 53631 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:24:58 osmanubuntu sshd[136830]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:24:59 osmanubuntu systemd-logind[723]: New session 2476 of user osman.
+May 20 16:24:59 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:24:59 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:24:59 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:24:59 osmanubuntu sshd[136878]: Received disconnect from 192.168.64.1 port 53631:11: disconnected by user
+May 20 16:24:59 osmanubuntu sshd[136878]: Disconnected from user osman 192.168.64.1 port 53631
+May 20 16:24:59 osmanubuntu sshd[136830]: pam_unix(sshd:session): session closed for user osman
+May 20 16:24:59 osmanubuntu systemd-logind[723]: Session 2476 logged out. Waiting for processes to exit.
+May 20 16:24:59 osmanubuntu systemd-logind[723]: Removed session 2476.
+May 20 16:26:13 osmanubuntu sshd[136883]: Accepted publickey for osman from 192.168.64.1 port 53797 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:26:13 osmanubuntu sshd[136883]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:26:13 osmanubuntu systemd-logind[723]: New session 2477 of user osman.
+May 20 16:26:13 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:26:13 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:26:13 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:26:13 osmanubuntu sshd[136941]: Received disconnect from 192.168.64.1 port 53797:11: disconnected by user
+May 20 16:26:13 osmanubuntu sshd[136941]: Disconnected from user osman 192.168.64.1 port 53797
+May 20 16:26:13 osmanubuntu sshd[136883]: pam_unix(sshd:session): session closed for user osman
+May 20 16:26:13 osmanubuntu systemd-logind[723]: Session 2477 logged out. Waiting for processes to exit.
+May 20 16:26:13 osmanubuntu systemd-logind[723]: Removed session 2477.
+May 20 16:26:13 osmanubuntu sshd[136945]: Accepted publickey for osman from 192.168.64.1 port 53806 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:26:13 osmanubuntu sshd[136945]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:26:13 osmanubuntu systemd-logind[723]: New session 2478 of user osman.
+May 20 16:26:14 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:26:14 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:26:14 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:26:14 osmanubuntu sshd[136993]: Received disconnect from 192.168.64.1 port 53806:11: disconnected by user
+May 20 16:26:14 osmanubuntu sshd[136993]: Disconnected from user osman 192.168.64.1 port 53806
+May 20 16:26:14 osmanubuntu sshd[136945]: pam_unix(sshd:session): session closed for user osman
+May 20 16:26:14 osmanubuntu systemd-logind[723]: Session 2478 logged out. Waiting for processes to exit.
+May 20 16:26:14 osmanubuntu systemd-logind[723]: Removed session 2478.
+May 20 16:26:19 osmanubuntu sshd[136998]: Accepted publickey for osman from 192.168.64.1 port 53820 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:26:19 osmanubuntu sshd[136998]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:26:19 osmanubuntu systemd-logind[723]: New session 2479 of user osman.
+May 20 16:26:19 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:26:19 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:26:19 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:26:19 osmanubuntu sshd[137046]: Received disconnect from 192.168.64.1 port 53820:11: disconnected by user
+May 20 16:26:19 osmanubuntu sshd[137046]: Disconnected from user osman 192.168.64.1 port 53820
+May 20 16:26:19 osmanubuntu sshd[136998]: pam_unix(sshd:session): session closed for user osman
+May 20 16:26:19 osmanubuntu systemd-logind[723]: Session 2479 logged out. Waiting for processes to exit.
+May 20 16:26:19 osmanubuntu systemd-logind[723]: Removed session 2479.
+May 20 16:26:23 osmanubuntu sshd[137050]: Accepted publickey for osman from 192.168.64.1 port 53833 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:26:23 osmanubuntu sshd[137050]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:26:24 osmanubuntu systemd-logind[723]: New session 2480 of user osman.
+May 20 16:26:24 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:26:24 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:26:24 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:26:24 osmanubuntu sshd[137098]: Received disconnect from 192.168.64.1 port 53833:11: disconnected by user
+May 20 16:26:24 osmanubuntu sshd[137098]: Disconnected from user osman 192.168.64.1 port 53833
+May 20 16:26:24 osmanubuntu sshd[137050]: pam_unix(sshd:session): session closed for user osman
+May 20 16:26:24 osmanubuntu systemd-logind[723]: Session 2480 logged out. Waiting for processes to exit.
+May 20 16:26:24 osmanubuntu systemd-logind[723]: Removed session 2480.
+May 20 16:26:29 osmanubuntu sshd[137102]: Accepted publickey for osman from 192.168.64.1 port 53847 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:26:29 osmanubuntu sshd[137102]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:26:29 osmanubuntu systemd-logind[723]: New session 2481 of user osman.
+May 20 16:26:29 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:26:29 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:26:29 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:26:29 osmanubuntu sshd[137150]: Received disconnect from 192.168.64.1 port 53847:11: disconnected by user
+May 20 16:26:29 osmanubuntu sshd[137150]: Disconnected from user osman 192.168.64.1 port 53847
+May 20 16:26:29 osmanubuntu sshd[137102]: pam_unix(sshd:session): session closed for user osman
+May 20 16:26:29 osmanubuntu systemd-logind[723]: Session 2481 logged out. Waiting for processes to exit.
+May 20 16:26:29 osmanubuntu systemd-logind[723]: Removed session 2481.
+May 20 16:26:38 osmanubuntu sshd[137157]: Accepted publickey for osman from 192.168.64.1 port 53865 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:26:38 osmanubuntu sshd[137156]: Accepted publickey for osman from 192.168.64.1 port 53864 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:26:38 osmanubuntu sshd[137157]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:26:38 osmanubuntu sshd[137156]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:26:38 osmanubuntu systemd-logind[723]: New session 2482 of user osman.
+May 20 16:26:38 osmanubuntu systemd-logind[723]: New session 2483 of user osman.
+May 20 16:26:38 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:26:38 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:26:38 osmanubuntu sshd[137253]: Received disconnect from 192.168.64.1 port 53864:11: disconnected by user
+May 20 16:26:38 osmanubuntu sshd[137253]: Disconnected from user osman 192.168.64.1 port 53864
+May 20 16:26:38 osmanubuntu sshd[137156]: pam_unix(sshd:session): session closed for user osman
+May 20 16:26:38 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:26:38 osmanubuntu systemd-logind[723]: Session 2483 logged out. Waiting for processes to exit.
+May 20 16:26:38 osmanubuntu sshd[137244]: Received disconnect from 192.168.64.1 port 53865:11: disconnected by user
+May 20 16:26:38 osmanubuntu sshd[137244]: Disconnected from user osman 192.168.64.1 port 53865
+May 20 16:26:38 osmanubuntu systemd-logind[723]: Removed session 2483.
+May 20 16:26:38 osmanubuntu sshd[137157]: pam_unix(sshd:session): session closed for user osman
+May 20 16:26:38 osmanubuntu systemd-logind[723]: Session 2482 logged out. Waiting for processes to exit.
+May 20 16:26:38 osmanubuntu systemd-logind[723]: Removed session 2482.
+May 20 16:26:44 osmanubuntu sshd[137261]: Accepted publickey for osman from 192.168.64.1 port 53874 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:26:44 osmanubuntu sshd[137261]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:26:44 osmanubuntu systemd-logind[723]: New session 2484 of user osman.
+May 20 16:26:44 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:26:44 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:26:44 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:26:44 osmanubuntu sshd[137309]: Received disconnect from 192.168.64.1 port 53874:11: disconnected by user
+May 20 16:26:44 osmanubuntu sshd[137309]: Disconnected from user osman 192.168.64.1 port 53874
+May 20 16:26:44 osmanubuntu sshd[137261]: pam_unix(sshd:session): session closed for user osman
+May 20 16:26:44 osmanubuntu systemd-logind[723]: Session 2484 logged out. Waiting for processes to exit.
+May 20 16:26:44 osmanubuntu systemd-logind[723]: Removed session 2484.
+May 20 16:26:50 osmanubuntu sshd[137313]: Accepted publickey for osman from 192.168.64.1 port 53883 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:26:50 osmanubuntu sshd[137313]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:26:50 osmanubuntu systemd-logind[723]: New session 2485 of user osman.
+May 20 16:26:50 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:26:50 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:26:50 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:26:50 osmanubuntu sshd[137361]: Received disconnect from 192.168.64.1 port 53883:11: disconnected by user
+May 20 16:26:50 osmanubuntu sshd[137361]: Disconnected from user osman 192.168.64.1 port 53883
+May 20 16:26:50 osmanubuntu sshd[137313]: pam_unix(sshd:session): session closed for user osman
+May 20 16:26:50 osmanubuntu systemd-logind[723]: Session 2485 logged out. Waiting for processes to exit.
+May 20 16:26:50 osmanubuntu systemd-logind[723]: Removed session 2485.
+May 20 16:26:56 osmanubuntu sshd[137365]: Accepted publickey for osman from 192.168.64.1 port 53892 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:26:56 osmanubuntu sshd[137365]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:26:56 osmanubuntu systemd-logind[723]: New session 2486 of user osman.
+May 20 16:26:56 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:26:56 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:26:56 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:26:56 osmanubuntu sshd[137413]: Received disconnect from 192.168.64.1 port 53892:11: disconnected by user
+May 20 16:26:56 osmanubuntu sshd[137413]: Disconnected from user osman 192.168.64.1 port 53892
+May 20 16:26:56 osmanubuntu sshd[137365]: pam_unix(sshd:session): session closed for user osman
+May 20 16:26:56 osmanubuntu systemd-logind[723]: Session 2486 logged out. Waiting for processes to exit.
+May 20 16:26:56 osmanubuntu systemd-logind[723]: Removed session 2486.
+May 20 16:27:02 osmanubuntu sshd[137417]: Accepted publickey for osman from 192.168.64.1 port 53902 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:27:02 osmanubuntu sshd[137417]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:27:02 osmanubuntu systemd-logind[723]: New session 2487 of user osman.
+May 20 16:27:02 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:27:02 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:27:02 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:27:02 osmanubuntu sshd[137465]: Received disconnect from 192.168.64.1 port 53902:11: disconnected by user
+May 20 16:27:02 osmanubuntu sshd[137465]: Disconnected from user osman 192.168.64.1 port 53902
+May 20 16:27:02 osmanubuntu sshd[137417]: pam_unix(sshd:session): session closed for user osman
+May 20 16:27:02 osmanubuntu systemd-logind[723]: Session 2487 logged out. Waiting for processes to exit.
+May 20 16:27:02 osmanubuntu systemd-logind[723]: Removed session 2487.
+May 20 16:27:07 osmanubuntu sshd[137469]: Accepted publickey for osman from 192.168.64.1 port 53915 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:27:07 osmanubuntu sshd[137469]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:27:07 osmanubuntu systemd-logind[723]: New session 2488 of user osman.
+May 20 16:27:07 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:27:07 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:27:07 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:27:07 osmanubuntu sshd[137517]: Received disconnect from 192.168.64.1 port 53915:11: disconnected by user
+May 20 16:27:07 osmanubuntu sshd[137517]: Disconnected from user osman 192.168.64.1 port 53915
+May 20 16:27:07 osmanubuntu sshd[137469]: pam_unix(sshd:session): session closed for user osman
+May 20 16:27:07 osmanubuntu systemd-logind[723]: Session 2488 logged out. Waiting for processes to exit.
+May 20 16:27:07 osmanubuntu systemd-logind[723]: Removed session 2488.
+May 20 16:27:12 osmanubuntu sshd[137521]: Accepted publickey for osman from 192.168.64.1 port 53927 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:27:12 osmanubuntu sshd[137521]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:27:12 osmanubuntu systemd-logind[723]: New session 2489 of user osman.
+May 20 16:27:12 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:27:12 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:27:12 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:27:12 osmanubuntu sshd[137569]: Received disconnect from 192.168.64.1 port 53927:11: disconnected by user
+May 20 16:27:12 osmanubuntu sshd[137569]: Disconnected from user osman 192.168.64.1 port 53927
+May 20 16:27:12 osmanubuntu sshd[137521]: pam_unix(sshd:session): session closed for user osman
+May 20 16:27:12 osmanubuntu systemd-logind[723]: Session 2489 logged out. Waiting for processes to exit.
+May 20 16:27:12 osmanubuntu systemd-logind[723]: Removed session 2489.
+May 20 16:27:18 osmanubuntu sshd[137583]: Accepted publickey for osman from 192.168.64.1 port 53940 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:27:18 osmanubuntu sshd[137583]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:27:18 osmanubuntu systemd-logind[723]: New session 2490 of user osman.
+May 20 16:27:18 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:27:18 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:27:18 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:27:18 osmanubuntu sshd[137641]: Received disconnect from 192.168.64.1 port 53940:11: disconnected by user
+May 20 16:27:18 osmanubuntu sshd[137641]: Disconnected from user osman 192.168.64.1 port 53940
+May 20 16:27:18 osmanubuntu sshd[137583]: pam_unix(sshd:session): session closed for user osman
+May 20 16:27:18 osmanubuntu systemd-logind[723]: Session 2490 logged out. Waiting for processes to exit.
+May 20 16:27:18 osmanubuntu systemd-logind[723]: Removed session 2490.
+May 20 16:27:24 osmanubuntu sshd[137646]: Accepted publickey for osman from 192.168.64.1 port 53958 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:27:24 osmanubuntu sshd[137646]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:27:24 osmanubuntu systemd-logind[723]: New session 2491 of user osman.
+May 20 16:27:24 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:27:24 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:27:24 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:27:24 osmanubuntu sshd[137694]: Received disconnect from 192.168.64.1 port 53958:11: disconnected by user
+May 20 16:27:24 osmanubuntu sshd[137694]: Disconnected from user osman 192.168.64.1 port 53958
+May 20 16:27:24 osmanubuntu sshd[137646]: pam_unix(sshd:session): session closed for user osman
+May 20 16:27:24 osmanubuntu systemd-logind[723]: Session 2491 logged out. Waiting for processes to exit.
+May 20 16:27:24 osmanubuntu systemd-logind[723]: Removed session 2491.
+May 20 16:27:30 osmanubuntu sshd[137698]: Accepted publickey for osman from 192.168.64.1 port 53969 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:27:30 osmanubuntu sshd[137698]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:27:30 osmanubuntu systemd-logind[723]: New session 2492 of user osman.
+May 20 16:27:30 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:27:30 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:27:30 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:27:30 osmanubuntu sshd[137746]: Received disconnect from 192.168.64.1 port 53969:11: disconnected by user
+May 20 16:27:30 osmanubuntu sshd[137746]: Disconnected from user osman 192.168.64.1 port 53969
+May 20 16:27:30 osmanubuntu sshd[137698]: pam_unix(sshd:session): session closed for user osman
+May 20 16:27:30 osmanubuntu systemd-logind[723]: Session 2492 logged out. Waiting for processes to exit.
+May 20 16:27:30 osmanubuntu systemd-logind[723]: Removed session 2492.
+May 20 16:27:37 osmanubuntu sshd[137750]: Invalid user hacker from 192.168.64.1 port 53994
+May 20 16:27:37 osmanubuntu sshd[137750]: Connection closed by invalid user hacker 192.168.64.1 port 53994 [preauth]
+May 20 16:27:38 osmanubuntu sshd[137752]: Invalid user hacker from 192.168.64.1 port 53995
+May 20 16:27:38 osmanubuntu sshd[137752]: Connection closed by invalid user hacker 192.168.64.1 port 53995 [preauth]
+May 20 16:27:38 osmanubuntu sshd[137754]: Invalid user hacker from 192.168.64.1 port 53996
+May 20 16:27:38 osmanubuntu sshd[137754]: Connection closed by invalid user hacker 192.168.64.1 port 53996 [preauth]
+May 20 16:27:39 osmanubuntu sshd[137756]: Invalid user hacker from 192.168.64.1 port 54001
+May 20 16:27:39 osmanubuntu sshd[137756]: Connection closed by invalid user hacker 192.168.64.1 port 54001 [preauth]
+May 20 16:27:40 osmanubuntu sshd[137758]: Invalid user hacker from 192.168.64.1 port 54002
+May 20 16:27:40 osmanubuntu sshd[137758]: Connection closed by invalid user hacker 192.168.64.1 port 54002 [preauth]
+May 20 16:27:40 osmanubuntu sshd[137760]: Invalid user hacker from 192.168.64.1 port 54003
+May 20 16:27:40 osmanubuntu sshd[137760]: Connection closed by invalid user hacker 192.168.64.1 port 54003 [preauth]
+May 20 16:27:41 osmanubuntu sshd[137762]: Invalid user hacker from 192.168.64.1 port 54006
+May 20 16:27:41 osmanubuntu sshd[137762]: Connection closed by invalid user hacker 192.168.64.1 port 54006 [preauth]
+May 20 16:27:42 osmanubuntu sshd[137764]: Invalid user hacker from 192.168.64.1 port 54007
+May 20 16:27:42 osmanubuntu sshd[137764]: Connection closed by invalid user hacker 192.168.64.1 port 54007 [preauth]
+May 20 16:27:42 osmanubuntu sshd[137766]: Accepted publickey for osman from 192.168.64.1 port 54008 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:27:42 osmanubuntu sshd[137766]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:27:42 osmanubuntu systemd-logind[723]: New session 2493 of user osman.
+May 20 16:27:42 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/bash -c 'echo \'May 20 19:27:37 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2\' >> /var/log/auth.log; echo \'May 20 19:27:38 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2\' >> /var/log/auth.log; echo \'May 20 19:27:38 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2\' >> /var/log/auth.log; echo \'May 20 19:27:39 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2\' >> /var/log/auth.log; echo \'May 20 19:27:40 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2\' >> /var/log/auth.log; echo \'May 20 19:27:40 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2\' >> /var/log/auth.log; echo \'May 20 19:27:41 osmanubuntu sshd[9999]: Failed
+May 20 16:27:42 osmanubuntu sudo:    osman : (command continued) password for invalid user hacker from 10.0.0.140 port 22 ssh2\' >> /var/log/auth.log; echo \'May 20 19:27:42 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2\' >> /var/log/auth.log; '
+May 20 16:27:42 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 19:27:37 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2
+May 20 19:27:38 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2
+May 20 19:27:38 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2
+May 20 19:27:39 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2
+May 20 19:27:40 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2
+May 20 19:27:40 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2
+May 20 19:27:41 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2
+May 20 19:27:42 osmanubuntu sshd[9999]: Failed password for invalid user hacker from 10.0.0.140 port 22 ssh2
+May 20 16:27:42 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:27:42 osmanubuntu sshd[137814]: Received disconnect from 192.168.64.1 port 54008:11: disconnected by user
+May 20 16:27:42 osmanubuntu sshd[137814]: Disconnected from user osman 192.168.64.1 port 54008
+May 20 16:27:42 osmanubuntu sshd[137766]: pam_unix(sshd:session): session closed for user osman
+May 20 16:27:42 osmanubuntu systemd-logind[723]: Session 2493 logged out. Waiting for processes to exit.
+May 20 16:27:42 osmanubuntu systemd-logind[723]: Removed session 2493.
+May 20 16:30:01 osmanubuntu CRON[137817]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+May 20 16:30:01 osmanubuntu CRON[137817]: pam_unix(cron:session): session closed for user root
+May 20 16:32:34 osmanubuntu sshd[137822]: Accepted publickey for osman from 192.168.64.1 port 54498 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:32:34 osmanubuntu sshd[137822]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:32:34 osmanubuntu systemd-logind[723]: New session 2495 of user osman.
+May 20 16:32:34 osmanubuntu sshd[137880]: Received disconnect from 192.168.64.1 port 54498:11: disconnected by user
+May 20 16:32:34 osmanubuntu sshd[137880]: Disconnected from user osman 192.168.64.1 port 54498
+May 20 16:32:34 osmanubuntu sshd[137822]: pam_unix(sshd:session): session closed for user osman
+May 20 16:32:34 osmanubuntu systemd-logind[723]: Session 2495 logged out. Waiting for processes to exit.
+May 20 16:32:34 osmanubuntu systemd-logind[723]: Removed session 2495.
+May 20 16:35:14 osmanubuntu sshd[137898]: Accepted publickey for osman from 192.168.64.1 port 54744 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:35:14 osmanubuntu sshd[137898]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:35:14 osmanubuntu systemd-logind[723]: New session 2496 of user osman.
+May 20 16:35:14 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:35:14 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:35:14 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:35:14 osmanubuntu sshd[137956]: Received disconnect from 192.168.64.1 port 54744:11: disconnected by user
+May 20 16:35:14 osmanubuntu sshd[137956]: Disconnected from user osman 192.168.64.1 port 54744
+May 20 16:35:14 osmanubuntu sshd[137898]: pam_unix(sshd:session): session closed for user osman
+May 20 16:35:14 osmanubuntu systemd-logind[723]: Session 2496 logged out. Waiting for processes to exit.
+May 20 16:35:14 osmanubuntu systemd-logind[723]: Removed session 2496.
+May 20 16:35:19 osmanubuntu sshd[137962]: Accepted publickey for osman from 192.168.64.1 port 54759 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:35:19 osmanubuntu sshd[137962]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:35:19 osmanubuntu systemd-logind[723]: New session 2497 of user osman.
+May 20 16:35:19 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:35:19 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:35:19 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:35:19 osmanubuntu sshd[138010]: Received disconnect from 192.168.64.1 port 54759:11: disconnected by user
+May 20 16:35:19 osmanubuntu sshd[138010]: Disconnected from user osman 192.168.64.1 port 54759
+May 20 16:35:19 osmanubuntu sshd[137962]: pam_unix(sshd:session): session closed for user osman
+May 20 16:35:19 osmanubuntu systemd-logind[723]: Session 2497 logged out. Waiting for processes to exit.
+May 20 16:35:19 osmanubuntu systemd-logind[723]: Removed session 2497.
+May 20 16:35:23 osmanubuntu sshd[138014]: Accepted publickey for osman from 192.168.64.1 port 54771 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:35:23 osmanubuntu sshd[138014]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:35:23 osmanubuntu systemd-logind[723]: New session 2498 of user osman.
+May 20 16:35:24 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:35:24 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:35:24 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:35:24 osmanubuntu sshd[138062]: Received disconnect from 192.168.64.1 port 54771:11: disconnected by user
+May 20 16:35:24 osmanubuntu sshd[138062]: Disconnected from user osman 192.168.64.1 port 54771
+May 20 16:35:24 osmanubuntu sshd[138014]: pam_unix(sshd:session): session closed for user osman
+May 20 16:35:24 osmanubuntu systemd-logind[723]: Session 2498 logged out. Waiting for processes to exit.
+May 20 16:35:24 osmanubuntu systemd-logind[723]: Removed session 2498.
+May 20 16:35:29 osmanubuntu sshd[138067]: Accepted publickey for osman from 192.168.64.1 port 54784 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:35:29 osmanubuntu sshd[138067]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:35:29 osmanubuntu systemd-logind[723]: New session 2499 of user osman.
+May 20 16:35:29 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:35:29 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:35:29 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:35:29 osmanubuntu sshd[138115]: Received disconnect from 192.168.64.1 port 54784:11: disconnected by user
+May 20 16:35:29 osmanubuntu sshd[138115]: Disconnected from user osman 192.168.64.1 port 54784
+May 20 16:35:29 osmanubuntu sshd[138067]: pam_unix(sshd:session): session closed for user osman
+May 20 16:35:29 osmanubuntu systemd-logind[723]: Session 2499 logged out. Waiting for processes to exit.
+May 20 16:35:29 osmanubuntu systemd-logind[723]: Removed session 2499.
+May 20 16:35:34 osmanubuntu sshd[138119]: Accepted publickey for osman from 192.168.64.1 port 54803 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:35:34 osmanubuntu sshd[138119]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:35:34 osmanubuntu systemd-logind[723]: New session 2500 of user osman.
+May 20 16:35:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:35:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:35:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:35:34 osmanubuntu sshd[138167]: Received disconnect from 192.168.64.1 port 54803:11: disconnected by user
+May 20 16:35:34 osmanubuntu sshd[138167]: Disconnected from user osman 192.168.64.1 port 54803
+May 20 16:35:34 osmanubuntu sshd[138119]: pam_unix(sshd:session): session closed for user osman
+May 20 16:35:34 osmanubuntu systemd-logind[723]: Session 2500 logged out. Waiting for processes to exit.
+May 20 16:35:34 osmanubuntu systemd-logind[723]: Removed session 2500.
+May 20 16:35:39 osmanubuntu sshd[138172]: Accepted publickey for osman from 192.168.64.1 port 54820 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:35:39 osmanubuntu sshd[138172]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:35:39 osmanubuntu systemd-logind[723]: New session 2501 of user osman.
+May 20 16:35:39 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:35:39 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:35:39 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:35:39 osmanubuntu sshd[138220]: Received disconnect from 192.168.64.1 port 54820:11: disconnected by user
+May 20 16:35:39 osmanubuntu sshd[138220]: Disconnected from user osman 192.168.64.1 port 54820
+May 20 16:35:39 osmanubuntu sshd[138172]: pam_unix(sshd:session): session closed for user osman
+May 20 16:35:39 osmanubuntu systemd-logind[723]: Session 2501 logged out. Waiting for processes to exit.
+May 20 16:35:39 osmanubuntu systemd-logind[723]: Removed session 2501.
+May 20 16:35:43 osmanubuntu sshd[138224]: Accepted publickey for osman from 192.168.64.1 port 54831 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:35:43 osmanubuntu sshd[138224]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:35:43 osmanubuntu systemd-logind[723]: New session 2502 of user osman.
+May 20 16:35:44 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:35:44 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:35:44 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:35:44 osmanubuntu sshd[138272]: Received disconnect from 192.168.64.1 port 54831:11: disconnected by user
+May 20 16:35:44 osmanubuntu sshd[138272]: Disconnected from user osman 192.168.64.1 port 54831
+May 20 16:35:44 osmanubuntu sshd[138224]: pam_unix(sshd:session): session closed for user osman
+May 20 16:35:44 osmanubuntu systemd-logind[723]: Session 2502 logged out. Waiting for processes to exit.
+May 20 16:35:44 osmanubuntu systemd-logind[723]: Removed session 2502.
+May 20 16:35:49 osmanubuntu sshd[138276]: Accepted publickey for osman from 192.168.64.1 port 54846 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:35:49 osmanubuntu sshd[138276]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:35:49 osmanubuntu systemd-logind[723]: New session 2503 of user osman.
+May 20 16:35:49 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:35:49 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:35:49 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:35:49 osmanubuntu sshd[138324]: Received disconnect from 192.168.64.1 port 54846:11: disconnected by user
+May 20 16:35:49 osmanubuntu sshd[138324]: Disconnected from user osman 192.168.64.1 port 54846
+May 20 16:35:49 osmanubuntu sshd[138276]: pam_unix(sshd:session): session closed for user osman
+May 20 16:35:49 osmanubuntu systemd-logind[723]: Session 2503 logged out. Waiting for processes to exit.
+May 20 16:35:49 osmanubuntu systemd-logind[723]: Removed session 2503.
+May 20 16:35:55 osmanubuntu sshd[138328]: Accepted publickey for osman from 192.168.64.1 port 54857 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:35:55 osmanubuntu sshd[138328]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:35:55 osmanubuntu systemd-logind[723]: New session 2504 of user osman.
+May 20 16:35:55 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:35:55 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:35:55 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:35:55 osmanubuntu sshd[138376]: Received disconnect from 192.168.64.1 port 54857:11: disconnected by user
+May 20 16:35:55 osmanubuntu sshd[138376]: Disconnected from user osman 192.168.64.1 port 54857
+May 20 16:35:55 osmanubuntu sshd[138328]: pam_unix(sshd:session): session closed for user osman
+May 20 16:35:55 osmanubuntu systemd-logind[723]: Session 2504 logged out. Waiting for processes to exit.
+May 20 16:35:55 osmanubuntu systemd-logind[723]: Removed session 2504.
+May 20 16:36:00 osmanubuntu sshd[138380]: Accepted publickey for osman from 192.168.64.1 port 54867 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:36:00 osmanubuntu sshd[138380]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:36:00 osmanubuntu systemd-logind[723]: New session 2505 of user osman.
+May 20 16:36:00 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:36:00 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:36:00 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:36:00 osmanubuntu sshd[138428]: Received disconnect from 192.168.64.1 port 54867:11: disconnected by user
+May 20 16:36:00 osmanubuntu sshd[138428]: Disconnected from user osman 192.168.64.1 port 54867
+May 20 16:36:00 osmanubuntu sshd[138380]: pam_unix(sshd:session): session closed for user osman
+May 20 16:36:00 osmanubuntu systemd-logind[723]: Session 2505 logged out. Waiting for processes to exit.
+May 20 16:36:00 osmanubuntu systemd-logind[723]: Removed session 2505.
+May 20 16:36:05 osmanubuntu sshd[138432]: Accepted publickey for osman from 192.168.64.1 port 54878 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:36:05 osmanubuntu sshd[138432]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:36:05 osmanubuntu systemd-logind[723]: New session 2506 of user osman.
+May 20 16:36:05 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:36:05 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:36:05 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:36:05 osmanubuntu sshd[138480]: Received disconnect from 192.168.64.1 port 54878:11: disconnected by user
+May 20 16:36:05 osmanubuntu sshd[138480]: Disconnected from user osman 192.168.64.1 port 54878
+May 20 16:36:05 osmanubuntu sshd[138432]: pam_unix(sshd:session): session closed for user osman
+May 20 16:36:05 osmanubuntu systemd-logind[723]: Session 2506 logged out. Waiting for processes to exit.
+May 20 16:36:05 osmanubuntu systemd-logind[723]: Removed session 2506.
+May 20 16:36:09 osmanubuntu sshd[138484]: Accepted publickey for osman from 192.168.64.1 port 54897 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:36:09 osmanubuntu sshd[138484]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:36:09 osmanubuntu systemd-logind[723]: New session 2507 of user osman.
+May 20 16:36:09 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:36:09 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:36:09 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:36:09 osmanubuntu sshd[138532]: Received disconnect from 192.168.64.1 port 54897:11: disconnected by user
+May 20 16:36:09 osmanubuntu sshd[138532]: Disconnected from user osman 192.168.64.1 port 54897
+May 20 16:36:09 osmanubuntu sshd[138484]: pam_unix(sshd:session): session closed for user osman
+May 20 16:36:09 osmanubuntu systemd-logind[723]: Session 2507 logged out. Waiting for processes to exit.
+May 20 16:36:09 osmanubuntu systemd-logind[723]: Removed session 2507.
+May 20 16:36:14 osmanubuntu sshd[138536]: Accepted publickey for osman from 192.168.64.1 port 54916 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:36:14 osmanubuntu sshd[138536]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:36:14 osmanubuntu systemd-logind[723]: New session 2508 of user osman.
+May 20 16:36:15 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:36:15 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:36:15 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:36:15 osmanubuntu sshd[138594]: Received disconnect from 192.168.64.1 port 54916:11: disconnected by user
+May 20 16:36:15 osmanubuntu sshd[138594]: Disconnected from user osman 192.168.64.1 port 54916
+May 20 16:36:15 osmanubuntu sshd[138536]: pam_unix(sshd:session): session closed for user osman
+May 20 16:36:15 osmanubuntu systemd-logind[723]: Session 2508 logged out. Waiting for processes to exit.
+May 20 16:36:15 osmanubuntu systemd-logind[723]: Removed session 2508.
+May 20 16:36:20 osmanubuntu sshd[138598]: Accepted publickey for osman from 192.168.64.1 port 54925 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:36:20 osmanubuntu sshd[138598]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:36:20 osmanubuntu systemd-logind[723]: New session 2509 of user osman.
+May 20 16:36:20 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:36:20 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:36:20 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:36:20 osmanubuntu sshd[138646]: Received disconnect from 192.168.64.1 port 54925:11: disconnected by user
+May 20 16:36:20 osmanubuntu sshd[138646]: Disconnected from user osman 192.168.64.1 port 54925
+May 20 16:36:20 osmanubuntu sshd[138598]: pam_unix(sshd:session): session closed for user osman
+May 20 16:36:20 osmanubuntu systemd-logind[723]: Session 2509 logged out. Waiting for processes to exit.
+May 20 16:36:20 osmanubuntu systemd-logind[723]: Removed session 2509.
+May 20 16:36:25 osmanubuntu sshd[138650]: Accepted publickey for osman from 192.168.64.1 port 54935 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:36:25 osmanubuntu sshd[138650]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:36:25 osmanubuntu systemd-logind[723]: New session 2510 of user osman.
+May 20 16:36:25 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:36:25 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:36:25 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:36:25 osmanubuntu sshd[138698]: Received disconnect from 192.168.64.1 port 54935:11: disconnected by user
+May 20 16:36:25 osmanubuntu sshd[138698]: Disconnected from user osman 192.168.64.1 port 54935
+May 20 16:36:25 osmanubuntu sshd[138650]: pam_unix(sshd:session): session closed for user osman
+May 20 16:36:25 osmanubuntu systemd-logind[723]: Session 2510 logged out. Waiting for processes to exit.
+May 20 16:36:25 osmanubuntu systemd-logind[723]: Removed session 2510.
+May 20 16:36:29 osmanubuntu sshd[138702]: Accepted publickey for osman from 192.168.64.1 port 54944 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:36:29 osmanubuntu sshd[138702]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:36:29 osmanubuntu systemd-logind[723]: New session 2511 of user osman.
+May 20 16:36:29 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:36:29 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:36:29 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:36:29 osmanubuntu sshd[138750]: Received disconnect from 192.168.64.1 port 54944:11: disconnected by user
+May 20 16:36:29 osmanubuntu sshd[138750]: Disconnected from user osman 192.168.64.1 port 54944
+May 20 16:36:29 osmanubuntu sshd[138702]: pam_unix(sshd:session): session closed for user osman
+May 20 16:36:29 osmanubuntu systemd-logind[723]: Session 2511 logged out. Waiting for processes to exit.
+May 20 16:36:29 osmanubuntu systemd-logind[723]: Removed session 2511.
+May 20 16:36:34 osmanubuntu sshd[138754]: Accepted publickey for osman from 192.168.64.1 port 54961 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:36:34 osmanubuntu sshd[138754]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:36:34 osmanubuntu systemd-logind[723]: New session 2512 of user osman.
+May 20 16:36:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:36:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:36:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:36:34 osmanubuntu sshd[138802]: Received disconnect from 192.168.64.1 port 54961:11: disconnected by user
+May 20 16:36:34 osmanubuntu sshd[138802]: Disconnected from user osman 192.168.64.1 port 54961
+May 20 16:36:34 osmanubuntu sshd[138754]: pam_unix(sshd:session): session closed for user osman
+May 20 16:36:34 osmanubuntu systemd-logind[723]: Session 2512 logged out. Waiting for processes to exit.
+May 20 16:36:34 osmanubuntu systemd-logind[723]: Removed session 2512.
+May 20 16:36:39 osmanubuntu sshd[138806]: Accepted publickey for osman from 192.168.64.1 port 54974 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:36:39 osmanubuntu sshd[138806]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:36:39 osmanubuntu systemd-logind[723]: New session 2513 of user osman.
+May 20 16:36:39 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:36:39 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:36:39 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:36:39 osmanubuntu sshd[138854]: Received disconnect from 192.168.64.1 port 54974:11: disconnected by user
+May 20 16:36:39 osmanubuntu sshd[138854]: Disconnected from user osman 192.168.64.1 port 54974
+May 20 16:36:39 osmanubuntu sshd[138806]: pam_unix(sshd:session): session closed for user osman
+May 20 16:36:39 osmanubuntu systemd-logind[723]: Session 2513 logged out. Waiting for processes to exit.
+May 20 16:36:39 osmanubuntu systemd-logind[723]: Removed session 2513.
+May 20 16:36:44 osmanubuntu sshd[138858]: Accepted publickey for osman from 192.168.64.1 port 54983 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:36:44 osmanubuntu sshd[138858]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:36:44 osmanubuntu systemd-logind[723]: New session 2514 of user osman.
+May 20 16:36:44 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:36:44 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:36:44 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:36:44 osmanubuntu sshd[138906]: Received disconnect from 192.168.64.1 port 54983:11: disconnected by user
+May 20 16:36:44 osmanubuntu sshd[138906]: Disconnected from user osman 192.168.64.1 port 54983
+May 20 16:36:44 osmanubuntu sshd[138858]: pam_unix(sshd:session): session closed for user osman
+May 20 16:36:44 osmanubuntu systemd-logind[723]: Session 2514 logged out. Waiting for processes to exit.
+May 20 16:36:44 osmanubuntu systemd-logind[723]: Removed session 2514.
+May 20 16:36:48 osmanubuntu sshd[138910]: Accepted publickey for osman from 192.168.64.1 port 54992 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:36:48 osmanubuntu sshd[138910]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:36:48 osmanubuntu systemd-logind[723]: New session 2515 of user osman.
+May 20 16:36:48 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:36:48 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:36:49 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:36:49 osmanubuntu sshd[138958]: Received disconnect from 192.168.64.1 port 54992:11: disconnected by user
+May 20 16:36:49 osmanubuntu sshd[138958]: Disconnected from user osman 192.168.64.1 port 54992
+May 20 16:36:49 osmanubuntu sshd[138910]: pam_unix(sshd:session): session closed for user osman
+May 20 16:36:49 osmanubuntu systemd-logind[723]: Session 2515 logged out. Waiting for processes to exit.
+May 20 16:36:49 osmanubuntu systemd-logind[723]: Removed session 2515.
+May 20 16:36:54 osmanubuntu sshd[138962]: Accepted publickey for osman from 192.168.64.1 port 55008 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:36:54 osmanubuntu sshd[138962]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:36:54 osmanubuntu systemd-logind[723]: New session 2516 of user osman.
+May 20 16:36:54 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:36:54 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:36:54 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:36:54 osmanubuntu sshd[139010]: Received disconnect from 192.168.64.1 port 55008:11: disconnected by user
+May 20 16:36:54 osmanubuntu sshd[139010]: Disconnected from user osman 192.168.64.1 port 55008
+May 20 16:36:54 osmanubuntu sshd[138962]: pam_unix(sshd:session): session closed for user osman
+May 20 16:36:54 osmanubuntu systemd-logind[723]: Session 2516 logged out. Waiting for processes to exit.
+May 20 16:36:54 osmanubuntu systemd-logind[723]: Removed session 2516.
+May 20 16:36:59 osmanubuntu sshd[139014]: Accepted publickey for osman from 192.168.64.1 port 55018 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:36:59 osmanubuntu sshd[139014]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:36:59 osmanubuntu systemd-logind[723]: New session 2517 of user osman.
+May 20 16:36:59 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:36:59 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:36:59 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:36:59 osmanubuntu sshd[139062]: Received disconnect from 192.168.64.1 port 55018:11: disconnected by user
+May 20 16:36:59 osmanubuntu sshd[139062]: Disconnected from user osman 192.168.64.1 port 55018
+May 20 16:36:59 osmanubuntu sshd[139014]: pam_unix(sshd:session): session closed for user osman
+May 20 16:36:59 osmanubuntu systemd-logind[723]: Session 2517 logged out. Waiting for processes to exit.
+May 20 16:36:59 osmanubuntu systemd-logind[723]: Removed session 2517.
+May 20 16:37:04 osmanubuntu sshd[139066]: Accepted publickey for osman from 192.168.64.1 port 55028 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:37:04 osmanubuntu sshd[139066]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:37:04 osmanubuntu systemd-logind[723]: New session 2518 of user osman.
+May 20 16:37:04 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:37:04 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:37:04 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:37:04 osmanubuntu sshd[139114]: Received disconnect from 192.168.64.1 port 55028:11: disconnected by user
+May 20 16:37:04 osmanubuntu sshd[139114]: Disconnected from user osman 192.168.64.1 port 55028
+May 20 16:37:04 osmanubuntu sshd[139066]: pam_unix(sshd:session): session closed for user osman
+May 20 16:37:04 osmanubuntu systemd-logind[723]: Session 2518 logged out. Waiting for processes to exit.
+May 20 16:37:04 osmanubuntu systemd-logind[723]: Removed session 2518.
+May 20 16:37:09 osmanubuntu sshd[139118]: Accepted publickey for osman from 192.168.64.1 port 55039 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:37:09 osmanubuntu sshd[139118]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:37:09 osmanubuntu systemd-logind[723]: New session 2519 of user osman.
+May 20 16:37:09 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:37:09 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:37:09 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:37:09 osmanubuntu sshd[139166]: Received disconnect from 192.168.64.1 port 55039:11: disconnected by user
+May 20 16:37:09 osmanubuntu sshd[139166]: Disconnected from user osman 192.168.64.1 port 55039
+May 20 16:37:09 osmanubuntu sshd[139118]: pam_unix(sshd:session): session closed for user osman
+May 20 16:37:09 osmanubuntu systemd-logind[723]: Session 2519 logged out. Waiting for processes to exit.
+May 20 16:37:09 osmanubuntu systemd-logind[723]: Removed session 2519.
+May 20 16:37:14 osmanubuntu sshd[139170]: Accepted publickey for osman from 192.168.64.1 port 55049 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:37:14 osmanubuntu sshd[139170]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:37:14 osmanubuntu systemd-logind[723]: New session 2520 of user osman.
+May 20 16:37:14 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:37:14 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:37:14 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:37:14 osmanubuntu sshd[139218]: Received disconnect from 192.168.64.1 port 55049:11: disconnected by user
+May 20 16:37:14 osmanubuntu sshd[139218]: Disconnected from user osman 192.168.64.1 port 55049
+May 20 16:37:14 osmanubuntu sshd[139170]: pam_unix(sshd:session): session closed for user osman
+May 20 16:37:14 osmanubuntu systemd-logind[723]: Session 2520 logged out. Waiting for processes to exit.
+May 20 16:37:14 osmanubuntu systemd-logind[723]: Removed session 2520.
+May 20 16:37:20 osmanubuntu sshd[139222]: Accepted publickey for osman from 192.168.64.1 port 55058 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:37:20 osmanubuntu sshd[139222]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:37:20 osmanubuntu systemd-logind[723]: New session 2521 of user osman.
+May 20 16:37:20 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:37:20 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:37:20 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:37:20 osmanubuntu sshd[139280]: Received disconnect from 192.168.64.1 port 55058:11: disconnected by user
+May 20 16:37:20 osmanubuntu sshd[139280]: Disconnected from user osman 192.168.64.1 port 55058
+May 20 16:37:20 osmanubuntu sshd[139222]: pam_unix(sshd:session): session closed for user osman
+May 20 16:37:20 osmanubuntu systemd-logind[723]: Session 2521 logged out. Waiting for processes to exit.
+May 20 16:37:20 osmanubuntu systemd-logind[723]: Removed session 2521.
+May 20 16:37:25 osmanubuntu sshd[139284]: Accepted publickey for osman from 192.168.64.1 port 55068 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:37:25 osmanubuntu sshd[139284]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:37:25 osmanubuntu systemd-logind[723]: New session 2522 of user osman.
+May 20 16:37:25 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:37:25 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:37:25 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:37:25 osmanubuntu sshd[139332]: Received disconnect from 192.168.64.1 port 55068:11: disconnected by user
+May 20 16:37:25 osmanubuntu sshd[139332]: Disconnected from user osman 192.168.64.1 port 55068
+May 20 16:37:25 osmanubuntu sshd[139284]: pam_unix(sshd:session): session closed for user osman
+May 20 16:37:25 osmanubuntu systemd-logind[723]: Session 2522 logged out. Waiting for processes to exit.
+May 20 16:37:25 osmanubuntu systemd-logind[723]: Removed session 2522.
+May 20 16:37:30 osmanubuntu sshd[139336]: Accepted publickey for osman from 192.168.64.1 port 55078 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:37:30 osmanubuntu sshd[139336]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:37:30 osmanubuntu systemd-logind[723]: New session 2523 of user osman.
+May 20 16:37:30 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:37:30 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:37:30 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:37:30 osmanubuntu sshd[139384]: Received disconnect from 192.168.64.1 port 55078:11: disconnected by user
+May 20 16:37:30 osmanubuntu sshd[139384]: Disconnected from user osman 192.168.64.1 port 55078
+May 20 16:37:30 osmanubuntu sshd[139336]: pam_unix(sshd:session): session closed for user osman
+May 20 16:37:30 osmanubuntu systemd-logind[723]: Session 2523 logged out. Waiting for processes to exit.
+May 20 16:37:30 osmanubuntu systemd-logind[723]: Removed session 2523.
+May 20 16:37:36 osmanubuntu sshd[139391]: Accepted publickey for osman from 192.168.64.1 port 55094 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:37:36 osmanubuntu sshd[139390]: Accepted publickey for osman from 192.168.64.1 port 55093 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:37:36 osmanubuntu sshd[139390]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:37:36 osmanubuntu sshd[139391]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:37:36 osmanubuntu systemd-logind[723]: New session 2524 of user osman.
+May 20 16:37:36 osmanubuntu systemd-logind[723]: New session 2525 of user osman.
+May 20 16:37:36 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:37:36 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:37:36 osmanubuntu sshd[139483]: Received disconnect from 192.168.64.1 port 55093:11: disconnected by user
+May 20 16:37:36 osmanubuntu sshd[139483]: Disconnected from user osman 192.168.64.1 port 55093
+May 20 16:37:36 osmanubuntu sshd[139390]: pam_unix(sshd:session): session closed for user osman
+May 20 16:37:36 osmanubuntu systemd-logind[723]: Session 2524 logged out. Waiting for processes to exit.
+May 20 16:37:36 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:37:36 osmanubuntu systemd-logind[723]: Removed session 2524.
+May 20 16:37:36 osmanubuntu sshd[139487]: Received disconnect from 192.168.64.1 port 55094:11: disconnected by user
+May 20 16:37:36 osmanubuntu sshd[139487]: Disconnected from user osman 192.168.64.1 port 55094
+May 20 16:37:36 osmanubuntu sshd[139391]: pam_unix(sshd:session): session closed for user osman
+May 20 16:37:36 osmanubuntu systemd-logind[723]: Session 2525 logged out. Waiting for processes to exit.
+May 20 16:37:36 osmanubuntu systemd-logind[723]: Removed session 2525.
+May 20 16:37:41 osmanubuntu sshd[139495]: Accepted publickey for osman from 192.168.64.1 port 55110 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:37:41 osmanubuntu sshd[139495]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:37:41 osmanubuntu systemd-logind[723]: New session 2526 of user osman.
+May 20 16:37:41 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:37:41 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:37:41 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:37:41 osmanubuntu sshd[139543]: Received disconnect from 192.168.64.1 port 55110:11: disconnected by user
+May 20 16:37:41 osmanubuntu sshd[139543]: Disconnected from user osman 192.168.64.1 port 55110
+May 20 16:37:41 osmanubuntu sshd[139495]: pam_unix(sshd:session): session closed for user osman
+May 20 16:37:41 osmanubuntu systemd-logind[723]: Session 2526 logged out. Waiting for processes to exit.
+May 20 16:37:41 osmanubuntu systemd-logind[723]: Removed session 2526.
+May 20 16:37:46 osmanubuntu sshd[139547]: Accepted publickey for osman from 192.168.64.1 port 55121 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:37:46 osmanubuntu sshd[139547]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:37:46 osmanubuntu systemd-logind[723]: New session 2527 of user osman.
+May 20 16:37:46 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:37:46 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:37:46 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:37:46 osmanubuntu sshd[139595]: Received disconnect from 192.168.64.1 port 55121:11: disconnected by user
+May 20 16:37:46 osmanubuntu sshd[139595]: Disconnected from user osman 192.168.64.1 port 55121
+May 20 16:37:46 osmanubuntu sshd[139547]: pam_unix(sshd:session): session closed for user osman
+May 20 16:37:46 osmanubuntu systemd-logind[723]: Session 2527 logged out. Waiting for processes to exit.
+May 20 16:37:46 osmanubuntu systemd-logind[723]: Removed session 2527.
+May 20 16:37:51 osmanubuntu sshd[139599]: Accepted publickey for osman from 192.168.64.1 port 55130 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:37:51 osmanubuntu sshd[139599]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:37:51 osmanubuntu systemd-logind[723]: New session 2528 of user osman.
+May 20 16:37:51 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:37:51 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:37:51 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:37:51 osmanubuntu sshd[139647]: Received disconnect from 192.168.64.1 port 55130:11: disconnected by user
+May 20 16:37:51 osmanubuntu sshd[139647]: Disconnected from user osman 192.168.64.1 port 55130
+May 20 16:37:51 osmanubuntu sshd[139599]: pam_unix(sshd:session): session closed for user osman
+May 20 16:37:51 osmanubuntu systemd-logind[723]: Session 2528 logged out. Waiting for processes to exit.
+May 20 16:37:51 osmanubuntu systemd-logind[723]: Removed session 2528.
+May 20 16:37:56 osmanubuntu sshd[139651]: Accepted publickey for osman from 192.168.64.1 port 55141 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:37:56 osmanubuntu sshd[139651]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:37:56 osmanubuntu systemd-logind[723]: New session 2529 of user osman.
+May 20 16:37:56 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:37:56 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:37:56 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:37:56 osmanubuntu sshd[139699]: Received disconnect from 192.168.64.1 port 55141:11: disconnected by user
+May 20 16:37:56 osmanubuntu sshd[139699]: Disconnected from user osman 192.168.64.1 port 55141
+May 20 16:37:56 osmanubuntu sshd[139651]: pam_unix(sshd:session): session closed for user osman
+May 20 16:37:56 osmanubuntu systemd-logind[723]: Session 2529 logged out. Waiting for processes to exit.
+May 20 16:37:56 osmanubuntu systemd-logind[723]: Removed session 2529.
+May 20 16:38:34 osmanubuntu sshd[139703]: Accepted publickey for osman from 192.168.64.1 port 55190 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:38:34 osmanubuntu sshd[139703]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:38:34 osmanubuntu systemd-logind[723]: New session 2530 of user osman.
+May 20 16:38:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:38:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:38:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:38:34 osmanubuntu sshd[139761]: Received disconnect from 192.168.64.1 port 55190:11: disconnected by user
+May 20 16:38:34 osmanubuntu sshd[139761]: Disconnected from user osman 192.168.64.1 port 55190
+May 20 16:38:34 osmanubuntu sshd[139703]: pam_unix(sshd:session): session closed for user osman
+May 20 16:38:34 osmanubuntu systemd-logind[723]: Session 2530 logged out. Waiting for processes to exit.
+May 20 16:38:34 osmanubuntu systemd-logind[723]: Removed session 2530.
+May 20 16:39:34 osmanubuntu sshd[139777]: Accepted publickey for osman from 192.168.64.1 port 55276 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:39:34 osmanubuntu sshd[139777]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:39:34 osmanubuntu systemd-logind[723]: New session 2531 of user osman.
+May 20 16:39:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:39:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:39:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:39:34 osmanubuntu sshd[139825]: Received disconnect from 192.168.64.1 port 55276:11: disconnected by user
+May 20 16:39:34 osmanubuntu sshd[139825]: Disconnected from user osman 192.168.64.1 port 55276
+May 20 16:39:34 osmanubuntu sshd[139777]: pam_unix(sshd:session): session closed for user osman
+May 20 16:39:34 osmanubuntu systemd-logind[723]: Session 2531 logged out. Waiting for processes to exit.
+May 20 16:39:34 osmanubuntu systemd-logind[723]: Removed session 2531.
+May 20 16:40:26 osmanubuntu sshd[139830]: Accepted publickey for osman from 192.168.64.1 port 55349 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:40:26 osmanubuntu sshd[139830]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:40:26 osmanubuntu systemd-logind[723]: New session 2532 of user osman.
+May 20 16:40:26 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:40:26 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:40:26 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:40:26 osmanubuntu sshd[139888]: Received disconnect from 192.168.64.1 port 55349:11: disconnected by user
+May 20 16:40:26 osmanubuntu sshd[139888]: Disconnected from user osman 192.168.64.1 port 55349
+May 20 16:40:26 osmanubuntu sshd[139830]: pam_unix(sshd:session): session closed for user osman
+May 20 16:40:26 osmanubuntu systemd-logind[723]: Session 2532 logged out. Waiting for processes to exit.
+May 20 16:40:26 osmanubuntu systemd-logind[723]: Removed session 2532.
+May 20 16:40:29 osmanubuntu sshd[139892]: Accepted publickey for osman from 192.168.64.1 port 55358 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:40:29 osmanubuntu sshd[139892]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:40:29 osmanubuntu systemd-logind[723]: New session 2533 of user osman.
+May 20 16:40:29 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:40:29 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:40:29 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:40:29 osmanubuntu sshd[139940]: Received disconnect from 192.168.64.1 port 55358:11: disconnected by user
+May 20 16:40:29 osmanubuntu sshd[139940]: Disconnected from user osman 192.168.64.1 port 55358
+May 20 16:40:29 osmanubuntu sshd[139892]: pam_unix(sshd:session): session closed for user osman
+May 20 16:40:29 osmanubuntu systemd-logind[723]: Session 2533 logged out. Waiting for processes to exit.
+May 20 16:40:29 osmanubuntu systemd-logind[723]: Removed session 2533.
+May 20 16:40:34 osmanubuntu sshd[139944]: Accepted publickey for osman from 192.168.64.1 port 55371 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:40:34 osmanubuntu sshd[139944]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:40:34 osmanubuntu systemd-logind[723]: New session 2534 of user osman.
+May 20 16:40:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:40:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:40:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:40:34 osmanubuntu sshd[139992]: Received disconnect from 192.168.64.1 port 55371:11: disconnected by user
+May 20 16:40:34 osmanubuntu sshd[139992]: Disconnected from user osman 192.168.64.1 port 55371
+May 20 16:40:34 osmanubuntu sshd[139944]: pam_unix(sshd:session): session closed for user osman
+May 20 16:40:34 osmanubuntu systemd-logind[723]: Session 2534 logged out. Waiting for processes to exit.
+May 20 16:40:34 osmanubuntu systemd-logind[723]: Removed session 2534.
+May 20 16:40:39 osmanubuntu sshd[139997]: Accepted publickey for osman from 192.168.64.1 port 55385 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:40:39 osmanubuntu sshd[139997]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:40:39 osmanubuntu systemd-logind[723]: New session 2535 of user osman.
+May 20 16:40:39 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:40:39 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:40:39 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:40:39 osmanubuntu sshd[140045]: Received disconnect from 192.168.64.1 port 55385:11: disconnected by user
+May 20 16:40:39 osmanubuntu sshd[140045]: Disconnected from user osman 192.168.64.1 port 55385
+May 20 16:40:39 osmanubuntu sshd[139997]: pam_unix(sshd:session): session closed for user osman
+May 20 16:40:39 osmanubuntu systemd-logind[723]: Session 2535 logged out. Waiting for processes to exit.
+May 20 16:40:39 osmanubuntu systemd-logind[723]: Removed session 2535.
+May 20 16:40:44 osmanubuntu sshd[140050]: Accepted publickey for osman from 192.168.64.1 port 55399 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:40:44 osmanubuntu sshd[140050]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:40:44 osmanubuntu systemd-logind[723]: New session 2536 of user osman.
+May 20 16:40:44 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:40:44 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:40:44 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:40:44 osmanubuntu sshd[140098]: Received disconnect from 192.168.64.1 port 55399:11: disconnected by user
+May 20 16:40:44 osmanubuntu sshd[140098]: Disconnected from user osman 192.168.64.1 port 55399
+May 20 16:40:44 osmanubuntu sshd[140050]: pam_unix(sshd:session): session closed for user osman
+May 20 16:40:44 osmanubuntu systemd-logind[723]: Session 2536 logged out. Waiting for processes to exit.
+May 20 16:40:44 osmanubuntu systemd-logind[723]: Removed session 2536.
+May 20 16:40:49 osmanubuntu sshd[140102]: Accepted publickey for osman from 192.168.64.1 port 55412 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:40:49 osmanubuntu sshd[140102]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:40:49 osmanubuntu systemd-logind[723]: New session 2537 of user osman.
+May 20 16:40:49 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:40:49 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:40:49 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:40:49 osmanubuntu sshd[140150]: Received disconnect from 192.168.64.1 port 55412:11: disconnected by user
+May 20 16:40:49 osmanubuntu sshd[140150]: Disconnected from user osman 192.168.64.1 port 55412
+May 20 16:40:49 osmanubuntu sshd[140102]: pam_unix(sshd:session): session closed for user osman
+May 20 16:40:49 osmanubuntu systemd-logind[723]: Session 2537 logged out. Waiting for processes to exit.
+May 20 16:40:49 osmanubuntu systemd-logind[723]: Removed session 2537.
+May 20 16:40:55 osmanubuntu sshd[140155]: Accepted publickey for osman from 192.168.64.1 port 55421 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:40:55 osmanubuntu sshd[140155]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:40:55 osmanubuntu systemd-logind[723]: New session 2538 of user osman.
+May 20 16:40:55 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:40:55 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:40:55 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:40:55 osmanubuntu sshd[140203]: Received disconnect from 192.168.64.1 port 55421:11: disconnected by user
+May 20 16:40:55 osmanubuntu sshd[140203]: Disconnected from user osman 192.168.64.1 port 55421
+May 20 16:40:55 osmanubuntu sshd[140155]: pam_unix(sshd:session): session closed for user osman
+May 20 16:40:55 osmanubuntu systemd-logind[723]: Session 2538 logged out. Waiting for processes to exit.
+May 20 16:40:55 osmanubuntu systemd-logind[723]: Removed session 2538.
+May 20 16:40:59 osmanubuntu sshd[140207]: Accepted publickey for osman from 192.168.64.1 port 55436 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:40:59 osmanubuntu sshd[140207]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:40:59 osmanubuntu systemd-logind[723]: New session 2539 of user osman.
+May 20 16:40:59 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:40:59 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:40:59 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:40:59 osmanubuntu sshd[140255]: Received disconnect from 192.168.64.1 port 55436:11: disconnected by user
+May 20 16:40:59 osmanubuntu sshd[140255]: Disconnected from user osman 192.168.64.1 port 55436
+May 20 16:40:59 osmanubuntu sshd[140207]: pam_unix(sshd:session): session closed for user osman
+May 20 16:40:59 osmanubuntu systemd-logind[723]: Session 2539 logged out. Waiting for processes to exit.
+May 20 16:40:59 osmanubuntu systemd-logind[723]: Removed session 2539.
+May 20 16:41:04 osmanubuntu sshd[140259]: Accepted publickey for osman from 192.168.64.1 port 55446 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:41:04 osmanubuntu sshd[140259]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:41:04 osmanubuntu systemd-logind[723]: New session 2540 of user osman.
+May 20 16:41:04 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:41:04 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:41:04 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:41:04 osmanubuntu sshd[140307]: Received disconnect from 192.168.64.1 port 55446:11: disconnected by user
+May 20 16:41:04 osmanubuntu sshd[140307]: Disconnected from user osman 192.168.64.1 port 55446
+May 20 16:41:04 osmanubuntu sshd[140259]: pam_unix(sshd:session): session closed for user osman
+May 20 16:41:04 osmanubuntu systemd-logind[723]: Session 2540 logged out. Waiting for processes to exit.
+May 20 16:41:04 osmanubuntu systemd-logind[723]: Removed session 2540.
+May 20 16:41:09 osmanubuntu sshd[140311]: Accepted publickey for osman from 192.168.64.1 port 55457 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:41:09 osmanubuntu sshd[140311]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:41:09 osmanubuntu systemd-logind[723]: New session 2541 of user osman.
+May 20 16:41:09 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:41:09 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:41:09 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:41:09 osmanubuntu sshd[140359]: Received disconnect from 192.168.64.1 port 55457:11: disconnected by user
+May 20 16:41:09 osmanubuntu sshd[140359]: Disconnected from user osman 192.168.64.1 port 55457
+May 20 16:41:09 osmanubuntu sshd[140311]: pam_unix(sshd:session): session closed for user osman
+May 20 16:41:09 osmanubuntu systemd-logind[723]: Session 2541 logged out. Waiting for processes to exit.
+May 20 16:41:09 osmanubuntu systemd-logind[723]: Removed session 2541.
+May 20 16:41:14 osmanubuntu sshd[140363]: Accepted publickey for osman from 192.168.64.1 port 55475 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:41:14 osmanubuntu sshd[140363]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:41:14 osmanubuntu systemd-logind[723]: New session 2542 of user osman.
+May 20 16:41:14 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:41:14 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:41:14 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:41:14 osmanubuntu sshd[140411]: Received disconnect from 192.168.64.1 port 55475:11: disconnected by user
+May 20 16:41:14 osmanubuntu sshd[140411]: Disconnected from user osman 192.168.64.1 port 55475
+May 20 16:41:14 osmanubuntu sshd[140363]: pam_unix(sshd:session): session closed for user osman
+May 20 16:41:14 osmanubuntu systemd-logind[723]: Session 2542 logged out. Waiting for processes to exit.
+May 20 16:41:14 osmanubuntu systemd-logind[723]: Removed session 2542.
+May 20 16:41:19 osmanubuntu sshd[140415]: Accepted publickey for osman from 192.168.64.1 port 55485 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:41:19 osmanubuntu sshd[140415]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:41:19 osmanubuntu systemd-logind[723]: New session 2543 of user osman.
+May 20 16:41:19 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:41:19 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:41:20 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:41:20 osmanubuntu sshd[140463]: Received disconnect from 192.168.64.1 port 55485:11: disconnected by user
+May 20 16:41:20 osmanubuntu sshd[140463]: Disconnected from user osman 192.168.64.1 port 55485
+May 20 16:41:20 osmanubuntu sshd[140415]: pam_unix(sshd:session): session closed for user osman
+May 20 16:41:20 osmanubuntu systemd-logind[723]: Session 2543 logged out. Waiting for processes to exit.
+May 20 16:41:20 osmanubuntu systemd-logind[723]: Removed session 2543.
+May 20 16:41:25 osmanubuntu sshd[140467]: Accepted publickey for osman from 192.168.64.1 port 55495 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:41:25 osmanubuntu sshd[140467]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:41:25 osmanubuntu systemd-logind[723]: New session 2544 of user osman.
+May 20 16:41:25 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:41:25 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:41:25 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:41:25 osmanubuntu sshd[140515]: Received disconnect from 192.168.64.1 port 55495:11: disconnected by user
+May 20 16:41:25 osmanubuntu sshd[140515]: Disconnected from user osman 192.168.64.1 port 55495
+May 20 16:41:25 osmanubuntu sshd[140467]: pam_unix(sshd:session): session closed for user osman
+May 20 16:41:25 osmanubuntu systemd-logind[723]: Session 2544 logged out. Waiting for processes to exit.
+May 20 16:41:25 osmanubuntu systemd-logind[723]: Removed session 2544.
+May 20 16:41:30 osmanubuntu sshd[140519]: Accepted publickey for osman from 192.168.64.1 port 55504 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:41:30 osmanubuntu sshd[140519]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:41:30 osmanubuntu systemd-logind[723]: New session 2545 of user osman.
+May 20 16:41:30 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:41:30 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:41:30 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:41:30 osmanubuntu sshd[140577]: Received disconnect from 192.168.64.1 port 55504:11: disconnected by user
+May 20 16:41:30 osmanubuntu sshd[140577]: Disconnected from user osman 192.168.64.1 port 55504
+May 20 16:41:30 osmanubuntu sshd[140519]: pam_unix(sshd:session): session closed for user osman
+May 20 16:41:30 osmanubuntu systemd-logind[723]: Session 2545 logged out. Waiting for processes to exit.
+May 20 16:41:30 osmanubuntu systemd-logind[723]: Removed session 2545.
+May 20 16:41:35 osmanubuntu sshd[140581]: Accepted publickey for osman from 192.168.64.1 port 55517 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:41:35 osmanubuntu sshd[140581]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:41:35 osmanubuntu systemd-logind[723]: New session 2546 of user osman.
+May 20 16:41:35 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:41:35 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:41:35 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:41:35 osmanubuntu sshd[140629]: Received disconnect from 192.168.64.1 port 55517:11: disconnected by user
+May 20 16:41:35 osmanubuntu sshd[140629]: Disconnected from user osman 192.168.64.1 port 55517
+May 20 16:41:35 osmanubuntu sshd[140581]: pam_unix(sshd:session): session closed for user osman
+May 20 16:41:35 osmanubuntu systemd-logind[723]: Session 2546 logged out. Waiting for processes to exit.
+May 20 16:41:35 osmanubuntu systemd-logind[723]: Removed session 2546.
+May 20 16:42:34 osmanubuntu sshd[140633]: Accepted publickey for osman from 192.168.64.1 port 55592 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:42:34 osmanubuntu sshd[140633]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:42:34 osmanubuntu systemd-logind[723]: New session 2547 of user osman.
+May 20 16:42:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:42:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:42:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:42:34 osmanubuntu sshd[140691]: Received disconnect from 192.168.64.1 port 55592:11: disconnected by user
+May 20 16:42:34 osmanubuntu sshd[140691]: Disconnected from user osman 192.168.64.1 port 55592
+May 20 16:42:34 osmanubuntu sshd[140633]: pam_unix(sshd:session): session closed for user osman
+May 20 16:42:34 osmanubuntu systemd-logind[723]: Session 2547 logged out. Waiting for processes to exit.
+May 20 16:42:34 osmanubuntu systemd-logind[723]: Removed session 2547.
+May 20 16:43:34 osmanubuntu sshd[140697]: Accepted publickey for osman from 192.168.64.1 port 55671 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:43:34 osmanubuntu sshd[140698]: Accepted publickey for osman from 192.168.64.1 port 55670 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:43:34 osmanubuntu sshd[140698]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:43:34 osmanubuntu sshd[140697]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:43:34 osmanubuntu systemd-logind[723]: New session 2548 of user osman.
+May 20 16:43:34 osmanubuntu systemd-logind[723]: New session 2549 of user osman.
+May 20 16:43:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:43:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:43:34 osmanubuntu sshd[140793]: Received disconnect from 192.168.64.1 port 55671:11: disconnected by user
+May 20 16:43:34 osmanubuntu sshd[140793]: Disconnected from user osman 192.168.64.1 port 55671
+May 20 16:43:34 osmanubuntu sshd[140697]: pam_unix(sshd:session): session closed for user osman
+May 20 16:43:34 osmanubuntu systemd-logind[723]: Session 2549 logged out. Waiting for processes to exit.
+May 20 16:43:34 osmanubuntu systemd-logind[723]: Removed session 2549.
+May 20 16:43:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:43:34 osmanubuntu sshd[140794]: Received disconnect from 192.168.64.1 port 55670:11: disconnected by user
+May 20 16:43:34 osmanubuntu sshd[140794]: Disconnected from user osman 192.168.64.1 port 55670
+May 20 16:43:34 osmanubuntu sshd[140698]: pam_unix(sshd:session): session closed for user osman
+May 20 16:43:34 osmanubuntu systemd-logind[723]: Session 2548 logged out. Waiting for processes to exit.
+May 20 16:43:34 osmanubuntu systemd-logind[723]: Removed session 2548.
+May 20 16:44:34 osmanubuntu sshd[140803]: Accepted publickey for osman from 192.168.64.1 port 55748 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:44:34 osmanubuntu sshd[140803]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:44:34 osmanubuntu systemd-logind[723]: New session 2550 of user osman.
+May 20 16:44:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:44:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:44:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:44:34 osmanubuntu sshd[140861]: Received disconnect from 192.168.64.1 port 55748:11: disconnected by user
+May 20 16:44:34 osmanubuntu sshd[140861]: Disconnected from user osman 192.168.64.1 port 55748
+May 20 16:44:34 osmanubuntu sshd[140803]: pam_unix(sshd:session): session closed for user osman
+May 20 16:44:34 osmanubuntu systemd-logind[723]: Session 2550 logged out. Waiting for processes to exit.
+May 20 16:44:34 osmanubuntu systemd-logind[723]: Removed session 2550.
+May 20 16:45:34 osmanubuntu sshd[140876]: Accepted publickey for osman from 192.168.64.1 port 55837 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:45:34 osmanubuntu sshd[140876]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:45:34 osmanubuntu systemd-logind[723]: New session 2551 of user osman.
+May 20 16:45:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:45:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:45:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:45:34 osmanubuntu sshd[140924]: Received disconnect from 192.168.64.1 port 55837:11: disconnected by user
+May 20 16:45:34 osmanubuntu sshd[140924]: Disconnected from user osman 192.168.64.1 port 55837
+May 20 16:45:34 osmanubuntu sshd[140876]: pam_unix(sshd:session): session closed for user osman
+May 20 16:45:34 osmanubuntu systemd-logind[723]: Session 2551 logged out. Waiting for processes to exit.
+May 20 16:45:34 osmanubuntu systemd-logind[723]: Removed session 2551.
+May 20 16:46:34 osmanubuntu sshd[140928]: Accepted publickey for osman from 192.168.64.1 port 55922 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:46:34 osmanubuntu sshd[140928]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:46:34 osmanubuntu systemd-logind[723]: New session 2552 of user osman.
+May 20 16:46:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:46:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:46:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:46:34 osmanubuntu sshd[140986]: Received disconnect from 192.168.64.1 port 55922:11: disconnected by user
+May 20 16:46:34 osmanubuntu sshd[140986]: Disconnected from user osman 192.168.64.1 port 55922
+May 20 16:46:34 osmanubuntu sshd[140928]: pam_unix(sshd:session): session closed for user osman
+May 20 16:46:34 osmanubuntu systemd-logind[723]: Session 2552 logged out. Waiting for processes to exit.
+May 20 16:46:34 osmanubuntu systemd-logind[723]: Removed session 2552.
+May 20 16:47:34 osmanubuntu sshd[140993]: Accepted publickey for osman from 192.168.64.1 port 55999 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:47:34 osmanubuntu sshd[140993]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:47:34 osmanubuntu systemd-logind[723]: New session 2553 of user osman.
+May 20 16:47:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:47:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:47:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:47:34 osmanubuntu sshd[141041]: Received disconnect from 192.168.64.1 port 55999:11: disconnected by user
+May 20 16:47:34 osmanubuntu sshd[141041]: Disconnected from user osman 192.168.64.1 port 55999
+May 20 16:47:34 osmanubuntu sshd[140993]: pam_unix(sshd:session): session closed for user osman
+May 20 16:47:34 osmanubuntu systemd-logind[723]: Session 2553 logged out. Waiting for processes to exit.
+May 20 16:47:34 osmanubuntu systemd-logind[723]: Removed session 2553.
+May 20 16:48:34 osmanubuntu sshd[141046]: Accepted publickey for osman from 192.168.64.1 port 56101 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:48:34 osmanubuntu sshd[141046]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:48:34 osmanubuntu systemd-logind[723]: New session 2554 of user osman.
+May 20 16:48:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:48:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:48:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:48:34 osmanubuntu sshd[141106]: Received disconnect from 192.168.64.1 port 56101:11: disconnected by user
+May 20 16:48:34 osmanubuntu sshd[141106]: Disconnected from user osman 192.168.64.1 port 56101
+May 20 16:48:34 osmanubuntu sshd[141046]: pam_unix(sshd:session): session closed for user osman
+May 20 16:48:34 osmanubuntu systemd-logind[723]: Session 2554 logged out. Waiting for processes to exit.
+May 20 16:48:34 osmanubuntu systemd-logind[723]: Removed session 2554.
+May 20 16:49:34 osmanubuntu sshd[141110]: Accepted publickey for osman from 192.168.64.1 port 56188 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:49:34 osmanubuntu sshd[141111]: Accepted publickey for osman from 192.168.64.1 port 56189 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:49:34 osmanubuntu sshd[141111]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:49:34 osmanubuntu sshd[141110]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:49:34 osmanubuntu systemd-logind[723]: New session 2556 of user osman.
+May 20 16:49:34 osmanubuntu systemd-logind[723]: New session 2555 of user osman.
+May 20 16:49:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:49:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:49:34 osmanubuntu sshd[141203]: Received disconnect from 192.168.64.1 port 56188:11: disconnected by user
+May 20 16:49:34 osmanubuntu sshd[141203]: Disconnected from user osman 192.168.64.1 port 56188
+May 20 16:49:34 osmanubuntu sshd[141110]: pam_unix(sshd:session): session closed for user osman
+May 20 16:49:34 osmanubuntu systemd-logind[723]: Session 2556 logged out. Waiting for processes to exit.
+May 20 16:49:34 osmanubuntu systemd-logind[723]: Removed session 2556.
+May 20 16:49:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:49:34 osmanubuntu sshd[141207]: Received disconnect from 192.168.64.1 port 56189:11: disconnected by user
+May 20 16:49:34 osmanubuntu sshd[141207]: Disconnected from user osman 192.168.64.1 port 56189
+May 20 16:49:34 osmanubuntu sshd[141111]: pam_unix(sshd:session): session closed for user osman
+May 20 16:49:34 osmanubuntu systemd-logind[723]: Session 2555 logged out. Waiting for processes to exit.
+May 20 16:49:34 osmanubuntu systemd-logind[723]: Removed session 2555.
+May 20 16:50:34 osmanubuntu sshd[141216]: Accepted publickey for osman from 192.168.64.1 port 56266 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:50:34 osmanubuntu sshd[141216]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:50:34 osmanubuntu systemd-logind[723]: New session 2557 of user osman.
+May 20 16:50:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:50:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:50:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:50:34 osmanubuntu sshd[141274]: Received disconnect from 192.168.64.1 port 56266:11: disconnected by user
+May 20 16:50:34 osmanubuntu sshd[141274]: Disconnected from user osman 192.168.64.1 port 56266
+May 20 16:50:34 osmanubuntu sshd[141216]: pam_unix(sshd:session): session closed for user osman
+May 20 16:50:34 osmanubuntu systemd-logind[723]: Session 2557 logged out. Waiting for processes to exit.
+May 20 16:50:34 osmanubuntu systemd-logind[723]: Removed session 2557.
+May 20 16:51:34 osmanubuntu sshd[141290]: Accepted publickey for osman from 192.168.64.1 port 56369 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:51:34 osmanubuntu sshd[141290]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:51:34 osmanubuntu systemd-logind[723]: New session 2558 of user osman.
+May 20 16:51:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:51:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:51:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:51:34 osmanubuntu sshd[141338]: Received disconnect from 192.168.64.1 port 56369:11: disconnected by user
+May 20 16:51:34 osmanubuntu sshd[141338]: Disconnected from user osman 192.168.64.1 port 56369
+May 20 16:51:34 osmanubuntu sshd[141290]: pam_unix(sshd:session): session closed for user osman
+May 20 16:51:34 osmanubuntu systemd-logind[723]: Session 2558 logged out. Waiting for processes to exit.
+May 20 16:51:34 osmanubuntu systemd-logind[723]: Removed session 2558.
+May 20 16:52:34 osmanubuntu sshd[141343]: Accepted publickey for osman from 192.168.64.1 port 56473 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:52:34 osmanubuntu sshd[141343]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:52:34 osmanubuntu systemd-logind[723]: New session 2559 of user osman.
+May 20 16:52:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:52:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:52:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:52:34 osmanubuntu sshd[141442]: Received disconnect from 192.168.64.1 port 56473:11: disconnected by user
+May 20 16:52:34 osmanubuntu sshd[141442]: Disconnected from user osman 192.168.64.1 port 56473
+May 20 16:52:34 osmanubuntu sshd[141343]: pam_unix(sshd:session): session closed for user osman
+May 20 16:52:34 osmanubuntu systemd-logind[723]: Session 2559 logged out. Waiting for processes to exit.
+May 20 16:52:34 osmanubuntu systemd-logind[723]: Removed session 2559.
+May 20 16:53:34 osmanubuntu sshd[141448]: Accepted publickey for osman from 192.168.64.1 port 56567 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:53:34 osmanubuntu sshd[141448]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:53:34 osmanubuntu systemd-logind[723]: New session 2560 of user osman.
+May 20 16:53:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:53:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:53:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:53:34 osmanubuntu sshd[141496]: Received disconnect from 192.168.64.1 port 56567:11: disconnected by user
+May 20 16:53:34 osmanubuntu sshd[141496]: Disconnected from user osman 192.168.64.1 port 56567
+May 20 16:53:34 osmanubuntu sshd[141448]: pam_unix(sshd:session): session closed for user osman
+May 20 16:53:34 osmanubuntu systemd-logind[723]: Session 2560 logged out. Waiting for processes to exit.
+May 20 16:53:34 osmanubuntu systemd-logind[723]: Removed session 2560.
+May 20 16:54:34 osmanubuntu sshd[141502]: Accepted publickey for osman from 192.168.64.1 port 56665 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:54:34 osmanubuntu sshd[141502]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:54:34 osmanubuntu systemd-logind[723]: New session 2561 of user osman.
+May 20 16:54:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:54:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:54:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:54:34 osmanubuntu sshd[141560]: Received disconnect from 192.168.64.1 port 56665:11: disconnected by user
+May 20 16:54:34 osmanubuntu sshd[141560]: Disconnected from user osman 192.168.64.1 port 56665
+May 20 16:54:34 osmanubuntu sshd[141502]: pam_unix(sshd:session): session closed for user osman
+May 20 16:54:34 osmanubuntu systemd-logind[723]: Session 2561 logged out. Waiting for processes to exit.
+May 20 16:54:34 osmanubuntu systemd-logind[723]: Removed session 2561.
+May 20 16:55:34 osmanubuntu sshd[141564]: Accepted publickey for osman from 192.168.64.1 port 56764 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:55:34 osmanubuntu sshd[141565]: Accepted publickey for osman from 192.168.64.1 port 56765 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:55:34 osmanubuntu sshd[141564]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:55:34 osmanubuntu sshd[141565]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:55:34 osmanubuntu systemd-logind[723]: New session 2562 of user osman.
+May 20 16:55:34 osmanubuntu systemd-logind[723]: New session 2563 of user osman.
+May 20 16:55:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:55:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:55:34 osmanubuntu sshd[141661]: Received disconnect from 192.168.64.1 port 56764:11: disconnected by user
+May 20 16:55:34 osmanubuntu sshd[141661]: Disconnected from user osman 192.168.64.1 port 56764
+May 20 16:55:34 osmanubuntu sshd[141564]: pam_unix(sshd:session): session closed for user osman
+May 20 16:55:34 osmanubuntu systemd-logind[723]: Session 2562 logged out. Waiting for processes to exit.
+May 20 16:55:34 osmanubuntu systemd-logind[723]: Removed session 2562.
+May 20 16:55:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:55:34 osmanubuntu sshd[141659]: Received disconnect from 192.168.64.1 port 56765:11: disconnected by user
+May 20 16:55:34 osmanubuntu sshd[141659]: Disconnected from user osman 192.168.64.1 port 56765
+May 20 16:55:34 osmanubuntu sshd[141565]: pam_unix(sshd:session): session closed for user osman
+May 20 16:55:34 osmanubuntu systemd-logind[723]: Session 2563 logged out. Waiting for processes to exit.
+May 20 16:55:34 osmanubuntu systemd-logind[723]: Removed session 2563.
+May 20 16:56:34 osmanubuntu sshd[141669]: Accepted publickey for osman from 192.168.64.1 port 56867 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:56:34 osmanubuntu sshd[141669]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:56:34 osmanubuntu systemd-logind[723]: New session 2564 of user osman.
+May 20 16:56:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:56:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:56:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:56:34 osmanubuntu sshd[141727]: Received disconnect from 192.168.64.1 port 56867:11: disconnected by user
+May 20 16:56:34 osmanubuntu sshd[141727]: Disconnected from user osman 192.168.64.1 port 56867
+May 20 16:56:34 osmanubuntu sshd[141669]: pam_unix(sshd:session): session closed for user osman
+May 20 16:56:34 osmanubuntu systemd-logind[723]: Session 2564 logged out. Waiting for processes to exit.
+May 20 16:56:34 osmanubuntu systemd-logind[723]: Removed session 2564.
+May 20 16:57:34 osmanubuntu sshd[141742]: Accepted publickey for osman from 192.168.64.1 port 56967 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:57:34 osmanubuntu sshd[141742]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:57:34 osmanubuntu systemd-logind[723]: New session 2565 of user osman.
+May 20 16:57:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:57:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:57:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:57:34 osmanubuntu sshd[141790]: Received disconnect from 192.168.64.1 port 56967:11: disconnected by user
+May 20 16:57:34 osmanubuntu sshd[141790]: Disconnected from user osman 192.168.64.1 port 56967
+May 20 16:57:34 osmanubuntu sshd[141742]: pam_unix(sshd:session): session closed for user osman
+May 20 16:57:34 osmanubuntu systemd-logind[723]: Session 2565 logged out. Waiting for processes to exit.
+May 20 16:57:34 osmanubuntu systemd-logind[723]: Removed session 2565.
+May 20 16:58:34 osmanubuntu sshd[141796]: Accepted publickey for osman from 192.168.64.1 port 57064 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:58:34 osmanubuntu sshd[141796]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:58:34 osmanubuntu systemd-logind[723]: New session 2566 of user osman.
+May 20 16:58:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:58:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:58:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:58:34 osmanubuntu sshd[141854]: Received disconnect from 192.168.64.1 port 57064:11: disconnected by user
+May 20 16:58:34 osmanubuntu sshd[141854]: Disconnected from user osman 192.168.64.1 port 57064
+May 20 16:58:34 osmanubuntu sshd[141796]: pam_unix(sshd:session): session closed for user osman
+May 20 16:58:34 osmanubuntu systemd-logind[723]: Session 2566 logged out. Waiting for processes to exit.
+May 20 16:58:34 osmanubuntu systemd-logind[723]: Removed session 2566.
+May 20 16:59:34 osmanubuntu sshd[141858]: Accepted publickey for osman from 192.168.64.1 port 57157 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 16:59:34 osmanubuntu sshd[141858]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 16:59:34 osmanubuntu systemd-logind[723]: New session 2567 of user osman.
+May 20 16:59:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 16:59:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 16:59:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 16:59:34 osmanubuntu sshd[141908]: Received disconnect from 192.168.64.1 port 57157:11: disconnected by user
+May 20 16:59:34 osmanubuntu sshd[141908]: Disconnected from user osman 192.168.64.1 port 57157
+May 20 16:59:34 osmanubuntu sshd[141858]: pam_unix(sshd:session): session closed for user osman
+May 20 16:59:34 osmanubuntu systemd-logind[723]: Session 2567 logged out. Waiting for processes to exit.
+May 20 16:59:34 osmanubuntu systemd-logind[723]: Removed session 2567.
+May 20 17:00:34 osmanubuntu sshd[141913]: Accepted publickey for osman from 192.168.64.1 port 57256 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 17:00:34 osmanubuntu sshd[141913]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 17:00:34 osmanubuntu systemd-logind[723]: New session 2568 of user osman.
+May 20 17:00:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 17:00:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 17:00:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 17:00:34 osmanubuntu sshd[141971]: Received disconnect from 192.168.64.1 port 57256:11: disconnected by user
+May 20 17:00:34 osmanubuntu sshd[141971]: Disconnected from user osman 192.168.64.1 port 57256
+May 20 17:00:34 osmanubuntu sshd[141913]: pam_unix(sshd:session): session closed for user osman
+May 20 17:00:34 osmanubuntu systemd-logind[723]: Session 2568 logged out. Waiting for processes to exit.
+May 20 17:00:34 osmanubuntu systemd-logind[723]: Removed session 2568.
+May 20 17:01:34 osmanubuntu sshd[141977]: Accepted publickey for osman from 192.168.64.1 port 57363 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 17:01:34 osmanubuntu sshd[141976]: Accepted publickey for osman from 192.168.64.1 port 57362 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 17:01:34 osmanubuntu sshd[141977]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 17:01:34 osmanubuntu sshd[141976]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 17:01:34 osmanubuntu systemd-logind[723]: New session 2569 of user osman.
+May 20 17:01:34 osmanubuntu systemd-logind[723]: New session 2570 of user osman.
+May 20 17:01:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 17:01:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 17:01:34 osmanubuntu sshd[142071]: Received disconnect from 192.168.64.1 port 57362:11: disconnected by user
+May 20 17:01:34 osmanubuntu sshd[142071]: Disconnected from user osman 192.168.64.1 port 57362
+May 20 17:01:34 osmanubuntu sshd[141976]: pam_unix(sshd:session): session closed for user osman
+May 20 17:01:34 osmanubuntu systemd-logind[723]: Session 2570 logged out. Waiting for processes to exit.
+May 20 17:01:34 osmanubuntu systemd-logind[723]: Removed session 2570.
+May 20 17:01:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 17:01:34 osmanubuntu sshd[142073]: Received disconnect from 192.168.64.1 port 57363:11: disconnected by user
+May 20 17:01:34 osmanubuntu sshd[142073]: Disconnected from user osman 192.168.64.1 port 57363
+May 20 17:01:34 osmanubuntu sshd[141977]: pam_unix(sshd:session): session closed for user osman
+May 20 17:01:34 osmanubuntu systemd-logind[723]: Session 2569 logged out. Waiting for processes to exit.
+May 20 17:01:34 osmanubuntu systemd-logind[723]: Removed session 2569.
+May 20 17:02:34 osmanubuntu sshd[142082]: Accepted publickey for osman from 192.168.64.1 port 57453 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 17:02:34 osmanubuntu sshd[142082]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 17:02:34 osmanubuntu systemd-logind[723]: New session 2571 of user osman.
+May 20 17:02:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 17:02:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 17:02:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 17:02:34 osmanubuntu sshd[142140]: Received disconnect from 192.168.64.1 port 57453:11: disconnected by user
+May 20 17:02:34 osmanubuntu sshd[142140]: Disconnected from user osman 192.168.64.1 port 57453
+May 20 17:02:34 osmanubuntu sshd[142082]: pam_unix(sshd:session): session closed for user osman
+May 20 17:02:34 osmanubuntu systemd-logind[723]: Session 2571 logged out. Waiting for processes to exit.
+May 20 17:02:34 osmanubuntu systemd-logind[723]: Removed session 2571.
+May 20 17:03:34 osmanubuntu sshd[142155]: Accepted publickey for osman from 192.168.64.1 port 57549 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 17:03:34 osmanubuntu sshd[142155]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 17:03:34 osmanubuntu systemd-logind[723]: New session 2572 of user osman.
+May 20 17:03:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 17:03:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 17:03:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 17:03:34 osmanubuntu sshd[142203]: Received disconnect from 192.168.64.1 port 57549:11: disconnected by user
+May 20 17:03:34 osmanubuntu sshd[142203]: Disconnected from user osman 192.168.64.1 port 57549
+May 20 17:03:34 osmanubuntu sshd[142155]: pam_unix(sshd:session): session closed for user osman
+May 20 17:03:34 osmanubuntu systemd-logind[723]: Session 2572 logged out. Waiting for processes to exit.
+May 20 17:03:34 osmanubuntu systemd-logind[723]: Removed session 2572.
+May 20 17:04:34 osmanubuntu sshd[142207]: Accepted publickey for osman from 192.168.64.1 port 57643 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 17:04:34 osmanubuntu sshd[142207]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 17:04:34 osmanubuntu systemd-logind[723]: New session 2573 of user osman.
+May 20 17:04:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 17:04:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 17:04:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 17:04:34 osmanubuntu sshd[142267]: Received disconnect from 192.168.64.1 port 57643:11: disconnected by user
+May 20 17:04:34 osmanubuntu sshd[142267]: Disconnected from user osman 192.168.64.1 port 57643
+May 20 17:04:34 osmanubuntu sshd[142207]: pam_unix(sshd:session): session closed for user osman
+May 20 17:04:34 osmanubuntu systemd-logind[723]: Session 2573 logged out. Waiting for processes to exit.
+May 20 17:04:34 osmanubuntu systemd-logind[723]: Removed session 2573.
+May 20 17:05:34 osmanubuntu sshd[142271]: Accepted publickey for osman from 192.168.64.1 port 57738 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 17:05:34 osmanubuntu sshd[142271]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 17:05:34 osmanubuntu systemd-logind[723]: New session 2574 of user osman.
+May 20 17:05:34 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 17:05:34 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 17:05:34 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 17:05:34 osmanubuntu sshd[142319]: Received disconnect from 192.168.64.1 port 57738:11: disconnected by user
+May 20 17:05:34 osmanubuntu sshd[142319]: Disconnected from user osman 192.168.64.1 port 57738
+May 20 17:05:34 osmanubuntu sshd[142271]: pam_unix(sshd:session): session closed for user osman
+May 20 17:05:34 osmanubuntu systemd-logind[723]: Session 2574 logged out. Waiting for processes to exit.
+May 20 17:05:34 osmanubuntu systemd-logind[723]: Removed session 2574.
+May 20 17:06:05 osmanubuntu sshd[142323]: Accepted publickey for osman from 192.168.64.1 port 57786 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 17:06:05 osmanubuntu sshd[142323]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 17:06:05 osmanubuntu systemd-logind[723]: New session 2575 of user osman.
+May 20 17:06:05 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/ossec/logs/alerts/alerts.json
+May 20 17:06:05 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+May 20 17:06:05 osmanubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 20 17:06:05 osmanubuntu sshd[142381]: Received disconnect from 192.168.64.1 port 57786:11: disconnected by user
+May 20 17:06:05 osmanubuntu sshd[142381]: Disconnected from user osman 192.168.64.1 port 57786
+May 20 17:06:05 osmanubuntu sshd[142323]: pam_unix(sshd:session): session closed for user osman
+May 20 17:06:05 osmanubuntu systemd-logind[723]: Session 2575 logged out. Waiting for processes to exit.
+May 20 17:06:05 osmanubuntu systemd-logind[723]: Removed session 2575.
+May 20 17:06:11 osmanubuntu sshd[142386]: Accepted publickey for osman from 192.168.64.1 port 57814 ssh2: ED25519 SHA256:Kc/RHcuwZucXhlIpcab2S3I1PqIeiRjXqn4f7O1W+FU
+May 20 17:06:11 osmanubuntu sshd[142386]: pam_unix(sshd:session): session opened for user osman(uid=1000) by (uid=0)
+May 20 17:06:11 osmanubuntu systemd-logind[723]: New session 2576 of user osman.
+May 20 17:06:11 osmanubuntu sudo:    osman : PWD=/home/osman ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+May 20 17:06:11 osmanubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)

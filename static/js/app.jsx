@@ -51,11 +51,15 @@
       
       // Dinamik veri köprüsü - mevcut sunum_app.js'den verileri almak için
       const [realData, setRealData] = useState(null);
+      const [recentThreats, setRecentThreats] = useState(mockThreats);
 
       useEffect(() => {
         // Vanilla JS tarafından çağrılabilmesi için global bir fonksiyon ekliyoruz
         window.updateReactDashboard = (data) => {
           setRealData(data);
+          if (data.recentThreats && data.recentThreats.length > 0) {
+            setRecentThreats(data.recentThreats);
+          }
         };
       }, []);
 
@@ -184,7 +188,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  {mockThreats.map((threat, idx) => {
+                  {recentThreats.map((threat, idx) => {
                     const lvlStyle = getLvlColor(threat.level);
                     return (
                     <tr key={idx} style={{ borderBottom: '1px solid rgba(255,255,255,0.02)', transition: 'background 0.2s', cursor: 'default' }} onMouseOver={(e)=>e.currentTarget.style.background='rgba(255,255,255,0.03)'} onMouseOut={(e)=>e.currentTarget.style.background='transparent'}>
