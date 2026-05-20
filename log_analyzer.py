@@ -288,7 +288,7 @@ class LLMAnalyzer:
             "\n\n## 🛡️ Acil Müdahale Adımları\n"
             "```bash\n"
             "# Saldıran IP'leri engelle\n"
-            "sudo ufw deny from <SALDIRGAN_IP>\n"
+            "sudo ufw deny from [SALDIRGAN_IP_ADRESI]\n"
             "# SSH güvenliğini artır\n"
             "sudo sed -i 's/PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config\n"
             "# Fail2Ban kur (otomatik engelleme)\n"
