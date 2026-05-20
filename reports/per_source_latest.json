@@ -3,11 +3,11 @@
     {
       "type": "SSH_BRUTE_FORCE",
       "severity": "CRITICAL",
-      "description": "192.168.64.1 adresinden 787 başarısız SSH giriş denemesi. Bu IP sisteme kaba kuvvet saldırısı yapıyor.",
+      "description": "192.168.64.1 adresinden 819 başarısız SSH giriş denemesi. Bu IP sisteme kaba kuvvet saldırısı yapıyor.",
       "mitre": "T1110.001 — Brute Force: Password Guessing",
       "source": "auth.log",
-      "event_count": 787,
-      "sample_log": "May 20 00:38:36 osmanubuntu sshd: Invalid user hacker from 192.168.64.1 port 55007"
+      "event_count": 819,
+      "sample_log": "May 20 00:40:48 osmanubuntu sshd: Invalid user hacker from 192.168.64.1 port 55007"
     },
     {
       "type": "PRIVILEGE_ESCALATION_SUCCESS",
