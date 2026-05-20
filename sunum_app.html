@@ -1198,26 +1198,7 @@ function renderAlerts(arr) {
       
       feed.prepend(div);
 
-      if (isCrit) {
-        var autoBox = document.createElement('div');
-        autoBox.style.cssText = 'margin-top:10px;padding:12px;background:var(--bg-row);border:1px solid var(--border);border-left:2px solid var(--blue);border-radius:4px;font-size:0.8rem;color:var(--t1);';
-        autoBox.innerHTML = '<div style="animation:pulse 1s infinite;color:var(--crit);font-weight:600;margin-bottom:6px;"> Kritik tehdit için Otonom AI devrede...</div>';
-        div.appendChild(autoBox);
 
-        var provider = document.getElementById('liveLLMSelector') ? document.getElementById('liveLLMSelector').value : 'gemini';
-        fetch(API+'/api/analyze_single_alert', {
-          method: 'POST', headers: {'Content-Type':'application/json'},
-          body: JSON.stringify({ api_key: '', llm_provider: provider, raw: jsonStr })
-        }).then(r=>r.json()).then(res=>{
-          if(res.ok) {
-            autoBox.style.background = 'var(--bg-card)'; autoBox.style.border = '1px solid var(--border)'; autoBox.style.borderLeft = '2px solid var(--blue)';
-            var txt = res.explanation.replace(/\*\*(.*?)\*\*/g, '<strong style="color:#fff">$1</strong>').replace(/\n/g, '<br>');
-            autoBox.innerHTML = '<div style="font-size:0.65rem;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:0.7px;margin-bottom:8px;">LLM ANALIZI</div><div style="line-height:1.6;color:#e2e8f0">' + txt + '</div>';
-          } else {
-            autoBox.innerHTML = '<span style="color:var(--warn)"> AI Analizi yapılamadı.</span>';
-          }
-        }).catch(()=>{ autoBox.innerHTML = '<span style="color:var(--warn)"> AI bağlantı hatası.</span>'; });
-      }
     }, i * 500);
   });
 }
