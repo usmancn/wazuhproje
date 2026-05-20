@@ -559,7 +559,6 @@ strong { color: var(--t1); }
           <option value="gemini">Gemini 2.5 Flash (Bulut)</option>
           <option value="ollama">Ollama / Llama 3.2 (Yerel)</option>
         </select>
-        <div id="ai-refresh-badge" style="font-size:0.68rem; color:var(--t3); font-family:var(--font-mono); white-space:nowrap;">Bekliyor</div>
       </div>
       <div style="display:flex; align-items:center; gap:8px;">
         <button id="btn-live-analyze" onclick="runLiveAnalysis()" style="padding:8px 20px; background:var(--blue); border:none; border-radius:3px; color:#fff; font-family:var(--font-sans); font-size:0.78rem; font-weight:700; cursor:pointer; text-transform:uppercase; letter-spacing:0.4px; transition:opacity 0.15s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
@@ -585,11 +584,14 @@ strong { color: var(--t1); }
       <div class="stat-card c-blue"><div class="stat-value" id="cnt-total" style="color:#fff">—</div><div class="stat-label">TOPLAM BULGU</div></div>
     </div>
 
-    <div class="ai-tabs-nav">
-      <button class="ai-tab-btn active" onclick="switchAITab('ai-tab-ana', this)">Kapsamlı Özet Raporu</button>
-      <button class="ai-tab-btn" onclick="switchAITab('ai-tab-auth', this)">auth.log</button>
-      <button class="ai-tab-btn" onclick="switchAITab('ai-tab-syslog', this)">syslog</button>
-      <button class="ai-tab-btn" onclick="switchAITab('ai-tab-kern', this)">kern.log</button>
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:0;">
+      <div class="ai-tabs-nav" style="margin-bottom:12px;">
+        <button class="ai-tab-btn active" onclick="switchAITab('ai-tab-ana', this)">Kapsamlı Özet Raporu</button>
+        <button class="ai-tab-btn" onclick="switchAITab('ai-tab-auth', this)">auth.log</button>
+        <button class="ai-tab-btn" onclick="switchAITab('ai-tab-syslog', this)">syslog</button>
+        <button class="ai-tab-btn" onclick="switchAITab('ai-tab-kern', this)">kern.log</button>
+      </div>
+      <div id="ai-refresh-badge" style="font-size:0.75rem; color:var(--blue); background:rgba(14, 165, 233, 0.1); border:1px solid rgba(14, 165, 233, 0.2); border-radius:4px; padding:6px 12px; font-weight:600; margin-bottom:12px; font-family:var(--font-mono); white-space:nowrap;">Bekliyor</div>
     </div>
 
     <div id="ai-tab-ana" class="ai-tab-content active">
