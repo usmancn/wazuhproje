@@ -701,6 +701,52 @@ ii  wazuh-manager  4.8.0-1  arm64  Wazuh manager — package for managing agents
           </div>
         </div>
 
+        <div class="terminal-ui">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div style="font-size: 0.7rem; color: var(--t2);">wazuh-alerts-tail — bash</div>
+            <button onclick="copyElementText(this.parentElement.nextElementSibling)" style="background: transparent; border: none; color: var(--t2); cursor: pointer; padding: 0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button>
+          </div>
+          <div class="terminal-body" style="line-height: 1.4;">
+<strong style="color: var(--ok)">osman@wazuh-server:~$</strong> tail -n 1 /var/ossec/logs/alerts/alerts.json | jq '.'
+{
+  <span style="color:var(--blue)">"timestamp"</span>: <span style="color:var(--ok)">"2026-05-20T21:30:15.000+0000"</span>,
+  <span style="color:var(--blue)">"rule"</span>: {
+    <span style="color:var(--blue)">"level"</span>: <span style="color:var(--warn)">10</span>,
+    <span style="color:var(--blue)">"description"</span>: <span style="color:var(--ok)">"sshd: brute force trying to get access to the system."</span>,
+    <span style="color:var(--blue)">"id"</span>: <span style="color:var(--warn)">"5712"</span>
+  },
+  <span style="color:var(--blue)">"agent"</span>: { <span style="color:var(--blue)">"id"</span>: <span style="color:var(--ok)">"000"</span>, <span style="color:var(--blue)">"name"</span>: <span style="color:var(--ok)">"osmanubuntu"</span> },
+  <span style="color:var(--blue)">"data"</span>: { <span style="color:var(--blue)">"srcip"</span>: <span style="color:var(--ok)">"192.168.64.1"</span> }
+}
+          </div>
+        </div>
+
+        <div class="terminal-ui">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div style="font-size: 0.7rem; color: var(--t2);">llm-api-connection — bash</div>
+            <button onclick="copyElementText(this.parentElement.nextElementSibling)" style="background: transparent; border: none; color: var(--t2); cursor: pointer; padding: 0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button>
+          </div>
+          <div class="terminal-body" style="line-height: 1.5;">
+<strong style="color: var(--ok)">osman@wazuh-server:~/guvenlik$</strong> tail -f server.log
+<span style="color:var(--cyan)">[INFO] 2026-05-20 21:05:12 - POST /api/analyze_single_alert HTTP/1.1</span>
+<span style="color:var(--t2)">[DEBUG] LLM_PROVIDER: ollama | MODEL: llama3:8b</span>
+<span style="color:var(--cyan)">[INFO] Sending 842 bytes to local API endpoint (http://localhost:11434)...</span>
+<span style="color:var(--warn)">[DEBUG] LLM Response received in 2.34s. Tokens generated: 142.</span>
+<span style="color:var(--blue)">[INFO] Generated response: "🚨 Tehdit Analizi: 192.168.64.1 IP adresi üzerinden..."</span>
+<span style="color:var(--ok); font-weight:bold;">[SUCCESS] AI inference completed and returned to dashboard.</span>
+          </div>
+        </div>
+
       </div>
     </div>
 
